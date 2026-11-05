@@ -1,0 +1,29 @@
+# Local packages, collected full review text, and previous design work
+node_modules/
+.cache/
+.versions/
+.ui-craft/
+reports/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+
+# Earlier mockup / 3D prototype (kept locally)
+original.html
+app.js
+styles.css
+experience.js
+experience.bundle.js
+experience.bundle.js.LEGAL.txt
+assets/airpods-pro-2/
+assets/catalog/*.jpg
+scripts/generate-airpods.mjs
+scripts/generate-airpods-trellis.mjs
+scripts/prepare-airpods.mjs
+
+# Portable downloads are generated locally; Pages publishes docs/
+후기돋보기_개선본.html
+후기돋보기_리뷰중심.html

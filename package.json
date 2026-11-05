@@ -1,0 +1,21 @@
+{
+  "name": "review-magnifier",
+  "version": "4.0.0",
+  "private": true,
+  "description": "후기돋보기의 인터랙티브 제품 후기 프로토타입",
+  "scripts": {
+    "build": "node scripts/prepare-catalog.mjs && esbuild catalog.js --bundle --minify --format=iife --target=es2020 --outfile=catalog.bundle.js && python3 scripts/export.py && python3 scripts/build-pages.py",
+    "check": "node --check catalog.js && node --check catalog.bundle.js",
+    "preview": "python3 -m http.server 4187 --bind 127.0.0.1",
+    "build:pages": "python3 scripts/build-pages.py"
+  },
+  "dependencies": {
+    "gsap": "3.15.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "@gradio/client": "2.7.2",
+    "esbuild": "0.28.2",
+    "sharp": "0.35.5"
+  }
+}
