@@ -5,6 +5,8 @@ const $$=selector=>[...document.querySelectorAll(selector)];
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const icon=name=>`<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const number=value=>Number(value).toLocaleString('ko-KR');
+const productUrl=id=>`#product/${encodeURIComponent(id)}`;
+const siteTitle='후기돋보기 — 제품은 한눈에, 후기는 자세히';
 const products=data.products;
 const byId=new Map(products.map(product=>[product.id,product]));
 const reviewOrder=(a,b)=>b.sourceReviewCount-a.sourceReviewCount||a.id.localeCompare(b.id);
@@ -17,8 +19,10 @@ const randomPosition=new Map(shuffledProducts.map((product,index)=>[product.id,i
 const categories=[['all','전체','grid'],['digital','가전·디지털','digital'],['kitchen','주방','kitchen'],['beauty','뷰티','beauty'],['living','생활·인테리어','living'],['food','식품','food'],['fashion','패션','fashion'],['hobby','취미','hobby']];
 const categoryNames=Object.fromEntries(categories.map(([id,name])=>[id,name]));
 const savedKey='review-magnifier:catalog-saved';
-const state={page:'home',category:'all',query:'',sort:'recommended',layout:'grid',saved:new Set(),compare:[],dialogProduct:null};
-let dialogTrigger=null,toastTimer;
+const state={page:'home',category:'all',query:'',sort:'recommended',layout:'grid',saved:new Set(),compare:[],product:null};
+const rememberedReturn=history.state?.productReturn;
+let productReturn=rememberedReturn&&/^#(?:home|saved|compare)(?:\?|$)/.test(rememberedReturn.hash)&&Number.isFinite(rememberedReturn.scroll)?rememberedReturn:{hash:'#home',scroll:0,trigger:null,layout:'grid'},toastTimer;
+state.layout=productReturn.layout==='list'?'list':'grid';
 try {const saved=JSON.parse(localStorage.getItem(savedKey)||'[]');if(Array.isArray(saved))state.saved=new Set(saved.filter(id=>byId.has(id)));} catch { /* Memory-only saving remains available. */ }
 if('scrollRestoration' in history)history.scrollRestoration='manual';
 
@@ -45,9 +49,9 @@ function renderCategories(){
 }
 function productCard(product,rank=0){
   const saved=state.saved.has(product.id),compared=state.compare.includes(product.id);
-  return `<article class="product-card" data-product="${product.id}"><div class="product-media"><button class="product-photo-button" data-open="${product.id}" aria-label="${esc(product.name)} 제품 사진과 후기 보기"><img class="product-photo" src="${product.imageData}" alt="${esc(product.brand+' '+product.name)} 판매처 제품 사진" loading="eager" decoding="async" width="600" height="600"></button>${rank?`<span class="product-rank ${rank<=3?'top-rank':''}" aria-label="선택 범위의 판매처 리뷰 수 ${rank}위">${String(rank).padStart(2,'0')}</span>`:''}<button class="save-button" data-save="${product.id}" aria-label="${esc(product.name)} 찜하기" aria-pressed="${saved}">${icon('bookmark')}</button></div>
-  <div class="product-copy"><span class="product-brand">${esc(product.brand)} · ${esc(product.categoryName)}</span><button class="product-name-button" data-open="${product.id}"><h2>${esc(product.name)}</h2></button><p class="product-subtitle">${esc(product.subtitle)}</p><div class="review-metrics" title="11번가 해당 판매 페이지에 표시된 평점과 전체 리뷰 수"><span class="rating-star" aria-hidden="true">★</span><b>${product.sourceRating.toFixed(1)}</b><span class="metrics-divider" aria-hidden="true"></span><span>판매처 리뷰 <b>${number(product.sourceReviewCount)}</b></span></div>
-  <button class="review-preview" data-open="${product.id}" aria-label="${esc(product.name)} 장점과 아쉬운 점 읽기"><span class="review-preview-label">후기를 읽어보니</span><p>${esc(product.lead)}</p><span class="preview-caution">체크 · ${esc(product.caution)}</span></button><div class="card-actions"><button class="review-detail-button" data-open="${product.id}" aria-label="${esc(product.name)} 후기 요약 ${product.reviews.length}개 읽기">후기 요약 ${product.reviews.length}개${icon('arrow')}</button><button class="compare-button" data-compare="${product.id}" aria-pressed="${compared}" aria-label="${esc(product.name)} 비교에 담기"><span class="compare-checkbox">${icon('check')}</span>비교</button></div></div></article>`;
+  return `<article class="product-card" data-product="${product.id}"><div class="product-media"><a class="product-photo-button" data-open="${product.id}" aria-label="${esc(product.name)} 제품 사진과 후기 보기" href="${productUrl(product.id)}"><img class="product-photo" src="${product.imageData}" alt="${esc(product.brand+' '+product.name)} 판매처 제품 사진" loading="eager" decoding="async" width="600" height="600"></a>${rank?`<span class="product-rank ${rank<=3?'top-rank':''}" aria-label="선택 범위의 판매처 리뷰 수 ${rank}위">${String(rank).padStart(2,'0')}</span>`:''}<button class="save-button" data-save="${product.id}" aria-label="${esc(product.name)} 찜하기" aria-pressed="${saved}">${icon('bookmark')}</button></div>
+  <div class="product-copy"><span class="product-brand">${esc(product.brand)} · ${esc(product.categoryName)}</span><a class="product-name-button" data-open="${product.id}" href="${productUrl(product.id)}"><h2>${esc(product.name)}</h2></a>
+  <a class="review-preview" data-open="${product.id}" aria-label="${esc(product.name)} 장점과 아쉬운 점 읽기" href="${productUrl(product.id)}"><span class="review-preview-label">후기를 읽어보니</span><p>${esc(product.lead)}</p><span class="preview-caution">체크 · ${esc(product.caution)}</span></a><p class="product-subtitle">${esc(product.subtitle)}</p><div class="review-metrics" title="11번가 해당 판매 페이지에 표시된 평점과 전체 리뷰 수"><span class="rating-star" aria-hidden="true">★</span><b>${product.sourceRating.toFixed(1)}</b><span class="metrics-divider" aria-hidden="true"></span><span>판매처 리뷰 <b>${number(product.sourceReviewCount)}</b></span></div><div class="card-actions"><a class="review-detail-button" data-open="${product.id}" aria-label="${esc(product.name)} 후기 요약 ${product.reviews.length}개 읽기" href="${productUrl(product.id)}">후기 요약 ${product.reviews.length}개${icon('arrow')}</a><button class="compare-button" data-compare="${product.id}" aria-pressed="${compared}" aria-label="${esc(product.name)} 비교에 담기"><span class="compare-checkbox">${icon('check')}</span>비교</button></div></div></article>`;
 }
 function renderBrowse(){
   const list=sortedProducts(),savedPage=state.page==='saved';
@@ -83,7 +87,7 @@ function renderSidebar(list){
   const chosen=[...list].sort((a,b)=>{const ia=preferred.indexOf(a.id),ib=preferred.indexOf(b.id);return (ia<0?99:ia)-(ib<0?99:ib);}).slice(0,4);
   $('#side-review-list').innerHTML=chosen.map(product=>{
     const review=product.reviews[0];
-    return `<button class="side-review" data-open="${product.id}"><img src="${product.imageData}" alt="" width="44" height="47"><span><small>${esc(product.name)}</small><strong>${esc(review.title)}</strong><span class="side-topic">${esc(review.topic)} · 11번가 원문 요약</span></span></button>`;
+    return `<a class="side-review" data-open="${product.id}" href="${productUrl(product.id)}"><img src="${product.imageData}" alt="" width="44" height="47"><span><small>${esc(product.name)}</small><strong>${esc(review.title)}</strong><span class="side-topic">${esc(review.topic)} · 11번가 원문 요약</span></span></a>`;
   }).join('');
 }
 function syncActions(){
@@ -109,42 +113,72 @@ function toggleCompare(id){
   else state.compare.push(id);
   if(state.page==='compare')renderComparison();syncActions();
 }
-function openProduct(id){
-  const p=byId.get(id);if(!p)return;
-  dialogTrigger=document.activeElement;state.dialogProduct=id;
-  $('#dialog-label').textContent=`${p.categoryName} · 공개 구매 후기 요약`;
-  $('#dialog-content').innerHTML=`<div class="detail-product"><img src="${p.imageData}" alt="${esc(p.name)} 판매처 사진" width="180" height="160"><div><span class="detail-brand">${esc(p.brand)}</span><h2 id="dialog-title">${esc(p.name)}</h2><p class="product-subtitle">${esc(p.subtitle)}</p><div class="detail-source-metrics"><span>판매처 표시 평점 <b>${p.sourceRating.toFixed(1)}</b></span><span>판매처 전체 리뷰 <b>${number(p.sourceReviewCount)}개</b></span></div><div class="detail-product-actions"><a class="button primary" href="${p.sourceUrl}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} 11번가 원문 페이지 새 창에서 보기">원문 페이지 보기${icon('external')}</a><button class="button secondary" data-save="${id}" aria-pressed="${state.saved.has(id)}">${icon('bookmark')}찜하기</button></div></div></div>
-  <div class="opinion-summary"><div><small>좋았다는 의견</small><strong>${esc(p.good)}</strong></div><div><small>함께 확인할 점</small><strong>${esc(p.caution)}</strong></div></div><div class="reviews-heading"><h3>후기 요약 ${p.reviews.length}개</h3><span>확인한 공개 후기 ${p.reviewSampleCount}개 중 선별</span></div>
-  ${p.reviews.map(review=>`<article class="review-summary-item"><header><span class="review-topic">${esc(review.topic)}</span><span>11번가 · ${esc(review.author)}</span></header><h3>${esc(review.title)}</h3><p>${esc(review.summary)}</p><footer><span>원문 요약</span><span>작성일 미제공</span><span>광고 여부 미확인</span><a href="${review.sourceUrl}" target="_blank" rel="noopener noreferrer" aria-label="${esc(review.author)} 후기의 원문 상품 페이지 새 창에서 보기">출처 보기${icon('external')}</a></footer></article>`).join('')}
-  <div class="detail-callout">상품 페이지에 공개된 일부 후기를 읽고 재구성한 요약이에요. 작성자의 개인 경험이며, 판매처 전체 리뷰를 대표하지 않아요. 실구매·실사용과 광고 여부는 별도로 인증하지 않았어요. 같은 페이지에 여러 옵션·이전 모델 후기가 섞일 수 있어요.</div><p class="detail-source-list">수집: ${esc(p.collectedAt.slice(0,10))} · 출처: <a href="${p.sourceUrl}" target="_blank" rel="noopener noreferrer">${esc(p.sourceTitle)}</a><br>판매 상태·구성과 가격은 원문에서 다시 확인해 주세요. 개별 리뷰로 바로 이동하는 링크가 없어 원문 상품 페이지를 연결했어요.</p>`;
-  if(!$('#product-dialog').open)$('#product-dialog').showModal();
-  $('#product-dialog').scrollTop=0;
+function renderProduct(){
+  const p=byId.get(state.product);
+  if(!p){
+    document.title='제품을 찾을 수 없어요 — 후기돋보기';
+    $('#product-view').innerHTML=`<div class="empty-state">${icon('search')}<h1 id="product-title" tabindex="-1">제품을 찾을 수 없어요.</h1><p>주소를 다시 확인하거나 다른 제품의 후기를 찾아보세요.</p><a class="button primary" href="#home">전체 제품 보기</a></div>`;
+    return;
+  }
+  document.title=`${p.name} 후기 — 후기돋보기`;
+  $('#product-view').innerHTML=`
+    <nav class="product-breadcrumb" aria-label="현재 위치"><a href="${esc(productReturn.hash)}" data-product-return>${icon('arrow')}목록으로</a><span>${esc(p.categoryName)}</span><span aria-current="page">제품 후기</span></nav>
+    <header class="product-page-header"><div><span class="product-page-brand">${esc(p.brand)} · ${esc(p.categoryName)}</span><h1 id="product-title" tabindex="-1">${esc(p.name)}</h1><p>${esc(p.subtitle)}</p></div><img class="product-mobile-photo" src="${p.imageData}" alt="${esc(p.name)} 판매처 제품 사진" width="88" height="88"></header>
+    <div class="product-detail-layout">
+      <div class="review-reading">
+        <section class="reading-summary" aria-labelledby="reading-summary-title"><span class="reading-kicker">후기를 읽어보니</span><h2 id="reading-summary-title">${esc(p.lead)}</h2><p class="reading-sample">공개 후기 ${p.reviewSampleCount}개를 확인하고, ${p.reviews.length}개를 골라 요약했어요.</p><div class="review-points"><div><h3>${icon('check')}좋았다는 의견</h3><p>${esc(p.good)}</p></div><div><h3>${icon('info')}함께 확인할 점</h3><p>${esc(p.caution)}</p></div></div></section>
+        <section class="product-reviews" id="product-reviews" aria-labelledby="product-reviews-title" tabindex="-1"><div class="reading-heading"><h2 id="product-reviews-title">읽어볼 후기 <span>${p.reviews.length}</span></h2><span>11번가 공개 후기</span></div><p class="review-editor-note">원문을 읽고 재구성한 요약이에요. 각 후기의 출처에서 원문을 확인할 수 있어요.</p>
+        ${p.reviews.map(review=>`<article class="review-story"><header><span class="review-story-topic">${esc(review.topic)}</span><span>${esc(review.author)} · 11번가</span></header><h3>${esc(review.title)}</h3><p class="review-story-body">${esc(review.summary)}</p><footer><span>작성일 미제공 · 광고 여부 미확인</span><a href="${esc(review.sourceUrl)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(review.title)} 후기의 원문 상품 페이지 새 창에서 보기">원문에서 확인${icon('external')}</a></footer></article>`).join('')}</section>
+        <section class="product-source-info" id="product-source-info" aria-labelledby="product-source-title" tabindex="-1"><h2 id="product-source-title">출처와 수집 범위</h2><p>${esc(p.collectedAt.slice(0,10).replaceAll('-','.'))} 수집 · 11번가 공개 상품 페이지</p><a class="product-source-link" href="${esc(p.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(p.sourceTitle)}${icon('external')}</a><details><summary>후기를 읽기 전에 확인해 주세요.</summary><p>공개된 일부 후기를 선별한 요약이며 판매처 전체 리뷰를 대표하지 않아요. 작성자의 개인 경험으로, 실구매·실사용·광고 여부는 별도로 인증하지 않았어요. 같은 상품 페이지에 여러 옵션이나 이전 모델 후기가 섞일 수 있어요. 작성일은 제공되지 않았어요.</p><p>개별 리뷰로 이동하는 링크가 없어 원문 상품 페이지를 연결했어요. 판매 상태·구성·가격은 원문에서 다시 확인해 주세요.</p></details></section>
+        <a class="product-return-bottom text-link" href="${esc(productReturn.hash)}" data-product-return>다른 제품의 후기도 둘러보기${icon('arrow')}</a>
+      </div>
+      <aside class="product-info-rail" aria-label="제품 정보"><img class="product-rail-photo" src="${p.imageData}" alt="${esc(p.name)} 판매처 제품 사진" width="300" height="250"><div class="product-rail-copy"><h2>제품 정보</h2><dl><div><dt>판매처 전체 리뷰</dt><dd>${number(p.sourceReviewCount)}개</dd></div><div><dt>판매처 표시 평점</dt><dd>${p.sourceRating.toFixed(1)} / 5</dd></div><div><dt>확인한 후기 표본</dt><dd>${p.reviewSampleCount}개</dd></div></dl><p>수집 당시 해당 판매 페이지 기준</p></div><div class="product-rail-actions"><button class="button primary" data-save="${p.id}" aria-pressed="${state.saved.has(p.id)}">${icon('bookmark')}찜하기</button><button class="button secondary" data-compare="${p.id}" aria-pressed="${state.compare.includes(p.id)}">${icon('compare')}비교에 담기</button></div><a class="product-original-link" href="${esc(p.sourceUrl)}" target="_blank" rel="noopener noreferrer">판매처 원문 페이지${icon('external')}</a><div class="product-reading-links"><button data-detail-jump="product-reviews">후기 요약 ${p.reviews.length}개${icon('arrow')}</button><button data-detail-jump="product-source-info">출처와 수집 범위${icon('arrow')}</button></div></aside>
+    </div>`;
 }
 function renderComparison(){
   const chosen=state.compare.map(id=>byId.get(id));
   if(chosen.length<2){$('#comparison-content').innerHTML=`<div class="empty-state">${icon('compare')}<h2>비교할 제품을 두 개 이상 골라주세요.</h2><p>제품 목록에서 비교를 누르면 최대 세 개를 나란히 볼 수 있어요.</p><button class="button primary" data-reset>제품 고르러 가기</button></div>`;return;}
   const cross=chosen.some(p=>p.category!==chosen[0].category);
-  $('#comparison-content').innerHTML=`<p class="compare-notice">${cross?'서로 다른 제품군을 선택했어요. 용도가 다른 제품의 별점으로 우열을 판단하기보다 후기 내용을 비교해 보세요.':'같은 제품군의 후기 내용을 나란히 볼 수 있어요.'} 평점과 리뷰 수는 각 판매 페이지 기준이에요.</p><div class="comparison-grid" data-count="${chosen.length}">${chosen.map(p=>`<article class="comparison-column"><img class="comparison-photo" src="${p.imageData}" alt="${esc(p.name)}" width="240" height="160"><span class="product-brand">${esc(p.brand)}</span><h2>${esc(p.name)}</h2><div class="comparison-cell"><small>판매처 리뷰 · 표시 평점</small><p><strong>${number(p.sourceReviewCount)}개</strong> · ${p.sourceRating.toFixed(1)}점</p></div><div class="comparison-cell good"><small>좋았다는 의견</small><p>${esc(p.good)}</p></div><div class="comparison-cell"><small>함께 확인할 점</small><p>${esc(p.caution)}</p></div><div class="comparison-cell"><small>모아본 표본 · 화면 요약</small><p>${p.reviewSampleCount}개 확인 · ${p.reviews.length}개 요약</p></div><button class="review-detail-button" data-open="${p.id}">출처와 후기 읽기${icon('arrow')}</button><button class="text-button" data-compare="${p.id}" aria-label="${esc(p.name)} 비교에서 빼기">선택에서 빼기</button></article>`).join('')}</div>`;
+  $('#comparison-content').innerHTML=`<p class="compare-notice">${cross?'서로 다른 제품군을 선택했어요. 용도가 다른 제품의 별점으로 우열을 판단하기보다 후기 내용을 비교해 보세요.':'같은 제품군의 후기 내용을 나란히 볼 수 있어요.'} 평점과 리뷰 수는 각 판매 페이지 기준이에요.</p><div class="comparison-grid" data-count="${chosen.length}">${chosen.map(p=>`<article class="comparison-column"><img class="comparison-photo" src="${p.imageData}" alt="${esc(p.name)}" width="240" height="160"><span class="product-brand">${esc(p.brand)}</span><h2>${esc(p.name)}</h2><div class="comparison-cell"><small>판매처 리뷰 · 표시 평점</small><p><strong>${number(p.sourceReviewCount)}개</strong> · ${p.sourceRating.toFixed(1)}점</p></div><div class="comparison-cell good"><small>좋았다는 의견</small><p>${esc(p.good)}</p></div><div class="comparison-cell"><small>함께 확인할 점</small><p>${esc(p.caution)}</p></div><div class="comparison-cell"><small>모아본 표본 · 화면 요약</small><p>${p.reviewSampleCount}개 확인 · ${p.reviews.length}개 요약</p></div><a class="review-detail-button" data-open="${p.id}" href="${productUrl(p.id)}">출처와 후기 읽기${icon('arrow')}</a><button class="text-button" data-compare="${p.id}" aria-label="${esc(p.name)} 비교에서 빼기">선택에서 빼기</button></article>`).join('')}</div>`;
 }
 function renderStandards(){
   $('#standards-content').innerHTML=`<section><h2>실제 제품 12개, 공개 후기 ${data.reviewSampleCount}개</h2><p>2026년 11월 5일 11번가의 공개 상품 페이지에서 제품 사진과 노출된 후기 표본을 소량 수집했어요. 디지털·주방·뷰티·생활·식품·패션·취미의 임의 예시 제품이며, 시장 전체를 조사한 순위가 아니에요.</p></section><section><h2>제품은 어떤 순서로 보이나요?</h2><p>첫 화면의 상위 3개는 등록된 제품 중 해당 판매처의 전체 리뷰 수가 많은 순서예요. 나머지는 새로 접속하거나 새로고침할 때 무작위로 섞어요. 탐색 중에는 순서를 유지하며, 검색·카테고리와 찜 목록에는 해당하는 모든 제품을 보여줘요. 리뷰 수·평점·이름순을 직접 고르면 선택한 기준으로 전체 목록을 정렬해요. 실제 조회수와 실시간 인기도는 수집하지 않아요.</p></section><section><h2>숫자는 이렇게 읽어주세요.</h2><ul><li><strong>판매처 리뷰 수</strong>: 해당 상품 페이지가 표시한 전체 리뷰 수예요. 수집한 후기 수와 달라요.</li><li><strong>별점</strong>: 원문에 ‘판매자 평점’으로 표시된 값이에요. 후기돋보기가 계산한 통합 제품 평점이 아니에요.</li><li><strong>후기 요약</strong>: 실제 공개 후기를 읽고 재구성한 내용이에요. 이번에는 ${data.summaryCount}개를 선별해 정리했어요.</li><li><strong>판매처 리뷰 많은 순</strong>: 이번 12개 표본의 해당 판매처 리뷰 수만 비교한 순서예요. 종합 인기·품질 순위가 아니에요.</li></ul></section><section><h2>확인하지 못한 정보도 남겨두었어요.</h2><p>작성일과 사용 기간은 공개 요약 영역에서 확인되지 않아 임의로 넣지 않았어요. 작성자가 2년 사용 등을 직접 언급한 경우에만 요약에 반영했어요. 광고 여부·실구매·제품 진위는 별도 인증하지 않았어요. 사진의 구성과 후기는 여러 옵션이나 이전 모델을 포함할 수 있어요.</p></section><section><h2>제품별 원문 출처</h2><p>개별 후기 고유 링크가 제공되지 않아 원문 상품 페이지의 리뷰 영역에서 확인할 수 있어요. 원문이 수정되거나 상품 판매가 종료될 수 있어요.</p><div class="source-table-scroll"><table><thead><tr><th scope="col">제품</th><th scope="col">확인한 후기</th><th scope="col">원문</th></tr></thead><tbody>${products.map(p=>`<tr><td>${esc(p.name)}</td><td>${p.reviewSampleCount}개</td><td><a href="${p.sourceUrl}" target="_blank" rel="noopener noreferrer" aria-label="${esc(p.name)} 11번가 출처 새 창에서 보기">11번가 ↗</a></td></tr>`).join('')}</tbody></table></div></section>`;
 }
 function route(){
-  if($('#product-dialog').open)$('#product-dialog').close();
-  const [page,search='']=location.hash.slice(1).split('?'),params=new URLSearchParams(search);
-  state.page=['saved','compare','standards'].includes(page)?page:'home';
+  const leavingProduct=state.page==='product';
+  const [path,search='']=location.hash.slice(1).split('?'),params=new URLSearchParams(search);
+  const [page,productId='']=path.split('/');
+  state.page=['saved','compare','standards','product'].includes(page)?page:'home';
+  state.product=state.page==='product'?productId:null;
   state.category=Object.hasOwn(categoryNames,params.get('category'))?params.get('category'):'all';
   state.query=(params.get('q')||'').slice(0,80);
   state.sort=['reviews','rating','name','recommended'].includes(params.get('sort'))?params.get('sort'):'recommended';
-  $('#browse-view').hidden=!['home','saved'].includes(state.page);$('#compare-view').hidden=state.page!=='compare';$('#standards-view').hidden=state.page!=='standards';
+  $('#main').dataset.page=state.page;
+  $('.category-wrap').hidden=state.page==='product';
+  $('#browse-view').hidden=!['home','saved'].includes(state.page);$('#compare-view').hidden=state.page!=='compare';$('#standards-view').hidden=state.page!=='standards';$('#product-view').hidden=state.page!=='product';
+  document.title=siteTitle;
   $$('[data-nav]').forEach(link=>link.dataset.nav===state.page?link.setAttribute('aria-current','page'):link.removeAttribute('aria-current'));
   renderCategories();
-  if(state.page==='compare')renderComparison();else if(state.page==='standards')renderStandards();else renderBrowse();
-  syncActions();window.scrollTo({top:0,behavior:'instant'});
+  if(state.page==='product')renderProduct();else if(state.page==='compare')renderComparison();else if(state.page==='standards')renderStandards();else renderBrowse();
+  syncActions();
+  if(state.page==='product'){history.replaceState({...history.state,productReturn},'');$('#product-title').focus({preventScroll:true});}
+  if(leavingProduct&&location.hash===productReturn.hash){
+    const returnHash=location.hash;
+    requestAnimationFrame(()=>{
+      if(location.hash!==returnHash)return;
+      const trigger=$$('[data-open]').find(link=>link.dataset.open===productReturn.trigger&&(!productReturn.triggerClass||link.className===productReturn.triggerClass)&&link.getClientRects().length);
+      (trigger||$('#main')).focus({preventScroll:true});window.scrollTo({top:productReturn.scroll,behavior:'instant'});
+    });
+  }else{window.scrollTo({top:0,behavior:'instant'});if(leavingProduct)$('#main').focus({preventScroll:true});}
 }
 document.addEventListener('click',event=>{
   const target=event.target.closest('button,a');if(!target)return;
-  if(target.hasAttribute('data-open'))return openProduct(target.dataset.open);
+  if(target.hasAttribute('data-open')){
+    if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    if(state.page!=='product')productReturn={hash:location.hash||'#home',scroll:window.scrollY,trigger:target.dataset.open,triggerClass:target.className,layout:state.layout};
+    event.preventDefault();return go(`product/${target.dataset.open}`);
+  }
+  if(target.hasAttribute('data-detail-jump')){const section=document.getElementById(target.dataset.detailJump);section?.focus({preventScroll:true});section?.scrollIntoView({block:'start',behavior:'instant'});return;}
   if(target.hasAttribute('data-save'))return toggleSave(target.dataset.save);
   if(target.hasAttribute('data-compare'))return toggleCompare(target.dataset.compare);
   if(target.hasAttribute('data-category'))return go(state.page==='saved'?'saved':'home',{category:target.dataset.category,sort:state.sort});
@@ -159,9 +193,6 @@ $('.skip-link').addEventListener('click',event=>{event.preventDefault();$('#main
 $('#product-search').addEventListener('search',()=>{if(!$('#product-search').value&&state.query)go('home');});
 $('#sort-select').addEventListener('change',event=>go(state.page,{category:state.category,q:state.query,sort:event.target.value}));
 $('#open-comparison').addEventListener('click',()=>{if(state.compare.length>=2)go('compare');});
-$('#dialog-close').addEventListener('click',()=>$('#product-dialog').close());
-$('#product-dialog').addEventListener('close',()=>{if(dialogTrigger?.isConnected)dialogTrigger.focus({preventScroll:true});else $(`[data-open="${state.dialogProduct}"]`)?.focus({preventScroll:true});});
-$('#product-dialog').addEventListener('click',event=>{if(event.target!==$('#product-dialog'))return;const r=event.target.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)event.target.close();});
 document.addEventListener('error',event=>{if(event.target instanceof HTMLImageElement){event.target.alt='사진을 표시하지 못했어요. 제품명과 후기는 계속 확인할 수 있어요.';event.target.classList.add('image-error');}},true);
 window.addEventListener('hashchange',route);
 $('#sample-total').textContent=`${data.reviewSampleCount}개`;$('#summary-total').textContent=`${data.summaryCount}개`;
