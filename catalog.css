@@ -21,4 +21,27 @@ dialog{border:0;border-radius:18px;width:min(850px,calc(100% - 40px));max-height
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 .source-table-scroll{overflow-x:auto;max-width:100%}.source-table-scroll th{position:sticky;top:0;background:#fff}.source-table-scroll table{min-width:280px}
+.featured-description{font-size:12px;color:var(--color-muted);margin:0 0 14px}
+.featured-grid .product-media{aspect-ratio:1.6;background:#f1f5f0}
+.discovery-heading{border-top:1px solid var(--color-line);padding-top:23px;margin:30px 0 20px}
+.discovery-heading h2{font-size:20px;letter-spacing:-.5px;font-weight:700}
+.discovery-heading p{font-size:12px;color:var(--color-muted);margin-top:5px}
+@media(max-width:620px){
+  .featured-description{font-size:11px;margin-bottom:15px}
+  .featured-grid{grid-template-columns:1fr;gap:18px}
+  .featured-grid[data-layout] .product-card{display:grid;grid-template-columns:105px minmax(0,1fr);gap:14px;padding:0;border:0;align-items:start}
+  .featured-grid[data-layout] .product-media{aspect-ratio:1;margin:0}
+  .featured-grid[data-layout] .product-photo-button{padding:12px}
+  .featured-grid .product-copy{padding:0}
+  .featured-grid .product-name-button h2{font-size:14px}
+  .featured-grid .product-subtitle,.featured-grid .review-preview-label,.featured-grid .preview-caution{display:none}
+  .featured-grid .review-metrics{margin-top:4px}
+  .featured-grid[data-layout] .review-preview{padding:0;min-height:0;margin-top:6px;background:transparent}
+  .featured-grid[data-layout] .review-preview p{font-size:12px;line-height:1.7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .featured-grid .card-actions{margin:3px 0 0;padding:0}
+  .discovery-heading{padding-top:20px;margin:25px 0 17px}
+  .discovery-heading h2{font-size:18px}
+  .discovery-heading p{font-size:11px}
+}
+@media(max-width:360px){.featured-grid[data-layout] .product-card{grid-template-columns:84px minmax(0,1fr);gap:12px}}
 @media(min-width:901px){.header-main{min-height:76px}.category-nav{min-height:76px;padding-block:7px}.page-layout{padding-top:24px}.section-title{margin-bottom:12px}#browse-view .eyebrow{display:none}.product-media{aspect-ratio:1.85}.product-photo-button{padding:14px}.sidebar{top:144px}}
