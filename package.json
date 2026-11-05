@@ -4,8 +4,8 @@
   "private": true,
   "description": "후기돋보기의 인터랙티브 제품 후기 프로토타입",
   "scripts": {
-    "build": "node scripts/prepare-catalog.mjs && esbuild catalog.js --bundle --minify --format=iife --target=es2020 --outfile=catalog.bundle.js && python3 scripts/export.py && python3 scripts/build-pages.py",
-    "check": "node --check catalog.js && node --check catalog.bundle.js",
+    "build": "python3 scripts/prepare-review-insights.py && node scripts/prepare-catalog.mjs && esbuild catalog.js --bundle --minify --format=iife --target=es2020 --outfile=catalog.bundle.js && python3 scripts/export.py && python3 scripts/build-pages.py",
+    "check": "node --check catalog.js && node --check review-insights.js && node --check catalog.bundle.js",
     "preview": "python3 -m http.server 4187 --bind 127.0.0.1",
     "build:pages": "python3 scripts/build-pages.py"
   },

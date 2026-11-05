@@ -8,6 +8,7 @@ const cachedEvidence=new URL('.cache/catalog/evidence.json',root);
 const hasEvidence=existsSync(cachedEvidence);
 const evidence=hasEvidence?JSON.parse(await readFile(cachedEvidence,'utf8')):[];
 const editorial=JSON.parse(await readFile(new URL('data/editorial.json',root),'utf8'));
+const reviewAnalysis=JSON.parse(await readFile(new URL('data/review-analysis.json',root),'utf8'));
 const products=hasEvidence?[]:JSON.parse(await readFile(new URL('data/catalog.json',root),'utf8')).products;
 for (const item of evidence) {
   const {originalReviews,...product}=item;
@@ -20,7 +21,11 @@ for (const item of evidence) {
   });
   products.push({...product,...edit,reviews});
 }
-const dataset={version:4,collectedDate:'2026-11-05',sourceCount:1,sourceName:'11번가',referenceSite:'https://www.09now.com/',reviewSampleCount:products.reduce((s,p)=>s+p.reviewSampleCount,0),summaryCount:products.reduce((s,p)=>s+p.reviews.length,0),products};
+for(const product of products){
+  product.reviewAnalysis=reviewAnalysis.products[product.id];
+  if(!product.reviewAnalysis||product.reviewAnalysis.reviewSampleCount!==product.reviewSampleCount)throw new Error('Mismatched review analysis: '+product.id);
+}
+const dataset={version:5,collectedDate:'2026-11-05',sourceCount:1,sourceName:'11번가',referenceSite:'https://www.09now.com/',reviewSampleCount:products.reduce((s,p)=>s+p.reviewSampleCount,0),summaryCount:products.reduce((s,p)=>s+p.reviews.length,0),originalExcerptCount:products.reduce((s,p)=>s+p.reviewAnalysis.originalExcerpts.length,0),products};
 await writeFile(new URL('data/catalog.json',root),JSON.stringify(dataset,null,2));
 for(const product of products){
   // Crop only the old promotional price strip below the BRITA product photo.

@@ -9,7 +9,7 @@ html=html.replace('<link rel="stylesheet" href="catalog.css">','<style>\n'+css+'
 html=html.replace('<script defer src="catalog.bundle.js"></script>','')
 html=html.replace('</body>','<script>\n'+script+'\n</script>\n</body>')
 for name in ['후기돋보기_개선본.html','후기돋보기_리뷰중심.html']:(root/name).write_text(html)
-allowed=['index.html','catalog.css','catalog.js','catalog.bundle.js','package.json','package-lock.json','README.md','.gitignore','후기돋보기_개선본.html','후기돋보기_리뷰중심.html','개선내용.md','실행안내.md','ASSET_CREDITS.md','THIRD_PARTY_NOTICES.md','data/catalog.json','data/catalog.viewer.json','data/editorial.json','scripts/collect-catalog.py','scripts/prepare-catalog.mjs','scripts/export.py','scripts/build-pages.py','.ui-craft/brief.md']
+allowed=['index.html','catalog.css','catalog.js','review-insights.js','catalog.bundle.js','package.json','package-lock.json','README.md','.gitignore','후기돋보기_개선본.html','후기돋보기_리뷰중심.html','개선내용.md','실행안내.md','ASSET_CREDITS.md','THIRD_PARTY_NOTICES.md','data/catalog.json','data/catalog.viewer.json','data/editorial.json','data/review-annotations.json','data/review-analysis.json','scripts/collect-catalog.py','scripts/prepare-catalog.mjs','scripts/prepare-review-insights.py','scripts/export.py','scripts/build-pages.py','.ui-craft/brief.md']
 with zipfile.ZipFile(root/'후기돋보기_수정본.zip','w',zipfile.ZIP_DEFLATED) as archive:
  for name in allowed:
   file=root/name
