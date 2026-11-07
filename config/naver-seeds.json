@@ -1,0 +1,113 @@
+{
+  "scope": "Initial discovery queries, not an exhaustive product universe. API results remain unreviewed candidates.",
+  "queries": [
+    {
+      "query": "에어팟 프로2",
+      "productId": "airpods"
+    },
+    {
+      "query": "소니 WH-1000XM5",
+      "productId": "sony"
+    },
+    {
+      "query": "로지텍 K380",
+      "productId": "keyboard"
+    },
+    {
+      "query": "일리 Y3.3",
+      "productId": "illy"
+    },
+    {
+      "query": "브리타 마렐라 2.4L",
+      "productId": "brita"
+    },
+    {
+      "query": "라로슈포제 시카플라스트 B5",
+      "productId": "cream"
+    },
+    {
+      "query": "레고 타자기 21327",
+      "productId": "lego"
+    },
+    {
+      "query": "하리보 젤리",
+      "productId": "haribo"
+    },
+    {
+      "query": "다우니 미스티크",
+      "productId": "downy"
+    },
+    {
+      "query": "발뮤다 랜턴",
+      "productId": "lantern"
+    },
+    {
+      "query": "발뮤다 토스터 K11B",
+      "productId": "toaster"
+    },
+    {
+      "query": "크록스 올터레인",
+      "productId": "crocs"
+    },
+    {
+      "query": "무선 이어폰"
+    },
+    {
+      "query": "노이즈캔슬링 헤드폰"
+    },
+    {
+      "query": "블루투스 키보드"
+    },
+    {
+      "query": "기계식 키보드"
+    },
+    {
+      "query": "보조배터리"
+    },
+    {
+      "query": "로봇청소기"
+    },
+    {
+      "query": "공기청정기"
+    },
+    {
+      "query": "가습기"
+    },
+    {
+      "query": "캡슐 커피머신"
+    },
+    {
+      "query": "에어프라이어"
+    },
+    {
+      "query": "전기포트"
+    },
+    {
+      "query": "프라이팬"
+    },
+    {
+      "query": "텀블러"
+    },
+    {
+      "query": "선크림"
+    },
+    {
+      "query": "수분크림"
+    },
+    {
+      "query": "샴푸"
+    },
+    {
+      "query": "세탁세제"
+    },
+    {
+      "query": "캠핑 랜턴"
+    },
+    {
+      "query": "운동화"
+    },
+    {
+      "query": "백팩"
+    }
+  ]
+}

@@ -29,6 +29,14 @@
 
 `data/review-annotations.json`에 원문 후기 번호별 분류가 있고, `scripts/prepare-review-insights.py`가 고유 후기 수와 원문 발췌의 일치를 검사해 `data/review-analysis.json`을 만듭니다. 전체 원문과 HTML은 로컬 `.cache/`에만 유지합니다. 공개된 분석 스냅샷이 있어 원문 캐시 없이도 빌드할 수 있습니다.
 
+## 데이터 저장·수집
+
+2026-11-07부터 로컬 SQLite DB를 사용합니다. 기존 제품 12개·구매 리뷰 원문 113개를 이전했고, 네이버 블로그 후보 10개 중 3개의 본문을 소량 확보했습니다. 신규 후보는 공개 집계에 자동 합치지 않습니다.
+
+DB는 `.local-data/review-magnifier.sqlite3`이며 GitHub에 올리지 않습니다. DB가 있는 환경의 빌드는 검토된 자료를 DB에서 내보내 사용하고, 없는 환경에서는 공개 JSON 스냅샷을 사용합니다. 네이버 쇼핑·블로그 공식 검색 수집은 API 키 설정 후 실행할 수 있으며, 구매 리뷰 전체를 제공하는 API는 아닙니다.
+
+[저장 구조·네이버 키 발급·수집 명령](docs-data/저장과수집.md)을 참고하세요. `npm run db:stats`로 실제 저장 건수, `npm run db:doctor`로 설정 상태를 확인합니다.
+
 ## 실행 및 수정
 
 Node.js 22 이상과 Python 3을 사용합니다.
@@ -40,7 +48,7 @@ npm run check
 npm run preview
 ```
 
-로컬 미리보기는 `http://127.0.0.1:4187/`입니다. `index.html`, `catalog.css`, `catalog.js`에서 화면과 동작을 수정합니다. `data/catalog.json`에는 공개 제품 정보와 재구성 요약·원문 출처가 있습니다. 수집 원문 캐시가 없어도 저장된 스냅샷으로 빌드할 수 있습니다.
+로컬 미리보기는 `http://127.0.0.1:4187/`이며 공개용 `docs/`만 제공합니다. `index.html`, `catalog.css`, `catalog.js`에서 화면과 동작을 수정합니다. `data/catalog.json`에는 공개 제품 정보와 재구성 요약·원문 출처가 있습니다. 수집 원문 캐시가 없어도 저장된 스냅샷으로 빌드할 수 있습니다.
 
 ## GitHub Pages 배포
 

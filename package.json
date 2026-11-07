@@ -6,8 +6,17 @@
   "scripts": {
     "build": "python3 scripts/prepare-review-insights.py && node scripts/prepare-catalog.mjs && esbuild catalog.js --bundle --minify --format=iife --target=es2020 --outfile=catalog.bundle.js && python3 scripts/export.py && python3 scripts/build-pages.py",
     "check": "node --check catalog.js && node --check review-insights.js && node --check catalog.bundle.js",
-    "preview": "python3 -m http.server 4187 --bind 127.0.0.1",
-    "build:pages": "python3 scripts/build-pages.py"
+    "preview": "python3 -m http.server 4187 --bind 127.0.0.1 --directory docs",
+    "build:pages": "python3 scripts/build-pages.py",
+    "db:init": "python3 scripts/data-pipeline.py init",
+    "db:migrate": "python3 scripts/data-pipeline.py migrate",
+    "db:stats": "python3 scripts/data-pipeline.py stats",
+    "db:doctor": "python3 scripts/data-pipeline.py doctor",
+    "db:backup": "python3 scripts/data-pipeline.py backup",
+    "db:export": "python3 scripts/data-pipeline.py export --output .local-data/catalog-export.json",
+    "data:plan": "python3 scripts/data-pipeline.py plan-naver",
+    "data:collect": "python3 scripts/data-pipeline.py collect-naver",
+    "test:data": "python3 -m unittest discover -s tests -p 'test_data_pipeline.py' -v"
   },
   "dependencies": {
     "gsap": "3.15.1",
