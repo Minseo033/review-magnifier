@@ -13,6 +13,13 @@ import time
 
 from data_store import ROOT, now, dumps, digest, run, upsert_listing
 
+SHOPPING_RETIRED = 'Naver shopping product search ended on 2026-07-31; no API HUB replacement. See https://developers.naver.com/notice/article/32530'
+
+
+def retire_unsupported_jobs(db):
+    with db:
+        return db.execute("UPDATE collection_jobs SET status='blocked',last_error=?,updated_at=? WHERE source_id='naver-shopping' AND status!='complete' AND (status!='blocked' OR last_error IS NULL OR last_error!=?)", (SHOPPING_RETIRED, now(), SHOPPING_RETIRED)).rowcount
+
 
 def plain(value):
     return unescape(re.sub(r'<[^>]*>', '', str(value or ''))).strip()
@@ -64,21 +71,22 @@ def add_job(db, source, query, subject=None, page_size=100, max_results=1000):
 
 
 def plan(db, seeds):
+    retire_unsupported_jobs(db)
     with db:
         for item in seeds:
             query = item['query'].strip()
             if len(query) < 2 or len(query) > 100:
                 raise ValueError('Seed queries must have 2–100 characters.')
-            for source in item.get('sources', ['naver-shopping', 'naver-blog']):
-                if source not in {'naver-shopping', 'naver-blog'}:
-                    raise ValueError('Unsupported source: ' + source)
+            for source in item.get('sources', ['naver-blog']):
+                if source != 'naver-blog':
+                    raise ValueError(SHOPPING_RETIRED if source == 'naver-shopping' else 'Unsupported source: ' + source)
                 add_job(db, source, query + (' 후기' if source == 'naver-blog' else ''), item.get('productId'))
     return dict(db.execute('SELECT status,COUNT(*) FROM collection_jobs GROUP BY status').fetchall())
 
 
 def load_credentials():
     # Read only the two expected keys; never execute a dotenv file or print values.
-    allowed = {'NAVER_CLIENT_ID', 'NAVER_CLIENT_SECRET', 'NAVER_SEARCH_CLIENT_ID', 'NAVER_SEARCH_CLIENT_SECRET'}
+    allowed = {'NAVER_API_HUB_CLIENT_ID', 'NAVER_API_HUB_CLIENT_SECRET'}
     values = {key: os.getenv(key) for key in allowed if os.getenv(key)}
     for path in (ROOT / '.env', Path.home() / '.config/k-skill/secrets.env'):
         if not path.exists():
@@ -87,18 +95,19 @@ def load_credentials():
             match = re.fullmatch(r'\s*(?:export\s+)?([A-Z_][A-Z0-9_]*)\s*=\s*(.*?)\s*', line)
             if match and match[1] in allowed and match[1] not in values:
                 values[match[1]] = match[2].strip('"\'')
-    client_id = values.get('NAVER_CLIENT_ID') or values.get('NAVER_SEARCH_CLIENT_ID')
-    secret = values.get('NAVER_CLIENT_SECRET') or values.get('NAVER_SEARCH_CLIENT_SECRET')
+    client_id = values.get('NAVER_API_HUB_CLIENT_ID')
+    secret = values.get('NAVER_API_HUB_CLIENT_SECRET')
     if not client_id or not secret or client_id == 'replace-me' or secret == 'replace-me':
-        raise ValueError('Missing Naver search API credentials. Set NAVER_SEARCH_CLIENT_ID and NAVER_SEARCH_CLIENT_SECRET in the private .env file.')
+        raise ValueError('Missing NAVER API HUB credentials. Set NAVER_API_HUB_CLIENT_ID and NAVER_API_HUB_CLIENT_SECRET in the private .env file. Legacy Developers keys cannot be reused.')
     return client_id, secret
 
 
 def request_page(job, credentials):
-    endpoint = 'shop' if job['source_id'] == 'naver-shopping' else 'blog'
+    if job['source_id'] != 'naver-blog':
+        raise ValueError(SHOPPING_RETIRED if job['source_id'] == 'naver-shopping' else 'Unsupported API HUB source.')
     display = min(job['page_size'], job['max_results'] - job['next_start'] + 1)
-    url = 'https://openapi.naver.com/v1/search/' + endpoint + '.json?' + urlencode({'query': job['query'], 'display': display, 'start': job['next_start'], 'sort': job['sort']})
-    headers = {'X-Naver-Client-Id': credentials[0], 'X-Naver-Client-Secret': credentials[1], 'Accept': 'application/json'}
+    url = 'https://naverapihub.apigw.ntruss.com/search/v1/blog?' + urlencode({'query': job['query'], 'display': display, 'start': job['next_start'], 'sort': job['sort'], 'format': 'json'})
+    headers = {'X-NCP-APIGW-API-KEY-ID': credentials[0], 'X-NCP-APIGW-API-KEY': credentials[1], 'Accept': 'application/json'}
     with urlopen(Request(url, headers=headers), timeout=25) as response:
         body = response.read(5_000_001)
         if len(body) > 5_000_000:
@@ -149,6 +158,7 @@ def persist_page(db, job, data, body, run_id, raw_dir):
 
 
 def collect(db, db_path, max_requests=20, delay=1.1, retry_failed=False):
+    retire_unsupported_jobs(db)
     credentials = load_credentials()
     if max_requests < 1 or max_requests > 1000 or delay < 1:
         raise ValueError('Use 1–1000 requests per invocation and a delay of at least 1 second.')
@@ -162,14 +172,14 @@ def collect(db, db_path, max_requests=20, delay=1.1, retry_failed=False):
             raise ValueError('Another collector is using this database.') from error
         if retry_failed:
             with db:
-                db.execute("UPDATE collection_jobs SET status='pending',last_error=NULL WHERE status IN ('failed','blocked')")
-        with run(db, 'naver-official-search') as run_id:
+                db.execute("UPDATE collection_jobs SET status='pending',last_error=NULL WHERE source_id='naver-blog' AND status IN ('failed','blocked')")
+        with run(db, 'naver-api-hub-search') as run_id:
             for attempt in range(max_requests):
-                job = db.execute("SELECT * FROM collection_jobs WHERE status='pending' ORDER BY next_start,id LIMIT 1").fetchone()
+                job = db.execute("SELECT * FROM collection_jobs WHERE source_id='naver-blog' AND status='pending' ORDER BY next_start,id LIMIT 1").fetchone()
                 if not job:
                     break
                 # Shared quota is not inferable; the local budget is deliberately below Naver's total quota.
-                used = db.execute("SELECT COALESCE(SUM(requests),0) FROM collection_runs WHERE kind='naver-official-search' AND substr(started_at,1,10)=?", (now()[:10],)).fetchone()[0]
+                used = db.execute("SELECT COALESCE(SUM(requests),0) FROM collection_runs WHERE kind IN ('naver-official-search','naver-api-hub-search') AND substr(started_at,1,10)=?", (now()[:10],)).fetchone()[0]
                 if used >= 1000:
                     db.execute("UPDATE collection_runs SET status='budget_limited' WHERE id=?", (run_id,))
                     db.commit()

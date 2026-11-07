@@ -6,7 +6,7 @@ import sqlite3
 import sys
 
 from data_store import DEFAULT_DB, ROOT, backup, connect, dumps, export_catalog, migrate_existing, now, stats
-from naver_sources import collect, fetch_blogs, import_pilot, load_credentials, plan
+from naver_sources import collect, fetch_blogs, import_pilot, load_credentials, plan, retire_unsupported_jobs
 
 
 def main():
@@ -33,6 +33,7 @@ def main():
     args = parser.parse_args()
     db = connect(args.db)
     try:
+        retire_unsupported_jobs(db)
         if args.command == 'migrate':
             result = migrate_existing(db)
         elif args.command in {'init', 'stats'}:
@@ -41,9 +42,10 @@ def main():
             result = stats(db)
             try:
                 load_credentials()
-                result['naverSearchCredentials'] = 'configured'
+                result['naverApiHubCredentials'] = 'configured'
             except ValueError:
-                result['naverSearchCredentials'] = 'missing'
+                result['naverApiHubCredentials'] = 'missing'
+            result['naverShoppingSearch'] = 'retired-2026-07-31-no-hub-replacement'
             result['publicSiteAccess'] = 'Static Pages snapshot; no direct database access'
         elif args.command == 'export':
             if args.output.suffix != '.json':

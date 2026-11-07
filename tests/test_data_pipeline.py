@@ -11,7 +11,7 @@ from contextlib import closing
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from data_store import ROOT, backup, connect, dumps, export_catalog, migrate_existing, stats, upsert_listing, upsert_review
-from naver_sources import BlogBody, add_job, canonical_blog, collect, persist_page, plan, upsert_document
+from naver_sources import BlogBody, add_job, canonical_blog, collect, persist_page, plan, upsert_document, request_page, retire_unsupported_jobs, load_credentials
 
 
 class DataPipelineTest(unittest.TestCase):
@@ -102,7 +102,7 @@ class DataPipelineTest(unittest.TestCase):
         self.assertEqual(self.db.execute('SELECT COUNT(*) FROM collection_pages').fetchone()[0], 0)
 
     def test_blocked_request_stops_batch_without_cursor_advance(self):
-        self.seed_run()
+        self.seed_run(source='naver-blog')
         with patch('naver_sources.load_credentials', return_value=('fixture-id', 'fixture-secret')), patch('naver_sources.request_page', side_effect=HTTPError('https://example.test', 429, 'blocked', {}, None)) as request:
             result = collect(self.db, self.path, max_requests=5)
         self.assertEqual(request.call_count, 1)
@@ -130,8 +130,47 @@ class DataPipelineTest(unittest.TestCase):
         seeds = [{'query': 'some product'}]
         plan(self.db, seeds)
         plan(self.db, seeds)
-        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM collection_jobs').fetchone()[0], 2)
+        self.assertEqual(self.db.execute('SELECT COUNT(*) FROM collection_jobs').fetchone()[0], 1)
         self.assertTrue(all(row[0] is None for row in self.db.execute('SELECT subject_product_id FROM collection_jobs')))
+
+    def test_retired_shopping_is_blocked_without_a_network_request(self):
+        job_id, _ = self.seed_run(source='naver-shopping')
+        self.assertEqual(retire_unsupported_jobs(self.db), 1)
+        job = self.db.execute('SELECT * FROM collection_jobs WHERE id=?', (job_id,)).fetchone()
+        self.assertEqual(job['status'], 'blocked')
+        self.assertIn('2026-07-31', job['last_error'])
+        with patch('naver_sources.urlopen') as request:
+            with self.assertRaisesRegex(ValueError, 'no API HUB replacement'):
+                request_page(job, ('fixture-id', 'fixture-secret'))
+        request.assert_not_called()
+        with self.assertRaisesRegex(ValueError, 'no API HUB replacement'):
+            plan(self.db, [{'query': 'some product', 'sources': ['naver-shopping']}])
+
+    def test_hub_blog_uses_new_host_path_and_headers(self):
+        job_id, _ = self.seed_run(source='naver-blog')
+        job = self.db.execute('SELECT * FROM collection_jobs WHERE id=?', (job_id,)).fetchone()
+        with patch('naver_sources.urlopen') as opened:
+            opened.return_value.__enter__.return_value.read.return_value = b'{"items":[],"total":0}'
+            data, _ = request_page(job, ('fixture-id', 'fixture-secret'))
+        request = opened.call_args.args[0]
+        self.assertTrue(request.full_url.startswith('https://naverapihub.apigw.ntruss.com/search/v1/blog?'))
+        self.assertIn('format=json', request.full_url)
+        headers = {key.lower(): value for key, value in request.header_items()}
+        self.assertEqual(headers['x-ncp-apigw-api-key-id'], 'fixture-id')
+        self.assertEqual(headers['x-ncp-apigw-api-key'], 'fixture-secret')
+        self.assertNotIn('x-naver-client-id', headers)
+        self.assertEqual(data['items'], [])
+
+    def test_legacy_credentials_are_not_silently_used_for_hub(self):
+        from unittest.mock import patch
+        import os
+        directory = Path(self.directory.name)
+        (directory / '.env').write_text('NAVER_SEARCH_CLIENT_ID=old-id\nNAVER_SEARCH_CLIENT_SECRET=old-secret\n')
+        with patch('naver_sources.ROOT', directory), patch('naver_sources.Path.home', return_value=directory), patch.dict(os.environ, {}, clear=True):
+            with self.assertRaisesRegex(ValueError, 'Legacy Developers keys cannot be reused'):
+                load_credentials()
+            (directory / '.env').write_text('NAVER_API_HUB_CLIENT_ID=hub-id\nNAVER_API_HUB_CLIENT_SECRET=hub-secret\n')
+            self.assertEqual(load_credentials(), ('hub-id', 'hub-secret'))
 
     def test_backup_is_consistent_and_not_overwritten(self):
         self.listing()
