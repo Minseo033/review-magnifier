@@ -11,7 +11,7 @@ import os
 import re
 import time
 
-from data_store import ROOT, now, dumps, digest, run, upsert_listing
+from data_store import ROOT, now, dumps, digest, run, upsert_listing, utc
 
 SHOPPING_RETIRED = 'Naver shopping product search ended on 2026-07-31; no API HUB replacement. See https://developers.naver.com/notice/article/32530'
 
@@ -43,6 +43,7 @@ def canonical_blog(url):
 
 
 def upsert_document(db, item, observed_at):
+    observed_at = utc(observed_at)
     canonical = canonical_blog(item.get('link') or item.get('url') or '')
     if not canonical:
         return None
@@ -60,8 +61,11 @@ def upsert_document(db, item, observed_at):
     snippet = plain(item.get('description') or item.get('snippet')).removesuffix('새 창 열림').strip()
     db.execute('''INSERT INTO documents(source_id,external_id,url,title,author,published_at,snippet,first_seen_at,last_seen_at)
       VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(source_id,external_id) DO UPDATE SET
-      title=excluded.title,author=excluded.author,published_at=COALESCE(excluded.published_at,documents.published_at),
-      snippet=excluded.snippet,last_seen_at=excluded.last_seen_at''', ('naver-blog', external_id, url, title, author, date, snippet, observed_at, observed_at))
+      title=CASE WHEN excluded.last_seen_at>=documents.last_seen_at THEN excluded.title ELSE documents.title END,
+      author=CASE WHEN excluded.last_seen_at>=documents.last_seen_at THEN excluded.author ELSE documents.author END,
+      published_at=COALESCE(documents.published_at,excluded.published_at),
+      snippet=CASE WHEN excluded.last_seen_at>=documents.last_seen_at THEN excluded.snippet ELSE documents.snippet END,
+      last_seen_at=MAX(documents.last_seen_at,excluded.last_seen_at)''', ('naver-blog', external_id, url, title, author, date, snippet, observed_at, observed_at))
     return db.execute("SELECT id FROM documents WHERE source_id='naver-blog' AND external_id=?", (external_id,)).fetchone()[0]
 
 

@@ -16,7 +16,9 @@
     "db:export": "python3 scripts/data-pipeline.py export --output .local-data/catalog-export.json",
     "data:plan": "python3 scripts/data-pipeline.py plan-naver",
     "data:collect": "python3 scripts/data-pipeline.py collect-naver",
-    "test:data": "python3 -m unittest discover -s tests -p 'test_data_pipeline.py' -v"
+    "data:rss": "python3 scripts/data-pipeline.py collect-rss",
+    "data:products": "python3 scripts/data-pipeline.py collect-products",
+    "test:data": "python3 -m unittest discover -s tests -p 'test_*.py' -v"
   },
   "dependencies": {
     "gsap": "3.15.1",

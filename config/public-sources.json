@@ -1,0 +1,13 @@
+{
+  "scope": "Small public-page/RSS research pilot; no exhaustive catalog, purchase verification or automatic publication.",
+  "products": [
+    { "url": "https://www.11st.co.kr/products/4951964779" },
+    { "url": "https://www.11st.co.kr/products/8459124910" },
+    { "url": "https://www.11st.co.kr/products/8201640764" }
+  ],
+  "blogs": [
+    { "url": "https://rss.blog.naver.com/sunny_madragon.xml", "titleKeywords": ["에어팟"] },
+    { "url": "https://rss.blog.naver.com/qlgofk51897.xml", "titleKeywords": ["에어팟"] },
+    { "url": "https://rss.blog.naver.com/kingstargirl.xml", "titleKeywords": ["에어팟"] }
+  ]
+}

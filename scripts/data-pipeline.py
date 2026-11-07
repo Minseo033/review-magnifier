@@ -7,6 +7,7 @@ import sys
 
 from data_store import DEFAULT_DB, ROOT, backup, connect, dumps, export_catalog, migrate_existing, now, stats
 from naver_sources import collect, fetch_blogs, import_pilot, load_credentials, plan, retire_unsupported_jobs
+from public_sources import collect_public
 
 
 def main():
@@ -30,6 +31,11 @@ def main():
     bodies = commands.add_parser('fetch-blog-pilot')
     bodies.add_argument('--document-id', type=int, nargs='+', required=True)
     bodies.add_argument('--limit', type=int, default=3)
+    for name in ('collect-rss', 'collect-products'):
+        public = commands.add_parser(name)
+        public.add_argument('--config', type=Path, default=ROOT / 'config/public-sources.json')
+        public.add_argument('--max-requests', type=int, default=3)
+        public.add_argument('--delay', type=float, default=1.1)
     args = parser.parse_args()
     db = connect(args.db)
     try:
@@ -47,6 +53,7 @@ def main():
                 result['naverApiHubCredentials'] = 'missing'
             result['naverShoppingSearch'] = 'retired-2026-07-31-no-hub-replacement'
             result['publicSiteAccess'] = 'Static Pages snapshot; no direct database access'
+            result['noKeyCollection'] = 'collect-rss / collect-products: explicit public samples, no API credentials'
         elif args.command == 'export':
             if args.output.suffix != '.json':
                 raise ValueError('The public export must be a JSON file.')
@@ -66,8 +73,11 @@ def main():
             result = {'blogCandidatesImported': import_pilot(db, args.input)}
         elif args.command == 'fetch-blog-pilot':
             result = fetch_blogs(db, args.db, args.limit, args.document_id)
+        elif args.command in {'collect-rss', 'collect-products'}:
+            result = collect_public(db, args.db, json.loads(args.config.read_text()),
+                                    'blogs' if args.command == 'collect-rss' else 'products', args.max_requests, args.delay)
         print(json.dumps(result, ensure_ascii=False, indent=2))
-        return 0
+        return 1 if result.get('status') in {'blocked', 'failed'} else 0
     except (ValueError, FileNotFoundError, sqlite3.Error, AssertionError) as error:
         db.rollback()
         # Keep collection failures inspectable without putting credentials in logs.

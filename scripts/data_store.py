@@ -70,8 +70,14 @@ def upsert_listing(db, source, external_id, title, url, observed_at, **fields):
         raise ValueError('A listing requires a source ID, title and URL.')
     db.execute('''INSERT INTO listings(source_id,external_id,product_id,title,url,image_url,mall_name,brand,maker,category_json,first_seen_at,last_seen_at)
       VALUES(?,?,?,?,?,?,?,?,?,?,?,?) ON CONFLICT(source_id,external_id) DO UPDATE SET
-      title=excluded.title,url=excluded.url,image_url=excluded.image_url,mall_name=excluded.mall_name,
-      brand=excluded.brand,maker=excluded.maker,category_json=excluded.category_json,last_seen_at=MAX(listings.last_seen_at,excluded.last_seen_at)''',
+      title=CASE WHEN excluded.last_seen_at>=listings.last_seen_at THEN excluded.title ELSE listings.title END,
+      url=CASE WHEN excluded.last_seen_at>=listings.last_seen_at THEN excluded.url ELSE listings.url END,
+      image_url=CASE WHEN excluded.last_seen_at>=listings.last_seen_at THEN excluded.image_url ELSE listings.image_url END,
+      mall_name=CASE WHEN excluded.last_seen_at>=listings.last_seen_at THEN excluded.mall_name ELSE listings.mall_name END,
+      brand=CASE WHEN excluded.last_seen_at>=listings.last_seen_at THEN excluded.brand ELSE listings.brand END,
+      maker=CASE WHEN excluded.last_seen_at>=listings.last_seen_at THEN excluded.maker ELSE listings.maker END,
+      category_json=CASE WHEN excluded.last_seen_at>=listings.last_seen_at THEN excluded.category_json ELSE listings.category_json END,
+      last_seen_at=MAX(listings.last_seen_at,excluded.last_seen_at)''',
       (source, str(external_id), fields.get('product_id'), title, url, fields.get('image_url'), fields.get('mall_name'), fields.get('brand'), fields.get('maker'), dumps(fields.get('categories', [])), observed_at, observed_at))
     listing_id = db.execute('SELECT id FROM listings WHERE source_id=? AND external_id=?', (source, str(external_id))).fetchone()[0]
     observation = {key: fields.get(key) for key in ('price', 'review_count', 'rating')}
