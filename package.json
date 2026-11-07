@@ -19,7 +19,7 @@
     "data:rss": "python3 scripts/data-pipeline.py collect-rss",
     "data:products": "python3 scripts/data-pipeline.py collect-products",
     "test:data": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "test:ui": "node --test tests/catalog-logic.test.mjs",
+    "test:ui": "node --test tests/*.test.mjs",
     "verify:release": "python3 scripts/verify-release.py"
   },
   "dependencies": {

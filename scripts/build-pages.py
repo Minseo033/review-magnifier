@@ -21,7 +21,7 @@ for folder in ('catalog','brand'):
         if file.suffix in {'.webp','.png','.svg'}:
             shutil.copyfile(file,assets/folder/file.name)
 url=config['url']
-title='후기돋보기 — 제품은 한눈에, 후기는 자세히'
+title='후기돋보기 — 요약보다 근거, 원문과 함께'
 description=escape_html.escape(config['description'],quote=True)
 meta=f'''<link rel="canonical" href="{url}">
 <meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="후기돋보기">
