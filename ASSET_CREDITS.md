@@ -35,3 +35,7 @@
 | 2080 오리지널 치약 옵션 모음 | [11번가](https://www.11st.co.kr/products/25023373) | 10 | 3 |
 | 크린랲 뽑아쓰는 크린백 중형 | [11번가](https://www.11st.co.kr/products/2872295616) | 2 | 2 |
 | JOY 울트라 조이 주방세제 | [11번가](https://www.11st.co.kr/products/2733501835) | 5 | 3 |
+
+## 서비스 아이콘·공유 이미지 — 2026-11-07
+
+`assets/brand/icon.svg`와 `image-unavailable.svg`는 서비스용으로 직접 작성한 도형입니다. `scripts/build-brand.mjs`가 아이콘과 1200×630 공유 이미지를 생성합니다. 공유 이미지의 AirPods·화장지 사진은 위 표의 해당 판매처 사진을 사용한 합성으로, 새 제품 사진을 생성한 것이 아닙니다. 사진 권리와 출처는 그대로 적용됩니다.

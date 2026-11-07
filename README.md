@@ -1,6 +1,6 @@
 # 후기돋보기
 
-제품 사진과 공개 구매 후기 요약을 바로 살펴보는 팀 프로젝트 프로토타입입니다.
+제품별로 모은 후기에서 반복되는 장점과 아쉬움을 살펴보고, 요약·원문 발췌·출처를 이어 읽는 팀 프로젝트 시범 서비스입니다.
 
 **사이트:** [minseo033.github.io/review-magnifier](https://minseo033.github.io/review-magnifier/)
 
@@ -10,16 +10,19 @@
 - 제품·브랜드·후기 내용 검색, 카테고리와 정렬
 - 첫 화면에 판매처 리뷰 수 상위 3개를 고정 노출하고, 나머지 17개는 접속할 때마다 랜덤 노출
 - 사진 목록 / 후기 중심 목록 전환
-- 브라우저에 저장하는 찜, 최대 3개 제품 비교
+- 새로고침해도 유지되는 찜·최대 3개 제품 비교·목록 표시 방식
 - 제품별 주소가 있는 후기 상세 페이지, 장점·확인할 점과 원문 출처
 - 요약 전용 영역과 문장을 고치지 않은 원문 발췌 58개
 - 긍정·아쉬움 주제별 언급 수, 최소 언급 1·2·3개 필터와 근거 후기 목록
 - 목록에서도 사양·평점보다 후기 요약을 먼저 강조하고, 상세 화면은 넓은 본문으로 표시
 - 데스크톱·모바일 화면
+- 검색어와 카테고리 조합, 조건별 해제, 한글 브랜드 검색
+- 상세 후기 섹션 이동·제품 링크 복사, 사진/시작 실패 안내
+- 브라우저 저장 안내와 자료 수정 요청 이메일
 
 2026년 11월 5~7일 11번가 공개 상품 페이지에서 후기 표본 160개를 확인했습니다. 생필품 8종의 표본 47개를 추가했으며, 제품별 표본 수는 서로 다릅니다. 판매처 전체 리뷰 수, 확인한 표본 수, 화면 요약 수는 구분해 표시합니다. 실시간 갱신·여러 플랫폼 통합·실구매 인증·광고 판별은 아직 연결하지 않았습니다.
 
-기본 정렬은 **추천 + 랜덤**입니다. 상위 3개와 일반 목록에는 같은 제품이 중복되지 않습니다. 랜덤 순서는 페이지를 여는 시점에 한 번 정하고 탐색 도중에는 유지합니다. 검색·카테고리·찜 화면은 해당하는 전체 제품을 보여주며, 다른 정렬 기준을 선택하면 전체 결과에 적용됩니다. 실제 조회수는 수집하지 않습니다.
+기본 정렬은 **리뷰 상위 + 랜덤**입니다. 상위 3개와 일반 목록에는 같은 제품이 중복되지 않습니다. 랜덤 순서는 페이지를 여는 시점에 한 번 정하고 탐색 도중에는 유지합니다. 검색·카테고리·찜 화면은 해당하는 전체 제품을 보여주며, 다른 정렬 기준을 선택하면 전체 결과에 적용됩니다. 실제 조회수는 수집하지 않습니다.
 
 제품 상세 주소는 `#product/airpods`처럼 표시됩니다. 해당 주소를 공유하거나 새로고침해도 바로 열립니다. 검색·카테고리·정렬 화면에서 상세로 들어간 뒤 브라우저 뒤로가기를 누르면 보던 조건과 위치로 돌아옵니다.
 
@@ -49,6 +52,8 @@ Node.js 22 이상과 Python 3을 사용합니다.
 npm ci
 npm run build
 npm run check
+npm run test:ui
+npm run verify:release
 npm run preview
 ```
 
@@ -61,13 +66,19 @@ npm run preview
 ```sh
 npm run build
 npm run check
-git add index.html catalog.css catalog.js review-insights.js catalog.bundle.js scripts data assets/catalog docs
+npm run test:ui
+npm run verify:release
+git add index.html catalog.css catalog.js catalog-logic.mjs boot.js review-insights.js catalog.bundle.js package.json scripts tests config/site.json data assets/catalog assets/brand docs docs-data README.md ASSET_CREDITS.md
 git commit -m "Update review catalog"
 git push
 ```
 
-`npm run build`는 `docs/`에 배포할 HTML·CSS·JavaScript와 `.nojekyll`, `robots.txt`를 준비합니다. `main`에 푸시하면 GitHub Pages가 자동으로 다시 배포합니다. Pages에는 이 폴더만 게시하며, 사이트는 별도 로그인 없이 열 수 있습니다. 검색엔진 노출을 줄이기 위한 `noindex`를 넣었지만 비공개 접근제어는 아닙니다.
+`npm run build`는 `docs/`에 배포할 HTML·CSS·JavaScript·제품 사진·공유 이미지·404 페이지와 `.nojekyll`, `robots.txt`를 준비합니다. `config/site.json`에서 공개 주소·문의 이메일·검색 노출 상태를 관리합니다. 사진은 JS에 넣지 않고 같은 사이트의 정적 파일로 제공하며, 사진을 모두 포함한 단일 HTML은 로컬 전달용으로 따로 만듭니다. `main`에 푸시하면 GitHub Pages가 자동으로 다시 배포합니다. Pages에는 이 폴더만 게시하며, 사이트는 별도 로그인 없이 열 수 있습니다. 검색엔진 노출을 줄이기 위한 `noindex`를 넣었지만 비공개 접근제어는 아닙니다.
 
-찜은 각 브라우저에 저장됩니다. 팀원끼리 찜 목록이 공유되지는 않습니다. 이전 3D 시안, 원문 전체 캐시, 로컬 보고서와 설치 패키지는 저장소에 포함하지 않습니다.
+찜·비교 선택과 표시 방식은 각 브라우저에 저장됩니다. 팀원이나 다른 기기와 공유되지 않습니다. `#privacy`에서 저장 범위를 확인하고 찜·비교를 비울 수 있습니다. 이전 3D 시안, 원문 전체 캐시, 로컬 보고서와 설치 패키지는 저장소에 포함하지 않습니다.
 
 사진·후기 원문의 권리는 각 권리자에게 있습니다. 제품별 출처와 처리 내용은 [ASSET_CREDITS.md](ASSET_CREDITS.md)를 참고하세요.
+
+## 배포 전 점검
+
+[출시 관점 점검·수정 결과와 남은 준비](docs-data/출시점검.md)를 참고하세요. `npm run verify:release`는 공개 자산·개인 DB 제외·리뷰 수치·공유 메타·JS 크기를 검사합니다. Lighthouse 점수나 운영 서버 준비 완료를 보증하는 검사는 아닙니다.

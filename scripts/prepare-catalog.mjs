@@ -41,7 +41,8 @@ for(const product of products){
     const input=new URL('assets/catalog/brita.jpg',root);const meta=await sharp(await readFile(input)).metadata();
     await sharp(await readFile(input)).extract({left:0,top:0,width:meta.width,height:Math.floor(meta.height*.85)}).resize(600,600,{fit:'contain',background:'#ffffff'}).webp({quality:86}).toFile(fileURLToPath(new URL('assets/catalog/brita.webp',root)));
   }
-  product.imageData='data:image/webp;base64,'+(await readFile(new URL(product.image,root))).toString('base64');
+  // Keep images cacheable and independently loadable instead of embedding every photo in JS.
+  delete product.imageData;
 }
 await writeFile(new URL('data/catalog.viewer.json',root),JSON.stringify(dataset));
 console.log(`Prepared ${products.length} actual products, ${dataset.reviewSampleCount} collected review samples, ${dataset.summaryCount} attributed summaries. Source: ${approvedCatalog?'approved database export':'saved file snapshot'}.`);
