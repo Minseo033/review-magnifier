@@ -382,3 +382,34 @@ html{scroll-padding-top:calc(var(--header-height) + 16px)}html[data-page=product
 @media(max-width:900px){.product-info-rail{display:block;position:static;margin-top:28px;border-top:1px solid var(--color-line);padding-top:20px}.product-info-rail .product-rail-photo{display:none}.product-info-rail .product-rail-copy{padding:0}.product-rail-actions{display:flex;gap:10px}.product-rail-actions .button{flex:1}.product-rail-copy dl{display:flex;flex-wrap:wrap;gap:12px 24px}.product-rail-copy dl>div{min-width:115px}.product-info-rail .product-original-link{display:inline-flex;min-height:44px;align-items:center}}
 @media(max-width:600px){.example-intro .eyebrow,.example-intro>p{display:none}.example-intro h2{font-size:20px;line-height:1.5;margin:0}.example-intro .button{margin-top:12px}.reading-example{padding-top:20px}.example-document{margin-top:20px}.section-title h1{max-width:none}.summary-excerpt footer{display:block}.summary-excerpt footer a{display:flex;width:fit-content;margin-top:6px}}
 @media(max-width:600px){.product-grid .product-card .product-copy{display:block}.product-grid .product-card .product-name-button,.product-grid .product-card .product-name-button h2{height:auto;min-height:0}.product-grid .product-card .review-preview{display:block;flex:none}.product-grid .product-card .review-preview p{min-height:0}.product-grid .product-card .product-subtitle{min-height:0;margin-top:6px}.product-grid .product-card .review-metrics{display:flex;min-height:0;margin-top:8px}.product-grid .product-card .preview-caution{min-height:0}.product-grid .product-card .card-actions{margin-top:8px}}
+
+/* Compact desktop catalog: keep review content visible without oversized photography. */
+@media(min-width:601px){
+  #product-grid[data-layout=grid]{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px;align-items:stretch}
+  #product-grid[data-layout=grid] .product-card{min-height:0;display:flex;flex-direction:column;gap:0}
+  #product-grid[data-layout=grid] .product-media{height:128px;min-height:0;aspect-ratio:auto;border-radius:8px}
+  #product-grid[data-layout=grid] .product-photo-button{height:100%;padding:10px 36px;width:100%}
+  #product-grid[data-layout=grid] .product-photo{height:100%;width:100%;object-fit:contain}
+  #product-grid[data-layout=grid] .save-button{width:32px;height:32px;top:7px;right:7px}
+  #product-grid[data-layout=grid] .save-button .icon{width:17px;height:17px}
+  #product-grid[data-layout=grid] .product-copy{padding:10px 0 0;display:flex;flex:1;min-height:0}
+  #product-grid[data-layout=grid] .product-brand{font-size:11px;line-height:1.5}
+  #product-grid[data-layout=grid] .product-name-button,#product-grid[data-layout=grid] .product-name-button h2{min-height:0;height:auto}
+  #product-grid[data-layout=grid] .product-name-button h2{font-size:16px;line-height:1.45;margin:4px 0 0}
+  #product-grid[data-layout=grid] .review-preview{min-height:0;flex:none;display:block;padding:10px 0 0;margin:0;background:none;border:0}
+  #product-grid[data-layout=grid] .review-preview-label{font-size:11px;line-height:1.5;gap:6px;justify-content:flex-start}
+  #product-grid[data-layout=grid] .review-preview-label b{font-size:11px}
+  #product-grid[data-layout=grid] .review-preview p{font-size:14px;line-height:1.55;min-height:0;margin:5px 0 0}
+  #product-grid[data-layout=grid] .preview-caution{font-size:12px;line-height:1.55;min-height:0;margin-top:8px;padding-top:7px;display:block}
+  #product-grid[data-layout=grid] .preview-caution>span{display:inline;font-size:11px;margin-right:6px}
+  #product-grid[data-layout=grid] .product-subtitle{display:none}
+  #product-grid[data-layout=grid] .review-metrics{display:flex;flex-wrap:wrap;gap:6px;min-height:0;font-size:10px;line-height:1.5;margin:9px 0 0}
+  #product-grid[data-layout=grid] .review-metrics>span:not(.metrics-divider){display:inline}
+  #product-grid[data-layout=grid] .card-actions{margin-top:auto;padding-top:8px;gap:8px}
+  #product-grid[data-layout=grid] .review-detail-button{font-size:12px;min-height:36px;gap:4px}
+  #product-grid[data-layout=grid] .review-detail-button .icon{width:15px;height:15px}
+  #product-grid[data-layout=grid] .compare-button{font-size:12px;min-height:36px;padding:5px 8px}
+  .site-header{background:#fff}
+}
+@media(min-width:901px){#product-grid[data-layout=grid]{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1101px){#product-grid[data-layout=grid]{grid-template-columns:repeat(4,minmax(0,1fr))}}
