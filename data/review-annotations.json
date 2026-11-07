@@ -1656,6 +1656,721 @@
           "text": "250사이즈 운동화 신는데 잘 맞아요"
         }
       ]
+    },
+    "tissue": {
+      "topics": {
+        "positive": [
+          {
+            "id": "soft",
+            "label": "부드러운 촉감",
+            "description": "부드럽거나 폭신하다고 느꼈어요."
+          },
+          {
+            "id": "absorb",
+            "label": "흡수력에 만족",
+            "description": "사용 중 물기가 잘 흡수됐다고 했어요."
+          },
+          {
+            "id": "shipping",
+            "label": "빠른 배송",
+            "description": "배송 속도를 좋게 평가했어요."
+          },
+          {
+            "id": "repeat",
+            "label": "계속 사용하는 제품",
+            "description": "반복 구매나 같은 제품 선호를 언급했어요."
+          },
+          {
+            "id": "thick",
+            "label": "두께와 향에 만족",
+            "description": "두껍고 향도 좋았다는 의견이에요."
+          },
+          {
+            "id": "value",
+            "label": "구매 가격에 만족",
+            "description": "가격을 긍정적으로 평가했어요."
+          }
+        ],
+        "negative": []
+      },
+      "reviews": [
+        {
+          "sourceReviewId": "548039106",
+          "positive": [
+            "absorb",
+            "shipping"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "537490625",
+          "positive": [
+            "soft"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "509072216",
+          "positive": [
+            "value"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "533724069",
+          "positive": [
+            "repeat"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "513990014",
+          "positive": [
+            "soft",
+            "absorb"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "526986234",
+          "positive": [
+            "shipping"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "546577485",
+          "positive": [
+            "repeat"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "545707988",
+          "positive": [
+            "thick"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "537882759",
+          "positive": [
+            "soft",
+            "shipping"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "537490625",
+          "text": "부드럽고 폭신한 느낌이 있어 좋아요."
+        },
+        {
+          "sourceReviewId": "513990014",
+          "text": "흡수가 잘 되고 부드러워요"
+        },
+        {
+          "sourceReviewId": "545707988",
+          "text": "향도 좋고 두껍고 화장실서 쓰기 딱 좋아요."
+        }
+      ]
+    },
+    "paper-towel": {
+      "topics": {
+        "positive": [
+          {
+            "id": "quantity",
+            "label": "넉넉한 양",
+            "description": "대용량 구성이 마음에 들었다고 했어요."
+          },
+          {
+            "id": "value",
+            "label": "구매 가격에 만족",
+            "description": "구매 가격을 좋게 평가했어요."
+          },
+          {
+            "id": "thick",
+            "label": "두툼함과 닦임",
+            "description": "두툼하고 잘 닦였다는 사용 의견이에요."
+          },
+          {
+            "id": "shipping",
+            "label": "배송·수령 상태",
+            "description": "배송 속도와 누락·파손 없는 수령을 언급했어요."
+          }
+        ],
+        "negative": []
+      },
+      "reviews": [
+        {
+          "sourceReviewId": "547280332",
+          "positive": [
+            "quantity",
+            "value",
+            "thick"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "513426729",
+          "positive": [
+            "quantity",
+            "value"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "500965591",
+          "positive": [
+            "value",
+            "shipping"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "511816412",
+          "positive": [
+            "value"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "521354186",
+          "positive": [
+            "quantity"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "509484321",
+          "positive": [],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "547280332",
+          "text": "리필통 하나 구입해서 뽑아쓰니 경제적이고 너무 좋아요"
+        },
+        {
+          "sourceReviewId": "513426729",
+          "text": "넉넉한 양 오래 쓸 수 있겠어요."
+        },
+        {
+          "sourceReviewId": "500965591",
+          "text": "누락 및 파손없이 왔어요."
+        }
+      ]
+    },
+    "wet-wipes": {
+      "topics": {
+        "positive": [
+          {
+            "id": "wipe",
+            "label": "잘 닦인다는 경험",
+            "description": "잘 닦이고 아이도 좋아했다는 의견이에요."
+          }
+        ],
+        "negative": [
+          {
+            "id": "packaging",
+            "label": "박스와 비닐 케이스",
+            "description": "빽빽한 포장과 얇게 느껴지는 비닐을 언급했어요."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "sourceReviewId": "492405525",
+          "positive": [],
+          "negative": [
+            "packaging"
+          ]
+        },
+        {
+          "sourceReviewId": "503822469",
+          "positive": [
+            "wipe"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "503822469",
+          "text": "잘닦이고 아이가 좋아해요"
+        },
+        {
+          "sourceReviewId": "492405525",
+          "text": "비닐 케이스가 엄청 얇은 느낌이예요"
+        }
+      ]
+    },
+    "detergent": {
+      "topics": {
+        "positive": [
+          {
+            "id": "scent",
+            "label": "향에 만족",
+            "description": "사용하면서 향이 좋았다고 했어요."
+          },
+          {
+            "id": "wash",
+            "label": "세척 경험에 만족",
+            "description": "세척이 잘돼 계속 사용한다는 의견이에요."
+          },
+          {
+            "id": "shipping",
+            "label": "빠른 배송",
+            "description": "주문 다음 날 받았다는 경험이에요."
+          },
+          {
+            "id": "value",
+            "label": "할인 구매에 만족",
+            "description": "할인받아 저렴하게 구매했다고 했어요."
+          },
+          {
+            "id": "quantity",
+            "label": "넉넉한 구성",
+            "description": "한동안 세제 걱정이 없겠다고 반겼어요."
+          }
+        ],
+        "negative": [
+          {
+            "id": "price",
+            "label": "구매 후 가격 하락",
+            "description": "구매 뒤 더 저렴해져 아쉬웠다는 의견이에요."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "sourceReviewId": "548295574",
+          "positive": [
+            "shipping",
+            "value"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "549030658",
+          "positive": [
+            "quantity"
+          ],
+          "negative": [
+            "price"
+          ]
+        },
+        {
+          "sourceReviewId": "548545578",
+          "positive": [],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "548280425",
+          "positive": [
+            "scent"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "548963739",
+          "positive": [
+            "scent",
+            "wash"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "548963739",
+          "text": "향도 좋고 세척도 잘되서 애용해요"
+        },
+        {
+          "sourceReviewId": "548280425",
+          "text": "항상 퍼실만써요 향이좋아요"
+        },
+        {
+          "sourceReviewId": "549030658",
+          "text": "월초에 더 싸졌네요 ㅠㅠ"
+        }
+      ]
+    },
+    "shampoo": {
+      "topics": {
+        "positive": [
+          {
+            "id": "value",
+            "label": "구매 가격에 만족",
+            "description": "기존 사용자가 구매 가격을 좋게 봤어요."
+          },
+          {
+            "id": "shipping",
+            "label": "빠른 배송",
+            "description": "배송이 빨랐다고 했어요."
+          },
+          {
+            "id": "quantity",
+            "label": "넉넉한 양",
+            "description": "양이 많아 부담 없이 쓴다는 의견이에요."
+          },
+          {
+            "id": "expiry",
+            "label": "구매 당시 사용기한",
+            "description": "받았을 때 사용기한이 넉넉했다고 했어요."
+          },
+          {
+            "id": "repeat",
+            "label": "계속 사용하는 제품",
+            "description": "쓰던 제품이나 반복 사용을 언급했어요."
+          }
+        ],
+        "negative": [
+          {
+            "id": "scent",
+            "label": "이전보다 짧게 느낀 잔향",
+            "description": "예전만큼 향이 오래 남지 않았다는 경험이에요."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "sourceReviewId": "522879595",
+          "positive": [
+            "expiry"
+          ],
+          "negative": [
+            "scent"
+          ]
+        },
+        {
+          "sourceReviewId": "521626296",
+          "positive": [
+            "quantity",
+            "shipping"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "514239116",
+          "positive": [
+            "shipping"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "528525371",
+          "positive": [
+            "value",
+            "repeat"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "516619335",
+          "positive": [
+            "value",
+            "repeat"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "522722787",
+          "positive": [
+            "shipping"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "533555978",
+          "positive": [],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "539528019",
+          "positive": [],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "522879595",
+          "text": "향이 예전에 비해 잔향 남는 정도가 오래가지 않네요"
+        },
+        {
+          "sourceReviewId": "521626296",
+          "text": "양도많아부담없이 쓸수있고 배송도빠르네요~"
+        },
+        {
+          "sourceReviewId": "528525371",
+          "text": "쓰던거에요 인터넷이라 획실히 싸게 파네요"
+        }
+      ]
+    },
+    "toothpaste": {
+      "topics": {
+        "positive": [
+          {
+            "id": "fresh",
+            "label": "양치 후 개운함",
+            "description": "개운하거나 시원한 사용감을 언급했어요."
+          },
+          {
+            "id": "value",
+            "label": "구매 가격에 만족",
+            "description": "가격이나 가성비를 좋게 평가했어요."
+          },
+          {
+            "id": "quantity",
+            "label": "넉넉한 용량·구성",
+            "description": "용량이나 묶음 수량을 반겼어요."
+          },
+          {
+            "id": "expiry",
+            "label": "구매 당시 사용기한",
+            "description": "작성 당시 남은 사용기한에 만족했어요."
+          },
+          {
+            "id": "shipping",
+            "label": "빠른 배송",
+            "description": "빠른 수령 경험을 남겼어요."
+          }
+        ],
+        "negative": [
+          {
+            "id": "basic",
+            "label": "베이직 옵션의 텁텁함",
+            "description": "베이직을 처음 쓴 뒤 텁텁하다고 느꼈어요."
+          },
+          {
+            "id": "price",
+            "label": "가격 인상에 아쉬움",
+            "description": "가격이 올라 아쉽다는 의견이에요."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "sourceReviewId": "548950568",
+          "positive": [
+            "fresh"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "523783816",
+          "positive": [
+            "value",
+            "quantity",
+            "expiry"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "526859230",
+          "positive": [
+            "value",
+            "expiry"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "527482280",
+          "positive": [
+            "fresh",
+            "value",
+            "quantity"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "523782133",
+          "positive": [
+            "quantity",
+            "expiry"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "535640787",
+          "positive": [
+            "quantity",
+            "value",
+            "expiry"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "506077290",
+          "positive": [
+            "value",
+            "expiry"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "512269232",
+          "positive": [
+            "value",
+            "shipping"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "503112584",
+          "positive": [
+            "fresh",
+            "value",
+            "shipping"
+          ],
+          "negative": [
+            "price"
+          ]
+        },
+        {
+          "sourceReviewId": "500666078",
+          "positive": [],
+          "negative": [
+            "basic"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "548950568",
+          "text": "시원하고 닦은 느낌난다고ㅋ"
+        },
+        {
+          "sourceReviewId": "500666078",
+          "text": "베이직은 처음 써봤는데 입안이 너무 텁텁해요"
+        },
+        {
+          "sourceReviewId": "503112584",
+          "text": "점점가격이 올라서 슬프네요~"
+        }
+      ]
+    },
+    "storage-bag": {
+      "topics": {
+        "positive": [
+          {
+            "id": "repeat",
+            "label": "브랜드 선호·반복 구매",
+            "description": "같은 브랜드를 계속 쓰거나 다시 구매한다고 했어요."
+          }
+        ],
+        "negative": []
+      },
+      "reviews": [
+        {
+          "sourceReviewId": "529937327",
+          "positive": [
+            "repeat"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "539768861",
+          "positive": [
+            "repeat"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "529937327",
+          "text": "엄마가 이 브랜드만 쓰세요."
+        },
+        {
+          "sourceReviewId": "539768861",
+          "text": "항상 시키는 제품입니다."
+        }
+      ]
+    },
+    "dish-soap": {
+      "topics": {
+        "positive": [
+          {
+            "id": "preference",
+            "label": "계속 찾게 되는 제품",
+            "description": "비용 부담이 있어도 같은 제품을 선호했어요."
+          },
+          {
+            "id": "shipping",
+            "label": "빠른 배송",
+            "description": "빠르게 받았다는 짧은 후기예요."
+          }
+        ],
+        "negative": [
+          {
+            "id": "price",
+            "label": "높아진 가격 부담",
+            "description": "기존 구매 가격보다 비싸다고 느꼈어요."
+          },
+          {
+            "id": "shipping-fee",
+            "label": "개당 배송비 부담",
+            "description": "상품마다 붙은 배송비가 부담스럽다고 했어요."
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "sourceReviewId": "452018574",
+          "positive": [
+            "shipping"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "446707971",
+          "positive": [
+            "preference"
+          ],
+          "negative": [
+            "price",
+            "shipping-fee"
+          ]
+        },
+        {
+          "sourceReviewId": "439974869",
+          "positive": [],
+          "negative": [
+            "shipping-fee"
+          ]
+        },
+        {
+          "sourceReviewId": "452698320",
+          "positive": [
+            "preference"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "449220444",
+          "positive": [],
+          "negative": [
+            "price"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "446707971",
+          "text": "가격은두배로올랐지만"
+        },
+        {
+          "sourceReviewId": "439974869",
+          "text": "1개당 배송비 각각 2.500원 받았 놓고는 묶음배송질"
+        },
+        {
+          "sourceReviewId": "452698320",
+          "text": "늘한결같은 울트라조이♡"
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,77 @@
+{
+  "scope": "Eight everyday household product pages selected for source review and publication.",
+  "products": [
+    {
+      "key": "tissue",
+      "url": "https://www.11st.co.kr/products/5554604945",
+      "brand": "크리넥스",
+      "name": "울트라클린 3겹 화장지",
+      "subtitle": "25m · 30롤 × 2팩",
+      "category": "essentials",
+      "categoryName": "생필품"
+    },
+    {
+      "key": "paper-towel",
+      "url": "https://www.11st.co.kr/products/3354670275",
+      "brand": "바리바리",
+      "name": "톡톡 뽑아쓰는 키친타월",
+      "subtitle": "리필 5,000매 · 용기 별도 확인",
+      "category": "essentials",
+      "categoryName": "생필품"
+    },
+    {
+      "key": "wet-wipes",
+      "url": "https://www.11st.co.kr/products/3772604193",
+      "brand": "베베숲",
+      "name": "프리미어 엠보싱 물티슈",
+      "subtitle": "캡형 · 70매 × 10팩",
+      "category": "essentials",
+      "categoryName": "생필품"
+    },
+    {
+      "key": "detergent",
+      "url": "https://www.11st.co.kr/products/9397641862",
+      "brand": "퍼실",
+      "name": "딥클린 라벤더젤 세탁세제",
+      "subtitle": "일반·드럼 겸용 · 1.5L × 4개",
+      "category": "essentials",
+      "categoryName": "생필품"
+    },
+    {
+      "key": "shampoo",
+      "url": "https://www.11st.co.kr/products/5139484742",
+      "brand": "케라시스",
+      "name": "데미지 클리닉 단백질 샴푸",
+      "subtitle": "750ml · 선택 구성은 판매처 확인",
+      "category": "essentials",
+      "categoryName": "생필품"
+    },
+    {
+      "key": "toothpaste",
+      "url": "https://www.11st.co.kr/products/25023373",
+      "brand": "2080",
+      "name": "오리지널 치약 옵션 모음",
+      "subtitle": "150g × 8개 외 선택 · 타 브랜드 옵션 포함",
+      "category": "essentials",
+      "categoryName": "생필품"
+    },
+    {
+      "key": "storage-bag",
+      "url": "https://www.11st.co.kr/products/2872295616",
+      "brand": "크린랲",
+      "name": "뽑아쓰는 크린백 중형",
+      "subtitle": "25 × 35cm · 100매",
+      "category": "essentials",
+      "categoryName": "생필품"
+    },
+    {
+      "key": "dish-soap",
+      "url": "https://www.11st.co.kr/products/2733501835",
+      "brand": "JOY",
+      "name": "울트라 조이 주방세제",
+      "subtitle": "레몬향 · 887ml",
+      "category": "essentials",
+      "categoryName": "생필품"
+    }
+  ]
+}

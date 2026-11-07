@@ -11,7 +11,7 @@ import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from data_store import connect, dumps, upsert_listing, upsert_review
 from naver_sources import upsert_document
-from public_sources import collect_public, parse_rss, PublicRedirects, validate_url
+from public_sources import collect_public, parse_rss, PublicRedirects, validate_url, DAILY_REQUEST_LIMIT
 
 
 RSS_URL = 'https://rss.blog.naver.com/demo.xml'
@@ -75,7 +75,7 @@ class PublicSourcesTest(unittest.TestCase):
         self.assertEqual(request.call_count, 1)
         self.assertEqual(first['snapshots'][0]['newReviews'], 1)
         self.assertEqual(second['snapshots'][0]['newReviews'], 0)
-        self.assertEqual(self.db.execute('SELECT body FROM review_versions').fetchone()[0], 'First & original review.')
+        self.assertEqual(self.db.execute('SELECT body FROM review_versions').fetchone()[0], 'First & original\nreview.')
         self.assertEqual(self.db.execute('SELECT published_at FROM reviews').fetchone()[0], None)
         self.assertEqual(self.db.execute('SELECT product_id FROM listings').fetchone()[0], None)
         self.assertEqual(self.db.execute('SELECT COUNT(*) FROM listing_observations').fetchone()[0], 1)
@@ -132,7 +132,7 @@ class PublicSourcesTest(unittest.TestCase):
         self.assertEqual(request.call_count, 1)
         self.assertEqual(limited['status'], 'request_limited')
         with self.db:
-            self.db.execute('UPDATE collection_runs SET requests=6')
+            self.db.execute('UPDATE collection_runs SET requests=?', (DAILY_REQUEST_LIMIT,))
         with patch('public_sources.request_public') as request:
             daily = collect_public(self.db, self.path, {'products': [{'url': PRODUCT_URL}]}, 'products')
         request.assert_not_called()

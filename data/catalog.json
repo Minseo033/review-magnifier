@@ -1,12 +1,13 @@
 {
-  "version": 5,
-  "collectedDate": "2026-11-05",
+  "version": 6,
+  "collectedDate": "2026-11-07",
   "sourceCount": 1,
   "sourceName": "11번가",
   "referenceSite": "https://www.09now.com/",
-  "reviewSampleCount": 113,
-  "summaryCount": 36,
-  "originalExcerptCount": 36,
+  "reviewSampleCount": 160,
+  "summaryCount": 58,
+  "originalExcerptCount": 58,
+  "collectedFromDate": "2026-11-05",
   "products": [
     {
       "id": "airpods",
@@ -3361,6 +3362,1685 @@
           ]
         },
         "unclassifiedReviewCount": 2
+      }
+    },
+    {
+      "id": "tissue",
+      "brand": "크리넥스",
+      "name": "울트라클린 3겹 화장지",
+      "subtitle": "25m · 30롤 × 2팩",
+      "category": "essentials",
+      "categoryName": "생필품",
+      "source": "11번가",
+      "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+      "sourceTitle": "크리넥스 울트라클린 3겹 25M 30롤x2팩 /두루마리 휴지",
+      "sourceRating": 4.6,
+      "sourceReviewCount": 41,
+      "observedPrice": 35400,
+      "image": "assets/catalog/tissue.webp",
+      "imageSourceUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/5554604945/B.webp?114227701",
+      "reviewSampleCount": 9,
+      "collectedAt": "2026-11-07T11:58:56+00:00",
+      "sourceReviewDatesAvailable": false,
+      "imageSha256": "627f267c8c52242f5531fc26732fac959d5d69b1dd946bf1d1ef91bcce68743c",
+      "lead": "부드러운 촉감과 흡수력을 좋게 봤어요.",
+      "good": "부드러움·흡수력에 만족",
+      "caution": "확인한 9개 표본에 구체적인 불만은 없었어요",
+      "tags": [
+        "화장지",
+        "욕실",
+        "휴지"
+      ],
+      "reviews": [
+        {
+          "id": "tissue-1",
+          "topic": "촉감",
+          "tone": "positive",
+          "title": "부드럽고 폭신하게 느꼈어요",
+          "summary": "기존 제품 대신 골랐고, 부드럽고 폭신한 촉감이 좋았다고 했어요.",
+          "sourceReviewId": "537490625",
+          "author": "ehfr**",
+          "sourceRating": 3,
+          "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "tissue-2",
+          "topic": "흡수력",
+          "tone": "positive",
+          "title": "흡수와 촉감을 함께 좋게 봤어요",
+          "summary": "흡수가 잘 되면서 부드럽다는 짧은 사용 후기를 남겼어요.",
+          "sourceReviewId": "513990014",
+          "author": "keepin",
+          "sourceRating": 4,
+          "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "tissue-3",
+          "topic": "배송",
+          "tone": "positive",
+          "title": "빠른 배송과 수령 상태에 만족했어요",
+          "summary": "배송이 빨랐고 파손 없이 받았다고 했어요. 흡수력도 함께 언급했어요.",
+          "sourceReviewId": "548039106",
+          "author": "안암동호랑이",
+          "sourceRating": 4,
+          "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        }
+      ],
+      "reviewAnalysis": {
+        "reviewSampleCount": 9,
+        "reviewEvidence": [
+          {
+            "sourceReviewId": "548039106",
+            "author": "안암동호랑이",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "5a0772642a0f05d12e49c0680aaff187cd1427f5ba3fbbbff3c1ad4f8b5629e8"
+          },
+          {
+            "sourceReviewId": "537490625",
+            "author": "ehfr**",
+            "sourceRating": 3,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "7838e675f7652a441aa60bb9c124d8f0bf5cadd0c7e90b20fdd8b786eedd453b"
+          },
+          {
+            "sourceReviewId": "509072216",
+            "author": "은서니꼬",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "499daade262a06c8954861d263b890a287a538c1fe734446c067e7c4860293da"
+          },
+          {
+            "sourceReviewId": "533724069",
+            "author": "cowa**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "ca9087a1adf7da7a7725b4156970c934220599a7c5f480c50617b41dfca40b80"
+          },
+          {
+            "sourceReviewId": "513990014",
+            "author": "keepin",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "1a3726a1b21807ab517b9d2a4942fa4c424eee233b7b28984a70513708f70408"
+          },
+          {
+            "sourceReviewId": "526986234",
+            "author": "dud7**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "d040e29367e4f4f7ebf00dead018f959c05b2382e3239078ec83fde647411d44"
+          },
+          {
+            "sourceReviewId": "546577485",
+            "author": "appl**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "7593d6e8ae64b0fa808aab88d1968abd9a9f74bc04e46d8be4af251e996fbd45"
+          },
+          {
+            "sourceReviewId": "545707988",
+            "author": "zero**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "4f750819969b0e2010ec27007667126efe4dba8163573f58bb6b2fc48983a07d"
+          },
+          {
+            "sourceReviewId": "537882759",
+            "author": "alsc**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "6f9e50640097c2d8a70869c60c40c35ba21390187e9f94e70408d2d656b72816"
+          }
+        ],
+        "originalExcerpts": [
+          {
+            "sourceReviewId": "537490625",
+            "author": "ehfr**",
+            "sourceRating": 3,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "7838e675f7652a441aa60bb9c124d8f0bf5cadd0c7e90b20fdd8b786eedd453b",
+            "id": "tissue-raw-537490625",
+            "text": "부드럽고 폭신한 느낌이 있어 좋아요.",
+            "start": 33,
+            "end": 53,
+            "isExcerpt": true
+          },
+          {
+            "sourceReviewId": "513990014",
+            "author": "keepin",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "1a3726a1b21807ab517b9d2a4942fa4c424eee233b7b28984a70513708f70408",
+            "id": "tissue-raw-513990014",
+            "text": "흡수가 잘 되고 부드러워요",
+            "start": 0,
+            "end": 14,
+            "isExcerpt": false
+          },
+          {
+            "sourceReviewId": "545707988",
+            "author": "zero**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5554604945",
+            "textSha256": "4f750819969b0e2010ec27007667126efe4dba8163573f58bb6b2fc48983a07d",
+            "id": "tissue-raw-545707988",
+            "text": "향도 좋고 두껍고 화장실서 쓰기 딱 좋아요.",
+            "start": 0,
+            "end": 24,
+            "isExcerpt": false
+          }
+        ],
+        "mentionGroups": {
+          "positive": [
+            {
+              "id": "soft",
+              "label": "부드러운 촉감",
+              "description": "부드럽거나 폭신하다고 느꼈어요.",
+              "count": 3,
+              "reviewIds": [
+                "537490625",
+                "513990014",
+                "537882759"
+              ]
+            },
+            {
+              "id": "shipping",
+              "label": "빠른 배송",
+              "description": "배송 속도를 좋게 평가했어요.",
+              "count": 3,
+              "reviewIds": [
+                "548039106",
+                "526986234",
+                "537882759"
+              ]
+            },
+            {
+              "id": "absorb",
+              "label": "흡수력에 만족",
+              "description": "사용 중 물기가 잘 흡수됐다고 했어요.",
+              "count": 2,
+              "reviewIds": [
+                "548039106",
+                "513990014"
+              ]
+            },
+            {
+              "id": "repeat",
+              "label": "계속 사용하는 제품",
+              "description": "반복 구매나 같은 제품 선호를 언급했어요.",
+              "count": 2,
+              "reviewIds": [
+                "533724069",
+                "546577485"
+              ]
+            },
+            {
+              "id": "thick",
+              "label": "두께와 향에 만족",
+              "description": "두껍고 향도 좋았다는 의견이에요.",
+              "count": 1,
+              "reviewIds": [
+                "545707988"
+              ]
+            },
+            {
+              "id": "value",
+              "label": "구매 가격에 만족",
+              "description": "가격을 긍정적으로 평가했어요.",
+              "count": 1,
+              "reviewIds": [
+                "509072216"
+              ]
+            }
+          ],
+          "negative": []
+        },
+        "unclassifiedReviewCount": 0
+      }
+    },
+    {
+      "id": "paper-towel",
+      "brand": "바리바리",
+      "name": "톡톡 뽑아쓰는 키친타월",
+      "subtitle": "리필 5,000매 · 용기 별도 확인",
+      "category": "essentials",
+      "categoryName": "생필품",
+      "source": "11번가",
+      "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+      "sourceTitle": "바리바리 톡톡 뽑아쓰는 키친타올 리필 5000매, 100% 천연펄프 키친타월",
+      "sourceRating": 4.5,
+      "sourceReviewCount": 35,
+      "observedPrice": 26980,
+      "image": "assets/catalog/paper-towel.webp",
+      "imageSourceUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/3354670275/B.jpg?958000000",
+      "reviewSampleCount": 6,
+      "collectedAt": "2026-11-07T11:58:57+00:00",
+      "sourceReviewDatesAvailable": false,
+      "imageSha256": "001f7b54eced3b7442a6baff60ada2f0b4290a9f8389fc6e3a4a630629b6d30f",
+      "lead": "넉넉한 양을 반겼고, 용기를 따로 사서 쓰기도 해요.",
+      "good": "대용량·구매 가격에 만족",
+      "caution": "리필용 용기 포함 여부를 확인해요",
+      "tags": [
+        "키친타월",
+        "주방",
+        "리필"
+      ],
+      "reviews": [
+        {
+          "id": "paper-towel-1",
+          "topic": "리필 사용",
+          "tone": "positive",
+          "title": "리필통을 따로 사서 뽑아 쓰고 있어요",
+          "summary": "작성자는 별도 리필통을 구입했어요. 대용량과 가격, 두툼한 닦임에 만족했어요.",
+          "sourceReviewId": "547280332",
+          "author": "juju**",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "paper-towel-2",
+          "topic": "용량",
+          "tone": "positive",
+          "title": "넉넉한 양을 반겼어요",
+          "summary": "가격과 넉넉한 양에 만족했어요. 오래 쓸 수 있겠다는 말은 사용 전 기대예요.",
+          "sourceReviewId": "513426729",
+          "author": "tjeo**",
+          "sourceRating": 4,
+          "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "paper-towel-3",
+          "topic": "수령 상태",
+          "tone": "positive",
+          "title": "누락이나 파손 없이 받았어요",
+          "summary": "배송이 빠르고 가격도 괜찮았으며, 누락·파손 없이 받았다고 했어요.",
+          "sourceReviewId": "500965591",
+          "author": "요니쿠니",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        }
+      ],
+      "reviewAnalysis": {
+        "reviewSampleCount": 6,
+        "reviewEvidence": [
+          {
+            "sourceReviewId": "547280332",
+            "author": "juju**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "fd97f539bb7a4a6276506ef7ddd5f3603634b28fa9c76d712db578a2de50c67c"
+          },
+          {
+            "sourceReviewId": "513426729",
+            "author": "tjeo**",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "df62333f2eb1a0876925ad3136d12194ef8a78d9d05b65c7bc3c5b8bacf80f59"
+          },
+          {
+            "sourceReviewId": "500965591",
+            "author": "요니쿠니",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "dff2e5c47674e1d4536b396f03b1a654b29e0c1d2786247c42b770d9697a5256"
+          },
+          {
+            "sourceReviewId": "511816412",
+            "author": "kek1**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "fe9ced045955aee8c5af0db412599982938be6aedf93f0e3cd7a32717ee239d2"
+          },
+          {
+            "sourceReviewId": "521354186",
+            "author": "chi7**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "bb99d192332c3e43549db69d88d26ba51b04107a2d099865c14793f610ec8faa"
+          },
+          {
+            "sourceReviewId": "509484321",
+            "author": "frie**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "57240c3227d2dadfd035cab827754be45761877aa38a3784aec7ba320cb9fd5a"
+          }
+        ],
+        "originalExcerpts": [
+          {
+            "sourceReviewId": "547280332",
+            "author": "juju**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "fd97f539bb7a4a6276506ef7ddd5f3603634b28fa9c76d712db578a2de50c67c",
+            "id": "paper-towel-raw-547280332",
+            "text": "리필통 하나 구입해서 뽑아쓰니 경제적이고 너무 좋아요",
+            "start": 33,
+            "end": 62,
+            "isExcerpt": true
+          },
+          {
+            "sourceReviewId": "513426729",
+            "author": "tjeo**",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "df62333f2eb1a0876925ad3136d12194ef8a78d9d05b65c7bc3c5b8bacf80f59",
+            "id": "paper-towel-raw-513426729",
+            "text": "넉넉한 양 오래 쓸 수 있겠어요.",
+            "start": 13,
+            "end": 31,
+            "isExcerpt": true
+          },
+          {
+            "sourceReviewId": "500965591",
+            "author": "요니쿠니",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3354670275",
+            "textSha256": "dff2e5c47674e1d4536b396f03b1a654b29e0c1d2786247c42b770d9697a5256",
+            "id": "paper-towel-raw-500965591",
+            "text": "누락 및 파손없이 왔어요.",
+            "start": 23,
+            "end": 37,
+            "isExcerpt": true
+          }
+        ],
+        "mentionGroups": {
+          "positive": [
+            {
+              "id": "value",
+              "label": "구매 가격에 만족",
+              "description": "구매 가격을 좋게 평가했어요.",
+              "count": 4,
+              "reviewIds": [
+                "547280332",
+                "513426729",
+                "500965591",
+                "511816412"
+              ]
+            },
+            {
+              "id": "quantity",
+              "label": "넉넉한 양",
+              "description": "대용량 구성이 마음에 들었다고 했어요.",
+              "count": 3,
+              "reviewIds": [
+                "547280332",
+                "513426729",
+                "521354186"
+              ]
+            },
+            {
+              "id": "thick",
+              "label": "두툼함과 닦임",
+              "description": "두툼하고 잘 닦였다는 사용 의견이에요.",
+              "count": 1,
+              "reviewIds": [
+                "547280332"
+              ]
+            },
+            {
+              "id": "shipping",
+              "label": "배송·수령 상태",
+              "description": "배송 속도와 누락·파손 없는 수령을 언급했어요.",
+              "count": 1,
+              "reviewIds": [
+                "500965591"
+              ]
+            }
+          ],
+          "negative": []
+        },
+        "unclassifiedReviewCount": 1
+      }
+    },
+    {
+      "id": "wet-wipes",
+      "brand": "베베숲",
+      "name": "프리미어 엠보싱 물티슈",
+      "subtitle": "캡형 · 70매 × 10팩",
+      "category": "essentials",
+      "categoryName": "생필품",
+      "source": "11번가",
+      "sourceUrl": "https://www.11st.co.kr/products/3772604193",
+      "sourceTitle": "베베숲 프리미어 물티슈 엠보싱 캡형 70매 10팩 (700매)",
+      "sourceRating": 4.7,
+      "sourceReviewCount": 19,
+      "observedPrice": 19900,
+      "image": "assets/catalog/wet-wipes.webp",
+      "imageSourceUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/3772604193/B.webp?523632734",
+      "reviewSampleCount": 2,
+      "collectedAt": "2026-11-07T11:58:59+00:00",
+      "sourceReviewDatesAvailable": false,
+      "imageSha256": "f202a493a5621910b9d9d9bd95c1c8bc28fab60d381b4a9600e91e212582d80b",
+      "lead": "닦임은 만족, 포장에는 아쉬운 의견이 있어요.",
+      "good": "잘 닦인다는 사용 의견",
+      "caution": "빽빽한 박스·얇게 느낀 비닐 케이스",
+      "tags": [
+        "물티슈",
+        "닦임",
+        "포장"
+      ],
+      "reviews": [
+        {
+          "id": "wet-wipes-1",
+          "topic": "닦임",
+          "tone": "positive",
+          "title": "잘 닦이고 아이도 좋아했어요",
+          "summary": "잘 닦인다는 짧은 사용 후기예요. 두께나 피부 자극에 대한 평가는 없어요.",
+          "sourceReviewId": "503822469",
+          "author": "djaa**",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/3772604193",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "wet-wipes-2",
+          "topic": "포장",
+          "tone": "caution",
+          "title": "사용 전 포장 상태를 아쉽게 봤어요",
+          "summary": "박스가 빽빽하고 비닐 케이스가 얇게 느껴졌다고 했어요. 내용물은 아직 사용 전이라고 밝혔어요.",
+          "sourceReviewId": "492405525",
+          "author": "soon**",
+          "sourceRating": 3,
+          "sourceUrl": "https://www.11st.co.kr/products/3772604193",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        }
+      ],
+      "reviewAnalysis": {
+        "reviewSampleCount": 2,
+        "reviewEvidence": [
+          {
+            "sourceReviewId": "492405525",
+            "author": "soon**",
+            "sourceRating": 3,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3772604193",
+            "textSha256": "aa46f28d3776013d67cc82ecd519b0703b79db912ce024e6b18661e83e5b8f64"
+          },
+          {
+            "sourceReviewId": "503822469",
+            "author": "djaa**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3772604193",
+            "textSha256": "24b79678704b3786570e3680cdff8741622008cbe9a9722437f698148cbeffe4"
+          }
+        ],
+        "originalExcerpts": [
+          {
+            "sourceReviewId": "503822469",
+            "author": "djaa**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3772604193",
+            "textSha256": "24b79678704b3786570e3680cdff8741622008cbe9a9722437f698148cbeffe4",
+            "id": "wet-wipes-raw-503822469",
+            "text": "잘닦이고 아이가 좋아해요",
+            "start": 0,
+            "end": 13,
+            "isExcerpt": false
+          },
+          {
+            "sourceReviewId": "492405525",
+            "author": "soon**",
+            "sourceRating": 3,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/3772604193",
+            "textSha256": "aa46f28d3776013d67cc82ecd519b0703b79db912ce024e6b18661e83e5b8f64",
+            "id": "wet-wipes-raw-492405525",
+            "text": "비닐 케이스가 엄청 얇은 느낌이예요",
+            "start": 49,
+            "end": 68,
+            "isExcerpt": true
+          }
+        ],
+        "mentionGroups": {
+          "positive": [
+            {
+              "id": "wipe",
+              "label": "잘 닦인다는 경험",
+              "description": "잘 닦이고 아이도 좋아했다는 의견이에요.",
+              "count": 1,
+              "reviewIds": [
+                "503822469"
+              ]
+            }
+          ],
+          "negative": [
+            {
+              "id": "packaging",
+              "label": "박스와 비닐 케이스",
+              "description": "빽빽한 포장과 얇게 느껴지는 비닐을 언급했어요.",
+              "count": 1,
+              "reviewIds": [
+                "492405525"
+              ]
+            }
+          ]
+        },
+        "unclassifiedReviewCount": 0
+      }
+    },
+    {
+      "id": "detergent",
+      "brand": "퍼실",
+      "name": "딥클린 라벤더젤 세탁세제",
+      "subtitle": "일반·드럼 겸용 · 1.5L × 4개",
+      "category": "essentials",
+      "categoryName": "생필품",
+      "source": "11번가",
+      "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+      "sourceTitle": "퍼실 딥클린 라벤더젤 드럼 일반 겸용 1.5L 4개",
+      "sourceRating": 5,
+      "sourceReviewCount": 26,
+      "observedPrice": 26150,
+      "image": "assets/catalog/detergent.webp",
+      "imageSourceUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/9397641862/B.webp?147478101",
+      "reviewSampleCount": 5,
+      "collectedAt": "2026-11-07T11:57:23+00:00",
+      "sourceReviewDatesAvailable": false,
+      "imageSha256": "4e139c0260af68345c02c31f4600bfc0d1eec3746e917851c31f3e94ceb0aff0",
+      "lead": "향은 좋았지만, 행사 가격에는 아쉬운 구매 건도 있어요.",
+      "good": "향·세척 경험에 만족",
+      "caution": "구매 직후 더 낮아진 행사 가격",
+      "tags": [
+        "세탁세제",
+        "세탁",
+        "향"
+      ],
+      "reviews": [
+        {
+          "id": "detergent-1",
+          "topic": "향·세척",
+          "tone": "positive",
+          "title": "향과 세척을 함께 좋게 봤어요",
+          "summary": "향이 좋고 세척도 잘돼 계속 사용하는 제품이라고 했어요.",
+          "sourceReviewId": "548963739",
+          "author": "베라천사",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "detergent-2",
+          "topic": "행사 가격",
+          "tone": "caution",
+          "title": "구매 뒤 더 싸져 아쉬웠어요",
+          "summary": "월말에 할인받아 샀지만 월초 가격이 더 낮아졌다고 했어요. 해당 구매 시점의 경험이에요.",
+          "sourceReviewId": "549030658",
+          "author": "jbkk**",
+          "sourceRating": 4,
+          "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "detergent-3",
+          "topic": "배송",
+          "tone": "positive",
+          "title": "세제가 필요할 때 빨리 받았어요",
+          "summary": "할인 가격에 샀고 배송도 하루 만에 와서 빨래를 할 수 있었다고 했어요.",
+          "sourceReviewId": "548295574",
+          "author": "enfrl",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        }
+      ],
+      "reviewAnalysis": {
+        "reviewSampleCount": 5,
+        "reviewEvidence": [
+          {
+            "sourceReviewId": "548295574",
+            "author": "enfrl",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+            "textSha256": "cbcf0c6ba6a1e3ff822fc74bcbee4f7fce42d152b6880044b9ae2a16268c5749"
+          },
+          {
+            "sourceReviewId": "549030658",
+            "author": "jbkk**",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+            "textSha256": "c6c181bab3ad311a68f2e03c324520216561756d6bad7ada80427a6c793ab016"
+          },
+          {
+            "sourceReviewId": "548545578",
+            "author": "feel**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+            "textSha256": "7b82f0b7b3dfee656c337bdf7f410b7aaaf877f8a0290ab9aa711903d9be16b3"
+          },
+          {
+            "sourceReviewId": "548280425",
+            "author": "sisi**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+            "textSha256": "3a4ca1b41b3044e76a3e37078b28e718c8dd8535b514b6d7078020a2d30068a1"
+          },
+          {
+            "sourceReviewId": "548963739",
+            "author": "베라천사",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+            "textSha256": "ae2bd4d60c452d53792f6147331a07850f3745686845449fd9b269f774e1d7f9"
+          }
+        ],
+        "originalExcerpts": [
+          {
+            "sourceReviewId": "548963739",
+            "author": "베라천사",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+            "textSha256": "ae2bd4d60c452d53792f6147331a07850f3745686845449fd9b269f774e1d7f9",
+            "id": "detergent-raw-548963739",
+            "text": "향도 좋고 세척도 잘되서 애용해요",
+            "start": 0,
+            "end": 18,
+            "isExcerpt": false
+          },
+          {
+            "sourceReviewId": "548280425",
+            "author": "sisi**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+            "textSha256": "3a4ca1b41b3044e76a3e37078b28e718c8dd8535b514b6d7078020a2d30068a1",
+            "id": "detergent-raw-548280425",
+            "text": "항상 퍼실만써요 향이좋아요",
+            "start": 0,
+            "end": 14,
+            "isExcerpt": false
+          },
+          {
+            "sourceReviewId": "549030658",
+            "author": "jbkk**",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/9397641862",
+            "textSha256": "c6c181bab3ad311a68f2e03c324520216561756d6bad7ada80427a6c793ab016",
+            "id": "detergent-raw-549030658",
+            "text": "월초에 더 싸졌네요 ㅠㅠ",
+            "start": 32,
+            "end": 45,
+            "isExcerpt": true
+          }
+        ],
+        "mentionGroups": {
+          "positive": [
+            {
+              "id": "scent",
+              "label": "향에 만족",
+              "description": "사용하면서 향이 좋았다고 했어요.",
+              "count": 2,
+              "reviewIds": [
+                "548280425",
+                "548963739"
+              ]
+            },
+            {
+              "id": "wash",
+              "label": "세척 경험에 만족",
+              "description": "세척이 잘돼 계속 사용한다는 의견이에요.",
+              "count": 1,
+              "reviewIds": [
+                "548963739"
+              ]
+            },
+            {
+              "id": "shipping",
+              "label": "빠른 배송",
+              "description": "주문 다음 날 받았다는 경험이에요.",
+              "count": 1,
+              "reviewIds": [
+                "548295574"
+              ]
+            },
+            {
+              "id": "value",
+              "label": "할인 구매에 만족",
+              "description": "할인받아 저렴하게 구매했다고 했어요.",
+              "count": 1,
+              "reviewIds": [
+                "548295574"
+              ]
+            },
+            {
+              "id": "quantity",
+              "label": "넉넉한 구성",
+              "description": "한동안 세제 걱정이 없겠다고 반겼어요.",
+              "count": 1,
+              "reviewIds": [
+                "549030658"
+              ]
+            }
+          ],
+          "negative": [
+            {
+              "id": "price",
+              "label": "구매 후 가격 하락",
+              "description": "구매 뒤 더 저렴해져 아쉬웠다는 의견이에요.",
+              "count": 1,
+              "reviewIds": [
+                "549030658"
+              ]
+            }
+          ]
+        },
+        "unclassifiedReviewCount": 1
+      }
+    },
+    {
+      "id": "shampoo",
+      "brand": "케라시스",
+      "name": "데미지 클리닉 단백질 샴푸",
+      "subtitle": "750ml · 선택 구성은 판매처 확인",
+      "category": "essentials",
+      "categoryName": "생필품",
+      "source": "11번가",
+      "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+      "sourceTitle": "케라시스 데미지 클리닉 단백질 샴푸 750ml",
+      "sourceRating": 4.8,
+      "sourceReviewCount": 31,
+      "observedPrice": 4500,
+      "image": "assets/catalog/shampoo.webp",
+      "imageSourceUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/5139484742/B.jpg?189000000",
+      "reviewSampleCount": 8,
+      "collectedAt": "2026-11-07T11:59:39+00:00",
+      "sourceReviewDatesAvailable": false,
+      "imageSha256": "45055a42e733428e8e3813cec79d31bbb41c576c49a96226cb5ca337894c970a",
+      "lead": "양과 가격은 반갑고, 잔향이 짧게 느껴진 경우도 있어요.",
+      "good": "넉넉한 양·구매 가격",
+      "caution": "예전보다 잔향이 짧았다는 의견",
+      "tags": [
+        "샴푸",
+        "욕실",
+        "향"
+      ],
+      "reviews": [
+        {
+          "id": "shampoo-1",
+          "topic": "잔향",
+          "tone": "caution",
+          "title": "예전보다 향이 오래 남지 않았어요",
+          "summary": "잔향이 이전보다 짧게 느껴졌다고 했어요. 수령 당시 사용기한은 넉넉했다고 남겼어요.",
+          "sourceReviewId": "522879595",
+          "author": "유리안공주",
+          "sourceRating": 4,
+          "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "shampoo-2",
+          "topic": "용량",
+          "tone": "positive",
+          "title": "넉넉한 양을 부담 없이 써요",
+          "summary": "양이 많아 편하게 쓸 수 있고 배송도 빨랐다는 의견이에요.",
+          "sourceReviewId": "521626296",
+          "author": "psk7**",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "shampoo-3",
+          "topic": "구매 가격",
+          "tone": "positive",
+          "title": "쓰던 제품을 저렴하게 샀어요",
+          "summary": "기존에 쓰던 샴푸를 인터넷에서 저렴하게 구매했다고 했어요.",
+          "sourceReviewId": "528525371",
+          "author": "jhjj**",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        }
+      ],
+      "reviewAnalysis": {
+        "reviewSampleCount": 8,
+        "reviewEvidence": [
+          {
+            "sourceReviewId": "522879595",
+            "author": "유리안공주",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "3dc4b837341db640495163a79ceb45d1a745b3ccc30c66a519c0e4aca2369f69"
+          },
+          {
+            "sourceReviewId": "521626296",
+            "author": "psk7**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "9bc783cc2cca3cbad2e48411373f4a7162151ce6a31fd7a58e062ad25136842d"
+          },
+          {
+            "sourceReviewId": "514239116",
+            "author": "gjh9**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "cd9410b53ee6e494a79a3569fb11272c7ceec81f793b153e8890d34cfb604eda"
+          },
+          {
+            "sourceReviewId": "528525371",
+            "author": "jhjj**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "afd21d4f38e827bb52812cd0a813b1b6bdf2d0806e419f2ba9ac4a93dd075124"
+          },
+          {
+            "sourceReviewId": "516619335",
+            "author": "hj98**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "c644efc8d851aee73fe37c6682f7737f847fdce5c80d7c6305ecf9d7d5133619"
+          },
+          {
+            "sourceReviewId": "522722787",
+            "author": "sik8**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "cd9410b53ee6e494a79a3569fb11272c7ceec81f793b153e8890d34cfb604eda"
+          },
+          {
+            "sourceReviewId": "533555978",
+            "author": "jhjj**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "33d76731016b6cd82c7b357c1c81f4b853e63862ebfeea4de285cf0c3364018a"
+          },
+          {
+            "sourceReviewId": "539528019",
+            "author": "jhjj**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "33d76731016b6cd82c7b357c1c81f4b853e63862ebfeea4de285cf0c3364018a"
+          }
+        ],
+        "originalExcerpts": [
+          {
+            "sourceReviewId": "522879595",
+            "author": "유리안공주",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "3dc4b837341db640495163a79ceb45d1a745b3ccc30c66a519c0e4aca2369f69",
+            "id": "shampoo-raw-522879595",
+            "text": "향이 예전에 비해 잔향 남는 정도가 오래가지 않네요",
+            "start": 0,
+            "end": 28,
+            "isExcerpt": true
+          },
+          {
+            "sourceReviewId": "521626296",
+            "author": "psk7**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "9bc783cc2cca3cbad2e48411373f4a7162151ce6a31fd7a58e062ad25136842d",
+            "id": "shampoo-raw-521626296",
+            "text": "양도많아부담없이 쓸수있고 배송도빠르네요~",
+            "start": 0,
+            "end": 22,
+            "isExcerpt": false
+          },
+          {
+            "sourceReviewId": "528525371",
+            "author": "jhjj**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/5139484742",
+            "textSha256": "afd21d4f38e827bb52812cd0a813b1b6bdf2d0806e419f2ba9ac4a93dd075124",
+            "id": "shampoo-raw-528525371",
+            "text": "쓰던거에요 인터넷이라 획실히 싸게 파네요",
+            "start": 0,
+            "end": 22,
+            "isExcerpt": true
+          }
+        ],
+        "mentionGroups": {
+          "positive": [
+            {
+              "id": "shipping",
+              "label": "빠른 배송",
+              "description": "배송이 빨랐다고 했어요.",
+              "count": 3,
+              "reviewIds": [
+                "521626296",
+                "514239116",
+                "522722787"
+              ]
+            },
+            {
+              "id": "value",
+              "label": "구매 가격에 만족",
+              "description": "기존 사용자가 구매 가격을 좋게 봤어요.",
+              "count": 2,
+              "reviewIds": [
+                "528525371",
+                "516619335"
+              ]
+            },
+            {
+              "id": "repeat",
+              "label": "계속 사용하는 제품",
+              "description": "쓰던 제품이나 반복 사용을 언급했어요.",
+              "count": 2,
+              "reviewIds": [
+                "528525371",
+                "516619335"
+              ]
+            },
+            {
+              "id": "quantity",
+              "label": "넉넉한 양",
+              "description": "양이 많아 부담 없이 쓴다는 의견이에요.",
+              "count": 1,
+              "reviewIds": [
+                "521626296"
+              ]
+            },
+            {
+              "id": "expiry",
+              "label": "구매 당시 사용기한",
+              "description": "받았을 때 사용기한이 넉넉했다고 했어요.",
+              "count": 1,
+              "reviewIds": [
+                "522879595"
+              ]
+            }
+          ],
+          "negative": [
+            {
+              "id": "scent",
+              "label": "이전보다 짧게 느낀 잔향",
+              "description": "예전만큼 향이 오래 남지 않았다는 경험이에요.",
+              "count": 1,
+              "reviewIds": [
+                "522879595"
+              ]
+            }
+          ]
+        },
+        "unclassifiedReviewCount": 2
+      }
+    },
+    {
+      "id": "toothpaste",
+      "brand": "2080",
+      "name": "오리지널 치약 옵션 모음",
+      "subtitle": "150g × 8개 외 선택 · 타 브랜드 옵션 포함",
+      "category": "essentials",
+      "categoryName": "생필품",
+      "source": "11번가",
+      "sourceUrl": "https://www.11st.co.kr/products/25023373",
+      "sourceTitle": "2080 오리지널 치약 150*8개 / 페리오/ 죽염",
+      "sourceRating": 4.6,
+      "sourceReviewCount": 1848,
+      "observedPrice": 10240,
+      "image": "assets/catalog/toothpaste.webp",
+      "imageSourceUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/25023373/B.jpg?744000000",
+      "reviewSampleCount": 10,
+      "collectedAt": "2026-11-07T11:59:41+00:00",
+      "sourceReviewDatesAvailable": false,
+      "imageSha256": "15df56c02de16abd8ff4bb5982aea35eb5179a2fa8e7028c0e95e35794e71a22",
+      "lead": "개운하다는 의견, 베이직은 텁텁했다는 의견도 있어요.",
+      "good": "양치 후 개운함·묶음 구성",
+      "caution": "베이직 옵션의 텁텁함·가격 인상 의견",
+      "tags": [
+        "치약",
+        "욕실",
+        "옵션 비교"
+      ],
+      "reviews": [
+        {
+          "id": "toothpaste-1",
+          "topic": "사용감",
+          "tone": "positive",
+          "title": "시원한 느낌 때문에 계속 써요",
+          "summary": "가족이 시원한 사용감을 좋아해 같은 치약을 다시 구매했다는 후기예요.",
+          "sourceReviewId": "548950568",
+          "author": "민스마미bs",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/25023373",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "toothpaste-2",
+          "topic": "선택 옵션",
+          "tone": "caution",
+          "title": "베이직은 텁텁하게 느꼈어요",
+          "summary": "베이직 옵션을 처음 사용한 작성자는 입안이 텁텁해 다른 제품을 쓰겠다고 했어요. 다른 옵션 전체의 평가는 아니에요.",
+          "sourceReviewId": "500666078",
+          "author": "myna**",
+          "sourceRating": 3,
+          "sourceUrl": "https://www.11st.co.kr/products/25023373",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "toothpaste-3",
+          "topic": "가격·사용감",
+          "tone": "mixed",
+          "title": "개운함은 만족, 가격 상승은 아쉬워요",
+          "summary": "저렴하게 구매하고 개운하게 사용했지만 가격이 점점 오른다는 아쉬움도 남겼어요.",
+          "sourceReviewId": "503112584",
+          "author": "love**",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/25023373",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        }
+      ],
+      "reviewAnalysis": {
+        "reviewSampleCount": 10,
+        "reviewEvidence": [
+          {
+            "sourceReviewId": "548950568",
+            "author": "민스마미bs",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "7e81d343cecb3a04de7129f4f4d0fb8fc75dcdc89e4ab9e12b4365e85aa69c0f"
+          },
+          {
+            "sourceReviewId": "523783816",
+            "author": "한팀장",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "4b3548ab4a30a58c215511d8f82276d48fa737f63b417d5804129f4194e8ad36"
+          },
+          {
+            "sourceReviewId": "526859230",
+            "author": "hwan**",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "477129c38b8f71055582c0c1e28020edb2fcb8a8e627669a6b0455abc94aac94"
+          },
+          {
+            "sourceReviewId": "527482280",
+            "author": "동하사랑이",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "a716d930ba6559345dbf98391d77aeae9141f31454d7cd51e46ba21b77e95569"
+          },
+          {
+            "sourceReviewId": "523782133",
+            "author": "khjc**",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "f8d96b309ba2a76b8bef5a691d183c85ae4e7e7b7b2f9f1371e86559c3908b79"
+          },
+          {
+            "sourceReviewId": "535640787",
+            "author": "nsk9**",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "5e859ba0f446472f8c4795a547ca882707fe5e29ecff55c0b20afb28c6fef80c"
+          },
+          {
+            "sourceReviewId": "506077290",
+            "author": "juce**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "4d4831d0ff34f6aff3aac9b8578ab9aaab08059bff080b70e3d3c80da43a9a36"
+          },
+          {
+            "sourceReviewId": "512269232",
+            "author": "뭉클",
+            "sourceRating": 4,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "88be89bfa70e68f30198ac0e389c263d7e7e7b2ed3d4e535f9c0e37b5bdc07a9"
+          },
+          {
+            "sourceReviewId": "503112584",
+            "author": "love**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "afd63fcee8eaafe9da8ec5f6374b3adf04590a3d5b56f44b0ceb21cd10a8f726"
+          },
+          {
+            "sourceReviewId": "500666078",
+            "author": "myna**",
+            "sourceRating": 3,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "9b3ebf7a6bdc4f7ef24298311e0ad0ceda973ae01645895dca6fa369e21f68f9"
+          }
+        ],
+        "originalExcerpts": [
+          {
+            "sourceReviewId": "548950568",
+            "author": "민스마미bs",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "7e81d343cecb3a04de7129f4f4d0fb8fc75dcdc89e4ab9e12b4365e85aa69c0f",
+            "id": "toothpaste-raw-548950568",
+            "text": "시원하고 닦은 느낌난다고ㅋ",
+            "start": 19,
+            "end": 33,
+            "isExcerpt": true
+          },
+          {
+            "sourceReviewId": "500666078",
+            "author": "myna**",
+            "sourceRating": 3,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "9b3ebf7a6bdc4f7ef24298311e0ad0ceda973ae01645895dca6fa369e21f68f9",
+            "id": "toothpaste-raw-500666078",
+            "text": "베이직은 처음 써봤는데 입안이 너무 텁텁해요",
+            "start": 0,
+            "end": 24,
+            "isExcerpt": true
+          },
+          {
+            "sourceReviewId": "503112584",
+            "author": "love**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/25023373",
+            "textSha256": "afd63fcee8eaafe9da8ec5f6374b3adf04590a3d5b56f44b0ceb21cd10a8f726",
+            "id": "toothpaste-raw-503112584",
+            "text": "점점가격이 올라서 슬프네요~",
+            "start": 47,
+            "end": 62,
+            "isExcerpt": true
+          }
+        ],
+        "mentionGroups": {
+          "positive": [
+            {
+              "id": "value",
+              "label": "구매 가격에 만족",
+              "description": "가격이나 가성비를 좋게 평가했어요.",
+              "count": 7,
+              "reviewIds": [
+                "523783816",
+                "526859230",
+                "527482280",
+                "535640787",
+                "506077290",
+                "512269232",
+                "503112584"
+              ]
+            },
+            {
+              "id": "expiry",
+              "label": "구매 당시 사용기한",
+              "description": "작성 당시 남은 사용기한에 만족했어요.",
+              "count": 5,
+              "reviewIds": [
+                "523783816",
+                "526859230",
+                "523782133",
+                "535640787",
+                "506077290"
+              ]
+            },
+            {
+              "id": "quantity",
+              "label": "넉넉한 용량·구성",
+              "description": "용량이나 묶음 수량을 반겼어요.",
+              "count": 4,
+              "reviewIds": [
+                "523783816",
+                "527482280",
+                "523782133",
+                "535640787"
+              ]
+            },
+            {
+              "id": "fresh",
+              "label": "양치 후 개운함",
+              "description": "개운하거나 시원한 사용감을 언급했어요.",
+              "count": 3,
+              "reviewIds": [
+                "548950568",
+                "527482280",
+                "503112584"
+              ]
+            },
+            {
+              "id": "shipping",
+              "label": "빠른 배송",
+              "description": "빠른 수령 경험을 남겼어요.",
+              "count": 2,
+              "reviewIds": [
+                "512269232",
+                "503112584"
+              ]
+            }
+          ],
+          "negative": [
+            {
+              "id": "basic",
+              "label": "베이직 옵션의 텁텁함",
+              "description": "베이직을 처음 쓴 뒤 텁텁하다고 느꼈어요.",
+              "count": 1,
+              "reviewIds": [
+                "500666078"
+              ]
+            },
+            {
+              "id": "price",
+              "label": "가격 인상에 아쉬움",
+              "description": "가격이 올라 아쉽다는 의견이에요.",
+              "count": 1,
+              "reviewIds": [
+                "503112584"
+              ]
+            }
+          ]
+        },
+        "unclassifiedReviewCount": 0
+      }
+    },
+    {
+      "id": "storage-bag",
+      "brand": "크린랲",
+      "name": "뽑아쓰는 크린백 중형",
+      "subtitle": "25 × 35cm · 100매",
+      "category": "essentials",
+      "categoryName": "생필품",
+      "source": "11번가",
+      "sourceUrl": "https://www.11st.co.kr/products/2872295616",
+      "sourceTitle": "크린랩 뽑아쓰는 크린백 100매 25*35 (중)",
+      "sourceRating": 4.9,
+      "sourceReviewCount": 7,
+      "observedPrice": 3500,
+      "image": "assets/catalog/storage-bag.webp",
+      "imageSourceUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/2872295616/B.webp?384948449",
+      "reviewSampleCount": 2,
+      "collectedAt": "2026-11-07T11:59:43+00:00",
+      "sourceReviewDatesAvailable": false,
+      "imageSha256": "552d024e64985f3a538e151cab7f207a7ddd27b1127c94d9d7f87f3c4622b06d",
+      "lead": "쓰던 브랜드를 다시 찾았다는 짧은 후기들이에요.",
+      "good": "브랜드 선호·반복 구매 의견",
+      "caution": "두께·밀봉성은 표본에서 확인하기 어려워요",
+      "tags": [
+        "위생백",
+        "주방",
+        "비닐팩"
+      ],
+      "reviews": [
+        {
+          "id": "storage-bag-1",
+          "topic": "가족의 선택",
+          "tone": "positive",
+          "title": "가족이 계속 고르는 브랜드예요",
+          "summary": "어머니가 이 브랜드만 사용한다는 짧은 후기예요. 구체적인 성능 설명은 없어요.",
+          "sourceReviewId": "529937327",
+          "author": "ylyn**",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/2872295616",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "storage-bag-2",
+          "topic": "재구매",
+          "tone": "positive",
+          "title": "늘 주문하고 다시 살 생각도 있어요",
+          "summary": "항상 주문하는 제품이며 다음에도 구매할 예정이라고 했어요. 두께나 밀봉성은 언급하지 않았어요.",
+          "sourceReviewId": "539768861",
+          "author": "슈퍼맨3",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/2872295616",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        }
+      ],
+      "reviewAnalysis": {
+        "reviewSampleCount": 2,
+        "reviewEvidence": [
+          {
+            "sourceReviewId": "529937327",
+            "author": "ylyn**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2872295616",
+            "textSha256": "d5fba80787e3101d3a63bdaf8ea8ab0777f2a28d0116caa5e5c151540de77c9b"
+          },
+          {
+            "sourceReviewId": "539768861",
+            "author": "슈퍼맨3",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2872295616",
+            "textSha256": "134d977b39bb8d1a167fb8caec59744d0e52918bc6ea558f92881850d34a21f8"
+          }
+        ],
+        "originalExcerpts": [
+          {
+            "sourceReviewId": "529937327",
+            "author": "ylyn**",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2872295616",
+            "textSha256": "d5fba80787e3101d3a63bdaf8ea8ab0777f2a28d0116caa5e5c151540de77c9b",
+            "id": "storage-bag-raw-529937327",
+            "text": "엄마가 이 브랜드만 쓰세요.",
+            "start": 0,
+            "end": 15,
+            "isExcerpt": false
+          },
+          {
+            "sourceReviewId": "539768861",
+            "author": "슈퍼맨3",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2872295616",
+            "textSha256": "134d977b39bb8d1a167fb8caec59744d0e52918bc6ea558f92881850d34a21f8",
+            "id": "storage-bag-raw-539768861",
+            "text": "항상 시키는 제품입니다.",
+            "start": 0,
+            "end": 13,
+            "isExcerpt": true
+          }
+        ],
+        "mentionGroups": {
+          "positive": [
+            {
+              "id": "repeat",
+              "label": "브랜드 선호·반복 구매",
+              "description": "같은 브랜드를 계속 쓰거나 다시 구매한다고 했어요.",
+              "count": 2,
+              "reviewIds": [
+                "529937327",
+                "539768861"
+              ]
+            }
+          ],
+          "negative": []
+        },
+        "unclassifiedReviewCount": 0
+      }
+    },
+    {
+      "id": "dish-soap",
+      "brand": "JOY",
+      "name": "울트라 조이 주방세제",
+      "subtitle": "레몬향 · 887ml",
+      "category": "essentials",
+      "categoryName": "생필품",
+      "source": "11번가",
+      "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+      "sourceTitle": "JOY 울트라 조이 주방세제 레몬향 887ml",
+      "sourceRating": 4.4,
+      "sourceReviewCount": 7,
+      "observedPrice": 6990,
+      "image": "assets/catalog/dish-soap.webp",
+      "imageSourceUrl": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/2733501835/B.jpg?874000000",
+      "reviewSampleCount": 5,
+      "collectedAt": "2026-11-07T11:59:51+00:00",
+      "sourceReviewDatesAvailable": false,
+      "imageSha256": "99b63346a6f42fa1c11548d9040ab3d207c0a1ef83b27f980b1a5384fd5f24ff",
+      "lead": "계속 찾는 세제지만, 개당 배송비는 살펴봐요.",
+      "good": "익숙한 제품을 다시 찾는 의견",
+      "caution": "가격·개당 배송비에 아쉬움",
+      "tags": [
+        "주방세제",
+        "설거지",
+        "배송비"
+      ],
+      "reviews": [
+        {
+          "id": "dish-soap-1",
+          "topic": "가격·선호",
+          "tone": "mixed",
+          "title": "비싸졌어도 익숙한 제품을 골랐어요",
+          "summary": "작성자는 이전보다 가격이 올랐지만 기존 만족 때문에 다시 샀다고 했어요. 개당 배송비도 부담스러웠다고 해요.",
+          "sourceReviewId": "446707971",
+          "author": "핑핑77",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "dish-soap-2",
+          "topic": "배송비",
+          "tone": "caution",
+          "title": "묶음배송과 개당 배송비를 함께 확인해요",
+          "summary": "묶음으로 받았는데도 개별 배송비를 냈다고 주장한 구매 후기예요. 현재 배송 조건은 판매처에서 확인해 주세요.",
+          "sourceReviewId": "439974869",
+          "author": "서현짱짱",
+          "sourceRating": 1,
+          "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        },
+        {
+          "id": "dish-soap-3",
+          "topic": "제품 선호",
+          "tone": "positive",
+          "title": "배송비를 내더라도 찾게 된다고 해요",
+          "summary": "익숙한 울트라 조이를 계속 사용하며 배송비를 내더라도 사고 싶다고 했어요.",
+          "sourceReviewId": "452698320",
+          "author": "핑핑77",
+          "sourceRating": 5,
+          "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+          "summaryType": "원문을 읽고 재구성한 요약",
+          "date": null,
+          "adStatus": "확인 불가"
+        }
+      ],
+      "reviewAnalysis": {
+        "reviewSampleCount": 5,
+        "reviewEvidence": [
+          {
+            "sourceReviewId": "452018574",
+            "author": "toja",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+            "textSha256": "b11fb5102a9c1c64ed9acd58a417c38869023a912216808d9dcaab00aaf82595"
+          },
+          {
+            "sourceReviewId": "446707971",
+            "author": "핑핑77",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+            "textSha256": "0a703537eafb6f92189b194dff3e6c0d21cd73ecc703755bf5ec5def56f00d34"
+          },
+          {
+            "sourceReviewId": "439974869",
+            "author": "서현짱짱",
+            "sourceRating": 1,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+            "textSha256": "39a2afbc7db948316c154998a5826002860eb7e5dad7db0b8e9cfe36546986e0"
+          },
+          {
+            "sourceReviewId": "452698320",
+            "author": "핑핑77",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+            "textSha256": "4727caf3854dcb41df89d4219c5cb000a81722236c1cf89042580c2e68f69e66"
+          },
+          {
+            "sourceReviewId": "449220444",
+            "author": "요오오란",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+            "textSha256": "d3f620c41d71af23d652cf40ec47422f303bed2c3e863e2d0df74d3eea667e67"
+          }
+        ],
+        "originalExcerpts": [
+          {
+            "sourceReviewId": "446707971",
+            "author": "핑핑77",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+            "textSha256": "0a703537eafb6f92189b194dff3e6c0d21cd73ecc703755bf5ec5def56f00d34",
+            "id": "dish-soap-raw-446707971",
+            "text": "가격은두배로올랐지만",
+            "start": 49,
+            "end": 59,
+            "isExcerpt": true
+          },
+          {
+            "sourceReviewId": "439974869",
+            "author": "서현짱짱",
+            "sourceRating": 1,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+            "textSha256": "39a2afbc7db948316c154998a5826002860eb7e5dad7db0b8e9cfe36546986e0",
+            "id": "dish-soap-raw-439974869",
+            "text": "1개당 배송비 각각 2.500원 받았 놓고는 묶음배송질",
+            "start": 0,
+            "end": 30,
+            "isExcerpt": true
+          },
+          {
+            "sourceReviewId": "452698320",
+            "author": "핑핑77",
+            "sourceRating": 5,
+            "date": null,
+            "sourceUrl": "https://www.11st.co.kr/products/2733501835",
+            "textSha256": "4727caf3854dcb41df89d4219c5cb000a81722236c1cf89042580c2e68f69e66",
+            "id": "dish-soap-raw-452698320",
+            "text": "늘한결같은 울트라조이♡",
+            "start": 0,
+            "end": 12,
+            "isExcerpt": true
+          }
+        ],
+        "mentionGroups": {
+          "positive": [
+            {
+              "id": "preference",
+              "label": "계속 찾게 되는 제품",
+              "description": "비용 부담이 있어도 같은 제품을 선호했어요.",
+              "count": 2,
+              "reviewIds": [
+                "446707971",
+                "452698320"
+              ]
+            },
+            {
+              "id": "shipping",
+              "label": "빠른 배송",
+              "description": "빠르게 받았다는 짧은 후기예요.",
+              "count": 1,
+              "reviewIds": [
+                "452018574"
+              ]
+            }
+          ],
+          "negative": [
+            {
+              "id": "price",
+              "label": "높아진 가격 부담",
+              "description": "기존 구매 가격보다 비싸다고 느꼈어요.",
+              "count": 2,
+              "reviewIds": [
+                "446707971",
+                "449220444"
+              ]
+            },
+            {
+              "id": "shipping-fee",
+              "label": "개당 배송비 부담",
+              "description": "상품마다 붙은 배송비가 부담스럽다고 했어요.",
+              "count": 2,
+              "reviewIds": [
+                "446707971",
+                "439974869"
+              ]
+            }
+          ]
+        },
+        "unclassifiedReviewCount": 0
       }
     }
   ]

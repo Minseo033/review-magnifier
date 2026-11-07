@@ -48,7 +48,7 @@ class DataPipelineTest(unittest.TestCase):
         expected = json.loads((ROOT / 'data/catalog.json').read_text())
         exported = export_catalog(self.db)
         self.assertEqual(expected, exported)
-        self.assertEqual(first['reviews'], 113)
+        self.assertEqual(first['reviews'], expected['reviewSampleCount'])
         self.assertNotIn('originalText', dumps(exported))
         private_body = self.db.execute('SELECT body FROM review_versions ORDER BY length(body) DESC LIMIT 1').fetchone()[0]
         self.assertNotIn(private_body, dumps(exported))
@@ -66,6 +66,21 @@ class DataPipelineTest(unittest.TestCase):
         self.assertEqual(self.db.execute('SELECT COUNT(*) FROM review_versions').fetchone()[0], 2)
         review = self.db.execute('SELECT * FROM reviews').fetchone()
         self.assertEqual((review['current_version_id'], review['author'], review['rating']), (newest, 'new', 3))
+
+    def test_approval_links_existing_candidate_and_excludes_unreviewed_reviews(self):
+        if not (ROOT / '.cache/catalog/reviews-verbatim.json').exists():
+            self.skipTest('Local full-text source cache is unavailable on this checkout.')
+        expected = json.loads((ROOT / 'data/catalog.json').read_text())
+        product = expected['products'][-1]
+        with self.db:
+            candidate = upsert_listing(self.db, '11st', product['sourceUrl'].split('/')[-1], product['sourceTitle'], product['sourceUrl'], '2026-11-01T00:00:00+00:00')
+        self.assertIsNone(self.db.execute('SELECT product_id FROM listings WHERE id=?', (candidate,)).fetchone()[0])
+        migrate_existing(self.db)
+        self.assertEqual(self.db.execute('SELECT product_id FROM listings WHERE id=?', (candidate,)).fetchone()[0], product['id'])
+        with self.db:
+            private = upsert_listing(self.db, '11st', 'unreviewed', 'Unreviewed candidate', 'https://example.test/private', '2026-11-07T00:00:00+00:00')
+            upsert_review(self.db, private, 'private-review', 'Unreviewed full review text', '2026-11-07T00:00:00+00:00')
+        self.assertEqual(export_catalog(self.db), expected)
 
     def test_changed_review_blocks_stale_publication(self):
         if not (ROOT / '.cache/catalog/reviews-verbatim.json').exists():

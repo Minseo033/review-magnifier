@@ -120,6 +120,11 @@ def migrate_existing(db, root=ROOT):
                        (key, product['name'], product['brand'], product['category'], at, at))
             listing_id = upsert_listing(db, '11st', product['sourceUrl'].rstrip('/').split('/')[-1], product['sourceTitle'], product['sourceUrl'], at,
                 product_id=key, image_url=product['imageSourceUrl'], brand=product['brand'], price=product.get('observedPrice'), review_count=product['sourceReviewCount'], rating=product['sourceRating'])
+            mapped = db.execute('SELECT product_id FROM listings WHERE id=?', (listing_id,)).fetchone()[0]
+            if mapped not in (None, key):
+                raise ValueError('An approved listing is already linked to a different product.')
+            # Approval is the explicit matching step; collection itself leaves candidates unlinked.
+            db.execute('UPDATE listings SET product_id=? WHERE id=?', (key, listing_id))
             profile = {field: value for field, value in product.items() if field not in {'imageData', 'reviews', 'reviewAnalysis'}}
             db.execute('INSERT INTO public_product_profiles VALUES(?,?,?,?) ON CONFLICT(product_id) DO UPDATE SET profile_json=excluded.profile_json,position=excluded.position', (key, listing_id, position, json.dumps(profile, ensure_ascii=False)))
             versions = {}

@@ -17,7 +17,7 @@ from data_store import digest, dumps, now, run, upsert_listing, upsert_review
 from naver_sources import canonical_blog, plain, upsert_document
 
 COOLDOWN_SECONDS = 6 * 60 * 60
-DAILY_REQUEST_LIMIT = 6  # Prototype budget shared by both commands, not a platform quota.
+DAILY_REQUEST_LIMIT = 24  # Bounded research budget shared by both commands, not a platform quota.
 
 
 def validate_url(url, kind):
@@ -95,6 +95,24 @@ class ProductMeta(HTMLParser):
             self.values[attrs.get('property', attrs.get('name', ''))] = attrs.get('content', '')
 
 
+class ReviewBody(HTMLParser):
+    """Decode HTML while preserving spelling, punctuation and internal whitespace."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag in {'br', 'p', 'div', 'li'}:
+            self.parts.append('\n')
+
+    def handle_endtag(self, tag):
+        if tag in {'p', 'div', 'li'}:
+            self.parts.append('\n')
+
+    def handle_data(self, text):
+        self.parts.append(text)
+
+
 def parse_product(body):
     page = body.decode('utf-8')
     meta = ProductMeta()
@@ -117,9 +135,10 @@ def parse_product(body):
         if not rid or not text or not plain(text[1]):
             skipped += 1
             continue
-        # Same HTML/whitespace normalization as the original import; no paraphrasing.
+        parser = ReviewBody()
+        parser.feed(text[1])
         clean = lambda value: re.sub(r'\s+', ' ', unescape(re.sub(r'<[^>]+>', ' ', value))).strip()
-        reviews.append({'id': rid[1], 'body': clean(text[1]), 'author': clean(author[1]) if author else None,
+        reviews.append({'id': rid[1], 'body': ''.join(parser.parts).strip(), 'author': clean(author[1]) if author else None,
                         'rating': int(rating[1]) if rating else None})
     return {'title': title.removeprefix('[11번가] '), 'image': image,
             'price': number(r'할인모음가:\s*([\d,]+)', int),
@@ -160,11 +179,12 @@ def persist_snapshot(db, kind, body, target, at):
 
 
 def collect_public(db, db_path, config, kind, max_requests=3, delay=1.1):
-    if kind not in {'blogs', 'products'} or not 1 <= max_requests <= 3 or delay < 1:
-        raise ValueError('Choose blogs/products, 1–3 requests, and a delay of at least 1 second.')
+    limit = 3 if kind == 'blogs' else 12
+    if kind not in {'blogs', 'products'} or not 1 <= max_requests <= limit or delay < 1:
+        raise ValueError('Choose up to 3 blog feeds or 12 product pages and a delay of at least 1 second.')
     targets = config.get(kind, [])
-    if not isinstance(targets, list) or not 1 <= len(targets) <= 3:
-        raise ValueError('Choose 1–3 explicit targets for this public pilot.')
+    if not isinstance(targets, list) or not 1 <= len(targets) <= limit:
+        raise ValueError('Choose up to 3 explicit RSS feeds or 12 product URLs.')
     for target in targets:
         if not isinstance(target, dict) or not isinstance(target.get('url'), str):
             raise ValueError('Each public target requires a URL.')
