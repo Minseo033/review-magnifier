@@ -268,7 +268,11 @@ a{ text-underline-offset:4px }
 .save-button{top:8px;right:8px;width:44px;height:44px;background:#fff;border:1px solid #e2e8e4;border-radius:50%;z-index:2}
 .save-button .icon{width:21px;height:21px}.save-button[aria-pressed=true]{background:var(--color-brand-soft);border-color:#b7cdbf}
 .product-copy{display:flex;flex-direction:column;flex:1;padding-top:14px;min-width:0}
-.product-brand{font-size:12px;color:var(--color-muted);margin-bottom:4px}
+.product-brand{font-size:12px;color:var(--color-muted);margin-bottom:4px;display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.platform-badge{display:inline-flex;align-items:center;font-size:10px;font-weight:600;padding:1px 5px;border-radius:4px;line-height:1.4}
+.platform-naver{background:#edf8f1;color:#028a3d;border:1px solid #c2e9d2}
+.platform-coupang{background:#fdf2f2;color:#cb1400;border:1px solid #f9cccc}
+.platform-11st{background:#fef2f4;color:#de1738;border:1px solid #f9ccd3}
 .product-name-button{display:block}.product-name-button h2{font-size:17px;font-weight:700;line-height:1.45;letter-spacing:-.35px;min-height:2.9em}
 .product-card:hover .product-name-button h2{color:var(--color-brand)}
 .review-preview{display:flex;flex-direction:column;flex:1;min-height:0;padding:12px 14px;margin-top:10px;border-radius:10px;background:#f8faf8;border:1px solid #e8edea;transition:background-color 160ms ease,border-color 160ms ease}

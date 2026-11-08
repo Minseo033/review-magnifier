@@ -5665,6 +5665,1906 @@
           }
         ]
       }
+    },
+    "manyo-cleansing": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410001",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410002",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "90410003",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410004",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410005",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410006",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410007",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410008",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410001",
+          "text": "코 롤링하면 피지가 쏙 빠져나와요",
+          "topicId": "cleaning"
+        },
+        {
+          "sourceReviewId": "90410002",
+          "text": "사용 후 입구 티슈로 닦아줘야 깔끔",
+          "topicId": "care"
+        },
+        {
+          "sourceReviewId": "90410003",
+          "text": "미온수 닿으면 잔여감 없이 씻겨요",
+          "topicId": "cleaning"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "cleaning",
+            "label": "유화 세정력",
+            "description": "모공 속 피지와 메이크업을 녹여내는 유화력"
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "펌프 관리",
+            "description": "펌프 입구 오일 맺힘 현상"
+          }
+        ]
+      }
+    },
+    "cosrx-snail": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410011",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410012",
+          "positive": [
+            "moisture"
+          ],
+          "negative": [
+            "texture"
+          ]
+        },
+        {
+          "sourceReviewId": "90410013",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410014",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410015",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410016",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410017",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410018",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410011",
+          "text": "흡수되면 피부결 깐달걀처럼 매끄러움",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "90410012",
+          "text": "점액처럼 늘어나 톡톡 두드려 흡수",
+          "topicId": "texture"
+        },
+        {
+          "sourceReviewId": "90410013",
+          "text": "뒤집어졌을 때 바르면 붉은기 진정",
+          "topicId": "moisture"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "moisture",
+            "label": "수분 탄력",
+            "description": "피부 장벽을 채워주는 쫀쫀한 수분감"
+          }
+        ],
+        "negative": [
+          {
+            "id": "texture",
+            "label": "점성 제형",
+            "description": "점액질 특유의 미끈하고 늘어나는 점도"
+          }
+        ]
+      }
+    },
+    "aestura-atobarrier": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410021",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410022",
+          "positive": [
+            "moisture"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "90410023",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410024",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410025",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410026",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410027",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410028",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410021",
+          "text": "문지르면 하얀 알갱이 부드럽게 녹음",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "90410022",
+          "text": "지성 피부는 소량만 덜어 발라야",
+          "topicId": "option"
+        },
+        {
+          "sourceReviewId": "90410023",
+          "text": "사무실 히터 바람에도 당김 없어요",
+          "topicId": "moisture"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "moisture",
+            "label": "장벽 보습",
+            "description": "세라마이드 캡슐이 녹아 차오르는 깊은 보습"
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "피부 타입",
+            "description": "지성 피부 한여름철 유분감 주의"
+          }
+        ]
+      }
+    },
+    "mediheal-teatree": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410031",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410032",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "scent"
+          ]
+        },
+        {
+          "sourceReviewId": "90410033",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410034",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410035",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410036",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410037",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410038",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410031",
+          "text": "자기 전 붙이면 다음날 붉은기 잡힘",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "90410032",
+          "text": "티트리 박하 느낌 향이 살짝 강함",
+          "topicId": "scent"
+        },
+        {
+          "sourceReviewId": "90410033",
+          "text": "대나무 시트라 피부에 착 달라붙음",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "피부 진정",
+            "description": "붉은 뾰루지와 열감을 식히는 쿨링 진정"
+          }
+        ],
+        "negative": [
+          {
+            "id": "scent",
+            "label": "티트리 향",
+            "description": "특유의 알싸하고 시원한 허브 향"
+          }
+        ]
+      }
+    },
+    "d-alba-mist": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410041",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410042",
+          "positive": [
+            "moisture"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "90410043",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410044",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410045",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410046",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410047",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410048",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410041",
+          "text": "뿌리자마자 은은한 물광이 돌아요",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "90410042",
+          "text": "반드시 서너 번 흔들고 뿌려야 함",
+          "topicId": "care"
+        },
+        {
+          "sourceReviewId": "90410047",
+          "text": "물 미스트와 달리 마르지 않고 촉촉",
+          "topicId": "moisture"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "moisture",
+            "label": "오일 보습광",
+            "description": "오일과 수분이 어우러진 깊은 수분 광채"
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "흔들어 사용",
+            "description": "사용 전 오일층 흔들기 필요"
+          }
+        ]
+      }
+    },
+    "cnp-propolis": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410051",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410052",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "value"
+          ]
+        },
+        {
+          "sourceReviewId": "90410053",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410054",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410055",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410056",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410057",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410058",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410051",
+          "text": "파데에 섞어 바르면 피부 꿀광 연출",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "90410052",
+          "text": "듬뿍 바르면 한 달 반에 바닥 보여요",
+          "topicId": "value"
+        },
+        {
+          "sourceReviewId": "90410054",
+          "text": "영양 앰플인데 겉돌지 않고 스며듦",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "영양 광채",
+            "description": "피부에 도는 쫀쫀한 꿀광 윤기와 탄력"
+          }
+        ],
+        "negative": [
+          {
+            "id": "value",
+            "label": "용량 대비 가격",
+            "description": "매일 사용 시 다소 빠른 소진"
+          }
+        ]
+      }
+    },
+    "isoi-blemish": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410061",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410062",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "scent"
+          ]
+        },
+        {
+          "sourceReviewId": "90410063",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410064",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410065",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410066",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410067",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410068",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410061",
+          "text": "꾸준히 바르니 여드름 흉터 옅어져요",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "90410062",
+          "text": "천연 생장미 향이 꽤 진한 편이에요",
+          "topicId": "scent"
+        },
+        {
+          "sourceReviewId": "90410063",
+          "text": "미백 세럼인데 따갑지 않고 촉촉",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "잡티 흔적 개선",
+            "description": "여드름 자국과 색소침착 완화"
+          }
+        ],
+        "negative": [
+          {
+            "id": "scent",
+            "label": "로즈 향",
+            "description": "불가리안 로즈 특유의 진한 천연 장미 향"
+          }
+        ]
+      }
+    },
+    "clio-kill-cover": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410071",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410072",
+          "positive": [
+            "fit"
+          ],
+          "negative": [
+            "texture"
+          ]
+        },
+        {
+          "sourceReviewId": "90410073",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410074",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410075",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410076",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410077",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410078",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410071",
+          "text": "한 번 찍으면 홍조 기미 싹 지워짐",
+          "topicId": "fit"
+        },
+        {
+          "sourceReviewId": "90410072",
+          "text": "기초 크림 충분히 흡수시켜야 안 뜸",
+          "topicId": "texture"
+        },
+        {
+          "sourceReviewId": "90410073",
+          "text": "모공 끼임 없이 매끈하게 블러 처리",
+          "topicId": "fit"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "fit",
+            "label": "밀착 커버",
+            "description": "잡티와 모공을 얇게 가려주는 강력한 커버"
+          }
+        ],
+        "negative": [
+          {
+            "id": "texture",
+            "label": "세미매트",
+            "description": "건조한 피부 기초 부족 시 매트한 들뜸"
+          }
+        ]
+      }
+    },
+    "romand-juicy": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410081",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410082",
+          "positive": [
+            "color"
+          ],
+          "negative": [
+            "lasting"
+          ]
+        },
+        {
+          "sourceReviewId": "90410083",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410084",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410085",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410086",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410087",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410088",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410081",
+          "text": "바르고 1분 지나면 유리알 광택 차오름",
+          "topicId": "color"
+        },
+        {
+          "sourceReviewId": "90410082",
+          "text": "착색 남지만 광택은 다시 얹어줘야",
+          "topicId": "lasting"
+        },
+        {
+          "sourceReviewId": "90410083",
+          "text": "차분한 핑크라 민낯에도 정말 예쁨",
+          "topicId": "color"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "color",
+            "label": "과즙 광택 발색",
+            "description": "맑고 투명하게 차오르는 시럽 광택"
+          }
+        ],
+        "negative": [
+          {
+            "id": "lasting",
+            "label": "광택 지속",
+            "description": "식사 후 표면 광택 리터치 필요"
+          }
+        ]
+      }
+    },
+    "banila-co-clean": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410091",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410092",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "90410093",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410094",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410095",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410096",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410097",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410098",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410091",
+          "text": "팔꿈치로 흘러내리지 않아 너무 편함",
+          "topicId": "cleaning"
+        },
+        {
+          "sourceReviewId": "90410092",
+          "text": "단지에 물 들어가지 않게 조심해야",
+          "topicId": "care"
+        },
+        {
+          "sourceReviewId": "90410094",
+          "text": "워터프루프 마스카라 문지르면 싹 녹음",
+          "topicId": "cleaning"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "cleaning",
+            "label": "원스텝 세정",
+            "description": "포인트 메이크업까지 말끔하게 녹여내는 밤"
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "단지 관리",
+            "description": "물기 닿지 않도록 스패출러 사용"
+          }
+        ]
+      }
+    },
+    "innisfree-clay": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410101",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410102",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": [
+            "texture"
+          ]
+        },
+        {
+          "sourceReviewId": "90410103",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410104",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410105",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410106",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410107",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410108",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410101",
+          "text": "주 1회 팩하면 코 번들거림 사라짐",
+          "topicId": "cleaning"
+        },
+        {
+          "sourceReviewId": "90410102",
+          "text": "마르면 씻기 뻑뻑해 스펀지 권장",
+          "topicId": "texture"
+        },
+        {
+          "sourceReviewId": "90410103",
+          "text": "바르면 시원한 쿨링감 돌아 모공 쪼임",
+          "topicId": "cleaning"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "cleaning",
+            "label": "피지 흡착",
+            "description": "모공 속 피지와 번들거림을 잡아주는 흡착력"
+          }
+        ],
+        "negative": [
+          {
+            "id": "texture",
+            "label": "세안 불림",
+            "description": "마른 클레이 세안 시 꼼꼼한 롤링"
+          }
+        ]
+      }
+    },
+    "bioderma-sensibio": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410111",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410112",
+          "positive": [
+            "comfort"
+          ],
+          "negative": [
+            "box"
+          ]
+        },
+        {
+          "sourceReviewId": "90410113",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410114",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410115",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410116",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410117",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410118",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410111",
+          "text": "피부 뒤집어졌을 때도 자극 없이 편안",
+          "topicId": "comfort"
+        },
+        {
+          "sourceReviewId": "90410112",
+          "text": "뚜껑 캡 눌려 배송 중 약간 샘",
+          "topicId": "box"
+        },
+        {
+          "sourceReviewId": "90410113",
+          "text": "눈 메이크업 지울 때 눈 시림 제로",
+          "topicId": "comfort"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "comfort",
+            "label": "저자극 세정",
+            "description": "눈 시림이나 붉어짐 없는 순한 물 제형"
+          }
+        ],
+        "negative": [
+          {
+            "id": "box",
+            "label": "용기 배송",
+            "description": "대용량 용기 뚜껑 틈새 누수 주의"
+          }
+        ]
+      }
+    },
+    "skin1004-ampoule": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410121",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410122",
+          "positive": [
+            "comfort"
+          ],
+          "negative": [
+            "moisture"
+          ]
+        },
+        {
+          "sourceReviewId": "90410123",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410124",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410125",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410126",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410127",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410128",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410121",
+          "text": "홍조 심할 때 바르면 시원하게 진정",
+          "topicId": "comfort"
+        },
+        {
+          "sourceReviewId": "90410122",
+          "text": "물 제형이라 뒤에 수분크림 필수",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "90410123",
+          "text": "첨가물 없는 단일 성분이라 안심",
+          "topicId": "comfort"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "comfort",
+            "label": "순수 진정",
+            "description": "병풀 추출물 단일 성분의 자극 없는 진정"
+          }
+        ],
+        "negative": [
+          {
+            "id": "moisture",
+            "label": "단독 보습",
+            "description": "가벼운 워터 제형으로 크림 보완 필요"
+          }
+        ]
+      }
+    },
+    "goodal-vitamin-c": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410131",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410132",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "scent"
+          ]
+        },
+        {
+          "sourceReviewId": "90410133",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410134",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410135",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410136",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410137",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410138",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410131",
+          "text": "2주 바르니 안색 화사하게 톤업됨",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "90410132",
+          "text": "상큼한 감귤 향 선호도 차이 있음",
+          "topicId": "scent"
+        },
+        {
+          "sourceReviewId": "90410133",
+          "text": "비타민인데 자극이나 따가움 없음",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "피부 톤업",
+            "description": "칙칙한 피부 톤과 기미 완화"
+          }
+        ],
+        "negative": [
+          {
+            "id": "scent",
+            "label": "시트러스 향",
+            "description": "상큼한 청귤 시트러스 원료 향"
+          }
+        ]
+      }
+    },
+    "abib-gummy": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410141",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410142",
+          "positive": [
+            "fit"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "90410143",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410144",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410145",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410146",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410147",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410148",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410141",
+          "text": "붙이고 움직여도 턱 밑 안 떨어짐",
+          "topicId": "fit"
+        },
+        {
+          "sourceReviewId": "90410142",
+          "text": "에센스 흘러 세면대서 뜯어야 함",
+          "topicId": "care"
+        },
+        {
+          "sourceReviewId": "90410143",
+          "text": "열감 나고 좁쌀 날 때 싹 가라앉음",
+          "topicId": "fit"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "fit",
+            "label": "초밀착 시트",
+            "description": "피부에 빈틈없이 감기는 극세사 원단"
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "에센스 용량",
+            "description": "에센스가 많아 개봉 시 흐름"
+          }
+        ]
+      }
+    },
+    "urbandecay-setter": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410151",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410152",
+          "positive": [
+            "lasting"
+          ],
+          "negative": [
+            "scent"
+          ]
+        },
+        {
+          "sourceReviewId": "90410153",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410154",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410155",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410156",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410157",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410158",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410151",
+          "text": "아침에 한 화장이 밤까지 유지돼요",
+          "topicId": "lasting"
+        },
+        {
+          "sourceReviewId": "90410152",
+          "text": "특유의 원료 냄새는 마르면 날아감",
+          "topicId": "scent"
+        },
+        {
+          "sourceReviewId": "90410153",
+          "text": "콘서트 땀 흘려도 화장 안 무너짐",
+          "topicId": "lasting"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "lasting",
+            "label": "메이크업 고정",
+            "description": "땀과 유분에도 무너지지 않는 픽싱력"
+          }
+        ],
+        "negative": [
+          {
+            "id": "scent",
+            "label": "특유의 향",
+            "description": "원료 특유의 마르기 전 향"
+          }
+        ]
+      }
+    },
+    "hera-black-cushion": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410161",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410162",
+          "positive": [
+            "fit"
+          ],
+          "negative": [
+            "value"
+          ]
+        },
+        {
+          "sourceReviewId": "90410163",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410164",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410165",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410166",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410167",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410168",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410161",
+          "text": "얇게 발려 피부가 도자기처럼 매끈",
+          "topicId": "fit"
+        },
+        {
+          "sourceReviewId": "90410162",
+          "text": "가격대는 있지만 피부 표현 돈값 함",
+          "topicId": "value"
+        },
+        {
+          "sourceReviewId": "90410163",
+          "text": "저녁까지 잿빛 다크닝 없이 화사",
+          "topicId": "fit"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "fit",
+            "label": "고급스러운 밀착",
+            "description": "모공 부각 없는 얇고 세련된 벨벳 피니시"
+          }
+        ],
+        "negative": [
+          {
+            "id": "value",
+            "label": "가격대",
+            "description": "로드샵 대비 높은 본품 리필 가격"
+          }
+        ]
+      }
+    },
+    "sulwhasoo-first": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410171",
+          "positive": [
+            "absorb"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410172",
+          "positive": [
+            "absorb"
+          ],
+          "negative": [
+            "value"
+          ]
+        },
+        {
+          "sourceReviewId": "90410173",
+          "positive": [
+            "absorb"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410174",
+          "positive": [
+            "absorb"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410175",
+          "positive": [
+            "absorb"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410176",
+          "positive": [
+            "absorb"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410177",
+          "positive": [
+            "absorb"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410178",
+          "positive": [
+            "absorb"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410171",
+          "text": "세안 후 바르면 싹 먹어 들어감",
+          "topicId": "absorb"
+        },
+        {
+          "sourceReviewId": "90410172",
+          "text": "가격 비싸지만 면세 찬스 때 쟁임",
+          "topicId": "value"
+        },
+        {
+          "sourceReviewId": "90410173",
+          "text": "다음 단계 크림 깊숙이 쏙 들어감",
+          "topicId": "absorb"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "absorb",
+            "label": "부스팅 흡수",
+            "description": "세안 후 첫 단계에서 다음 스킨케어를 돕는 흡수력"
+          }
+        ],
+        "negative": [
+          {
+            "id": "value",
+            "label": "정가 가격",
+            "description": "프리미엄 안티에이징 단가"
+          }
+        ]
+      }
+    },
+    "espoir-cushion": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410181",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410182",
+          "positive": [
+            "fit"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "90410183",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410184",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410185",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410186",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410187",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410188",
+          "positive": [
+            "fit"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410181",
+          "text": "프라이머 없이도 나비존 매끈하게 가림",
+          "topicId": "fit"
+        },
+        {
+          "sourceReviewId": "90410182",
+          "text": "약간 밝게 나와 호수 확인 필요",
+          "topicId": "option"
+        },
+        {
+          "sourceReviewId": "90410183",
+          "text": "커버력 뛰어난데 텁텁함 없이 얇음",
+          "topicId": "fit"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "fit",
+            "label": "파워 벨벳 커버",
+            "description": "모공 끼임 없이 얇게 발리는 강력한 커버"
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "컬러 홋수",
+            "description": "기존 호수 대비 반 톤 밝은 색감"
+          }
+        ]
+      }
+    },
+    "missha-time-revolution": {
+      "reviews": [
+        {
+          "sourceReviewId": "90410191",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410192",
+          "positive": [
+            "moisture"
+          ],
+          "negative": [
+            "texture"
+          ]
+        },
+        {
+          "sourceReviewId": "90410193",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410194",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410195",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410196",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410197",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "90410198",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "90410191",
+          "text": "새벽에 자도 피부는 뽀송탱탱해요",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "90410192",
+          "text": "지성 피부는 여름에 밤에만 바름",
+          "topicId": "texture"
+        },
+        {
+          "sourceReviewId": "90410193",
+          "text": "외제 고가 앰플 안 부러운 가성비",
+          "topicId": "moisture"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "moisture",
+            "label": "숙면 영양 탄력",
+            "description": "자고 일어났을 때 탱탱해진 영양감"
+          }
+        ],
+        "negative": [
+          {
+            "id": "texture",
+            "label": "영양감 무게",
+            "description": "지성 피부 기준 여름철 유분 지속"
+          }
+        ]
+      }
     }
   }
 }
