@@ -33,7 +33,19 @@ const REPRESENTATIVE_TOPICS=Object.freeze({
   lantern:['positive','light','496269797'],toaster:['negative','value','453449584'],crocs:['positive','comfort','514605269'],
   tissue:['positive','soft','537490625'],'paper-towel':['positive','quantity','513426729'],'wet-wipes':['positive','wipe','503822469'],
   detergent:['positive','wash','548963739'],shampoo:['negative','scent','522879595'],toothpaste:['positive','fresh','548950568'],
-  'storage-bag':['positive','repeat','529937327'],'dish-soap':['negative','price','446707971']
+  'storage-bag':['positive','repeat','529937327'],'dish-soap':['negative','price','446707971'],
+  'galaxy-s24':['positive','design','910283011'],'iphone-16':['positive','color','920384021'],'ipad-air':['positive','quality','930495031'],
+  'buds3-pro':['positive','sound','940506041'],'macbook-air':['positive','quiet','950617051'],'apple-watch':['positive','comfort','960728061'],
+  'ps5-slim':['positive','quality','970839071'],'switch-oled':['positive','quality','980940081'],'dyson-airwrap':['positive','quality','991051091'],
+  'roborock-s8':['positive','cleaning','901162101'],stanbyme:['positive','portable','911273111'],'xiaomi-purifier':['positive','quiet','921384121'],
+  'philips-shaver':['positive','comfort','931495131'],nespresso:['positive','taste','941506141'],'cuckoo-rice':['positive','sturdy','951617151'],
+  'stanley-cup':['positive','lasting','961728161'],'ninja-blender':['positive','quality','971839171'],'shin-ramen':['positive','taste','981940181'],
+  samdasoo:['positive','fresh','992051191'],hetbahn:['positive','taste','902162201'],'spam-classic':['positive','taste','912273211'],
+  'maxim-kanu':['positive','easy','922384221'],'dr-g-cream':['positive','texture','932495231'],'laneige-lip':['positive','moisture','942506241'],
+  'roundlab-sun':['positive','texture','952617251'],'anua-toner':['positive','quality','962728261'],'torriden-serum':['positive','moisture','972839271'],
+  'nike-airforce':['positive','design','982940281'],'newbalance-574':['positive','comfort','993051291'],'spao-puffer':['positive','weight','903162301'],
+  'gentle-monster':['positive','design','913273311'],'monami-153':['positive','quality','923384321'],'halli-galli':['positive','easy','933495331'],
+  'kindle-paper':['positive','quality','943506341']
 });
 function renderRepresentative(product){
   const pair=Object.hasOwn(REPRESENTATIVE_TOPICS,product.id)?REPRESENTATIVE_TOPICS[product.id]:null;

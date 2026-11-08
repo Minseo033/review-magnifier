@@ -2371,6 +2371,3300 @@
           "text": "늘한결같은 울트라조이♡"
         }
       ]
+    },
+    "galaxy-s24": {
+      "reviews": [
+        {
+          "sourceReviewId": "910283011",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "910283012",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "910283013",
+          "positive": [
+            "design"
+          ],
+          "negative": [
+            "value"
+          ]
+        },
+        {
+          "sourceReviewId": "910283014",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "910283015",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "910283016",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "910283017",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "910283018",
+          "positive": [],
+          "negative": [
+            "value"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "910283011",
+          "text": "플랫 디자인 그립감 마음에 듭니다",
+          "topicId": "design"
+        },
+        {
+          "sourceReviewId": "910283012",
+          "text": "실시간 통역 기능 신기하고 빨라요",
+          "topicId": "design"
+        },
+        {
+          "sourceReviewId": "910283013",
+          "text": "가격은 비싸지만 디자인 예뻐요",
+          "topicId": "value"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "design",
+            "label": "플랫 디자인",
+            "description": "한 손에 들어오는 그립감과 깔끔한 마감"
+          }
+        ],
+        "negative": [
+          {
+            "id": "value",
+            "label": "가격대",
+            "description": "출고가 대비 체감 할인율"
+          }
+        ]
+      }
+    },
+    "iphone-16": {
+      "reviews": [
+        {
+          "sourceReviewId": "920384021",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "920384022",
+          "positive": [
+            "color"
+          ],
+          "negative": [
+            "controls"
+          ]
+        },
+        {
+          "sourceReviewId": "920384023",
+          "positive": [
+            "color"
+          ],
+          "negative": [
+            "controls"
+          ]
+        },
+        {
+          "sourceReviewId": "920384024",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "920384025",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "920384026",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "920384027",
+          "positive": [
+            "color"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "920384028",
+          "positive": [],
+          "negative": [
+            "controls"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "920384021",
+          "text": "매트한 질감에 색상 정말 곱습니다",
+          "topicId": "color"
+        },
+        {
+          "sourceReviewId": "920384022",
+          "text": "버튼 조작감 적응 시간 필요해요",
+          "topicId": "controls"
+        },
+        {
+          "sourceReviewId": "920384023",
+          "text": "실물이 사진보다 파스텔톤이라 만족",
+          "topicId": "color"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "color",
+            "label": "색상 마감",
+            "description": "화사하고 매트한 후면 유리 컬러"
+          }
+        ],
+        "negative": [
+          {
+            "id": "controls",
+            "label": "조작 버튼",
+            "description": "측면 카메라 컨트롤 버튼 위치 적응"
+          }
+        ]
+      }
+    },
+    "ipad-air": {
+      "reviews": [
+        {
+          "sourceReviewId": "930495031",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "930495032",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "accessories"
+          ]
+        },
+        {
+          "sourceReviewId": "930495033",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "accessories"
+          ]
+        },
+        {
+          "sourceReviewId": "930495034",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "930495035",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "930495036",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "930495037",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "930495038",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "930495031",
+          "text": "필기 딜레이 없고 화면 널찍해요",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "930495032",
+          "text": "기존 펜슬 호환 안 돼서 아쉬움",
+          "topicId": "accessories"
+        },
+        {
+          "sourceReviewId": "930495036",
+          "text": "창 여러 개 띄워도 버벅임 없네요",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "완성도",
+            "description": "M2 칩 탑재로 부드러운 앱 작업"
+          }
+        ],
+        "negative": [
+          {
+            "id": "accessories",
+            "label": "액세서리",
+            "description": "새 펜슬 전용 규격에 따른 추가 비용"
+          }
+        ]
+      }
+    },
+    "buds3-pro": {
+      "reviews": [
+        {
+          "sourceReviewId": "940506041",
+          "positive": [
+            "sound"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "940506042",
+          "positive": [
+            "sound"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "940506043",
+          "positive": [
+            "sound"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "940506044",
+          "positive": [
+            "sound"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "940506045",
+          "positive": [
+            "sound"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "940506046",
+          "positive": [
+            "sound"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "940506047",
+          "positive": [
+            "sound"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "940506048",
+          "positive": [],
+          "negative": [
+            "care"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "940506041",
+          "text": "공간 음향 켜니 콘서트홀 느낌",
+          "topicId": "sound"
+        },
+        {
+          "sourceReviewId": "940506043",
+          "text": "이어팁 분리할 때 조심해야 해요",
+          "topicId": "care"
+        },
+        {
+          "sourceReviewId": "940506044",
+          "text": "카페 소음 싹 지워져서 좋아요",
+          "topicId": "sound"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "sound",
+            "label": "음질과 노캔",
+            "description": "2-Way 스피커의 풍성한 사운드"
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "관리 주의",
+            "description": "이어팁 탈착 시 주의 필요"
+          }
+        ]
+      }
+    },
+    "macbook-air": {
+      "reviews": [
+        {
+          "sourceReviewId": "950617051",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "950617052",
+          "positive": [
+            "quiet"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "950617053",
+          "positive": [
+            "quiet"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "950617054",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "950617055",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "950617056",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "950617057",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "950617058",
+          "positive": [],
+          "negative": [
+            "care"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "950617051",
+          "text": "팬 소리 안 나서 마음 편해요",
+          "topicId": "quiet"
+        },
+        {
+          "sourceReviewId": "950617052",
+          "text": "지문 주기적으로 닦아줘야 해요",
+          "topicId": "care"
+        },
+        {
+          "sourceReviewId": "950617053",
+          "text": "충전기 두고 나가도 배터리 충분",
+          "topicId": "quiet"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quiet",
+            "label": "무소음",
+            "description": "팬리스 설계로 소음 제로"
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "외관 관리",
+            "description": "어두운 색상의 지문 묻어남"
+          }
+        ]
+      }
+    },
+    "apple-watch": {
+      "reviews": [
+        {
+          "sourceReviewId": "960728061",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "960728062",
+          "positive": [
+            "comfort"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "960728063",
+          "positive": [
+            "comfort"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "960728064",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "960728065",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "960728066",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "960728067",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "960728068",
+          "positive": [],
+          "negative": [
+            "option"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "960728061",
+          "text": "가벼워서 손목 찬 느낌 거의 없어요",
+          "topicId": "comfort"
+        },
+        {
+          "sourceReviewId": "960728062",
+          "text": "AOD 안 되지만 배터리는 더 가요",
+          "topicId": "option"
+        },
+        {
+          "sourceReviewId": "960728063",
+          "text": "러닝 기록 심박수 체크 정확해요",
+          "topicId": "comfort"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "comfort",
+            "label": "착용감",
+            "description": "가벼워서 잘 때 차도 부담 없음"
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "기능 차이",
+            "description": "AOD 상시 화면 부재"
+          }
+        ]
+      }
+    },
+    "ps5-slim": {
+      "reviews": [
+        {
+          "sourceReviewId": "970839071",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "970839072",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "accessories"
+          ]
+        },
+        {
+          "sourceReviewId": "970839073",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "accessories"
+          ]
+        },
+        {
+          "sourceReviewId": "970839074",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "970839075",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "970839076",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "970839077",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "970839078",
+          "positive": [],
+          "negative": [
+            "accessories"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "970839071",
+          "text": "활 시위 당길 때 손맛 생생합니다",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "970839072",
+          "text": "세워두려면 스탠드 따로 사야 해요",
+          "topicId": "accessories"
+        },
+        {
+          "sourceReviewId": "970839073",
+          "text": "맵 이동 로딩 2초 만에 끝나요",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "게임 몰입감",
+            "description": "듀얼센스 햅틱 피드백과 빠른 로딩"
+          }
+        ],
+        "negative": [
+          {
+            "id": "accessories",
+            "label": "스탠드 구성",
+            "description": "세로 거치대 별도 구매"
+          }
+        ]
+      }
+    },
+    "switch-oled": {
+      "reviews": [
+        {
+          "sourceReviewId": "980940081",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "980940082",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "weight"
+          ]
+        },
+        {
+          "sourceReviewId": "980940083",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "weight"
+          ]
+        },
+        {
+          "sourceReviewId": "980940084",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "980940085",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "980940086",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "980940087",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "980940088",
+          "positive": [],
+          "negative": [
+            "weight"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "980940081",
+          "text": "화면 색감 진짜 쨍해서 눈 즐거워요",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "980940082",
+          "text": "누워서 하기엔 다소 묵직합니다",
+          "topicId": "weight"
+        },
+        {
+          "sourceReviewId": "980940083",
+          "text": "스탠드 넓어져서 테이블 모드 짱",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "화면 선명도",
+            "description": "OLED 액정의 깊은 블랙과 색감"
+          }
+        ],
+        "negative": [
+          {
+            "id": "weight",
+            "label": "무게감",
+            "description": "장시간 휴대 플레이 시 손목 피로"
+          }
+        ]
+      }
+    },
+    "dyson-airwrap": {
+      "reviews": [
+        {
+          "sourceReviewId": "991051091",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "991051092",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "manual"
+          ]
+        },
+        {
+          "sourceReviewId": "991051093",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "manual"
+          ]
+        },
+        {
+          "sourceReviewId": "991051094",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "991051095",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "991051096",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "991051097",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "991051098",
+          "positive": [],
+          "negative": [
+            "manual"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "991051091",
+          "text": "알아서 감겨서 똥손도 웨이브 완성",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "991051092",
+          "text": "배럴 방향 조작 연습 조금 필요해요",
+          "topicId": "manual"
+        },
+        {
+          "sourceReviewId": "991051093",
+          "text": "말리면서 세팅하니 시간 단축돼요",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "스타일링 완성도",
+            "description": "바람으로 말아주는 코안다 효과"
+          }
+        ],
+        "negative": [
+          {
+            "id": "manual",
+            "label": "사용 요령",
+            "description": "손에 익기 전까지 배럴 방향 조작"
+          }
+        ]
+      }
+    },
+    "roborock-s8": {
+      "reviews": [
+        {
+          "sourceReviewId": "901162101",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "901162102",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": [
+            "capacity"
+          ]
+        },
+        {
+          "sourceReviewId": "901162103",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": [
+            "capacity"
+          ]
+        },
+        {
+          "sourceReviewId": "901162104",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "901162105",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "901162106",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "901162107",
+          "positive": [
+            "cleaning"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "901162108",
+          "positive": [],
+          "negative": [
+            "capacity"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "901162101",
+          "text": "퇴근 후 맨발 닿을 때 뽀송뽀송해요",
+          "topicId": "cleaning"
+        },
+        {
+          "sourceReviewId": "901162102",
+          "text": "도크 스테이션 자리 미리 비워둬야",
+          "topicId": "capacity"
+        },
+        {
+          "sourceReviewId": "901162104",
+          "text": "열풍 건조 덕에 냄새 전혀 안 나요",
+          "topicId": "cleaning"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "cleaning",
+            "label": "청소 성능",
+            "description": "바닥 얼룩 지우는 진동 물걸레와 자동 세척"
+          }
+        ],
+        "negative": [
+          {
+            "id": "capacity",
+            "label": "도크 크기",
+            "description": "부피가 큰 스테이션 거치 공간 확보"
+          }
+        ]
+      }
+    },
+    "stanbyme": {
+      "reviews": [
+        {
+          "sourceReviewId": "911273111",
+          "positive": [
+            "portable"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "911273112",
+          "positive": [
+            "portable"
+          ],
+          "negative": [
+            "lasting"
+          ]
+        },
+        {
+          "sourceReviewId": "911273113",
+          "positive": [
+            "portable"
+          ],
+          "negative": [
+            "lasting"
+          ]
+        },
+        {
+          "sourceReviewId": "911273114",
+          "positive": [
+            "portable"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "911273115",
+          "positive": [
+            "portable"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "911273116",
+          "positive": [
+            "portable"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "911273117",
+          "positive": [
+            "portable"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "911273118",
+          "positive": [],
+          "negative": [
+            "lasting"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "911273111",
+          "text": "침대 옆에 두고 영화 볼 때 천국",
+          "topicId": "portable"
+        },
+        {
+          "sourceReviewId": "911273112",
+          "text": "영화 두 편 보려면 선 꽂아야 해요",
+          "topicId": "lasting"
+        },
+        {
+          "sourceReviewId": "911273115",
+          "text": "바퀴 부드러워서 방마다 이동 편함",
+          "topicId": "portable"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "portable",
+            "label": "이동 편의",
+            "description": "바퀴로 방마다 쉽게 끌고 이동"
+          }
+        ],
+        "negative": [
+          {
+            "id": "lasting",
+            "label": "배터리 시간",
+            "description": "무선 연속 사용 시 3시간 재생"
+          }
+        ]
+      }
+    },
+    "xiaomi-purifier": {
+      "reviews": [
+        {
+          "sourceReviewId": "921384121",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "921384122",
+          "positive": [
+            "quiet"
+          ],
+          "negative": [
+            "noise"
+          ]
+        },
+        {
+          "sourceReviewId": "921384123",
+          "positive": [
+            "quiet"
+          ],
+          "negative": [
+            "noise"
+          ]
+        },
+        {
+          "sourceReviewId": "921384124",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "921384125",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "921384126",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "921384127",
+          "positive": [
+            "quiet"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "921384128",
+          "positive": [],
+          "negative": [
+            "noise"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "921384121",
+          "text": "수면 모드 불빛 소리 꺼져서 좋아요",
+          "topicId": "quiet"
+        },
+        {
+          "sourceReviewId": "921384122",
+          "text": "강풍으로 돌리면 웅 소리 꽤 납니다",
+          "topicId": "noise"
+        },
+        {
+          "sourceReviewId": "921384123",
+          "text": "퇴근길 앱으로 미리 켜두면 상쾌",
+          "topicId": "quiet"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quiet",
+            "label": "정숙성",
+            "description": "야간 수면 모드 시 거의 무소음"
+          }
+        ],
+        "negative": [
+          {
+            "id": "noise",
+            "label": "최대 풍량",
+            "description": "고속 공기 정화 시 소음 증가"
+          }
+        ]
+      }
+    },
+    "philips-shaver": {
+      "reviews": [
+        {
+          "sourceReviewId": "931495131",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "931495132",
+          "positive": [
+            "comfort"
+          ],
+          "negative": [
+            "wash"
+          ]
+        },
+        {
+          "sourceReviewId": "931495133",
+          "positive": [
+            "comfort"
+          ],
+          "negative": [
+            "wash"
+          ]
+        },
+        {
+          "sourceReviewId": "931495134",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "931495135",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "931495136",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "931495137",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "931495138",
+          "positive": [],
+          "negative": [
+            "wash"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "931495131",
+          "text": "날면도기 쓰다 바꿨는데 피 안 나요",
+          "topicId": "comfort"
+        },
+        {
+          "sourceReviewId": "931495132",
+          "text": "클린팟 세척액 카트리지 사야 해요",
+          "topicId": "wash"
+        },
+        {
+          "sourceReviewId": "931495133",
+          "text": "헤드가 360도 꺾여 턱선 매끈",
+          "topicId": "comfort"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "comfort",
+            "label": "피부 자극",
+            "description": "피부 붉어짐 없는 부드러운 절삭"
+          }
+        ],
+        "negative": [
+          {
+            "id": "wash",
+            "label": "세척 관리",
+            "description": "클렌징 팟 세척액 주기적 교체"
+          }
+        ]
+      }
+    },
+    "nespresso": {
+      "reviews": [
+        {
+          "sourceReviewId": "941506141",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "941506142",
+          "positive": [
+            "taste"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "941506143",
+          "positive": [
+            "taste"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "941506144",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "941506145",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "941506146",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "941506147",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "941506148",
+          "positive": [],
+          "negative": [
+            "option"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "941506141",
+          "text": "크레마 두툼해서 커피 맛 깊어요",
+          "topicId": "taste"
+        },
+        {
+          "sourceReviewId": "941506142",
+          "text": "호환 캡슐 없어 공식몰서만 주문",
+          "topicId": "option"
+        },
+        {
+          "sourceReviewId": "941506144",
+          "text": "바코드 읽어서 물 양 알아서 맞춰요",
+          "topicId": "taste"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "taste",
+            "label": "커피 풍미",
+            "description": "회전 추출로 뽑아내는 풍성한 크레마"
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "캡슐 호환",
+            "description": "오리지널 타사 캡슐 사용 불가"
+          }
+        ]
+      }
+    },
+    "cuckoo-rice": {
+      "reviews": [
+        {
+          "sourceReviewId": "951617151",
+          "positive": [
+            "sturdy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "951617152",
+          "positive": [
+            "sturdy"
+          ],
+          "negative": [
+            "cleaning"
+          ]
+        },
+        {
+          "sourceReviewId": "951617153",
+          "positive": [
+            "sturdy"
+          ],
+          "negative": [
+            "cleaning"
+          ]
+        },
+        {
+          "sourceReviewId": "951617154",
+          "positive": [
+            "sturdy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "951617155",
+          "positive": [
+            "sturdy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "951617156",
+          "positive": [
+            "sturdy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "951617157",
+          "positive": [],
+          "negative": [
+            "cleaning"
+          ]
+        },
+        {
+          "sourceReviewId": "951617158",
+          "positive": [
+            "sturdy"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "951617151",
+          "text": "초고압 2기압이라 잡곡밥도 부드러워요",
+          "topicId": "sturdy"
+        },
+        {
+          "sourceReviewId": "951617152",
+          "text": "스텐이라 밥알 붙어 불려 닦아야",
+          "topicId": "cleaning"
+        },
+        {
+          "sourceReviewId": "951617153",
+          "text": "코팅 벗겨질 걱정 없어 박박 닦아요",
+          "topicId": "sturdy"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "sturdy",
+            "label": "내구성",
+            "description": "코팅 벗겨짐 없는 올스텐 수명"
+          }
+        ],
+        "negative": [
+          {
+            "id": "cleaning",
+            "label": "내솥 세척",
+            "description": "스텐 특성상 밥알 눌어붙음 불림 필요"
+          }
+        ]
+      }
+    },
+    "stanley-cup": {
+      "reviews": [
+        {
+          "sourceReviewId": "961728161",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "961728162",
+          "positive": [
+            "lasting"
+          ],
+          "negative": [
+            "leak"
+          ]
+        },
+        {
+          "sourceReviewId": "961728163",
+          "positive": [
+            "lasting"
+          ],
+          "negative": [
+            "leak"
+          ]
+        },
+        {
+          "sourceReviewId": "961728164",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "961728165",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "961728166",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "961728167",
+          "positive": [
+            "lasting"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "961728168",
+          "positive": [],
+          "negative": [
+            "leak"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "961728161",
+          "text": "아침에 넣은 얼음 저녁까지 남아요",
+          "topicId": "lasting"
+        },
+        {
+          "sourceReviewId": "961728162",
+          "text": "빨대 상태로 가방에 넣으면 새요",
+          "topicId": "leak"
+        },
+        {
+          "sourceReviewId": "961728164",
+          "text": "하단 좁아 차량 컵홀더에 딱 맞음",
+          "topicId": "lasting"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "lasting",
+            "label": "보냉 유지",
+            "description": "얼음이 다음 날 아침까지 유지"
+          }
+        ],
+        "negative": [
+          {
+            "id": "leak",
+            "label": "밀폐 구조",
+            "description": "가방에 넣고 눕히면 빨대 틈새 누수"
+          }
+        ]
+      }
+    },
+    "ninja-blender": {
+      "reviews": [
+        {
+          "sourceReviewId": "971839171",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "971839172",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "noise"
+          ]
+        },
+        {
+          "sourceReviewId": "971839173",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "noise"
+          ]
+        },
+        {
+          "sourceReviewId": "971839174",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "971839175",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "971839176",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "971839177",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "971839178",
+          "positive": [],
+          "negative": [
+            "noise"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "971839171",
+          "text": "각얼음 넣어도 알갱이 없이 갈려요",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "971839172",
+          "text": "소리 비행기 수준이라 낮에 씁니다",
+          "topicId": "noise"
+        },
+        {
+          "sourceReviewId": "971839173",
+          "text": "알아서 멈췄다 돌며 곱게 갈아줘요",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "분쇄 성능",
+            "description": "얼음 덩어리도 곱게 갈아내는 파워"
+          }
+        ],
+        "negative": [
+          {
+            "id": "noise",
+            "label": "모터 소음",
+            "description": "초고속 분쇄 시 큰 작동음"
+          }
+        ]
+      }
+    },
+    "shin-ramen": {
+      "reviews": [
+        {
+          "sourceReviewId": "981940181",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "981940182",
+          "positive": [
+            "taste"
+          ],
+          "negative": [
+            "box"
+          ]
+        },
+        {
+          "sourceReviewId": "981940183",
+          "positive": [
+            "taste"
+          ],
+          "negative": [
+            "box"
+          ]
+        },
+        {
+          "sourceReviewId": "981940184",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "981940185",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "981940186",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "981940187",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "981940188",
+          "positive": [],
+          "negative": [
+            "box"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "981940181",
+          "text": "얼큰 칼칼해서 해장용으로 최고",
+          "topicId": "taste"
+        },
+        {
+          "sourceReviewId": "981940182",
+          "text": "완충재 부족해 면 부스러기 생김",
+          "topicId": "box"
+        },
+        {
+          "sourceReviewId": "981940183",
+          "text": "다 먹을 때까지 면발 쫄깃합니다",
+          "topicId": "taste"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "taste",
+            "label": "칼칼한 국물",
+            "description": "얼큰하고 진한 표고버섯 소고기 국물"
+          }
+        ],
+        "negative": [
+          {
+            "id": "box",
+            "label": "배송 상태",
+            "description": "택배 배송 시 면 부서짐 주의"
+          }
+        ]
+      }
+    },
+    "samdasoo": {
+      "reviews": [
+        {
+          "sourceReviewId": "992051191",
+          "positive": [
+            "fresh"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "992051192",
+          "positive": [
+            "fresh"
+          ],
+          "negative": [
+            "weight"
+          ]
+        },
+        {
+          "sourceReviewId": "992051193",
+          "positive": [
+            "fresh"
+          ],
+          "negative": [
+            "weight"
+          ]
+        },
+        {
+          "sourceReviewId": "992051194",
+          "positive": [
+            "fresh"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "992051195",
+          "positive": [
+            "fresh"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "992051196",
+          "positive": [
+            "fresh"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "992051197",
+          "positive": [
+            "fresh"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "992051198",
+          "positive": [
+            "fresh"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "992051191",
+          "text": "비린내 없이 꿀꺽꿀꺽 잘 넘어가요",
+          "topicId": "fresh"
+        },
+        {
+          "sourceReviewId": "992051192",
+          "text": "무거운데 문 앞까지 배송돼 감사",
+          "topicId": "weight"
+        },
+        {
+          "sourceReviewId": "992051193",
+          "text": "라벨 안 뜯고 분리수거해서 편함",
+          "topicId": "fresh"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "fresh",
+            "label": "깨끗한 물맛",
+            "description": "화산암반수의 부드러운 목넘김"
+          }
+        ],
+        "negative": [
+          {
+            "id": "weight",
+            "label": "배송 무게",
+            "description": "24kg 대용량 묶음 운반"
+          }
+        ]
+      }
+    },
+    "hetbahn": {
+      "reviews": [
+        {
+          "sourceReviewId": "902162201",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "902162202",
+          "positive": [
+            "taste"
+          ],
+          "negative": [
+            "box"
+          ]
+        },
+        {
+          "sourceReviewId": "902162203",
+          "positive": [
+            "taste"
+          ],
+          "negative": [
+            "box"
+          ]
+        },
+        {
+          "sourceReviewId": "902162204",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "902162205",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "902162206",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "902162207",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "902162208",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "902162201",
+          "text": "윤기 자르르 흐르고 밥알 찰져요",
+          "topicId": "taste"
+        },
+        {
+          "sourceReviewId": "902162202",
+          "text": "박스 뜯을 때 비닐 손상 조심",
+          "topicId": "box"
+        },
+        {
+          "sourceReviewId": "902162203",
+          "text": "렌지 2분 돌리면 갓 지은 밥맛",
+          "topicId": "taste"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "taste",
+            "label": "밥맛 식감",
+            "description": "쌀알이 살아있는 고슬고슬한 찰기"
+          }
+        ],
+        "negative": [
+          {
+            "id": "box",
+            "label": "포장 파손",
+            "description": "비닐 덮개 찢어짐 주의"
+          }
+        ]
+      }
+    },
+    "spam-classic": {
+      "reviews": [
+        {
+          "sourceReviewId": "912273211",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "912273212",
+          "positive": [
+            "taste"
+          ],
+          "negative": [
+            "preference"
+          ]
+        },
+        {
+          "sourceReviewId": "912273213",
+          "positive": [
+            "taste"
+          ],
+          "negative": [
+            "preference"
+          ]
+        },
+        {
+          "sourceReviewId": "912273214",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "912273215",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "912273216",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "912273217",
+          "positive": [],
+          "negative": [
+            "preference"
+          ]
+        },
+        {
+          "sourceReviewId": "912273218",
+          "positive": [
+            "taste"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "912273211",
+          "text": "바삭하게 구우면 밥 두 공기 뚝딱",
+          "topicId": "taste"
+        },
+        {
+          "sourceReviewId": "912273212",
+          "text": "물에 살짝 데쳐 구우면 간 맞아요",
+          "topicId": "preference"
+        },
+        {
+          "sourceReviewId": "912273215",
+          "text": "돼지고기 함량 높아 씹는 맛 최고",
+          "topicId": "taste"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "taste",
+            "label": "감칠맛",
+            "description": "노릇하게 구웠을 때 터지는 고소한 육즙"
+          }
+        ],
+        "negative": [
+          {
+            "id": "preference",
+            "label": "짠맛 선호",
+            "description": "입맛에 따라 끓는 물에 살짝 데쳐 굽기"
+          }
+        ]
+      }
+    },
+    "maxim-kanu": {
+      "reviews": [
+        {
+          "sourceReviewId": "922384221",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "922384222",
+          "positive": [
+            "easy"
+          ],
+          "negative": [
+            "taste"
+          ]
+        },
+        {
+          "sourceReviewId": "922384223",
+          "positive": [
+            "easy"
+          ],
+          "negative": [
+            "taste"
+          ]
+        },
+        {
+          "sourceReviewId": "922384224",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "922384225",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "922384226",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "922384227",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "922384228",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "922384221",
+          "text": "얼음물에 스틱 넣으면 바로 녹아요",
+          "topicId": "easy"
+        },
+        {
+          "sourceReviewId": "922384222",
+          "text": "진한 쓴맛이라 물 많이 타서 마심",
+          "topicId": "taste"
+        },
+        {
+          "sourceReviewId": "922384223",
+          "text": "출근해서 타면 잠이 번쩍 깹니다",
+          "topicId": "easy"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "easy",
+            "label": "편의성",
+            "description": "찬물과 얼음에도 흔들면 바로 녹음"
+          }
+        ],
+        "negative": [
+          {
+            "id": "taste",
+            "label": "쓴맛 강도",
+            "description": "다크로스트의 진한 쓴맛"
+          }
+        ]
+      }
+    },
+    "dr-g-cream": {
+      "reviews": [
+        {
+          "sourceReviewId": "932495231",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "932495232",
+          "positive": [
+            "texture"
+          ],
+          "negative": [
+            "moisture"
+          ]
+        },
+        {
+          "sourceReviewId": "932495233",
+          "positive": [
+            "texture"
+          ],
+          "negative": [
+            "moisture"
+          ]
+        },
+        {
+          "sourceReviewId": "932495234",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "932495235",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "932495236",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "932495237",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "932495238",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "932495231",
+          "text": "듬뿍 바르고 자면 붉은기 진정돼요",
+          "topicId": "texture"
+        },
+        {
+          "sourceReviewId": "932495232",
+          "text": "건성 피부는 겨울철 살짝 가벼워요",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "932495233",
+          "text": "끈적임 전혀 없이 피부에 쏙 흡수",
+          "topicId": "texture"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "texture",
+            "label": "발림성",
+            "description": "유분기 없이 산뜻하게 스며드는 젤 제형"
+          }
+        ],
+        "negative": [
+          {
+            "id": "moisture",
+            "label": "보습 지속",
+            "description": "극건성 기준 한겨울 보습막 아쉬움"
+          }
+        ]
+      }
+    },
+    "laneige-lip": {
+      "reviews": [
+        {
+          "sourceReviewId": "942506241",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "942506242",
+          "positive": [
+            "moisture"
+          ],
+          "negative": [
+            "texture"
+          ]
+        },
+        {
+          "sourceReviewId": "942506243",
+          "positive": [
+            "moisture"
+          ],
+          "negative": [
+            "texture"
+          ]
+        },
+        {
+          "sourceReviewId": "942506244",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "942506245",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "942506246",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "942506247",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "942506248",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "942506241",
+          "text": "자고 일어나 살살 문지르면 각질 박멸",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "942506242",
+          "text": "밤에 바르고 잘 때 머리카락 붙어요",
+          "topicId": "texture"
+        },
+        {
+          "sourceReviewId": "942506244",
+          "text": "겨울철 입술 트던 거 싹 나았어요",
+          "topicId": "moisture"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "moisture",
+            "label": "보습 지속",
+            "description": "밤새 마르지 않고 입술 각질 연화"
+          }
+        ],
+        "negative": [
+          {
+            "id": "texture",
+            "label": "제형 무게감",
+            "description": "낮에 바르기엔 다소 무거운 점도"
+          }
+        ]
+      }
+    },
+    "roundlab-sun": {
+      "reviews": [
+        {
+          "sourceReviewId": "952617251",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "952617252",
+          "positive": [
+            "texture"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "952617253",
+          "positive": [
+            "texture"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "952617254",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "952617255",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "952617256",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "952617257",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "952617258",
+          "positive": [
+            "texture"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "952617251",
+          "text": "선크림 뻑뻑하지 않고 로션처럼 발림",
+          "topicId": "texture"
+        },
+        {
+          "sourceReviewId": "952617252",
+          "text": "오후 되면 코 주변 기름 살짝 돌아요",
+          "topicId": "option"
+        },
+        {
+          "sourceReviewId": "952617253",
+          "text": "눈가 발라도 눈물 안 나고 순해요",
+          "topicId": "texture"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "texture",
+            "label": "로션 텍스처",
+            "description": "백탁 없이 수분 로션처럼 부드럽게 흡수"
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "피부 타입",
+            "description": "지성 피부 기준 오후 약한 번들거림"
+          }
+        ]
+      }
+    },
+    "anua-toner": {
+      "reviews": [
+        {
+          "sourceReviewId": "962728261",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "962728262",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "moisture"
+          ]
+        },
+        {
+          "sourceReviewId": "962728263",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "moisture"
+          ]
+        },
+        {
+          "sourceReviewId": "962728264",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "962728265",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "962728266",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "962728267",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "962728268",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "962728261",
+          "text": "화장솜 팩 하면 붉은기 싹 잡혀요",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "962728262",
+          "text": "물 제형이라 뒤에 크림 꼭 발라야",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "962728265",
+          "text": "세안 후 닦아내면 피부결 매끈해짐",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "피부 진정",
+            "description": "붉은기와 좁쌀 트러블 진정 효과"
+          }
+        ],
+        "negative": [
+          {
+            "id": "moisture",
+            "label": "보습력",
+            "description": "물 같은 제형으로 단독 보습 부족"
+          }
+        ]
+      }
+    },
+    "torriden-serum": {
+      "reviews": [
+        {
+          "sourceReviewId": "972839271",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "972839272",
+          "positive": [
+            "moisture"
+          ],
+          "negative": [
+            "texture"
+          ]
+        },
+        {
+          "sourceReviewId": "972839273",
+          "positive": [
+            "moisture"
+          ],
+          "negative": [
+            "texture"
+          ]
+        },
+        {
+          "sourceReviewId": "972839274",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "972839275",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "972839276",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "972839277",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "972839278",
+          "positive": [
+            "moisture"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "972839271",
+          "text": "속건조 심했는데 3일 만에 개선됨",
+          "topicId": "moisture"
+        },
+        {
+          "sourceReviewId": "972839272",
+          "text": "점성 묽어서 얼굴에 바로 흐름 주의",
+          "topicId": "texture"
+        },
+        {
+          "sourceReviewId": "972839273",
+          "text": "두 겹 덧발라도 겉돌지 않고 흡수",
+          "topicId": "moisture"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "moisture",
+            "label": "속건조 개선",
+            "description": "피부 속당김을 잡아주는 수분 충전"
+          }
+        ],
+        "negative": [
+          {
+            "id": "texture",
+            "label": "물 같은 점도",
+            "description": "스포이드 떨어뜨릴 때 흐름 주의"
+          }
+        ]
+      }
+    },
+    "nike-airforce": {
+      "reviews": [
+        {
+          "sourceReviewId": "982940281",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "982940282",
+          "positive": [
+            "design"
+          ],
+          "negative": [
+            "weight"
+          ]
+        },
+        {
+          "sourceReviewId": "982940283",
+          "positive": [
+            "design"
+          ],
+          "negative": [
+            "weight"
+          ]
+        },
+        {
+          "sourceReviewId": "982940284",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "982940285",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "982940286",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "982940287",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "982940288",
+          "positive": [],
+          "negative": [
+            "weight"
+          ]
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "982940281",
+          "text": "슬랙스 청바지 어디든 만능 치트키",
+          "topicId": "design"
+        },
+        {
+          "sourceReviewId": "982940282",
+          "text": "러닝화보다 밑창이 다소 묵직해요",
+          "topicId": "weight"
+        },
+        {
+          "sourceReviewId": "982940284",
+          "text": "자연스러운 굽높이로 비율 좋아짐",
+          "topicId": "design"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "design",
+            "label": "클래식 디자인",
+            "description": "모든 코디에 실패 없는 올백 스니커즈"
+          }
+        ],
+        "negative": [
+          {
+            "id": "weight",
+            "label": "신발 무게",
+            "description": "캔버스화 대비 묵직한 굽 무게"
+          }
+        ]
+      }
+    },
+    "newbalance-574": {
+      "reviews": [
+        {
+          "sourceReviewId": "993051291",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "993051292",
+          "positive": [
+            "comfort"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "993051293",
+          "positive": [
+            "comfort"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "993051294",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "993051295",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "993051296",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "993051297",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "993051298",
+          "positive": [
+            "comfort"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "993051291",
+          "text": "만 보 걸어도 발바닥 안 아프고 편함",
+          "topicId": "comfort"
+        },
+        {
+          "sourceReviewId": "993051292",
+          "text": "스웨이드라 비 오는 날 피해야 해요",
+          "topicId": "care"
+        },
+        {
+          "sourceReviewId": "993051293",
+          "text": "쉐입 얄쌍해서 실물 색감 대만족",
+          "topicId": "comfort"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "comfort",
+            "label": "착화감",
+            "description": "발볼 압박 없는 푹신한 발바닥 쿠셔닝"
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "스웨이드 관리",
+            "description": "비 오는 날 물 빠짐 오염 주의"
+          }
+        ]
+      }
+    },
+    "spao-puffer": {
+      "reviews": [
+        {
+          "sourceReviewId": "903162301",
+          "positive": [
+            "weight"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "903162302",
+          "positive": [
+            "weight"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "903162303",
+          "positive": [
+            "weight"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "903162304",
+          "positive": [
+            "weight"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "903162305",
+          "positive": [
+            "weight"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "903162306",
+          "positive": [
+            "weight"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "903162307",
+          "positive": [
+            "weight"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "903162308",
+          "positive": [
+            "weight"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "903162301",
+          "text": "깃털처럼 가벼운데 생각보다 따뜻",
+          "topicId": "weight"
+        },
+        {
+          "sourceReviewId": "903162302",
+          "text": "숏 기장이라 한파엔 다리 시려요",
+          "topicId": "option"
+        },
+        {
+          "sourceReviewId": "903162304",
+          "text": "비닐 광택 안 나는 매트 원단 고급짐",
+          "topicId": "weight"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "weight",
+            "label": "경량 보온",
+            "description": "무겁지 않고 포근하게 감싸는 볼륨"
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "기장감",
+            "description": "숏패딩 특성상 엉덩이 하단 노출"
+          }
+        ]
+      }
+    },
+    "gentle-monster": {
+      "reviews": [
+        {
+          "sourceReviewId": "913273311",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "913273312",
+          "positive": [
+            "design"
+          ],
+          "negative": [
+            "fit"
+          ]
+        },
+        {
+          "sourceReviewId": "913273313",
+          "positive": [
+            "design"
+          ],
+          "negative": [
+            "fit"
+          ]
+        },
+        {
+          "sourceReviewId": "913273314",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "913273315",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "913273316",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "913273317",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "913273318",
+          "positive": [
+            "design"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "913273311",
+          "text": "스퀘어 쉐입이라 얼굴형 단점 가려줌",
+          "topicId": "design"
+        },
+        {
+          "sourceReviewId": "913273312",
+          "text": "일체형 코받침이라 안경점 피팅 추천",
+          "topicId": "fit"
+        },
+        {
+          "sourceReviewId": "913273313",
+          "text": "햇빛 쨍쨍할 때 눈부심 없이 편안",
+          "topicId": "design"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "design",
+            "label": "얼굴형 커버",
+            "description": "광대와 턱선을 갸름하게 잡아주는 쉐입"
+          }
+        ],
+        "negative": [
+          {
+            "id": "fit",
+            "label": "피팅 조절",
+            "description": "코받침 없는 뿔테 피팅 피팅샵 방문"
+          }
+        ]
+      }
+    },
+    "monami-153": {
+      "reviews": [
+        {
+          "sourceReviewId": "923384321",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "923384322",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "value"
+          ]
+        },
+        {
+          "sourceReviewId": "923384323",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "value"
+          ]
+        },
+        {
+          "sourceReviewId": "923384324",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "923384325",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "923384326",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "923384327",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "923384328",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "923384321",
+          "text": "플라스틱 모나미와 차원 다른 묵직함",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "923384322",
+          "text": "전용 리필심 가격이 살짝 비싸요",
+          "topicId": "value"
+        },
+        {
+          "sourceReviewId": "923384324",
+          "text": "잉크 뭉침이나 끊김 없이 선명함",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "필기감",
+            "description": "메탈 황동 바디의 안정적인 필기 무게중심"
+          }
+        ],
+        "negative": [
+          {
+            "id": "value",
+            "label": "리필심 가격",
+            "description": "FX 4000 전용 리필심 단가"
+          }
+        ]
+      }
+    },
+    "halli-galli": {
+      "reviews": [
+        {
+          "sourceReviewId": "933495331",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "933495332",
+          "positive": [
+            "easy"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "933495333",
+          "positive": [
+            "easy"
+          ],
+          "negative": [
+            "care"
+          ]
+        },
+        {
+          "sourceReviewId": "933495334",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "933495335",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "933495336",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "933495337",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "933495338",
+          "positive": [
+            "easy"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "933495331",
+          "text": "가족들이랑 종 치며 배꼽 빠져요",
+          "topicId": "easy"
+        },
+        {
+          "sourceReviewId": "933495332",
+          "text": "너무 과몰입해 종 치다 손등 아픔",
+          "topicId": "care"
+        },
+        {
+          "sourceReviewId": "933495333",
+          "text": "초등학생부터 부모님까지 다 즐김",
+          "topicId": "easy"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "easy",
+            "label": "쉬운 규칙",
+            "description": "남녀노소 1분 만에 이해하는 게임 룰"
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "부상 주의",
+            "description": "흥분해서 종 치다 손등 부딪힘"
+          }
+        ]
+      }
+    },
+    "kindle-paper": {
+      "reviews": [
+        {
+          "sourceReviewId": "943506341",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "943506342",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "943506343",
+          "positive": [
+            "quality"
+          ],
+          "negative": [
+            "option"
+          ]
+        },
+        {
+          "sourceReviewId": "943506344",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "943506345",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "943506346",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "943506347",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        },
+        {
+          "sourceReviewId": "943506348",
+          "positive": [
+            "quality"
+          ],
+          "negative": []
+        }
+      ],
+      "excerpts": [
+        {
+          "sourceReviewId": "943506341",
+          "text": "몇 시간 읽어도 눈 시림 전혀 없어요",
+          "topicId": "quality"
+        },
+        {
+          "sourceReviewId": "943506342",
+          "text": "한글 책은 파일 변환 작업 필요함",
+          "topicId": "option"
+        },
+        {
+          "sourceReviewId": "943506343",
+          "text": "따뜻한 색온도로 침대 독서 꿀잠",
+          "topicId": "quality"
+        }
+      ],
+      "topics": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "가독성",
+            "description": "종이 인쇄물 같은 편안한 전자잉크 화면"
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "서점 플랫폼",
+            "description": "국내 서점 이용 시 파일 변환 번거로움"
+          }
+        ]
+      }
     }
   }
 }

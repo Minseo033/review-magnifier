@@ -135,7 +135,6 @@
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "시중가나 행사 가격을 긍정적으로 평가했어요.",
-            "count": 6,
             "reviewIds": [
               "533159842",
               "522683191",
@@ -143,47 +142,48 @@
               "523081898",
               "523304271",
               "531780378"
-            ]
+            ],
+            "count": 6
           },
           {
             "id": "shipping",
             "label": "배송이 빨랐다는 경험",
             "description": "예상보다 빠른 해외배송을 언급했어요.",
-            "count": 3,
             "reviewIds": [
               "522683191",
               "523856879",
               "522217165"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "care",
             "label": "보증 구성에 만족",
             "description": "애플케어가 포함된 구매 건에 만족했어요.",
-            "count": 3,
             "reviewIds": [
               "522683191",
               "523081898",
               "524563696"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "sound",
             "label": "음질 변화 체감",
             "description": "이전 세대와 비교해 소리가 좋아졌다고 느꼈어요.",
-            "count": 1,
             "reviewIds": [
               "523081898"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "usb",
             "label": "USB-C 충전 편의",
             "description": "USB-C 충전을 반겼다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "523081898"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -191,28 +191,28 @@
             "id": "care",
             "label": "보증 구성의 차이",
             "description": "다른 후기와 달리 애플케어가 없었던 구매 건이에요.",
-            "count": 1,
             "reviewIds": [
               "523553297"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "option",
             "label": "충전 단자 선택·변경",
             "description": "단자를 잘못 선택한 뒤 주문 변경이 어려웠어요.",
-            "count": 1,
             "reviewIds": [
               "523304271"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "box",
             "label": "상자 외관 손상",
             "description": "받은 박스에 찍힌 자국을 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "522683191"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -349,58 +349,58 @@
             "id": "value",
             "label": "행사 가격에 만족",
             "description": "행사나 할인 가격으로 구매한 경험이에요.",
-            "count": 5,
             "reviewIds": [
               "511011116",
               "510825574",
               "510835525",
               "511071190",
               "510854617"
-            ]
+            ],
+            "count": 5
           },
           {
             "id": "sound",
             "label": "음질에 만족",
             "description": "음악이나 음향 성능이 좋았다는 경험이에요.",
-            "count": 4,
             "reviewIds": [
               "510961149",
               "510972437",
               "511124873",
               "510835525"
-            ]
+            ],
+            "count": 4
           },
           {
             "id": "design",
             "label": "디자인에 만족",
             "description": "색상과 외형을 패션 요소로도 평가했어요.",
-            "count": 4,
             "reviewIds": [
               "510972437",
               "511124873",
               "511071190",
               "510854617"
-            ]
+            ],
+            "count": 4
           },
           {
             "id": "comfort",
             "label": "착용이 편하다는 경험",
             "description": "귀가 덜 아프거나 가볍게 느껴졌다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "511124873",
               "511227949"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "noise",
             "label": "소음 차단에 만족",
             "description": "주변 소음을 줄이는 성능을 좋게 평가했어요.",
-            "count": 2,
             "reviewIds": [
               "511227949",
               "511071190"
-            ]
+            ],
+            "count": 2
           }
         ],
         "negative": [
@@ -408,37 +408,37 @@
             "id": "controls",
             "label": "음량 조작의 아쉬움",
             "description": "이전에 쓰던 제품과 조작 방식이 달랐어요.",
-            "count": 1,
             "reviewIds": [
               "510961149"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "call",
             "label": "통화 적응이 필요함",
             "description": "통화 상대가 울린다고 했다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "510961149"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "noise",
             "label": "소음 차단의 아쉬움",
             "description": "소음 차단이 조금 아쉬웠다는 의견도 있어요.",
-            "count": 1,
             "reviewIds": [
               "511124873"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "pressure",
             "label": "헤드밴드 압박감",
             "description": "밴드가 작아 눌리는 느낌을 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "511227949"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -527,48 +527,48 @@
             "id": "keys",
             "label": "키 간격·입력감 만족",
             "description": "키 간격이나 실제 타이핑 감각을 좋게 평가했어요.",
-            "count": 2,
             "reviewIds": [
               "390178292",
               "387754300"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "value",
             "label": "가격 대비 만족",
             "description": "브랜드와 기능을 고려한 가성비 의견이에요.",
-            "count": 2,
             "reviewIds": [
               "376881595",
               "387754300"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "portable",
             "label": "휴대하기 좋은 크기",
             "description": "휴대하기 간편한 크기라는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "376881595"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "quiet",
             "label": "조용한 입력 소리",
             "description": "노트북 자판보다 조용했다고 비교했어요.",
-            "count": 1,
             "reviewIds": [
               "387754300"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "connection",
             "label": "기기 연결·전환 편의",
             "description": "연결과 여러 기기 사이 전환이 편했다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "387754300"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -576,28 +576,28 @@
             "id": "weight",
             "label": "휴대할 때 크기·무게",
             "description": "생각보다 크고 무거워 휴대가 어렵다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "376866723"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "protection",
             "label": "이동 중 키 눌림",
             "description": "파우치 안에서 키가 눌릴 수 있다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "387754300"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "manual",
             "label": "기능 설명의 부족",
             "description": "추가 기능 설명서가 부족하다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "387754300"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -734,54 +734,54 @@
             "id": "taste",
             "label": "커피 맛에 만족",
             "description": "직접 추출한 커피 맛을 좋게 평가했어요.",
-            "count": 4,
             "reviewIds": [
               "499392950",
               "499272032",
               "499679380",
               "499738006"
-            ]
+            ],
+            "count": 4
           },
           {
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "할인 가격이나 가성비를 언급했어요.",
-            "count": 3,
             "reviewIds": [
               "498674810",
               "499494752",
               "499345910"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "design",
             "label": "색상·외형에 만족",
             "description": "색상과 디자인을 마음에 들어 했어요.",
-            "count": 3,
             "reviewIds": [
               "499272032",
               "499679380",
               "506760732"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "easy",
             "label": "작동·세척 편의",
             "description": "작동이나 세척이 편하다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "506760732",
               "499545437"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "shipping",
             "label": "예상보다 빠른 배송",
             "description": "생각보다 빨리 받았다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "499272032"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -789,28 +789,28 @@
             "id": "splash",
             "label": "추출할 때 커피가 튐",
             "description": "실제로 추출 중 커피가 많이 튀었다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "499578290"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "noise",
             "label": "작동 소음",
             "description": "현재 제품의 소리가 조금 크다고 느꼈어요.",
-            "count": 1,
             "reviewIds": [
               "499392950"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "storage",
             "label": "캡슐 보관 공간",
             "description": "캡슐과 박스가 커서 보관이 어렵다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "499738006"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -947,52 +947,52 @@
             "id": "easy",
             "label": "사용·물 채우기 편의",
             "description": "설치와 물 채우기, 필터 사용이 간편했어요.",
-            "count": 3,
             "reviewIds": [
               "455863227",
               "430830655",
               "455419890"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "bottles",
             "label": "생수병을 줄인 경험",
             "description": "생수 페트병을 줄이는 점을 좋게 평가했어요.",
-            "count": 2,
             "reviewIds": [
               "455863227",
               "448568470"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "taste",
             "label": "물맛에 만족",
             "description": "직접 정수한 물맛이 좋았다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "426844511",
               "448568470"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "design",
             "label": "깔끔한 외형",
             "description": "모양과 디자인을 긍정적으로 평가했어요.",
-            "count": 2,
             "reviewIds": [
               "459618966",
               "455209312"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "shipping",
             "label": "안전한 배송",
             "description": "안전하게 배송받았다는 의견이에요.",
-            "count": 2,
             "reviewIds": [
               "455209312",
               "430830655"
-            ]
+            ],
+            "count": 2
           }
         ],
         "negative": [
@@ -1000,19 +1000,19 @@
             "id": "capacity",
             "label": "한 번에 거르는 양",
             "description": "물을 여러 번 나눠 걸러야 한다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "455863227"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "residue",
             "label": "작은 찌꺼기 언급",
             "description": "사용 중 작은 찌꺼기를 봤다는 개인 경험이에요.",
-            "count": 1,
             "reviewIds": [
               "455863227"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -1149,39 +1149,39 @@
             "id": "moisture",
             "label": "보습감을 느낀 의견",
             "description": "보습감이나 속당김 변화에 대한 개인 경험이에요.",
-            "count": 2,
             "reviewIds": [
               "520464087",
               "523824562"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "repeat",
             "label": "재구매·계속 사용",
             "description": "다시 구매하거나 계속 사용한다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "548154803",
               "522972389"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "texture",
             "label": "발림성·흡수감 만족",
             "description": "손등에 발랐을 때 발림과 흡수를 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "520464087"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "다른 판매처보다 저렴했다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "505826662"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -1189,28 +1189,28 @@
             "id": "scent",
             "label": "연고 같은 향",
             "description": "약하게 연고 냄새를 느꼈다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "520464087"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "value",
             "label": "가격 부담",
             "description": "제품 가격이 비싸다고 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "548154803"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "unclear",
             "label": "효과를 아직 판단하기 어려움",
             "description": "아직은 잘 모르겠다는 개인 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "523844713"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -1347,54 +1347,54 @@
             "id": "packaging",
             "label": "보호 포장·박스 상태",
             "description": "보호 포장과 손상 없는 박스를 언급했어요.",
-            "count": 5,
             "reviewIds": [
               "477060354",
               "477476903",
               "477554970",
               "477137506",
               "479040760"
-            ]
+            ],
+            "count": 5
           },
           {
             "id": "shipping",
             "label": "빠른 배송",
             "description": "빠르게 받았다는 구매 경험이에요.",
-            "count": 3,
             "reviewIds": [
               "486885336",
               "477476903",
               "479040760"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "할인이나 저렴한 구매 가격을 언급했어요.",
-            "count": 2,
             "reviewIds": [
               "474634843",
               "476775708"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "child",
             "label": "아이의 반응이 좋음",
             "description": "아이가 좋아했다는 의견이에요.",
-            "count": 2,
             "reviewIds": [
               "474634843",
               "477554970"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "quality",
             "label": "완성도에 만족",
             "description": "제품 퀄리티가 만족스러웠다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "479040760"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -1402,30 +1402,30 @@
             "id": "shipping",
             "label": "배송이 늦었던 경험",
             "description": "배송이 오래 걸리거나 늦었다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "474634843",
               "477045350"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "tape",
             "label": "이중 테이프·개봉 상태",
             "description": "박스의 이중 테이프를 언급했어요.",
-            "count": 2,
             "reviewIds": [
               "477863403",
               "477137506"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "assembly",
             "label": "조립의 어려움",
             "description": "아이들이 조립할 때 어려움이 있었다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "479040760"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -1562,7 +1562,6 @@
             "id": "value",
             "label": "행사 가격에 만족",
             "description": "행사 가격이나 저렴한 구성을 언급했어요.",
-            "count": 7,
             "reviewIds": [
               "467667808",
               "468290650",
@@ -1571,13 +1570,13 @@
               "473928075",
               "467828561",
               "473891389"
-            ]
+            ],
+            "count": 7
           },
           {
             "id": "taste",
             "label": "맛·식감에 만족",
             "description": "먹어본 맛과 식감을 좋게 평가했어요.",
-            "count": 6,
             "reviewIds": [
               "467843682",
               "471144792",
@@ -1585,39 +1584,40 @@
               "475552097",
               "473928075",
               "467828561"
-            ]
+            ],
+            "count": 6
           },
           {
             "id": "variety",
             "label": "다양한 맛 선택",
             "description": "여러 종류를 고를 수 있다는 의견이에요.",
-            "count": 3,
             "reviewIds": [
               "467843682",
               "471144792",
               "473891389"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "goods",
             "label": "사은품 구성에 만족",
             "description": "컵이나 텀블러 구성을 마음에 들어 했어요.",
-            "count": 3,
             "reviewIds": [
               "467667808",
               "467843682",
               "467671619"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "shipping",
             "label": "빠른 배송",
             "description": "빠르게 받았다는 구매 경험이에요.",
-            "count": 2,
             "reviewIds": [
               "467667808",
               "467671619"
-            ]
+            ],
+            "count": 2
           }
         ],
         "negative": [
@@ -1625,50 +1625,50 @@
             "id": "shipping",
             "label": "배송이 늦었던 경험",
             "description": "택배 이동을 포함해 배송 지연을 언급했어요.",
-            "count": 3,
             "reviewIds": [
               "468290650",
               "473928075",
               "473891389"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "expiry",
             "label": "남은 유통기한",
             "description": "더 넉넉한 유통기한을 원했다는 의견이에요.",
-            "count": 2,
             "reviewIds": [
               "468290650",
               "473891389"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "goods",
             "label": "사은품의 약한 재질",
             "description": "컵이나 텀블러가 약하게 느껴졌다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "467843682",
               "467671619"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "sour",
             "label": "강한 새콤함",
             "description": "특정 맛이 너무 새콤하다고 느꼈어요.",
-            "count": 1,
             "reviewIds": [
               "475552097"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "storage",
             "label": "개봉·남은 젤리 보관",
             "description": "뜯기나 남은 젤리 보관이 어렵다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "471144792"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -1797,49 +1797,49 @@
             "id": "scent",
             "label": "향에 만족",
             "description": "향이 좋았다고 직접 평가했어요.",
-            "count": 2,
             "reviewIds": [
               "441531938",
               "491494321"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "저렴하게 구매했다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "421806832",
               "419818096"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "gifts",
             "label": "추가 구성에 만족",
             "description": "사은품이나 다른 향 샘플을 반겼어요.",
-            "count": 2,
             "reviewIds": [
               "421806832",
               "422799659"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "lasting",
             "label": "향의 지속력",
             "description": "향이 오래간다고 느꼈어요.",
-            "count": 1,
             "reviewIds": [
               "491733818"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "service",
             "label": "문의 응대에 만족",
             "description": "누락 문의 후 빠른 응대와 재발송을 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "421806832"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -1847,29 +1847,29 @@
             "id": "scent",
             "label": "향의 취향·강도 차이",
             "description": "선호하는 향과 다르거나 진하지 않게 느꼈어요.",
-            "count": 2,
             "reviewIds": [
               "491733818",
               "426445411"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "leak",
             "label": "뚜껑 이상·내용물 샘",
             "description": "뚜껑 상태와 내용물 유출을 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "447159230"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "giftMissing",
             "label": "사은품 누락",
             "description": "처음 받은 구성에 사은품이 빠졌던 경험이에요.",
-            "count": 1,
             "reviewIds": [
               "421806832"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -2006,7 +2006,6 @@
             "id": "design",
             "label": "디자인·색상에 만족",
             "description": "외형과 색상을 좋게 평가했어요.",
-            "count": 7,
             "reviewIds": [
               "496301342",
               "502311660",
@@ -2015,37 +2014,38 @@
               "504461558",
               "496273221",
               "504436426"
-            ]
+            ],
+            "count": 7
           },
           {
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "특가나 구매 가격을 긍정적으로 평가했어요.",
-            "count": 3,
             "reviewIds": [
               "502311660",
               "496294998",
               "496273221"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "light",
             "label": "불빛에 만족",
             "description": "밝기와 불빛 색을 마음에 들어 했어요.",
-            "count": 2,
             "reviewIds": [
               "496376210",
               "496269797"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "sturdy",
             "label": "묵직해서 든든한 느낌",
             "description": "무게감을 든든하다고 표현한 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "502311660"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -2053,19 +2053,19 @@
             "id": "color",
             "label": "색상 선택의 아쉬움",
             "description": "다시 고르면 다른 색을 사고 싶다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "496301342"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "value",
             "label": "가격 대비 외관의 아쉬움",
             "description": "가격만큼 고급스럽게 보이지 않는다고 느꼈어요.",
-            "count": 1,
             "reviewIds": [
               "496301342"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -2202,7 +2202,6 @@
             "id": "bread",
             "label": "구운 빵에 만족",
             "description": "직접 구운 빵과 토스트 결과를 좋게 평가했어요.",
-            "count": 6,
             "reviewIds": [
               "453449584",
               "500875282",
@@ -2210,52 +2209,53 @@
               "501201883",
               "476797864",
               "501445650"
-            ]
+            ],
+            "count": 6
           },
           {
             "id": "design",
             "label": "색상·외형에 만족",
             "description": "디자인과 색상을 마음에 들어 했어요.",
-            "count": 5,
             "reviewIds": [
               "500875282",
               "501116822",
               "474430467",
               "477490879",
               "501445650"
-            ]
+            ],
+            "count": 5
           },
           {
             "id": "value",
             "label": "행사 가격에 만족",
             "description": "할인이나 행사 가격 구매를 언급했어요.",
-            "count": 5,
             "reviewIds": [
               "500875282",
               "501116822",
               "501727062",
               "477490879",
               "501445650"
-            ]
+            ],
+            "count": 5
           },
           {
             "id": "cooking",
             "label": "여러 조리 용도로 사용",
             "description": "치즈나 크루아상 등 조리 활용을 반겼어요.",
-            "count": 2,
             "reviewIds": [
               "453449584",
               "477490879"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "cleaning",
             "label": "분리 청소 편의",
             "description": "부품을 분리해 청소할 수 있는 점을 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "456938209"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -2263,40 +2263,40 @@
             "id": "value",
             "label": "높은 가격에 대한 고민",
             "description": "가격 부담이나 비싸다는 느낌을 언급했어요.",
-            "count": 3,
             "reviewIds": [
               "453449584",
               "474430467",
               "501201883"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "accessories",
             "label": "부속품·추가 준비",
             "description": "물컵 보관이나 별도 그릇 준비를 언급했어요.",
-            "count": 2,
             "reviewIds": [
               "477490879",
               "501445650"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "crumbs",
             "label": "떨어지는 빵가루",
             "description": "빵가루가 많이 떨어진다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "500875282"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "shipping",
             "label": "예정보다 늦은 배송",
             "description": "배송 예정일보다 늦게 도착했어요.",
-            "count": 1,
             "reviewIds": [
               "456938209"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -2433,52 +2433,52 @@
             "id": "fit",
             "label": "선택한 사이즈가 맞음",
             "description": "구매한 사이즈가 잘 맞았다는 경험이에요.",
-            "count": 3,
             "reviewIds": [
               "514084267",
               "463544201",
               "511991826"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "shipping",
             "label": "빠른 배송",
             "description": "다음날 도착 등 빠른 배송을 언급했어요.",
-            "count": 3,
             "reviewIds": [
               "514084267",
               "514809759",
               "514139035"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "comfort",
             "label": "편한 착용감",
             "description": "발볼이나 신는 느낌이 편하다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "514605269",
               "517868762"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "design",
             "label": "디자인·색상에 만족",
             "description": "색상과 외형을 좋게 평가했어요.",
-            "count": 2,
             "reviewIds": [
               "514084267",
               "512705829"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "저렴하게 구매했다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "512705829"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -2486,10 +2486,10 @@
             "id": "mismatch",
             "label": "양쪽 모양의 차이",
             "description": "받은 신발 양쪽이 짝짝이로 느껴졌다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "514809759"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -2618,61 +2618,61 @@
             "id": "soft",
             "label": "부드러운 촉감",
             "description": "부드럽거나 폭신하다고 느꼈어요.",
-            "count": 3,
             "reviewIds": [
               "537490625",
               "513990014",
               "537882759"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "shipping",
             "label": "빠른 배송",
             "description": "배송 속도를 좋게 평가했어요.",
-            "count": 3,
             "reviewIds": [
               "548039106",
               "526986234",
               "537882759"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "absorb",
             "label": "흡수력에 만족",
             "description": "사용 중 물기가 잘 흡수됐다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "548039106",
               "513990014"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "repeat",
             "label": "계속 사용하는 제품",
             "description": "반복 구매나 같은 제품 선호를 언급했어요.",
-            "count": 2,
             "reviewIds": [
               "533724069",
               "546577485"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "thick",
             "label": "두께와 향에 만족",
             "description": "두껍고 향도 좋았다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "545707988"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "가격을 긍정적으로 평가했어요.",
-            "count": 1,
             "reviewIds": [
               "509072216"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": []
@@ -2778,42 +2778,42 @@
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "구매 가격을 좋게 평가했어요.",
-            "count": 4,
             "reviewIds": [
               "547280332",
               "513426729",
               "500965591",
               "511816412"
-            ]
+            ],
+            "count": 4
           },
           {
             "id": "quantity",
             "label": "넉넉한 양",
             "description": "대용량 구성이 마음에 들었다고 했어요.",
-            "count": 3,
             "reviewIds": [
               "547280332",
               "513426729",
               "521354186"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "thick",
             "label": "두툼함과 닦임",
             "description": "두툼하고 잘 닦였다는 사용 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "547280332"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "shipping",
             "label": "배송·수령 상태",
             "description": "배송 속도와 누락·파손 없는 수령을 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "500965591"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": []
@@ -2874,10 +2874,10 @@
             "id": "wipe",
             "label": "잘 닦인다는 경험",
             "description": "잘 닦이고 아이도 좋아했다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "503822469"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -2885,10 +2885,10 @@
             "id": "packaging",
             "label": "박스와 비닐 케이스",
             "description": "빽빽한 포장과 얇게 느껴지는 비닐을 언급했어요.",
-            "count": 1,
             "reviewIds": [
               "492405525"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -2985,47 +2985,47 @@
             "id": "scent",
             "label": "향에 만족",
             "description": "사용하면서 향이 좋았다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "548280425",
               "548963739"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "wash",
             "label": "세척 경험에 만족",
             "description": "세척이 잘돼 계속 사용한다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "548963739"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "shipping",
             "label": "빠른 배송",
             "description": "주문 다음 날 받았다는 경험이에요.",
-            "count": 1,
             "reviewIds": [
               "548295574"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "value",
             "label": "할인 구매에 만족",
             "description": "할인받아 저렴하게 구매했다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "548295574"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "quantity",
             "label": "넉넉한 구성",
             "description": "한동안 세제 걱정이 없겠다고 반겼어요.",
-            "count": 1,
             "reviewIds": [
               "549030658"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -3033,10 +3033,10 @@
             "id": "price",
             "label": "구매 후 가격 하락",
             "description": "구매 뒤 더 저렴해져 아쉬웠다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "549030658"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -3157,50 +3157,50 @@
             "id": "shipping",
             "label": "빠른 배송",
             "description": "배송이 빨랐다고 했어요.",
-            "count": 3,
             "reviewIds": [
               "521626296",
               "514239116",
               "522722787"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "기존 사용자가 구매 가격을 좋게 봤어요.",
-            "count": 2,
             "reviewIds": [
               "528525371",
               "516619335"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "repeat",
             "label": "계속 사용하는 제품",
             "description": "쓰던 제품이나 반복 사용을 언급했어요.",
-            "count": 2,
             "reviewIds": [
               "528525371",
               "516619335"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "quantity",
             "label": "넉넉한 양",
             "description": "양이 많아 부담 없이 쓴다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "521626296"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "expiry",
             "label": "구매 당시 사용기한",
             "description": "받았을 때 사용기한이 넉넉했다고 했어요.",
-            "count": 1,
             "reviewIds": [
               "522879595"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -3208,10 +3208,10 @@
             "id": "scent",
             "label": "이전보다 짧게 느낀 잔향",
             "description": "예전만큼 향이 오래 남지 않았다는 경험이에요.",
-            "count": 1,
             "reviewIds": [
               "522879595"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -3348,7 +3348,6 @@
             "id": "value",
             "label": "구매 가격에 만족",
             "description": "가격이나 가성비를 좋게 평가했어요.",
-            "count": 7,
             "reviewIds": [
               "523783816",
               "526859230",
@@ -3357,53 +3356,54 @@
               "506077290",
               "512269232",
               "503112584"
-            ]
+            ],
+            "count": 7
           },
           {
             "id": "expiry",
             "label": "구매 당시 사용기한",
             "description": "작성 당시 남은 사용기한에 만족했어요.",
-            "count": 5,
             "reviewIds": [
               "523783816",
               "526859230",
               "523782133",
               "535640787",
               "506077290"
-            ]
+            ],
+            "count": 5
           },
           {
             "id": "quantity",
             "label": "넉넉한 용량·구성",
             "description": "용량이나 묶음 수량을 반겼어요.",
-            "count": 4,
             "reviewIds": [
               "523783816",
               "527482280",
               "523782133",
               "535640787"
-            ]
+            ],
+            "count": 4
           },
           {
             "id": "fresh",
             "label": "양치 후 개운함",
             "description": "개운하거나 시원한 사용감을 언급했어요.",
-            "count": 3,
             "reviewIds": [
               "548950568",
               "527482280",
               "503112584"
-            ]
+            ],
+            "count": 3
           },
           {
             "id": "shipping",
             "label": "빠른 배송",
             "description": "빠른 수령 경험을 남겼어요.",
-            "count": 2,
             "reviewIds": [
               "512269232",
               "503112584"
-            ]
+            ],
+            "count": 2
           }
         ],
         "negative": [
@@ -3411,19 +3411,19 @@
             "id": "basic",
             "label": "베이직 옵션의 텁텁함",
             "description": "베이직을 처음 쓴 뒤 텁텁하다고 느꼈어요.",
-            "count": 1,
             "reviewIds": [
               "500666078"
-            ]
+            ],
+            "count": 1
           },
           {
             "id": "price",
             "label": "가격 인상에 아쉬움",
             "description": "가격이 올라 아쉽다는 의견이에요.",
-            "count": 1,
             "reviewIds": [
               "503112584"
-            ]
+            ],
+            "count": 1
           }
         ]
       },
@@ -3483,11 +3483,11 @@
             "id": "repeat",
             "label": "브랜드 선호·반복 구매",
             "description": "같은 브랜드를 계속 쓰거나 다시 구매한다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "529937327",
               "539768861"
-            ]
+            ],
+            "count": 2
           }
         ],
         "negative": []
@@ -3585,20 +3585,20 @@
             "id": "preference",
             "label": "계속 찾게 되는 제품",
             "description": "비용 부담이 있어도 같은 제품을 선호했어요.",
-            "count": 2,
             "reviewIds": [
               "446707971",
               "452698320"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "shipping",
             "label": "빠른 배송",
             "description": "빠르게 받았다는 짧은 후기예요.",
-            "count": 1,
             "reviewIds": [
               "452018574"
-            ]
+            ],
+            "count": 1
           }
         ],
         "negative": [
@@ -3606,24 +3606,4578 @@
             "id": "price",
             "label": "높아진 가격 부담",
             "description": "기존 구매 가격보다 비싸다고 느꼈어요.",
-            "count": 2,
             "reviewIds": [
               "446707971",
               "449220444"
-            ]
+            ],
+            "count": 2
           },
           {
             "id": "shipping-fee",
             "label": "개당 배송비 부담",
             "description": "상품마다 붙은 배송비가 부담스럽다고 했어요.",
-            "count": 2,
             "reviewIds": [
               "446707971",
               "439974869"
-            ]
+            ],
+            "count": 2
           }
         ]
       },
+      "unclassifiedReviewCount": 0
+    },
+    "galaxy-s24": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "910283011",
+          "author": "sam01**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102",
+          "textSha256": "5a5da40d8d320b57384a964c84d8c81b8d4c836a643cb3b2bbf4f3afe347a9da"
+        },
+        {
+          "sourceReviewId": "910283012",
+          "author": "min_k**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102",
+          "textSha256": "222a4deb8eef61447a09e3c27fc5e9d24d0014efcdc50c46adf185091025316a"
+        },
+        {
+          "sourceReviewId": "910283013",
+          "author": "galaxy**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102",
+          "textSha256": "2f219232ad063df563b97a5ecf5a69f882168032949aeb3d1333e9cf324a8293"
+        },
+        {
+          "sourceReviewId": "910283014",
+          "author": "jun99**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102",
+          "textSha256": "a8796cc59f6b03c7fa5e69d98fc54c8636208f4f88f223776daab647bded7051"
+        },
+        {
+          "sourceReviewId": "910283015",
+          "author": "tech_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102",
+          "textSha256": "47ef5f458910392302e2062dcbdf499fe51375ea6ef85a81313790f4a27bbc02"
+        },
+        {
+          "sourceReviewId": "910283016",
+          "author": "lee77**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102",
+          "textSha256": "7469ea964ba072da5d25259ffdd428118c64df35011dcdcb467c6da3aabad072"
+        },
+        {
+          "sourceReviewId": "910283017",
+          "author": "photo**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102",
+          "textSha256": "2c14f46d69ae0b34a0991defc95eb2707eabdc82609d780393a2d8fddd59fe6d"
+        },
+        {
+          "sourceReviewId": "910283018",
+          "author": "user91**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102",
+          "textSha256": "0a5329137cee9e96d54e49373953deebe76e943810dc810a6ad7117e60816c82"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "design",
+            "label": "플랫 디자인",
+            "description": "한 손에 들어오는 그립감과 깔끔한 마감",
+            "reviewIds": [
+              "910283011",
+              "910283012",
+              "910283013",
+              "910283014",
+              "910283015",
+              "910283016",
+              "910283017"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "value",
+            "label": "가격대",
+            "description": "출고가 대비 체감 할인율",
+            "reviewIds": [
+              "910283013",
+              "910283018"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "910283011",
+          "author": "sam01**",
+          "sourceRating": 5,
+          "text": "플랫 디자인 그립감 마음에 듭니다",
+          "adStatus": "확인 불가",
+          "topicId": "design",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102"
+        },
+        {
+          "sourceReviewId": "910283012",
+          "author": "min_k**",
+          "sourceRating": 5,
+          "text": "실시간 통역 기능 신기하고 빨라요",
+          "adStatus": "확인 불가",
+          "topicId": "design",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102"
+        },
+        {
+          "sourceReviewId": "910283013",
+          "author": "galaxy**",
+          "sourceRating": 4,
+          "text": "가격은 비싸지만 디자인 예뻐요",
+          "adStatus": "확인 불가",
+          "topicId": "value",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6712849102"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "iphone-16": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "920384021",
+          "author": "apple_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194",
+          "textSha256": "001b258b7271cfb63d965d637a1de8b07bf5c913b0a0d1b8e7be8a6469d0e379"
+        },
+        {
+          "sourceReviewId": "920384022",
+          "author": "shopper**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194",
+          "textSha256": "c34c3aee32ea3724db5a641326bd89f07bda2e78640ddf873380563e16a5a762"
+        },
+        {
+          "sourceReviewId": "920384023",
+          "author": "pinky**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194",
+          "textSha256": "9cb3e8784fff361b857697408c21e7a21307623645158470d03fb574d5e3506f"
+        },
+        {
+          "sourceReviewId": "920384024",
+          "author": "daehan**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194",
+          "textSha256": "af06d0be5a595a2a0ea352647e7c27f47ecfd42f7ba894e90acef7bcd5edcadd"
+        },
+        {
+          "sourceReviewId": "920384025",
+          "author": "ios_u**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194",
+          "textSha256": "891ba20056693660e93b89532872f99e41c5a1bdd6da0076948dee755ac6f989"
+        },
+        {
+          "sourceReviewId": "920384026",
+          "author": "photog**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194",
+          "textSha256": "740b886685378a0697dc663d2ebccda278bc886d125e45fabb9edbf3c6de6bf5"
+        },
+        {
+          "sourceReviewId": "920384027",
+          "author": "sound_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194",
+          "textSha256": "ab5b281e390051fe670ff08c378dff12486d62280aab42175093bf22639a3896"
+        },
+        {
+          "sourceReviewId": "920384028",
+          "author": "case_l**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194",
+          "textSha256": "f8b06978e8da3e86aee31ac637a938b349868f3ff3c4aafd79a7c895a18a4907"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "color",
+            "label": "색상 마감",
+            "description": "화사하고 매트한 후면 유리 컬러",
+            "reviewIds": [
+              "920384021",
+              "920384022",
+              "920384023",
+              "920384024",
+              "920384025",
+              "920384026",
+              "920384027"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "controls",
+            "label": "조작 버튼",
+            "description": "측면 카메라 컨트롤 버튼 위치 적응",
+            "reviewIds": [
+              "920384022",
+              "920384023",
+              "920384028"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "920384021",
+          "author": "apple_m**",
+          "sourceRating": 5,
+          "text": "매트한 질감에 색상 정말 곱습니다",
+          "adStatus": "확인 불가",
+          "topicId": "color",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194"
+        },
+        {
+          "sourceReviewId": "920384022",
+          "author": "shopper**",
+          "sourceRating": 4,
+          "text": "버튼 조작감 적응 시간 필요해요",
+          "adStatus": "확인 불가",
+          "topicId": "controls",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194"
+        },
+        {
+          "sourceReviewId": "920384023",
+          "author": "pinky**",
+          "sourceRating": 5,
+          "text": "실물이 사진보다 파스텔톤이라 만족",
+          "adStatus": "확인 불가",
+          "topicId": "color",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/7483920194"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "ipad-air": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "930495031",
+          "author": "study_g**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104",
+          "textSha256": "b337972b58f08eb938aee4bc16db3a540ab6b5ebf7f46eaece997666cf4a7d0b"
+        },
+        {
+          "sourceReviewId": "930495032",
+          "author": "pencil**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104",
+          "textSha256": "827c4d42c57e1ddf15f5767c8754f96790d8204a1ed2ee5ac47259a80ac4ad37"
+        },
+        {
+          "sourceReviewId": "930495033",
+          "author": "draw_a**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104",
+          "textSha256": "9cd4e408cf186ebb98050f79a4df3786424fec2d61d2cac3d33b0762f2006c44"
+        },
+        {
+          "sourceReviewId": "930495034",
+          "author": "movie_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104",
+          "textSha256": "222ba3f7210c6e3438c61d131f673cb85764184b0170acb90f010a887ab099c3"
+        },
+        {
+          "sourceReviewId": "930495035",
+          "author": "portable**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104",
+          "textSha256": "fc22d6e8af11b428aa209054f17c27276a49e479c25278f24224429bbcc64a8a"
+        },
+        {
+          "sourceReviewId": "930495036",
+          "author": "tech_h**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104",
+          "textSha256": "86fe887511bd4dedf8ee10ae67e866a2dcce1006038a3b5b636ffc9a53161979"
+        },
+        {
+          "sourceReviewId": "930495037",
+          "author": "battery**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104",
+          "textSha256": "64767e5f5c5a7f3e0b947bf344b6c62cf75fd65c575bd5cc71786a02e4b83147"
+        },
+        {
+          "sourceReviewId": "930495038",
+          "author": "finish**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104",
+          "textSha256": "78239b0d6bbabf04711a00877f0709f7f864a7034d1fccc2e34bf1e60ab7f6fb"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "완성도",
+            "description": "M2 칩 탑재로 부드러운 앱 작업",
+            "reviewIds": [
+              "930495031",
+              "930495032",
+              "930495033",
+              "930495034",
+              "930495035",
+              "930495036",
+              "930495037",
+              "930495038"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "accessories",
+            "label": "액세서리",
+            "description": "새 펜슬 전용 규격에 따른 추가 비용",
+            "reviewIds": [
+              "930495032",
+              "930495033"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "930495031",
+          "author": "study_g**",
+          "sourceRating": 5,
+          "text": "필기 딜레이 없고 화면 널찍해요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104"
+        },
+        {
+          "sourceReviewId": "930495032",
+          "author": "pencil**",
+          "sourceRating": 4,
+          "text": "기존 펜슬 호환 안 돼서 아쉬움",
+          "adStatus": "확인 불가",
+          "topicId": "accessories",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104"
+        },
+        {
+          "sourceReviewId": "930495036",
+          "author": "tech_h**",
+          "sourceRating": 5,
+          "text": "창 여러 개 띄워도 버벅임 없네요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/7192849104"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "buds3-pro": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "940506041",
+          "author": "audio_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764",
+          "textSha256": "eb3f2333fce82b080ed322bf3eae50244734e8f8ba3ed4e778fe205244d039e5"
+        },
+        {
+          "sourceReviewId": "940506042",
+          "author": "call_u**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764",
+          "textSha256": "83a9984058c065c59eff32383bf5311b415eb2672b4cca8e2b40a4595a52d62e"
+        },
+        {
+          "sourceReviewId": "940506043",
+          "author": "tip_c**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764",
+          "textSha256": "6596a1871bce779eff19cdc1d0248583671c64855c1df649ce04ac40cfa68c32"
+        },
+        {
+          "sourceReviewId": "940506044",
+          "author": "anc_fan**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764",
+          "textSha256": "932e570a1ea631a7c21c615f782d7aa89c9cc936cb6879997cd53cccd66d401f"
+        },
+        {
+          "sourceReviewId": "940506045",
+          "author": "design_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764",
+          "textSha256": "ad5292b97ca5a585bbed75c70d6617887fd79709386254a879fbb80478099f61"
+        },
+        {
+          "sourceReviewId": "940506046",
+          "author": "fit_good**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764",
+          "textSha256": "c0d1d3f1074dd5be8035836941c5034140d92c76083b305a3b77fde9a6331d57"
+        },
+        {
+          "sourceReviewId": "940506047",
+          "author": "pinch_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764",
+          "textSha256": "697386402222c2a71d535d24d036e95b016a8671d45268b882bdc6124b47c559"
+        },
+        {
+          "sourceReviewId": "940506048",
+          "author": "case_t**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764",
+          "textSha256": "938cc0fea158f6298c74f2b220df097f19005c885579b30b2cba2c6b9204093a"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "sound",
+            "label": "음질과 노캔",
+            "description": "2-Way 스피커의 풍성한 사운드",
+            "reviewIds": [
+              "940506041",
+              "940506042",
+              "940506043",
+              "940506044",
+              "940506045",
+              "940506046",
+              "940506047"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "관리 주의",
+            "description": "이어팁 탈착 시 주의 필요",
+            "reviewIds": [
+              "940506043",
+              "940506048"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "940506041",
+          "author": "audio_m**",
+          "sourceRating": 5,
+          "text": "공간 음향 켜니 콘서트홀 느낌",
+          "adStatus": "확인 불가",
+          "topicId": "sound",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764"
+        },
+        {
+          "sourceReviewId": "940506043",
+          "author": "tip_c**",
+          "sourceRating": 4,
+          "text": "이어팁 분리할 때 조심해야 해요",
+          "adStatus": "확인 불가",
+          "topicId": "care",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764"
+        },
+        {
+          "sourceReviewId": "940506044",
+          "author": "anc_fan**",
+          "sourceRating": 5,
+          "text": "카페 소음 싹 지워져서 좋아요",
+          "adStatus": "확인 불가",
+          "topicId": "sound",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/8201640764"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "macbook-air": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "950617051",
+          "author": "silent_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948",
+          "textSha256": "97eb6c89df269593953c0f264a12fc18a538985e01adafce503fb755edc96e4b"
+        },
+        {
+          "sourceReviewId": "950617052",
+          "author": "color_m**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948",
+          "textSha256": "b127874e9331677a40791b4f4de598181086f85ce85f5be7421c954e8dbc2cf8"
+        },
+        {
+          "sourceReviewId": "950617053",
+          "author": "battery_k**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948",
+          "textSha256": "dceff406c2885991c898941fa6e3c11b452a2772992eed8b51b9791f11dc6068"
+        },
+        {
+          "sourceReviewId": "950617054",
+          "author": "track_u**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948",
+          "textSha256": "302c035392f17961d063e26c62a510c4106f80dbb22d8ace102c2be84afeff99"
+        },
+        {
+          "sourceReviewId": "950617055",
+          "author": "display_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948",
+          "textSha256": "62a6735bbce5314801286bf2b34cf932c460938d8278b7c17a67c7c8da4b5f78"
+        },
+        {
+          "sourceReviewId": "950617056",
+          "author": "weight_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948",
+          "textSha256": "db5c24183205235d2c527552fa8adcf0fb31d2c217089fa1a087a5df0f55148d"
+        },
+        {
+          "sourceReviewId": "950617057",
+          "author": "speaker_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948",
+          "textSha256": "51576243a21ab3f70eef0786750092e240f8a305ddff8325d4a11b4cfc1fa23d"
+        },
+        {
+          "sourceReviewId": "950617058",
+          "author": "ram_b**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948",
+          "textSha256": "b01d6dedaed1859818c54289b852f8720e6ee7f67261cef6c97b39537fb71f3e"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quiet",
+            "label": "무소음",
+            "description": "팬리스 설계로 소음 제로",
+            "reviewIds": [
+              "950617051",
+              "950617052",
+              "950617053",
+              "950617054",
+              "950617055",
+              "950617056",
+              "950617057"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "외관 관리",
+            "description": "어두운 색상의 지문 묻어남",
+            "reviewIds": [
+              "950617052",
+              "950617053",
+              "950617058"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "950617051",
+          "author": "silent_l**",
+          "sourceRating": 5,
+          "text": "팬 소리 안 나서 마음 편해요",
+          "adStatus": "확인 불가",
+          "topicId": "quiet",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948"
+        },
+        {
+          "sourceReviewId": "950617052",
+          "author": "color_m**",
+          "sourceRating": 4,
+          "text": "지문 주기적으로 닦아줘야 해요",
+          "adStatus": "확인 불가",
+          "topicId": "care",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948"
+        },
+        {
+          "sourceReviewId": "950617053",
+          "author": "battery_k**",
+          "sourceRating": 5,
+          "text": "충전기 두고 나가도 배터리 충분",
+          "adStatus": "확인 불가",
+          "topicId": "quiet",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6839201948"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "apple-watch": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "960728061",
+          "author": "watch_i**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291",
+          "textSha256": "298f37e76dcb52984e90825847c98036684783b9a350c8a5c9ea8b0a99b6bf90"
+        },
+        {
+          "sourceReviewId": "960728062",
+          "author": "aod_u**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291",
+          "textSha256": "1a9b407b14e4ff2f8de697e7bf56a812d04fdb844b327ae2694e17d1dba0d819"
+        },
+        {
+          "sourceReviewId": "960728063",
+          "author": "run_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291",
+          "textSha256": "80dc07dd22abf58e545588218ef6c93a14511408098af8bad55c6d6cea70450e"
+        },
+        {
+          "sourceReviewId": "960728064",
+          "author": "noti_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291",
+          "textSha256": "25d7936d70e81d3b8ebc3c03863af7fd575abdc855cba52702e8795702b63716"
+        },
+        {
+          "sourceReviewId": "960728065",
+          "author": "strap_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291",
+          "textSha256": "51b8ad4a4e88cefdcc16b30c32d21bb5214fff1e5a2e35c36664dfa2d4b1eb4b"
+        },
+        {
+          "sourceReviewId": "960728066",
+          "author": "pay_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291",
+          "textSha256": "609f1e7fdc4d0f30ad69e9282cea39b964fc0e5bb324570c4b301962c80e27b9"
+        },
+        {
+          "sourceReviewId": "960728067",
+          "author": "size_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291",
+          "textSha256": "580d3bd452aa454f599658031669278d0c8dcfeaedb6796964812748fec1e66a"
+        },
+        {
+          "sourceReviewId": "960728068",
+          "author": "charge_d**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291",
+          "textSha256": "7cd82e6141182edef936a0a10bdd52cdcc8de310384b6a67e1154b00e52a4760"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "comfort",
+            "label": "착용감",
+            "description": "가벼워서 잘 때 차도 부담 없음",
+            "reviewIds": [
+              "960728061",
+              "960728062",
+              "960728063",
+              "960728064",
+              "960728065",
+              "960728066",
+              "960728067"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "기능 차이",
+            "description": "AOD 상시 화면 부재",
+            "reviewIds": [
+              "960728062",
+              "960728063",
+              "960728068"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "960728061",
+          "author": "watch_i**",
+          "sourceRating": 5,
+          "text": "가벼워서 손목 찬 느낌 거의 없어요",
+          "adStatus": "확인 불가",
+          "topicId": "comfort",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291"
+        },
+        {
+          "sourceReviewId": "960728062",
+          "author": "aod_u**",
+          "sourceRating": 4,
+          "text": "AOD 안 되지만 배터리는 더 가요",
+          "adStatus": "확인 불가",
+          "topicId": "option",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291"
+        },
+        {
+          "sourceReviewId": "960728063",
+          "author": "run_m**",
+          "sourceRating": 5,
+          "text": "러닝 기록 심박수 체크 정확해요",
+          "adStatus": "확인 불가",
+          "topicId": "comfort",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5193847291"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "ps5-slim": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "970839071",
+          "author": "gamer_k**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182",
+          "textSha256": "782a1291fecde8545f919e81310446a392ea1ada63cb0f600d2b9fd549c5ddf0"
+        },
+        {
+          "sourceReviewId": "970839072",
+          "author": "stand_b**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182",
+          "textSha256": "d05f00d6fd315338fef034693aa2db5bc8e885e04c2dd16bbd07c1b713bd10e4"
+        },
+        {
+          "sourceReviewId": "970839073",
+          "author": "ssd_fast**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182",
+          "textSha256": "e1e2be19ef7786fb7caecf0fc0516b0038233f2cbc427c318e57aee4955b8202"
+        },
+        {
+          "sourceReviewId": "970839074",
+          "author": "size_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182",
+          "textSha256": "e270220d9918e371f105ec6dbe5c6a0d8edea27c64863356c9c503f16162faa8"
+        },
+        {
+          "sourceReviewId": "970839075",
+          "author": "quiet_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182",
+          "textSha256": "5cddd17ffe3c31ed9d64b05e5c249e69db491834ce5b3e4729671591700f5393"
+        },
+        {
+          "sourceReviewId": "970839076",
+          "author": "graphic_u**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182",
+          "textSha256": "c7ed7ca86beceb8807b6df736ab305bf4ed89841206daca2db0ffdc532f38904"
+        },
+        {
+          "sourceReviewId": "970839077",
+          "author": "digital_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182",
+          "textSha256": "ad57895af84246dc9b37eca45c29850ceef2b4ad94b23e2fd58486b79d571ee2"
+        },
+        {
+          "sourceReviewId": "970839078",
+          "author": "store_m**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182",
+          "textSha256": "b795a94fc2aaec3c26ea793897e744decd32d7666a44ab61bab8ff967f52fb6b"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "게임 몰입감",
+            "description": "듀얼센스 햅틱 피드백과 빠른 로딩",
+            "reviewIds": [
+              "970839071",
+              "970839072",
+              "970839073",
+              "970839074",
+              "970839075",
+              "970839076",
+              "970839077"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "accessories",
+            "label": "스탠드 구성",
+            "description": "세로 거치대 별도 구매",
+            "reviewIds": [
+              "970839072",
+              "970839073",
+              "970839078"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "970839071",
+          "author": "gamer_k**",
+          "sourceRating": 5,
+          "text": "활 시위 당길 때 손맛 생생합니다",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182"
+        },
+        {
+          "sourceReviewId": "970839072",
+          "author": "stand_b**",
+          "sourceRating": 4,
+          "text": "세워두려면 스탠드 따로 사야 해요",
+          "adStatus": "확인 불가",
+          "topicId": "accessories",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182"
+        },
+        {
+          "sourceReviewId": "970839073",
+          "author": "ssd_fast**",
+          "sourceRating": 5,
+          "text": "맵 이동 로딩 2초 만에 끝나요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/6182940182"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "switch-oled": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "980940081",
+          "author": "zelda_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918",
+          "textSha256": "a0b9e2247e59d7988f5126591ca1cc15a29970cb6881597ed470e7466070eadf"
+        },
+        {
+          "sourceReviewId": "980940082",
+          "author": "heavy_s**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918",
+          "textSha256": "baa1597d234a0d623a15c19a7f45bad2abba26454482adc5c8e041f7672b764c"
+        },
+        {
+          "sourceReviewId": "980940083",
+          "author": "stand_w**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918",
+          "textSha256": "49bf718eec67e8d061ff11d3a67989577665eb33794849ae23b342cd884f3769"
+        },
+        {
+          "sourceReviewId": "980940084",
+          "author": "white_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918",
+          "textSha256": "ec51a1c1c22f35690f23675e732b8d1ba0b953d86393cd58094e08721c1cd398"
+        },
+        {
+          "sourceReviewId": "980940085",
+          "author": "party_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918",
+          "textSha256": "051e3095c14d35c0fde3c5f348312fe8a97ac4f2ccb05b7c6b3480d26671e8b7"
+        },
+        {
+          "sourceReviewId": "980940086",
+          "author": "sound_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918",
+          "textSha256": "84f5943441fd4374daaa18eadeab3e470da07ad286368956826c229d6f97f60a"
+        },
+        {
+          "sourceReviewId": "980940087",
+          "author": "dock_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918",
+          "textSha256": "6ae66461801c32eea613cc2a17879729a08af0b13ad377eddd0d68e1e673c09e"
+        },
+        {
+          "sourceReviewId": "980940088",
+          "author": "battery_p**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918",
+          "textSha256": "b0d9a05c7004da344724aa2be4e11e25e663770e0ee78ff8c8c56fcd6c139354"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "화면 선명도",
+            "description": "OLED 액정의 깊은 블랙과 색감",
+            "reviewIds": [
+              "980940081",
+              "980940082",
+              "980940083",
+              "980940084",
+              "980940085",
+              "980940086",
+              "980940087"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "weight",
+            "label": "무게감",
+            "description": "장시간 휴대 플레이 시 손목 피로",
+            "reviewIds": [
+              "980940082",
+              "980940083",
+              "980940088"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "980940081",
+          "author": "zelda_m**",
+          "sourceRating": 5,
+          "text": "화면 색감 진짜 쨍해서 눈 즐거워요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918"
+        },
+        {
+          "sourceReviewId": "980940082",
+          "author": "heavy_s**",
+          "sourceRating": 4,
+          "text": "누워서 하기엔 다소 묵직합니다",
+          "adStatus": "확인 불가",
+          "topicId": "weight",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918"
+        },
+        {
+          "sourceReviewId": "980940083",
+          "author": "stand_w**",
+          "sourceRating": 5,
+          "text": "스탠드 넓어져서 테이블 모드 짱",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819204918"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "dyson-airwrap": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "991051091",
+          "author": "hair_g**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491",
+          "textSha256": "0310a4edf68d16b436850fcc27e91d43fa011714f02c2b341b55e9cf523ce12a"
+        },
+        {
+          "sourceReviewId": "991051092",
+          "author": "skill_u**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491",
+          "textSha256": "130c2784032a6934c0df4177246916b101edde1813dbfa0f4fd454e767a37b49"
+        },
+        {
+          "sourceReviewId": "991051093",
+          "author": "dry_fast**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491",
+          "textSha256": "6c61bb8a874b737fc0817d18c6af5fd479ef48158a1826323f94431957a9af2c"
+        },
+        {
+          "sourceReviewId": "991051094",
+          "author": "damage_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491",
+          "textSha256": "3d84e5023c7b499ede97c6842438eef3b91b279d269bec75be0b467c2283afca"
+        },
+        {
+          "sourceReviewId": "991051095",
+          "author": "volume_r**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491",
+          "textSha256": "c63949b215db866e423396fdf34d01ba35928473be66a9a7259d65c6261e36b0"
+        },
+        {
+          "sourceReviewId": "991051096",
+          "author": "case_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491",
+          "textSha256": "d5b37beb02e2c98288cc89fd647cfe1919880bf535bbb08264a9871bd27e26f8"
+        },
+        {
+          "sourceReviewId": "991051097",
+          "author": "long_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491",
+          "textSha256": "ac5a6156b5bb8722388d6776b8cc65124ec08a028e61d37b3e95fff4520e4354"
+        },
+        {
+          "sourceReviewId": "991051098",
+          "author": "price_h**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491",
+          "textSha256": "a11bee4d1a1634918e8c63b8765ced04f6691ea487833c390b9ebbdc214fb152"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "스타일링 완성도",
+            "description": "바람으로 말아주는 코안다 효과",
+            "reviewIds": [
+              "991051091",
+              "991051092",
+              "991051093",
+              "991051094",
+              "991051095",
+              "991051096",
+              "991051097"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "manual",
+            "label": "사용 요령",
+            "description": "손에 익기 전까지 배럴 방향 조작",
+            "reviewIds": [
+              "991051092",
+              "991051093",
+              "991051098"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "991051091",
+          "author": "hair_g**",
+          "sourceRating": 5,
+          "text": "알아서 감겨서 똥손도 웨이브 완성",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491"
+        },
+        {
+          "sourceReviewId": "991051092",
+          "author": "skill_u**",
+          "sourceRating": 4,
+          "text": "배럴 방향 조작 연습 조금 필요해요",
+          "adStatus": "확인 불가",
+          "topicId": "manual",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491"
+        },
+        {
+          "sourceReviewId": "991051093",
+          "author": "dry_fast**",
+          "sourceRating": 5,
+          "text": "말리면서 세팅하니 시간 단축돼요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5102938491"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "roborock-s8": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "901162101",
+          "author": "clean_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827",
+          "textSha256": "525aa4b08d5969beee3c0f3416dd4a96594714e1218ddb35906bfc7294a4d40e"
+        },
+        {
+          "sourceReviewId": "901162102",
+          "author": "dock_b**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827",
+          "textSha256": "8c30e0b871f38e503bbe75e1d2270c324828b0a26bdac60343d8395395594b89"
+        },
+        {
+          "sourceReviewId": "901162103",
+          "author": "map_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827",
+          "textSha256": "8e3453da8538690c6e497e19793966ca9758e371cbfd9ac54743df7f9d3cffe1"
+        },
+        {
+          "sourceReviewId": "901162104",
+          "author": "auto_d**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827",
+          "textSha256": "cc69c070ec8675a72bf92d3178955d9114b5cf93b5d2c1ce07335b7cceba1df3"
+        },
+        {
+          "sourceReviewId": "901162105",
+          "author": "suction_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827",
+          "textSha256": "ddff7caada8df8373c149396cc11e85d7aec69ae99021a63126a8a2a99aa9dda"
+        },
+        {
+          "sourceReviewId": "901162106",
+          "author": "app_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827",
+          "textSha256": "fd7eefa9a2c09590935a54dd8edc7bd96e13d39e10e558ee440c3c8ea095d939"
+        },
+        {
+          "sourceReviewId": "901162107",
+          "author": "pet_h**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827",
+          "textSha256": "5a885269c44bdd25c86a036a0d55aabe6be6660a53b547333703957eb297b8d4"
+        },
+        {
+          "sourceReviewId": "901162108",
+          "author": "tank_f**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827",
+          "textSha256": "6c00125bd353102f8aad1e5fb81b6c7126bacde97695c9c83eb0191dab84f3ac"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "cleaning",
+            "label": "청소 성능",
+            "description": "바닥 얼룩 지우는 진동 물걸레와 자동 세척",
+            "reviewIds": [
+              "901162101",
+              "901162102",
+              "901162103",
+              "901162104",
+              "901162105",
+              "901162106",
+              "901162107"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "capacity",
+            "label": "도크 크기",
+            "description": "부피가 큰 스테이션 거치 공간 확보",
+            "reviewIds": [
+              "901162102",
+              "901162103",
+              "901162108"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "901162101",
+          "author": "clean_m**",
+          "sourceRating": 5,
+          "text": "퇴근 후 맨발 닿을 때 뽀송뽀송해요",
+          "adStatus": "확인 불가",
+          "topicId": "cleaning",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827"
+        },
+        {
+          "sourceReviewId": "901162102",
+          "author": "dock_b**",
+          "sourceRating": 4,
+          "text": "도크 스테이션 자리 미리 비워둬야",
+          "adStatus": "확인 불가",
+          "topicId": "capacity",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827"
+        },
+        {
+          "sourceReviewId": "901162104",
+          "author": "auto_d**",
+          "sourceRating": 5,
+          "text": "열풍 건조 덕에 냄새 전혀 안 나요",
+          "adStatus": "확인 불가",
+          "topicId": "cleaning",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5920194827"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "stanbyme": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "911273111",
+          "author": "bed_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918",
+          "textSha256": "cdb6534117d8a4867e62472bfd4b9e0965018d469817e5efb83eb18ff5d2ab91"
+        },
+        {
+          "sourceReviewId": "911273112",
+          "author": "battery_s**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918",
+          "textSha256": "33357a80d9dbb354ddf89c647a5a335ed469001c586f06f9202bb5a0a5add601"
+        },
+        {
+          "sourceReviewId": "911273113",
+          "author": "kitchen_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918",
+          "textSha256": "e2d243176ec905f60b7e05a7f7d25849ff6500ac80699bf673a33863acd41e74"
+        },
+        {
+          "sourceReviewId": "911273114",
+          "author": "touch_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918",
+          "textSha256": "132430778a448eab5d4532d3778f99136650ac90b9138736a14f1c7913cacd26"
+        },
+        {
+          "sourceReviewId": "911273115",
+          "author": "wheel_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918",
+          "textSha256": "8a80bc1fe84903a32bfbb2f2ba4598d88ead519821482693758e87d3bc445cfe"
+        },
+        {
+          "sourceReviewId": "911273116",
+          "author": "angle_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918",
+          "textSha256": "80b9d448b2147a1f7ab4d3cdad4c795531b3be62724a992d69261895e8e916a4"
+        },
+        {
+          "sourceReviewId": "911273117",
+          "author": "sound_g**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918",
+          "textSha256": "6a2498ffc7f7f6a2b93b3367da22a013ae059edfcd48b403305b44f19a655483"
+        },
+        {
+          "sourceReviewId": "911273118",
+          "author": "screen_q**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918",
+          "textSha256": "df72ae77c01010cfe70131e0a23451d2b25db00093d3c5db6a6d2a4e92f00faf"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "portable",
+            "label": "이동 편의",
+            "description": "바퀴로 방마다 쉽게 끌고 이동",
+            "reviewIds": [
+              "911273111",
+              "911273112",
+              "911273113",
+              "911273114",
+              "911273115",
+              "911273116",
+              "911273117"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "lasting",
+            "label": "배터리 시간",
+            "description": "무선 연속 사용 시 3시간 재생",
+            "reviewIds": [
+              "911273112",
+              "911273113",
+              "911273118"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "911273111",
+          "author": "bed_l**",
+          "sourceRating": 5,
+          "text": "침대 옆에 두고 영화 볼 때 천국",
+          "adStatus": "확인 불가",
+          "topicId": "portable",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918"
+        },
+        {
+          "sourceReviewId": "911273112",
+          "author": "battery_s**",
+          "sourceRating": 4,
+          "text": "영화 두 편 보려면 선 꽂아야 해요",
+          "adStatus": "확인 불가",
+          "topicId": "lasting",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918"
+        },
+        {
+          "sourceReviewId": "911273115",
+          "author": "wheel_s**",
+          "sourceRating": 5,
+          "text": "바퀴 부드러워서 방마다 이동 편함",
+          "adStatus": "확인 불가",
+          "topicId": "portable",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203918"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "xiaomi-purifier": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "921384121",
+          "author": "sleep_q**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819",
+          "textSha256": "65a64cd488953cd3df6f1bde64ec89a33a1069d71183d3aff602c2595d400a2a"
+        },
+        {
+          "sourceReviewId": "921384122",
+          "author": "turbo_n**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819",
+          "textSha256": "4e10a0bf9afd66eacaafb5c7b2a86fd716b40e27158e367a7343fd91f5ab3f18"
+        },
+        {
+          "sourceReviewId": "921384123",
+          "author": "app_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819",
+          "textSha256": "4a235496ba546b4f1af4f99ca4d173d7cdec45003ac2bea94a36dbfcde37a391"
+        },
+        {
+          "sourceReviewId": "921384124",
+          "author": "filter_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819",
+          "textSha256": "262df50964ce77df12b0714442076de594a94c65f27ddbd2b53debe0495b38a9"
+        },
+        {
+          "sourceReviewId": "921384125",
+          "author": "display_o**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819",
+          "textSha256": "3094c7b1513473ffa3bc6ad0d4c3afe36347d8d85e11a375dc3a2a3ae465a633"
+        },
+        {
+          "sourceReviewId": "921384126",
+          "author": "air_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819",
+          "textSha256": "b57cb9f5db564f0db014fd2e2642bbcf4605bfa31a34fb6b7cb2e15aec7f99a6"
+        },
+        {
+          "sourceReviewId": "921384127",
+          "author": "design_w**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819",
+          "textSha256": "117667b28ac53e69dcc09befc7a2e4e4f8307f07f5e5837359a80680c6823f8c"
+        },
+        {
+          "sourceReviewId": "921384128",
+          "author": "filter_cost**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819",
+          "textSha256": "da847c8f399393fcf41c47b96ba3b4d96f6866b441213fba2d51aefe94961a95"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quiet",
+            "label": "정숙성",
+            "description": "야간 수면 모드 시 거의 무소음",
+            "reviewIds": [
+              "921384121",
+              "921384122",
+              "921384123",
+              "921384124",
+              "921384125",
+              "921384126",
+              "921384127"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "noise",
+            "label": "최대 풍량",
+            "description": "고속 공기 정화 시 소음 증가",
+            "reviewIds": [
+              "921384122",
+              "921384123",
+              "921384128"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "921384121",
+          "author": "sleep_q**",
+          "sourceRating": 5,
+          "text": "수면 모드 불빛 소리 꺼져서 좋아요",
+          "adStatus": "확인 불가",
+          "topicId": "quiet",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819"
+        },
+        {
+          "sourceReviewId": "921384122",
+          "author": "turbo_n**",
+          "sourceRating": 4,
+          "text": "강풍으로 돌리면 웅 소리 꽤 납니다",
+          "adStatus": "확인 불가",
+          "topicId": "noise",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819"
+        },
+        {
+          "sourceReviewId": "921384123",
+          "author": "app_s**",
+          "sourceRating": 5,
+          "text": "퇴근길 앱으로 미리 켜두면 상쾌",
+          "adStatus": "확인 불가",
+          "topicId": "quiet",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294819"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "philips-shaver": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "931495131",
+          "author": "skin_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819",
+          "textSha256": "eb751813eda1c7eca7715926c95d4c3fb5a6e4a56e7cd6a32abb280d14c4f9f9"
+        },
+        {
+          "sourceReviewId": "931495132",
+          "author": "cart_m**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819",
+          "textSha256": "16f00e358fd551c319a83a60fc27788a51336bf142f32c25aaaa466ecb9ea2a8"
+        },
+        {
+          "sourceReviewId": "931495133",
+          "author": "cut_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819",
+          "textSha256": "0bb2396c8f6e6d1781f166126be0ede5cf893ef734857a5ab2e30f4b373745d6"
+        },
+        {
+          "sourceReviewId": "931495134",
+          "author": "clean_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819",
+          "textSha256": "6941b0a7386e61bf46b545df8d201beee62b82c54d10fdd149da2c7c1882b25d"
+        },
+        {
+          "sourceReviewId": "931495135",
+          "author": "grip_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819",
+          "textSha256": "6bdd48c69b1ee9313ffe6ed4a3be969a483235d101f8c6d5b5b7240bd3812d40"
+        },
+        {
+          "sourceReviewId": "931495136",
+          "author": "battery_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819",
+          "textSha256": "885e8af0946a4f81eddf68e5898d61d7206709b068beb38a6a926f6eb00ad1b7"
+        },
+        {
+          "sourceReviewId": "931495137",
+          "author": "led_g**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819",
+          "textSha256": "d1155c2d00db5c00468076f3090262f3bd06493c495c22b4a1d6a77377be6725"
+        },
+        {
+          "sourceReviewId": "931495138",
+          "author": "chin_s**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819",
+          "textSha256": "516982facddc6f23d304a14f679f43d466ddecb0f143815b55451c291c5bdcb1"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "comfort",
+            "label": "피부 자극",
+            "description": "피부 붉어짐 없는 부드러운 절삭",
+            "reviewIds": [
+              "931495131",
+              "931495132",
+              "931495133",
+              "931495134",
+              "931495135",
+              "931495136",
+              "931495137"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "wash",
+            "label": "세척 관리",
+            "description": "클렌징 팟 세척액 주기적 교체",
+            "reviewIds": [
+              "931495132",
+              "931495133",
+              "931495138"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "931495131",
+          "author": "skin_p**",
+          "sourceRating": 5,
+          "text": "날면도기 쓰다 바꿨는데 피 안 나요",
+          "adStatus": "확인 불가",
+          "topicId": "comfort",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819"
+        },
+        {
+          "sourceReviewId": "931495132",
+          "author": "cart_m**",
+          "sourceRating": 4,
+          "text": "클린팟 세척액 카트리지 사야 해요",
+          "adStatus": "확인 불가",
+          "topicId": "wash",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819"
+        },
+        {
+          "sourceReviewId": "931495133",
+          "author": "cut_c**",
+          "sourceRating": 5,
+          "text": "헤드가 360도 꺾여 턱선 매끈",
+          "adStatus": "확인 불가",
+          "topicId": "comfort",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4810294819"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "nespresso": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "941506141",
+          "author": "crema_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192",
+          "textSha256": "7c240552d962ca72a5958d61e64a6027ed336b6a4ea657953ccbbf5b2870609e"
+        },
+        {
+          "sourceReviewId": "941506142",
+          "author": "pod_m**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192",
+          "textSha256": "83a78f6c1cfc647461e8d892357c0137a0ba60454a074dd91c4fdb8abddace5b"
+        },
+        {
+          "sourceReviewId": "941506143",
+          "author": "size_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192",
+          "textSha256": "0bb219cbf427b7721f69d254bd4ea5d52bf423958e02ec6f7c0a6b6bcaafe0a1"
+        },
+        {
+          "sourceReviewId": "941506144",
+          "author": "barcode_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192",
+          "textSha256": "f35b853c08daca279fccb88a664a05613b7db6210d2cc8d7a190624cbb03cf54"
+        },
+        {
+          "sourceReviewId": "941506145",
+          "author": "mug_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192",
+          "textSha256": "f35d19f0d016b25d50cf5006006d9b6cd43c5b7f2571d018d4884cc98a5fa727"
+        },
+        {
+          "sourceReviewId": "941506146",
+          "author": "color_y**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192",
+          "textSha256": "3cce5e5cf65fcac08c494dbea890b28fa44d347d2bf70232b05749f9a8a65146"
+        },
+        {
+          "sourceReviewId": "941506147",
+          "author": "clean_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192",
+          "textSha256": "5df223926b4a0e4965fcf191fde537a6a9af9ae10c0992cd6fc0ae3f70c5b955"
+        },
+        {
+          "sourceReviewId": "941506148",
+          "author": "water_t**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192",
+          "textSha256": "b99c48e0b68503625cbc53fe5b3c65f4271ae5c43a1f75d38ce53566f0464799"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "taste",
+            "label": "커피 풍미",
+            "description": "회전 추출로 뽑아내는 풍성한 크레마",
+            "reviewIds": [
+              "941506141",
+              "941506142",
+              "941506143",
+              "941506144",
+              "941506145",
+              "941506146",
+              "941506147"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "캡슐 호환",
+            "description": "오리지널 타사 캡슐 사용 불가",
+            "reviewIds": [
+              "941506142",
+              "941506143",
+              "941506148"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "941506141",
+          "author": "crema_l**",
+          "sourceRating": 5,
+          "text": "크레마 두툼해서 커피 맛 깊어요",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192"
+        },
+        {
+          "sourceReviewId": "941506142",
+          "author": "pod_m**",
+          "sourceRating": 4,
+          "text": "호환 캡슐 없어 공식몰서만 주문",
+          "adStatus": "확인 불가",
+          "topicId": "option",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192"
+        },
+        {
+          "sourceReviewId": "941506144",
+          "author": "barcode_f**",
+          "sourceRating": 5,
+          "text": "바코드 읽어서 물 양 알아서 맞춰요",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5192840192"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "cuckoo-rice": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "951617151",
+          "author": "rice_k**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152",
+          "textSha256": "5c93bb2354032a83baca10383bcbf7e88cf739efcb75cec2a3293f58e283416e"
+        },
+        {
+          "sourceReviewId": "951617152",
+          "author": "clean_s**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152",
+          "textSha256": "ef74afd5c7144a613b4d947dd4b3c7fd65e6fee0a98d0e8aa6fe490bfed181ff"
+        },
+        {
+          "sourceReviewId": "951617153",
+          "author": "healthy_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152",
+          "textSha256": "7f1376a71fea8171d6bdbbfc9520eb04f9fae504ebc09e86750123562646248d"
+        },
+        {
+          "sourceReviewId": "951617154",
+          "author": "design_w**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152",
+          "textSha256": "d690dbaf7905bd3df47687c4ce07a1fdef47c605fc6b39fb76453034bd3269ef"
+        },
+        {
+          "sourceReviewId": "951617155",
+          "author": "size_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152",
+          "textSha256": "83b2791eb6f23be1fc25fb9a7d132d3a1ef5017ea7e78207fc23bffec5978293"
+        },
+        {
+          "sourceReviewId": "951617156",
+          "author": "pack_w**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152",
+          "textSha256": "8b3bc2f52f8aa0ca22710f9bc79a76c9967b9f705053576c42aade8b9a3b8d78"
+        },
+        {
+          "sourceReviewId": "951617157",
+          "author": "polish_r**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152",
+          "textSha256": "f75b6431833cd1a47009f5f22495c558b026ee2faf019053881afd2e4844d9e1"
+        },
+        {
+          "sourceReviewId": "951617158",
+          "author": "voice_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152",
+          "textSha256": "63e4eb8067c45b017ac31bc20d51553374c32c08b90bab524084cb7da9066e10"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "sturdy",
+            "label": "내구성",
+            "description": "코팅 벗겨짐 없는 올스텐 수명",
+            "reviewIds": [
+              "951617151",
+              "951617152",
+              "951617153",
+              "951617154",
+              "951617155",
+              "951617156",
+              "951617158"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "cleaning",
+            "label": "내솥 세척",
+            "description": "스텐 특성상 밥알 눌어붙음 불림 필요",
+            "reviewIds": [
+              "951617152",
+              "951617153",
+              "951617157"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "951617151",
+          "author": "rice_k**",
+          "sourceRating": 5,
+          "text": "초고압 2기압이라 잡곡밥도 부드러워요",
+          "adStatus": "확인 불가",
+          "topicId": "sturdy",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152"
+        },
+        {
+          "sourceReviewId": "951617152",
+          "author": "clean_s**",
+          "sourceRating": 4,
+          "text": "스텐이라 밥알 붙어 불려 닦아야",
+          "adStatus": "확인 불가",
+          "topicId": "cleaning",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152"
+        },
+        {
+          "sourceReviewId": "951617153",
+          "author": "healthy_m**",
+          "sourceRating": 5,
+          "text": "코팅 벗겨질 걱정 없어 박박 닦아요",
+          "adStatus": "확인 불가",
+          "topicId": "sturdy",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/9453003152"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "stanley-cup": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "961728161",
+          "author": "ice_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194",
+          "textSha256": "a557ae52ea3e26cace62ad5db5e1b65d59552031305ddd4b45bf7703755192bd"
+        },
+        {
+          "sourceReviewId": "961728162",
+          "author": "bag_c**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194",
+          "textSha256": "07e5beb3e12ad5b0fb7bbd643a1ed9983a6287d922504e41eadd44e43d1cb138"
+        },
+        {
+          "sourceReviewId": "961728163",
+          "author": "handle_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194",
+          "textSha256": "f885dc31af97afbd7b66c3984447b309ee3e5ebaecc8c852a957715176f06f27"
+        },
+        {
+          "sourceReviewId": "961728164",
+          "author": "car_h**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194",
+          "textSha256": "70703aa49713e02a61fafce07a49ce73d5037aa3e8530195fbfe2e030af3e922"
+        },
+        {
+          "sourceReviewId": "961728165",
+          "author": "water_h**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194",
+          "textSha256": "badb324e877ec276f431391b9644b569b041cf72418720f1be8dccaa87fccc8a"
+        },
+        {
+          "sourceReviewId": "961728166",
+          "author": "color_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194",
+          "textSha256": "4407382e0c6f7cab6fef9fa9994c324de47d847cb0459180dd8bff2031bf5afe"
+        },
+        {
+          "sourceReviewId": "961728167",
+          "author": "straw_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194",
+          "textSha256": "24680f0347b22a36fb48224709f56b5dd963de97afb68ffcbd2b7b8c715e99a6"
+        },
+        {
+          "sourceReviewId": "961728168",
+          "author": "weight_h**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194",
+          "textSha256": "e09346d4520084ab5e617a64858bafc2c9690423ac63583eb789844d16c867e9"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "lasting",
+            "label": "보냉 유지",
+            "description": "얼음이 다음 날 아침까지 유지",
+            "reviewIds": [
+              "961728161",
+              "961728162",
+              "961728163",
+              "961728164",
+              "961728165",
+              "961728166",
+              "961728167"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "leak",
+            "label": "밀폐 구조",
+            "description": "가방에 넣고 눕히면 빨대 틈새 누수",
+            "reviewIds": [
+              "961728162",
+              "961728163",
+              "961728168"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "961728161",
+          "author": "ice_l**",
+          "sourceRating": 5,
+          "text": "아침에 넣은 얼음 저녁까지 남아요",
+          "adStatus": "확인 불가",
+          "topicId": "lasting",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194"
+        },
+        {
+          "sourceReviewId": "961728162",
+          "author": "bag_c**",
+          "sourceRating": 4,
+          "text": "빨대 상태로 가방에 넣으면 새요",
+          "adStatus": "확인 불가",
+          "topicId": "leak",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194"
+        },
+        {
+          "sourceReviewId": "961728164",
+          "author": "car_h**",
+          "sourceRating": 5,
+          "text": "하단 좁아 차량 컵홀더에 딱 맞음",
+          "adStatus": "확인 불가",
+          "topicId": "lasting",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5193820194"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "ninja-blender": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "971839171",
+          "author": "smoothie_k**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849",
+          "textSha256": "4e51b9e10aa0afb505f418edc65cffb64eeaa8ff63eec0d230efd7f2bc44da99"
+        },
+        {
+          "sourceReviewId": "971839172",
+          "author": "noise_b**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849",
+          "textSha256": "680fc3782553f3c59f365c0ffa63c6954c9246311db1e76d85b8f164a73d6c54"
+        },
+        {
+          "sourceReviewId": "971839173",
+          "author": "auto_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849",
+          "textSha256": "5884d9be6dc7767f74f8189e3c8b7d942bda745f33d994d341d2bbc44c918507"
+        },
+        {
+          "sourceReviewId": "971839174",
+          "author": "blade_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849",
+          "textSha256": "e59b5e9b7ba126adbfdad3fafbc7a0d9e1a67fa67135e24b15ebc2e945915b09"
+        },
+        {
+          "sourceReviewId": "971839175",
+          "author": "wash_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849",
+          "textSha256": "505f6fe47f464b25d7fd21bcee23cee57ddc6226bec17a05a1dbc6a60eb782dd"
+        },
+        {
+          "sourceReviewId": "971839176",
+          "author": "cup_v**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849",
+          "textSha256": "8120fd4056f6a78485374b997bc53a8f1c943634f831790263893dd8d296cb6a"
+        },
+        {
+          "sourceReviewId": "971839177",
+          "author": "sturdy_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849",
+          "textSha256": "7db1814e7df3c8a01dc0bea03aef7a665a44d64a09ca8997006885878b25bde9"
+        },
+        {
+          "sourceReviewId": "971839178",
+          "author": "sharp_b**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849",
+          "textSha256": "56c22e228faf72857cb2e6f3a1bc69df3c5348818a4708de2ef59cb17d859d3b"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "분쇄 성능",
+            "description": "얼음 덩어리도 곱게 갈아내는 파워",
+            "reviewIds": [
+              "971839171",
+              "971839172",
+              "971839173",
+              "971839174",
+              "971839175",
+              "971839176",
+              "971839177"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "noise",
+            "label": "모터 소음",
+            "description": "초고속 분쇄 시 큰 작동음",
+            "reviewIds": [
+              "971839172",
+              "971839173",
+              "971839178"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "971839171",
+          "author": "smoothie_k**",
+          "sourceRating": 5,
+          "text": "각얼음 넣어도 알갱이 없이 갈려요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849"
+        },
+        {
+          "sourceReviewId": "971839172",
+          "author": "noise_b**",
+          "sourceRating": 4,
+          "text": "소리 비행기 수준이라 낮에 씁니다",
+          "adStatus": "확인 불가",
+          "topicId": "noise",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849"
+        },
+        {
+          "sourceReviewId": "971839173",
+          "author": "auto_p**",
+          "sourceRating": 5,
+          "text": "알아서 멈췄다 돌며 곱게 갈아줘요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293849"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "shin-ramen": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "981940181",
+          "author": "ramen_k**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948",
+          "textSha256": "bff1a81b56e2e812abb8123cb6a5d40a857edc17bae9cbd71b8dd99dafc93642"
+        },
+        {
+          "sourceReviewId": "981940182",
+          "author": "box_c**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948",
+          "textSha256": "3a7cae4a60a6ab95c2f7bcc18829648ad8a4a1e6942fadef3787927bc2852d01"
+        },
+        {
+          "sourceReviewId": "981940183",
+          "author": "noodle_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948",
+          "textSha256": "3c0ea9fa0fadf6e6b21d08736278beeb20dd9568675888cee2bffaea750a0f56"
+        },
+        {
+          "sourceReviewId": "981940184",
+          "author": "topping_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948",
+          "textSha256": "d91ffcbae6cbc496364352846bb91794ec558927853ce0964863ca2516dbefc3"
+        },
+        {
+          "sourceReviewId": "981940185",
+          "author": "camp_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948",
+          "textSha256": "83ceca4ac43497282ba01492bd501e8508fed1a9aebdf7bd212b7db2114ce647"
+        },
+        {
+          "sourceReviewId": "981940186",
+          "author": "rice_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948",
+          "textSha256": "575bd36de282fcf23af22f6f349e34bbbe3323e5f44e18f6c7ecbc35878bd1e2"
+        },
+        {
+          "sourceReviewId": "981940187",
+          "author": "fresh_d**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948",
+          "textSha256": "f42e9c5d048393ed7454cd4b493a5080f4341399b66214b532ffe52c5c0546e4"
+        },
+        {
+          "sourceReviewId": "981940188",
+          "author": "spicy_h**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948",
+          "textSha256": "38793a4dcf87257371041716bbf53378ef5f8681abffd2b6b565413770d52fa5"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "taste",
+            "label": "칼칼한 국물",
+            "description": "얼큰하고 진한 표고버섯 소고기 국물",
+            "reviewIds": [
+              "981940181",
+              "981940182",
+              "981940183",
+              "981940184",
+              "981940185",
+              "981940186",
+              "981940187"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "box",
+            "label": "배송 상태",
+            "description": "택배 배송 시 면 부서짐 주의",
+            "reviewIds": [
+              "981940182",
+              "981940183",
+              "981940188"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "981940181",
+          "author": "ramen_k**",
+          "sourceRating": 5,
+          "text": "얼큰 칼칼해서 해장용으로 최고",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948"
+        },
+        {
+          "sourceReviewId": "981940182",
+          "author": "box_c**",
+          "sourceRating": 4,
+          "text": "완충재 부족해 면 부스러기 생김",
+          "adStatus": "확인 불가",
+          "topicId": "box",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948"
+        },
+        {
+          "sourceReviewId": "981940183",
+          "author": "noodle_c**",
+          "sourceRating": 5,
+          "text": "다 먹을 때까지 면발 쫄깃합니다",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/1938201948"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "samdasoo": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "992051191",
+          "author": "water_t**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800",
+          "textSha256": "affa2b256d773788115cbdc829c6936d2f092606baa8f28af792916aedee5631"
+        },
+        {
+          "sourceReviewId": "992051192",
+          "author": "heavy_d**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800",
+          "textSha256": "2cdd0814c761d23d04f3fe5dfa381be666cbcc8f8683a4cc57f94adf52dfeea7"
+        },
+        {
+          "sourceReviewId": "992051193",
+          "author": "label_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800",
+          "textSha256": "79f4039a2c8b9501e2f2584ba02485cb6187c3f901ffb4c73a5f223e5eadcb35"
+        },
+        {
+          "sourceReviewId": "992051194",
+          "author": "tea_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800",
+          "textSha256": "3219da974bdb316098c52889cb572d3e740391c66404a32bf8eacd2e7c450dd1"
+        },
+        {
+          "sourceReviewId": "992051195",
+          "author": "cook_r**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800",
+          "textSha256": "1c21663cc251f2f07344bd20a3a7829e2649b439259f993c7e3da6be5ec3d900"
+        },
+        {
+          "sourceReviewId": "992051196",
+          "author": "ship_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800",
+          "textSha256": "f904db003f7b09afa9a9d871625bda2067c66f41e9482b4d3b9c0bf9566852cc"
+        },
+        {
+          "sourceReviewId": "992051197",
+          "author": "bottle_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800",
+          "textSha256": "1da870abf08eae2e0fa12dfc5067cf7cca3d2f81bcb51bdd110d7a33ae0094eb"
+        },
+        {
+          "sourceReviewId": "992051198",
+          "author": "price_v**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800",
+          "textSha256": "94c945825a58aef4d67aa23dcd3e2e1fb95034c4d5762c5d4816f6b9c8e81037"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "fresh",
+            "label": "깨끗한 물맛",
+            "description": "화산암반수의 부드러운 목넘김",
+            "reviewIds": [
+              "992051191",
+              "992051192",
+              "992051193",
+              "992051194",
+              "992051195",
+              "992051196",
+              "992051197",
+              "992051198"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "weight",
+            "label": "배송 무게",
+            "description": "24kg 대용량 묶음 운반",
+            "reviewIds": [
+              "992051192",
+              "992051193"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "992051191",
+          "author": "water_t**",
+          "sourceRating": 5,
+          "text": "비린내 없이 꿀꺽꿀꺽 잘 넘어가요",
+          "adStatus": "확인 불가",
+          "topicId": "fresh",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800"
+        },
+        {
+          "sourceReviewId": "992051192",
+          "author": "heavy_d**",
+          "sourceRating": 4,
+          "text": "무거운데 문 앞까지 배송돼 감사",
+          "adStatus": "확인 불가",
+          "topicId": "weight",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800"
+        },
+        {
+          "sourceReviewId": "992051193",
+          "author": "label_e**",
+          "sourceRating": 5,
+          "text": "라벨 안 뜯고 분리수거해서 편함",
+          "adStatus": "확인 불가",
+          "topicId": "fresh",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/9718376800"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "hetbahn": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "902162201",
+          "author": "rice_j**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491",
+          "textSha256": "392aae34651374d7cc321020088902a8c8ffaf9c0224b2ee101fd96b89ac866c"
+        },
+        {
+          "sourceReviewId": "902162202",
+          "author": "pack_t**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491",
+          "textSha256": "9b61725bbfeff8146fd80fad2801994f605bcb345e182f48875992b518ab21b9"
+        },
+        {
+          "sourceReviewId": "902162203",
+          "author": "time_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491",
+          "textSha256": "9f92389a9ec861a44261d2e312af4af9f47ef86443d42f16c147ac0408a7609e"
+        },
+        {
+          "sourceReviewId": "902162204",
+          "author": "smell_n**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491",
+          "textSha256": "87bf4719b542dfbeac06f14a0e7ad48a3e852b2bdd39ab4bfe77b88771cffcf8"
+        },
+        {
+          "sourceReviewId": "902162205",
+          "author": "size_210**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491",
+          "textSha256": "635e3bf05950f7a34c82db2d267d6cf307fc0f50149491db3e308b4eeda06856"
+        },
+        {
+          "sourceReviewId": "902162206",
+          "author": "storage_r**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491",
+          "textSha256": "f9aab69882f2393f17566b001f42438162451c0bcad769eca87560f685dd24b3"
+        },
+        {
+          "sourceReviewId": "902162207",
+          "author": "camp_u**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491",
+          "textSha256": "f52b557fc773a9bdc91e5bed7b1b4a5901add593d906cbad11a67fab4efd285d"
+        },
+        {
+          "sourceReviewId": "902162208",
+          "author": "price_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491",
+          "textSha256": "c0d70443ef1548d3758456cbb96206f2c7681e837540d04ba265680d75913fc0"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "taste",
+            "label": "밥맛 식감",
+            "description": "쌀알이 살아있는 고슬고슬한 찰기",
+            "reviewIds": [
+              "902162201",
+              "902162202",
+              "902162203",
+              "902162204",
+              "902162205",
+              "902162206",
+              "902162207",
+              "902162208"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "box",
+            "label": "포장 파손",
+            "description": "비닐 덮개 찢어짐 주의",
+            "reviewIds": [
+              "902162202",
+              "902162203"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "902162201",
+          "author": "rice_j**",
+          "sourceRating": 5,
+          "text": "윤기 자르르 흐르고 밥알 찰져요",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491"
+        },
+        {
+          "sourceReviewId": "902162202",
+          "author": "pack_t**",
+          "sourceRating": 4,
+          "text": "박스 뜯을 때 비닐 손상 조심",
+          "adStatus": "확인 불가",
+          "topicId": "box",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491"
+        },
+        {
+          "sourceReviewId": "902162203",
+          "author": "time_f**",
+          "sourceRating": 5,
+          "text": "렌지 2분 돌리면 갓 지은 밥맛",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2102938491"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "spam-classic": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "912273211",
+          "author": "spam_fan**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819",
+          "textSha256": "4e38339824b8d6ad75d9ae25f3ff98e2e2dbac3963b977e10269ad491922929b"
+        },
+        {
+          "sourceReviewId": "912273212",
+          "author": "salty_k**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819",
+          "textSha256": "ecb2f9e771127d8ad0f0bb0aed485daf7989a4745c7a88070b21684c0e412917"
+        },
+        {
+          "sourceReviewId": "912273213",
+          "author": "budae_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819",
+          "textSha256": "eaadd3905e9d2c41605b3badc1ba63ed3573ce47c06dcca5b3a4ea86093c282d"
+        },
+        {
+          "sourceReviewId": "912273214",
+          "author": "can_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819",
+          "textSha256": "83333ef7ad4d876f44934e709168369ddf614ad089b2734b719f6c1419f6f4a7"
+        },
+        {
+          "sourceReviewId": "912273215",
+          "author": "meat_r**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819",
+          "textSha256": "f87bbd1e25ea9a48bdfc77ee2802386084b48aac98202c4a930b2e6f7a7c464b"
+        },
+        {
+          "sourceReviewId": "912273216",
+          "author": "gift_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819",
+          "textSha256": "3a944c1a652e820bed80b61a063bb392b32e0f816c5c2a613820fb4866a50d9e"
+        },
+        {
+          "sourceReviewId": "912273217",
+          "author": "open_e**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819",
+          "textSha256": "7ba29f25d1a10c964189efcf94379a23b3c4672545ffed6a3810d9b8788c29d2"
+        },
+        {
+          "sourceReviewId": "912273218",
+          "author": "price_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819",
+          "textSha256": "a62078001f398a6e48682f3d0f9edcc2e842376e8c13494247c5a0c9484e6b29"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "taste",
+            "label": "감칠맛",
+            "description": "노릇하게 구웠을 때 터지는 고소한 육즙",
+            "reviewIds": [
+              "912273211",
+              "912273212",
+              "912273213",
+              "912273214",
+              "912273215",
+              "912273216",
+              "912273218"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "preference",
+            "label": "짠맛 선호",
+            "description": "입맛에 따라 끓는 물에 살짝 데쳐 굽기",
+            "reviewIds": [
+              "912273212",
+              "912273213",
+              "912273217"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "912273211",
+          "author": "spam_fan**",
+          "sourceRating": 5,
+          "text": "바삭하게 구우면 밥 두 공기 뚝딱",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819"
+        },
+        {
+          "sourceReviewId": "912273212",
+          "author": "salty_k**",
+          "sourceRating": 4,
+          "text": "물에 살짝 데쳐 구우면 간 맞아요",
+          "adStatus": "확인 불가",
+          "topicId": "preference",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819"
+        },
+        {
+          "sourceReviewId": "912273215",
+          "author": "meat_r**",
+          "sourceRating": 5,
+          "text": "돼지고기 함량 높아 씹는 맛 최고",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294819"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "maxim-kanu": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "922384221",
+          "author": "ice_a**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928",
+          "textSha256": "fb784496522ce66ab85d758b8ac6a7381d802b140a1f8e4fc681de99136b609c"
+        },
+        {
+          "sourceReviewId": "922384222",
+          "author": "bitter_d**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928",
+          "textSha256": "d0a7bd9f44a2b316ba8cfdb1a9bc2c717689625435300b5c3d2c35aea8df94e9"
+        },
+        {
+          "sourceReviewId": "922384223",
+          "author": "office_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928",
+          "textSha256": "f833a6ce23adaaa171a4ffca3c2bccf1934cd64a6273fd8d40fd4f56e69fb043"
+        },
+        {
+          "sourceReviewId": "922384224",
+          "author": "scent_r**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928",
+          "textSha256": "3ec9cb1b56c7bac31baf6d59e819fa0206393d162180db2065e574da39a9c549"
+        },
+        {
+          "sourceReviewId": "922384225",
+          "author": "mini_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928",
+          "textSha256": "c7aa159ee538c166121c171c831413f215115a178839ca30b7ab21bfef9a233e"
+        },
+        {
+          "sourceReviewId": "922384226",
+          "author": "latte_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928",
+          "textSha256": "4b564cd5f1837b80bf211182107190bab29f036c7b68cced4735f817a8ac9ffc"
+        },
+        {
+          "sourceReviewId": "922384227",
+          "author": "box_t**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928",
+          "textSha256": "1b00eefdc23ddead8d491e63c9de194341c048b7fdaa2cec6e73a893880e9df4"
+        },
+        {
+          "sourceReviewId": "922384228",
+          "author": "cost_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928",
+          "textSha256": "e56c96d8c4f38745222fdc1231bc2a8d18e32be8efe4506d1aee228796b9e749"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "easy",
+            "label": "편의성",
+            "description": "찬물과 얼음에도 흔들면 바로 녹음",
+            "reviewIds": [
+              "922384221",
+              "922384222",
+              "922384223",
+              "922384224",
+              "922384225",
+              "922384226",
+              "922384227",
+              "922384228"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "taste",
+            "label": "쓴맛 강도",
+            "description": "다크로스트의 진한 쓴맛",
+            "reviewIds": [
+              "922384222",
+              "922384223"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "922384221",
+          "author": "ice_a**",
+          "sourceRating": 5,
+          "text": "얼음물에 스틱 넣으면 바로 녹아요",
+          "adStatus": "확인 불가",
+          "topicId": "easy",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928"
+        },
+        {
+          "sourceReviewId": "922384222",
+          "author": "bitter_d**",
+          "sourceRating": 4,
+          "text": "진한 쓴맛이라 물 많이 타서 마심",
+          "adStatus": "확인 불가",
+          "topicId": "taste",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928"
+        },
+        {
+          "sourceReviewId": "922384223",
+          "author": "office_c**",
+          "sourceRating": 5,
+          "text": "출근해서 타면 잠이 번쩍 깹니다",
+          "adStatus": "확인 불가",
+          "topicId": "easy",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/1829401928"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "dr-g-cream": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "932495231",
+          "author": "sooth_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819",
+          "textSha256": "fc05e268f6db52137c241d6eaf7febda7a288875d7202d2054b9e6cd87d6e67b"
+        },
+        {
+          "sourceReviewId": "932495232",
+          "author": "dry_w**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819",
+          "textSha256": "d91e05972fd5e812a09469aa141a1f679b1eb21d7f87a825ae567b30e4206bbe"
+        },
+        {
+          "sourceReviewId": "932495233",
+          "author": "absorb_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819",
+          "textSha256": "656541c67d53886ee11b08d7ce1405e26b62a49b6c1d27aaffc665197df8a60d"
+        },
+        {
+          "sourceReviewId": "932495234",
+          "author": "men_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819",
+          "textSha256": "e1b8545df70cd95a01aa5fd0271f35b2a63216ed56d624827844c904087bb886"
+        },
+        {
+          "sourceReviewId": "932495235",
+          "author": "trouble_z**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819",
+          "textSha256": "eb26a35af436eb0b72bc4f1d6d65ac925fd7cc0c140774cb2d1aca7f1132cd6a"
+        },
+        {
+          "sourceReviewId": "932495236",
+          "author": "spatula_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819",
+          "textSha256": "9efb4a8fb97a36ecab748bc7841c54b4a6929a5027bd90ae8339b37f7112eb4f"
+        },
+        {
+          "sourceReviewId": "932495237",
+          "author": "cooling_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819",
+          "textSha256": "09845781ac3cc004a4747073f2f80f473f1aed3f0b00ae33591f2b9d6a29828f"
+        },
+        {
+          "sourceReviewId": "932495238",
+          "author": "repeat_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819",
+          "textSha256": "d919021791e5a7497ee80227b49a2bd388dcff35589715ad926fb5e35bc9660c"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "texture",
+            "label": "발림성",
+            "description": "유분기 없이 산뜻하게 스며드는 젤 제형",
+            "reviewIds": [
+              "932495231",
+              "932495232",
+              "932495233",
+              "932495234",
+              "932495235",
+              "932495236",
+              "932495237",
+              "932495238"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "moisture",
+            "label": "보습 지속",
+            "description": "극건성 기준 한겨울 보습막 아쉬움",
+            "reviewIds": [
+              "932495232",
+              "932495233"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "932495231",
+          "author": "sooth_m**",
+          "sourceRating": 5,
+          "text": "듬뿍 바르고 자면 붉은기 진정돼요",
+          "adStatus": "확인 불가",
+          "topicId": "texture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819"
+        },
+        {
+          "sourceReviewId": "932495232",
+          "author": "dry_w**",
+          "sourceRating": 4,
+          "text": "건성 피부는 겨울철 살짝 가벼워요",
+          "adStatus": "확인 불가",
+          "topicId": "moisture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819"
+        },
+        {
+          "sourceReviewId": "932495233",
+          "author": "absorb_f**",
+          "sourceRating": 5,
+          "text": "끈적임 전혀 없이 피부에 쏙 흡수",
+          "adStatus": "확인 불가",
+          "topicId": "texture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2910294819"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "laneige-lip": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "942506241",
+          "author": "lip_care**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829",
+          "textSha256": "fe1900801ac3b021e7f3237b1b7b68a892ffac041a67756d21cad7bcb4b194b3"
+        },
+        {
+          "sourceReviewId": "942506242",
+          "author": "sticky_d**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829",
+          "textSha256": "ae99cba99f789dda615f6840402c026e567fd71c7f36e9bd06b810f4a4c2d2fa"
+        },
+        {
+          "sourceReviewId": "942506243",
+          "author": "berry_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829",
+          "textSha256": "4373bc895cf60e9b8594066b92e5ec949e096efda14bd5f530e46ac418efc295"
+        },
+        {
+          "sourceReviewId": "942506244",
+          "author": "winter_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829",
+          "textSha256": "4458d01774735f46faae08b7639221d1ba64a8403accafdb010b83195130d69d"
+        },
+        {
+          "sourceReviewId": "942506245",
+          "author": "capacity_g**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829",
+          "textSha256": "5b83bcb84ca7fd26dc2a393b46f17306b1c064d5d71df305bfe5bc55e0676e73"
+        },
+        {
+          "sourceReviewId": "942506246",
+          "author": "applicator_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829",
+          "textSha256": "cfed05b771744465c84f501fa7a976577fe728f215d8c95a15c673756c248dae"
+        },
+        {
+          "sourceReviewId": "942506247",
+          "author": "matt_lip**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829",
+          "textSha256": "c022ecd45425a087102350fcf7906b6882864611ad1f5474862a92edcd433019"
+        },
+        {
+          "sourceReviewId": "942506248",
+          "author": "gift_r**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829",
+          "textSha256": "4d08f466f3f00293b1c0e61628f599afa99fce2c0d77c0244a49da9e4188ddd9"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "moisture",
+            "label": "보습 지속",
+            "description": "밤새 마르지 않고 입술 각질 연화",
+            "reviewIds": [
+              "942506241",
+              "942506242",
+              "942506243",
+              "942506244",
+              "942506245",
+              "942506246",
+              "942506247",
+              "942506248"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "texture",
+            "label": "제형 무게감",
+            "description": "낮에 바르기엔 다소 무거운 점도",
+            "reviewIds": [
+              "942506242",
+              "942506243"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "942506241",
+          "author": "lip_care**",
+          "sourceRating": 5,
+          "text": "자고 일어나 살살 문지르면 각질 박멸",
+          "adStatus": "확인 불가",
+          "topicId": "moisture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829"
+        },
+        {
+          "sourceReviewId": "942506242",
+          "author": "sticky_d**",
+          "sourceRating": 4,
+          "text": "밤에 바르고 잘 때 머리카락 붙어요",
+          "adStatus": "확인 불가",
+          "topicId": "texture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829"
+        },
+        {
+          "sourceReviewId": "942506244",
+          "author": "winter_m**",
+          "sourceRating": 5,
+          "text": "겨울철 입술 트던 거 싹 나았어요",
+          "adStatus": "확인 불가",
+          "topicId": "moisture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3810294829"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "roundlab-sun": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "952617251",
+          "author": "sun_lotion**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819",
+          "textSha256": "f74752b297f4655fa364c6300de488f1bdec1646b4855b69431802260db412c7"
+        },
+        {
+          "sourceReviewId": "952617252",
+          "author": "oil_t**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819",
+          "textSha256": "d9ec0288709bc3d33331d09f44b5e2d3c207d142af1ccba6c2faf37e83b16dfe"
+        },
+        {
+          "sourceReviewId": "952617253",
+          "author": "eye_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819",
+          "textSha256": "3fe20dd7cfc894402a74c195ab16ce1d147ed92b9ee395b758952a009a222d07"
+        },
+        {
+          "sourceReviewId": "952617254",
+          "author": "white_z**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819",
+          "textSha256": "a260e4e62dc65aae94b967f9cb462cae2d9bc05714859ee255e6eccc5ab86218"
+        },
+        {
+          "sourceReviewId": "952617255",
+          "author": "makeup_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819",
+          "textSha256": "e192b1ceea2a41ed5c8b04d5b8e8ad510eb4e2a386efbdcb1d0829bc9673f25b"
+        },
+        {
+          "sourceReviewId": "952617256",
+          "author": "spf_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819",
+          "textSha256": "2e4b5015990ce154a5b34b0dec90ca0d0a28f48e8863d79deaebbcbbeb516eb9"
+        },
+        {
+          "sourceReviewId": "952617257",
+          "author": "wash_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819",
+          "textSha256": "44123621a9094cb291cc4c8b599515130134dcd2a036608953a6a9cac525cbc9"
+        },
+        {
+          "sourceReviewId": "952617258",
+          "author": "repeat_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819",
+          "textSha256": "607fb4d5889ef575bb4e5a98e72c427bf83ce1c1e7095306835254f1cb13fa18"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "texture",
+            "label": "로션 텍스처",
+            "description": "백탁 없이 수분 로션처럼 부드럽게 흡수",
+            "reviewIds": [
+              "952617251",
+              "952617252",
+              "952617253",
+              "952617254",
+              "952617255",
+              "952617256",
+              "952617257",
+              "952617258"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "피부 타입",
+            "description": "지성 피부 기준 오후 약한 번들거림",
+            "reviewIds": [
+              "952617252",
+              "952617253"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "952617251",
+          "author": "sun_lotion**",
+          "sourceRating": 5,
+          "text": "선크림 뻑뻑하지 않고 로션처럼 발림",
+          "adStatus": "확인 불가",
+          "topicId": "texture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819"
+        },
+        {
+          "sourceReviewId": "952617252",
+          "author": "oil_t**",
+          "sourceRating": 4,
+          "text": "오후 되면 코 주변 기름 살짝 돌아요",
+          "adStatus": "확인 불가",
+          "topicId": "option",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819"
+        },
+        {
+          "sourceReviewId": "952617253",
+          "author": "eye_s**",
+          "sourceRating": 5,
+          "text": "눈가 발라도 눈물 안 나고 순해요",
+          "adStatus": "확인 불가",
+          "topicId": "texture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910293819"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "anua-toner": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "962728261",
+          "author": "calm_t**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182",
+          "textSha256": "277ff7073718cf40323b6cf944767eae2d2bd3492a3a843ed99e9df254e745ec"
+        },
+        {
+          "sourceReviewId": "962728262",
+          "author": "water_l**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182",
+          "textSha256": "d7193833401925302551e89a604d4f4d49aba353ab5d7f2c3c097ce37c91932c"
+        },
+        {
+          "sourceReviewId": "962728263",
+          "author": "pack_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182",
+          "textSha256": "d3f58e6a69f4e0e25018dab912657b7fb1eca4e62dd02a08591199921ec6139e"
+        },
+        {
+          "sourceReviewId": "962728264",
+          "author": "size_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182",
+          "textSha256": "4636d4ecf3889403ec7005fb62db9289b0413b21e43544a91b33700091b621c5"
+        },
+        {
+          "sourceReviewId": "962728265",
+          "author": "clean_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182",
+          "textSha256": "88fa80d7973b010e41eb6fb15ba6b4b8f0f49402cceefd2cf3795789d5b01032"
+        },
+        {
+          "sourceReviewId": "962728266",
+          "author": "pure_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182",
+          "textSha256": "4320d680b9f3a2ce38cf16e17c794d138bf47b856faacb3e7ec44dd386e5a785"
+        },
+        {
+          "sourceReviewId": "962728267",
+          "author": "ph_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182",
+          "textSha256": "7c4688cd545dc7125ee3802afb1e510a8b7a15e7373ddcd2c39539895426c7ff"
+        },
+        {
+          "sourceReviewId": "962728268",
+          "author": "price_d**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182",
+          "textSha256": "6e6b87a3cfd274e141626c913ee4fdce85f937575a712d60b5f0cc7aa5dc0cc5"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "피부 진정",
+            "description": "붉은기와 좁쌀 트러블 진정 효과",
+            "reviewIds": [
+              "962728261",
+              "962728262",
+              "962728263",
+              "962728264",
+              "962728265",
+              "962728266",
+              "962728267",
+              "962728268"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "moisture",
+            "label": "보습력",
+            "description": "물 같은 제형으로 단독 보습 부족",
+            "reviewIds": [
+              "962728262",
+              "962728263"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "962728261",
+          "author": "calm_t**",
+          "sourceRating": 5,
+          "text": "화장솜 팩 하면 붉은기 싹 잡혀요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182"
+        },
+        {
+          "sourceReviewId": "962728262",
+          "author": "water_l**",
+          "sourceRating": 4,
+          "text": "물 제형이라 뒤에 크림 꼭 발라야",
+          "adStatus": "확인 불가",
+          "topicId": "moisture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182"
+        },
+        {
+          "sourceReviewId": "962728265",
+          "author": "clean_m**",
+          "sourceRating": 5,
+          "text": "세안 후 닦아내면 피부결 매끈해짐",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4192039182"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "torriden-serum": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "972839271",
+          "author": "inner_d**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481",
+          "textSha256": "9d5c088dcb81f3d5534109eb4c5462f04d7cb62efeb54fa2437b5af08df451d6"
+        },
+        {
+          "sourceReviewId": "972839272",
+          "author": "drop_r**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481",
+          "textSha256": "029320340ee4d96089214692c446a78734654d0e937719897d696192ae1d4886"
+        },
+        {
+          "sourceReviewId": "972839273",
+          "author": "absorb_q**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481",
+          "textSha256": "ff689baee08434df629ebc5ecee772a7cccc3f1565dc2a74d47238f7cfa541f0"
+        },
+        {
+          "sourceReviewId": "972839274",
+          "author": "calm_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481",
+          "textSha256": "5c5c1469ad1668c0e2d00f07fd2e291b73faa23cbf5bb5f7e7612e80a89ebd24"
+        },
+        {
+          "sourceReviewId": "972839275",
+          "author": "base_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481",
+          "textSha256": "47e428cbeaf1863d91a49b20868051efca9ec856f4b8fb2ff56534a9e948f921"
+        },
+        {
+          "sourceReviewId": "972839276",
+          "author": "sticky_z**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481",
+          "textSha256": "14bea5d217d93f8bfdf04f1e2ac22d8cb06d4dfa51300e8f688d09b5f209ef51"
+        },
+        {
+          "sourceReviewId": "972839277",
+          "author": "pump_e**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481",
+          "textSha256": "7d96fd829c7b1dcb13632018edc05b96ecf7dc0caa49f806b93a499fc821c19d"
+        },
+        {
+          "sourceReviewId": "972839278",
+          "author": "winner_o**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481",
+          "textSha256": "44972e566f8475c5b57e0ecaf9565f9c32edc3e81f8a9be5acdf97fdcbc0a684"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "moisture",
+            "label": "속건조 개선",
+            "description": "피부 속당김을 잡아주는 수분 충전",
+            "reviewIds": [
+              "972839271",
+              "972839272",
+              "972839273",
+              "972839274",
+              "972839275",
+              "972839276",
+              "972839277",
+              "972839278"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "texture",
+            "label": "물 같은 점도",
+            "description": "스포이드 떨어뜨릴 때 흐름 주의",
+            "reviewIds": [
+              "972839272",
+              "972839273"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "972839271",
+          "author": "inner_d**",
+          "sourceRating": 5,
+          "text": "속건조 심했는데 3일 만에 개선됨",
+          "adStatus": "확인 불가",
+          "topicId": "moisture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481"
+        },
+        {
+          "sourceReviewId": "972839272",
+          "author": "drop_r**",
+          "sourceRating": 4,
+          "text": "점성 묽어서 얼굴에 바로 흐름 주의",
+          "adStatus": "확인 불가",
+          "topicId": "texture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481"
+        },
+        {
+          "sourceReviewId": "972839273",
+          "author": "absorb_q**",
+          "sourceRating": 5,
+          "text": "두 겹 덧발라도 겉돌지 않고 흡수",
+          "adStatus": "확인 불가",
+          "topicId": "moisture",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/5192039481"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "nike-airforce": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "982940281",
+          "author": "coordi_k**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481",
+          "textSha256": "8d5e929017ef6dd3ec2e146f0a889049c934062a31e72ec5ff13c399350feafb"
+        },
+        {
+          "sourceReviewId": "982940282",
+          "author": "heavy_s**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481",
+          "textSha256": "93c871d472290de075dcf618af7540925b89ab9e375612f6b2896295cd168183"
+        },
+        {
+          "sourceReviewId": "982940283",
+          "author": "leather_q**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481",
+          "textSha256": "008932160c27e73c96737671bc896b08d6b8fc4da88b445b2359296e3a66c216"
+        },
+        {
+          "sourceReviewId": "982940284",
+          "author": "height_u**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481",
+          "textSha256": "e48d1109913af486584408e73de2b7ae73ac0f1bb1df40cab16ea3d309f29c6e"
+        },
+        {
+          "sourceReviewId": "982940285",
+          "author": "size_t**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481",
+          "textSha256": "11645a0a703cf586a276b15a17cab180d0e766e83f004ac5aad3bc78aebf0ce5"
+        },
+        {
+          "sourceReviewId": "982940286",
+          "author": "white_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481",
+          "textSha256": "4f51266dbfbe45b0eb5d1ad813a2f8860b057236be07035dccac37b1623c7e87"
+        },
+        {
+          "sourceReviewId": "982940287",
+          "author": "air_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481",
+          "textSha256": "1d5d75ed126626d6ac7ecb9533c2b5c610e0b4cb0609a81c169383d9894c3fa5"
+        },
+        {
+          "sourceReviewId": "982940288",
+          "author": "clean_m**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481",
+          "textSha256": "3ba7a8fcbfa8e5c209b6f75f53b816d704f4a988f1b03625a4edfd6e627108b0"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "design",
+            "label": "클래식 디자인",
+            "description": "모든 코디에 실패 없는 올백 스니커즈",
+            "reviewIds": [
+              "982940281",
+              "982940282",
+              "982940283",
+              "982940284",
+              "982940285",
+              "982940286",
+              "982940287"
+            ],
+            "count": 7
+          }
+        ],
+        "negative": [
+          {
+            "id": "weight",
+            "label": "신발 무게",
+            "description": "캔버스화 대비 묵직한 굽 무게",
+            "reviewIds": [
+              "982940282",
+              "982940283",
+              "982940288"
+            ],
+            "count": 3
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "982940281",
+          "author": "coordi_k**",
+          "sourceRating": 5,
+          "text": "슬랙스 청바지 어디든 만능 치트키",
+          "adStatus": "확인 불가",
+          "topicId": "design",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481"
+        },
+        {
+          "sourceReviewId": "982940282",
+          "author": "heavy_s**",
+          "sourceRating": 4,
+          "text": "러닝화보다 밑창이 다소 묵직해요",
+          "adStatus": "확인 불가",
+          "topicId": "weight",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481"
+        },
+        {
+          "sourceReviewId": "982940284",
+          "author": "height_u**",
+          "sourceRating": 5,
+          "text": "자연스러운 굽높이로 비율 좋아짐",
+          "adStatus": "확인 불가",
+          "topicId": "design",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3192039481"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "newbalance-574": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "993051291",
+          "author": "comfy_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192",
+          "textSha256": "0acf8f374e41bf770586ff6b463fb9405211f665f406581aa19b033a90ae9f55"
+        },
+        {
+          "sourceReviewId": "993051292",
+          "author": "rain_c**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192",
+          "textSha256": "aa4fd7edd2a028f63adb1e147d9f28a415cb20754c6b67d2c15047d18c5ed8d5"
+        },
+        {
+          "sourceReviewId": "993051293",
+          "author": "color_n**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192",
+          "textSha256": "6958d91a71c25aa66279453cfe2a16ff8a3fa977f9eee3b204b5b3b255c3fa85"
+        },
+        {
+          "sourceReviewId": "993051294",
+          "author": "wide_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192",
+          "textSha256": "9542de9279f9107c2de2c42f6fb58c48cd886ae1630e0a388981f0e1f3f8f77b"
+        },
+        {
+          "sourceReviewId": "993051295",
+          "author": "pants_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192",
+          "textSha256": "6f92015633cbd691f240375ed37c349d818c75e21367e46c2815cd8b6077f182"
+        },
+        {
+          "sourceReviewId": "993051296",
+          "author": "stitch_d**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192",
+          "textSha256": "f41f00bad72a81d95eaf525187070b5bf9e49abf4579e61b388db1183772872b"
+        },
+        {
+          "sourceReviewId": "993051297",
+          "author": "daily_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192",
+          "textSha256": "6fc7dac47b899a4a1790773fd6a5329dc525345eb68707d3a7adc82e76c3239e"
+        },
+        {
+          "sourceReviewId": "993051298",
+          "author": "size_h**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192",
+          "textSha256": "fdf350df5c7736a7b3d6ba4570172568915aa1ba1906578258d4738931876d4b"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "comfort",
+            "label": "착화감",
+            "description": "발볼 압박 없는 푹신한 발바닥 쿠셔닝",
+            "reviewIds": [
+              "993051291",
+              "993051292",
+              "993051293",
+              "993051294",
+              "993051295",
+              "993051296",
+              "993051297",
+              "993051298"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "스웨이드 관리",
+            "description": "비 오는 날 물 빠짐 오염 주의",
+            "reviewIds": [
+              "993051292",
+              "993051293"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "993051291",
+          "author": "comfy_m**",
+          "sourceRating": 5,
+          "text": "만 보 걸어도 발바닥 안 아프고 편함",
+          "adStatus": "확인 불가",
+          "topicId": "comfort",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192"
+        },
+        {
+          "sourceReviewId": "993051292",
+          "author": "rain_c**",
+          "sourceRating": 4,
+          "text": "스웨이드라 비 오는 날 피해야 해요",
+          "adStatus": "확인 불가",
+          "topicId": "care",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192"
+        },
+        {
+          "sourceReviewId": "993051293",
+          "author": "color_n**",
+          "sourceRating": 5,
+          "text": "쉐입 얄쌍해서 실물 색감 대만족",
+          "adStatus": "확인 불가",
+          "topicId": "comfort",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4192840192"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "spao-puffer": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "903162301",
+          "author": "warm_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918",
+          "textSha256": "61c20b2abda5fb4114a84bf729ff7ba1d1d2b1135b594d76c2c20a749dedf98f"
+        },
+        {
+          "sourceReviewId": "903162302",
+          "author": "length_s**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918",
+          "textSha256": "cf8a3148a92a820cdfc48c590a39bc0d4feb8d996b884ffc79196d1448b667b5"
+        },
+        {
+          "sourceReviewId": "903162303",
+          "author": "fit_o**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918",
+          "textSha256": "0307b291f95e57d777c373a2c8cdd413eff98682e70111592cba401119c362c5"
+        },
+        {
+          "sourceReviewId": "903162304",
+          "author": "color_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918",
+          "textSha256": "bead1d561bdc5e7245cf37182274009736c8d2cd9b78834055bac5103d2dc25f"
+        },
+        {
+          "sourceReviewId": "903162305",
+          "author": "pocket_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918",
+          "textSha256": "3eca61ebcdfa703093e8d1c181a6438f4c9b8690760ad441b8c35f72a6456eda"
+        },
+        {
+          "sourceReviewId": "903162306",
+          "author": "neck_h**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918",
+          "textSha256": "51777e9814abaf0b5dc5bea7c05b3ccc60c95ac41a1da499111d82abd50d2a55"
+        },
+        {
+          "sourceReviewId": "903162307",
+          "author": "price_v**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918",
+          "textSha256": "6859820cf4bbc3bf37aa8aad34eb63d30e36196c5f1c981057c3b6d7eda6d2af"
+        },
+        {
+          "sourceReviewId": "903162308",
+          "author": "string_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918",
+          "textSha256": "3bc84ca956eb49cd1500f8b319dd1fc81dae616ec36ef711fc312ca224103598"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "weight",
+            "label": "경량 보온",
+            "description": "무겁지 않고 포근하게 감싸는 볼륨",
+            "reviewIds": [
+              "903162301",
+              "903162302",
+              "903162303",
+              "903162304",
+              "903162305",
+              "903162306",
+              "903162307",
+              "903162308"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "기장감",
+            "description": "숏패딩 특성상 엉덩이 하단 노출",
+            "reviewIds": [
+              "903162302",
+              "903162303"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "903162301",
+          "author": "warm_p**",
+          "sourceRating": 5,
+          "text": "깃털처럼 가벼운데 생각보다 따뜻",
+          "adStatus": "확인 불가",
+          "topicId": "weight",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918"
+        },
+        {
+          "sourceReviewId": "903162302",
+          "author": "length_s**",
+          "sourceRating": 4,
+          "text": "숏 기장이라 한파엔 다리 시려요",
+          "adStatus": "확인 불가",
+          "topicId": "option",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918"
+        },
+        {
+          "sourceReviewId": "903162304",
+          "author": "color_b**",
+          "sourceRating": 5,
+          "text": "비닐 광택 안 나는 매트 원단 고급짐",
+          "adStatus": "확인 불가",
+          "topicId": "weight",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2819203918"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "gentle-monster": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "913273311",
+          "author": "shape_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948",
+          "textSha256": "b077960747ef7f051e936c186bf6c407af3cce68e5aea3ada3b0093287fa0820"
+        },
+        {
+          "sourceReviewId": "913273312",
+          "author": "nose_f**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948",
+          "textSha256": "06987f75667f6dcf939f624cbf0e256352f6eb86a22840486438f6e078edc87b"
+        },
+        {
+          "sourceReviewId": "913273313",
+          "author": "uv_d**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948",
+          "textSha256": "f4de4c84d37be9a49fafe00ee89e6c917e7fb74af2ce404c730809752c406119"
+        },
+        {
+          "sourceReviewId": "913273314",
+          "author": "package_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948",
+          "textSha256": "928a8a689507e931dc73fd6755edb5107acd2b0f75d1f06c95cbd060fbbc5bf2"
+        },
+        {
+          "sourceReviewId": "913273315",
+          "author": "travel_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948",
+          "textSha256": "2a534bb2d94f1061b021bce8c168f5a86e4aed684df2c0088310ed6d80920b91"
+        },
+        {
+          "sourceReviewId": "913273316",
+          "author": "weight_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948",
+          "textSha256": "257703f32a0341ea8a8087005318bb56bc4cccafe03fbb56b7c14410a40683bf"
+        },
+        {
+          "sourceReviewId": "913273317",
+          "author": "metal_d**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948",
+          "textSha256": "d3da32079136bc39f6e2518927cfc943d436f72212da03d2ff427e3753a06512"
+        },
+        {
+          "sourceReviewId": "913273318",
+          "author": "timeless_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948",
+          "textSha256": "c2763d1d539c6a1ebb5c0aab32ebd5e79113ba91b90a663e3aeda390b344d199"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "design",
+            "label": "얼굴형 커버",
+            "description": "광대와 턱선을 갸름하게 잡아주는 쉐입",
+            "reviewIds": [
+              "913273311",
+              "913273312",
+              "913273313",
+              "913273314",
+              "913273315",
+              "913273316",
+              "913273317",
+              "913273318"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "fit",
+            "label": "피팅 조절",
+            "description": "코받침 없는 뿔테 피팅 피팅샵 방문",
+            "reviewIds": [
+              "913273312",
+              "913273313"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "913273311",
+          "author": "shape_s**",
+          "sourceRating": 5,
+          "text": "스퀘어 쉐입이라 얼굴형 단점 가려줌",
+          "adStatus": "확인 불가",
+          "topicId": "design",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948"
+        },
+        {
+          "sourceReviewId": "913273312",
+          "author": "nose_f**",
+          "sourceRating": 4,
+          "text": "일체형 코받침이라 안경점 피팅 추천",
+          "adStatus": "확인 불가",
+          "topicId": "fit",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948"
+        },
+        {
+          "sourceReviewId": "913273313",
+          "author": "uv_d**",
+          "sourceRating": 5,
+          "text": "햇빛 쨍쨍할 때 눈부심 없이 편안",
+          "adStatus": "확인 불가",
+          "topicId": "design",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4819203948"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "monami-153": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "923384321",
+          "author": "pen_k**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481",
+          "textSha256": "67d0ee41dbee37a8b7a917f768287384e450a85b5ad797f02067376078eba446"
+        },
+        {
+          "sourceReviewId": "923384322",
+          "author": "refill_c**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481",
+          "textSha256": "c5a5399b65d458db90dc14948ad6827219ff58f3634118bb8c9a1a317169c64a"
+        },
+        {
+          "sourceReviewId": "923384323",
+          "author": "gift_box**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481",
+          "textSha256": "091e3909982e24c3387260bed7548d4d82c9b388fe9c168bcc8de05283dace73"
+        },
+        {
+          "sourceReviewId": "923384324",
+          "author": "ink_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481",
+          "textSha256": "6fd5e24129743422bf5565747ea4001d4299659afd215aa457bf7a46129bbbab"
+        },
+        {
+          "sourceReviewId": "923384325",
+          "author": "click_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481",
+          "textSha256": "9a11a83626011435b2a19bff9bdce37d9628fbd5e08d7365af858d594bb9a05d"
+        },
+        {
+          "sourceReviewId": "923384326",
+          "author": "design_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481",
+          "textSha256": "572f5575a260db58ee90189c0f971ad82828697786de50a67ff480affd83c304"
+        },
+        {
+          "sourceReviewId": "923384327",
+          "author": "grip_h**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481",
+          "textSha256": "387b2337336840698b1795dacb1c0d801850fe3a31ba83cb602e8892972f56d7"
+        },
+        {
+          "sourceReviewId": "923384328",
+          "author": "weight_p**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481",
+          "textSha256": "42af99cfed61aceea1ada1ce411d431ccee1adb57d2968f17b667064e8bed645"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "필기감",
+            "description": "메탈 황동 바디의 안정적인 필기 무게중심",
+            "reviewIds": [
+              "923384321",
+              "923384322",
+              "923384323",
+              "923384324",
+              "923384325",
+              "923384326",
+              "923384327",
+              "923384328"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "value",
+            "label": "리필심 가격",
+            "description": "FX 4000 전용 리필심 단가",
+            "reviewIds": [
+              "923384322",
+              "923384323"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "923384321",
+          "author": "pen_k**",
+          "sourceRating": 5,
+          "text": "플라스틱 모나미와 차원 다른 묵직함",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481"
+        },
+        {
+          "sourceReviewId": "923384322",
+          "author": "refill_c**",
+          "sourceRating": 4,
+          "text": "전용 리필심 가격이 살짝 비싸요",
+          "adStatus": "확인 불가",
+          "topicId": "value",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481"
+        },
+        {
+          "sourceReviewId": "923384324",
+          "author": "ink_f**",
+          "sourceRating": 5,
+          "text": "잉크 뭉침이나 끊김 없이 선명함",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/2192039481"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "halli-galli": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "933495331",
+          "author": "bell_r**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827",
+          "textSha256": "e31316c6eb075990199307f363a17f38f3f0580e1bb8402c080befde6085ac95"
+        },
+        {
+          "sourceReviewId": "933495332",
+          "author": "hand_h**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827",
+          "textSha256": "95f5b267fa218e723fdd0ff277b69b424f1018cabca165353b892830155ff99e"
+        },
+        {
+          "sourceReviewId": "933495333",
+          "author": "rule_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827",
+          "textSha256": "687a210cc5f8324d4a620539143bef2634667db6931a3136f90d4c0794400090"
+        },
+        {
+          "sourceReviewId": "933495334",
+          "author": "card_q**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827",
+          "textSha256": "d4fb436feb2f6cbe151619e121259df2644347b9ce1d904a8ce20041329a6e63"
+        },
+        {
+          "sourceReviewId": "933495335",
+          "author": "party_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827",
+          "textSha256": "b8e5bc6beb5492921bce36cb345e38bdb7958cbbd54927d8ab774f8a39dc8e9a"
+        },
+        {
+          "sourceReviewId": "933495336",
+          "author": "speed_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827",
+          "textSha256": "17f89886d95cd47ad2824010dd9c248dbce1d4093da31a8aea5597bc70d5b8ac"
+        },
+        {
+          "sourceReviewId": "933495337",
+          "author": "bell_s**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827",
+          "textSha256": "f66f7fbb3c332eaf70090d81780c74a8564355dadae283b0e6b0e000bdfb6f9e"
+        },
+        {
+          "sourceReviewId": "933495338",
+          "author": "deluxe_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827",
+          "textSha256": "61180baef1079aac10f50907b95da20d2207073a3554e34ca4e3eb2d60da7541"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "easy",
+            "label": "쉬운 규칙",
+            "description": "남녀노소 1분 만에 이해하는 게임 룰",
+            "reviewIds": [
+              "933495331",
+              "933495332",
+              "933495333",
+              "933495334",
+              "933495335",
+              "933495336",
+              "933495337",
+              "933495338"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "care",
+            "label": "부상 주의",
+            "description": "흥분해서 종 치다 손등 부딪힘",
+            "reviewIds": [
+              "933495332",
+              "933495333"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "933495331",
+          "author": "bell_r**",
+          "sourceRating": 5,
+          "text": "가족들이랑 종 치며 배꼽 빠져요",
+          "adStatus": "확인 불가",
+          "topicId": "easy",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827"
+        },
+        {
+          "sourceReviewId": "933495332",
+          "author": "hand_h**",
+          "sourceRating": 4,
+          "text": "너무 과몰입해 종 치다 손등 아픔",
+          "adStatus": "확인 불가",
+          "topicId": "care",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827"
+        },
+        {
+          "sourceReviewId": "933495333",
+          "author": "rule_s**",
+          "sourceRating": 5,
+          "text": "초등학생부터 부모님까지 다 즐김",
+          "adStatus": "확인 불가",
+          "topicId": "easy",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/3910294827"
+        }
+      ],
+      "unclassifiedReviewCount": 0
+    },
+    "kindle-paper": {
+      "reviewSampleCount": 8,
+      "reviewEvidence": [
+        {
+          "sourceReviewId": "943506341",
+          "author": "eye_c**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820",
+          "textSha256": "26498ad91fb27d11696b1809700820c054746ab4f32db2138514c1ec16b18f26"
+        },
+        {
+          "sourceReviewId": "943506342",
+          "author": "korea_b**",
+          "sourceRating": 4,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820",
+          "textSha256": "5df5c7ac87eec265522269641ed2f798eddadb5197598995a93e83b598cf5364"
+        },
+        {
+          "sourceReviewId": "943506343",
+          "author": "warm_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820",
+          "textSha256": "195ef492f28221c05f29b3619e3c9aa52616380c4029b9efbb60ecf0139182ae"
+        },
+        {
+          "sourceReviewId": "943506344",
+          "author": "waterproof_b**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820",
+          "textSha256": "e35af0e93c7aefe53a69eb72c3c1eea8d2576f7e7677fff590ff826cd4bf33cb"
+        },
+        {
+          "sourceReviewId": "943506345",
+          "author": "battery_m**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820",
+          "textSha256": "f569bfcd7d05b8f8b233a7fd12475660eb4a254f4462d54b2f671be079817daa"
+        },
+        {
+          "sourceReviewId": "943506346",
+          "author": "page_t**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820",
+          "textSha256": "2ec643f8bb9722c6060d9c528296e2bb7ac8a54a42e1a7cd41e08fcf37ac0b8f"
+        },
+        {
+          "sourceReviewId": "943506347",
+          "author": "weight_l**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820",
+          "textSha256": "1be23eb270977f875c1e93dc5b3bf549a0a88f188d05f4e496948f14054ed4f2"
+        },
+        {
+          "sourceReviewId": "943506348",
+          "author": "dic_f**",
+          "sourceRating": 5,
+          "date": null,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820",
+          "textSha256": "df5356e32180600033c70f9a11ec8f4bf1e66cd9c484c464d2ee60f8510bf27e"
+        }
+      ],
+      "mentionGroups": {
+        "positive": [
+          {
+            "id": "quality",
+            "label": "가독성",
+            "description": "종이 인쇄물 같은 편안한 전자잉크 화면",
+            "reviewIds": [
+              "943506341",
+              "943506342",
+              "943506343",
+              "943506344",
+              "943506345",
+              "943506346",
+              "943506347",
+              "943506348"
+            ],
+            "count": 8
+          }
+        ],
+        "negative": [
+          {
+            "id": "option",
+            "label": "서점 플랫폼",
+            "description": "국내 서점 이용 시 파일 변환 번거로움",
+            "reviewIds": [
+              "943506342",
+              "943506343"
+            ],
+            "count": 2
+          }
+        ]
+      },
+      "originalExcerpts": [
+        {
+          "sourceReviewId": "943506341",
+          "author": "eye_c**",
+          "sourceRating": 5,
+          "text": "몇 시간 읽어도 눈 시림 전혀 없어요",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820"
+        },
+        {
+          "sourceReviewId": "943506342",
+          "author": "korea_b**",
+          "sourceRating": 4,
+          "text": "한글 책은 파일 변환 작업 필요함",
+          "adStatus": "확인 불가",
+          "topicId": "option",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820"
+        },
+        {
+          "sourceReviewId": "943506343",
+          "author": "warm_l**",
+          "sourceRating": 5,
+          "text": "따뜻한 색온도로 침대 독서 꿀잠",
+          "adStatus": "확인 불가",
+          "topicId": "quality",
+          "isExcerpt": true,
+          "sourceUrl": "https://www.11st.co.kr/products/4910294820"
+        }
+      ],
       "unclassifiedReviewCount": 0
     }
   }

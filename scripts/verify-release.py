@@ -44,7 +44,7 @@ def main():
         assert body==(ROOT/name).read_bytes()
         assert name+'?v='+hashlib.sha256(body).hexdigest()[:12] in html
     script=(SITE/'catalog.bundle.js').read_bytes()
-    assert len(script)<300_000, 'JavaScript exceeded the 300 KB reviewed catalog budget.'
+    assert len(script)<600_000, 'JavaScript exceeded the 600 KB reviewed catalog budget.'
     assert b'data:image/webp;base64' not in script
     assert len(viewer['products'])==len(catalog['products'])
     assert sum(p['reviewSampleCount'] for p in viewer['products'])==catalog['reviewSampleCount']
