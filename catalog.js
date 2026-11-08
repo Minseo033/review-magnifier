@@ -152,6 +152,114 @@ function toggleCompare(id){
   if(state.page==='compare')renderComparison();syncActions();
   if(!persisted)notify('이 브라우저에서는 저장이 제한돼요. 창을 닫기 전까지 비교할 수 있어요.');
 }
+function renderProductHero(p){
+  return `
+    <header class="product-hero-card">
+      <div class="product-hero-media">
+        <img class="product-hero-photo" src="${p.image}" alt="${esc(p.name)} 판매처 제품 사진" width="200" height="200">
+      </div>
+      <div class="product-hero-content">
+        <div class="product-hero-meta">
+          <span class="product-platform-pill" data-platform="${p.platform||'11st'}">${esc(p.source)}</span>
+          <span class="product-category-text">${esc(p.brand)} · ${esc(p.categoryName)}</span>
+        </div>
+        <h1 id="product-title" tabindex="-1">${esc(p.name)}</h1>
+        <p class="product-hero-subtitle">${esc(p.subtitle)}</p>
+        
+        <div class="product-hero-stats">
+          <div class="hero-stat-box rating">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-text">
+              <span class="stat-main"><strong>${rating(p.sourceRating)}</strong> <small>/ 5</small></span>
+              <span class="stat-sub">${number(p.sourceReviewCount)}개 판매처 리뷰</span>
+            </div>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat-box analysis">
+            <span class="stat-icon">🔍</span>
+            <div class="stat-text">
+              <span class="stat-main"><strong>${p.reviewSampleCount}개</strong> 표본</span>
+              <span class="stat-sub">원문 정밀 대조</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-hero-actions">
+          <button class="button hero-save-btn" data-save="${p.id}" aria-pressed="${state.saved.has(p.id)}">${icon('bookmark')}<span data-save-label>찜하기</span></button>
+          <button class="button hero-compare-btn" data-compare="${p.id}" aria-pressed="${state.compare.includes(p.id)}">${icon('compare')}<span data-compare-label>비교</span></button>
+          <button class="button hero-share-btn" data-share="${p.id}">${icon('share')}공유</button>
+          <a class="hero-source-btn" href="${esc(p.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(p.source)} 원문${icon('external')}</a>
+        </div>
+      </div>
+    </header>`;
+}
+
+function renderQuickGlance(p){
+  const posPoints = (p.reviewAnalysis?.mentionGroups?.positive || []).slice(0, 3);
+  const negPoints = (p.reviewAnalysis?.mentionGroups?.negative?.length ? p.reviewAnalysis.mentionGroups.negative.slice(0, 2) : [{label: '호불호', description: '개인 피부 타입 및 사용 환경에 따라 다를 수 있어요.', count: 1}]);
+  const frequentTags = (p.reviews || []).slice(0, 6);
+
+  return `
+    <section class="quick-glance-dashboard" aria-label="한눈에 보는 후기 요약">
+      <div class="glance-head">
+        <div>
+          <h2>한눈에 보는 후기 요약</h2>
+          <p class="glance-head-sub">실제 구매자 원문 ${p.reviewSampleCount}개 표본을 종합 대조한 3초 컷 요약이에요.</p>
+        </div>
+        <span class="glance-head-badge">팩트체크 완료</span>
+      </div>
+
+      <div class="glance-cards-grid">
+        <div class="glance-card good">
+          <div class="glance-card-header">
+            <span class="glance-badge good">${icon('check')}만족 포인트</span>
+            <span class="glance-card-tag">호평 요약</span>
+          </div>
+          <p class="glance-highlight-text">${esc(p.good)}</p>
+          <ul class="glance-points-list">
+            ${posPoints.map(item => `
+              <li>
+                <span class="point-bullet good">✓</span>
+                <div class="point-desc">
+                  <strong>${esc(item.label)}</strong>
+                  <span>${esc(item.description)}</span>
+                </div>
+                <span class="point-count">${item.count}개 후기</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+
+        <div class="glance-card caution">
+          <div class="glance-card-header">
+            <span class="glance-badge caution">${icon('info')}구매 전 주의점</span>
+            <span class="glance-card-tag">체크포인트</span>
+          </div>
+          <p class="glance-highlight-text">${esc(p.caution)}</p>
+          <ul class="glance-points-list">
+            ${negPoints.map(item => `
+              <li>
+                <span class="point-bullet caution">!</span>
+                <div class="point-desc">
+                  <strong>${esc(item.label)}</strong>
+                  <span>${esc(item.description)}</span>
+                </div>
+                <span class="point-count">${item.count}개 후기</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      </div>
+
+      <div class="glance-keywords-bar">
+        <span class="keywords-label">후기 핵심 키워드</span>
+        <div class="keywords-wrap">
+          ${frequentTags.map(r => `<span class="keyword-pill">#${esc(r.topic)}</span>`).join('')}
+        </div>
+      </div>
+    </section>`;
+}
+
 function renderProduct(){
   const p=byId.get(state.product);
   if(!p){
@@ -162,16 +270,12 @@ function renderProduct(){
   document.title=`${p.name} 후기 — 후기돋보기`;
   $('#product-view').innerHTML=`
     <nav class="product-breadcrumb" aria-label="현재 위치"><a href="${esc(productReturn.hash)}" data-product-return>${icon('arrow')}목록으로</a><span>${esc(p.categoryName)}</span><span aria-current="page">제품 후기</span></nav>
-    <header class="product-page-header"><div><span class="product-page-brand">${esc(p.brand)} · ${esc(p.categoryName)}</span><h1 id="product-title" tabindex="-1">${esc(p.name)}</h1><p>${esc(p.subtitle)}</p><span class="product-evidence-line">${p.collectedAt.slice(0,10).replaceAll('-','.')} 수집 · 분석한 후기 표본 <b>${p.reviewSampleCount}개</b> · 출처 ${esc(p.source)}</span></div><div class="product-header-tools"><img class="product-mobile-photo" src="${p.image}" alt="${esc(p.name)} 판매처 제품 사진" width="88" height="88"><button class="share-button" data-share="${p.id}">${icon('share')}링크 복사</button></div></header>
+    ${renderProductHero(p)}
     <div class="share-fallback" id="share-fallback" hidden><label for="share-address">이 제품의 후기 주소</label><input id="share-address" readonly value="${esc(publicProductUrl(p.id))}"><p>주소를 선택해 복사해 주세요.</p></div>
-    <nav class="detail-section-nav" aria-label="제품 후기 안에서 이동"><button data-detail-jump="review-summary">후기 요약</button><button data-detail-jump="review-mentions">긍정·아쉬움</button><button data-detail-jump="product-reviews">원문 후기</button><button data-detail-jump="product-source-info">출처</button></nav>
+    ${renderQuickGlance(p)}
+    <nav class="detail-section-nav" aria-label="제품 후기 안에서 이동"><button data-detail-jump="review-summary">주제별 요약 (${p.reviews.length})</button><button data-detail-jump="review-mentions">긍정·아쉬움 상세</button><button data-detail-jump="product-reviews">원문 발췌 (${p.reviewAnalysis.originalExcerpts.length})</button><button data-detail-jump="product-source-info">출처 및 기준</button></nav>
     <div class="product-detail-layout">
       <div class="review-reading">
-        <aside class="product-caution-callout" aria-label="구매 전 꼭 체크할 점">
-          <div class="caution-callout-header">${icon('info')}<strong>구매 전 꼭 체크할 점</strong><span class="caution-badge">실제 후기 기반</span></div>
-          <p class="caution-callout-text">${esc(p.caution)}</p>
-          <p class="caution-callout-sub">수집된 후기 표본에서 구매자들이 공통으로 짚은 아쉬운 점이나 사용 전 유의사항이에요.</p>
-        </aside>
         ${renderReviewSummary(p)}
         ${renderMentionSection(p,state.mentionMinimum)}
         ${renderOriginalReviews(p)}

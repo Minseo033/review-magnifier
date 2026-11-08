@@ -452,3 +452,78 @@ html{scroll-padding-top:calc(var(--header-height) + 16px)}html[data-page=product
   .product-info-rail{position:sticky!important;top:calc(var(--header-height) + 16px)!important;align-self:start!important}
 }
 
+/* Product Detail Hero Card */
+.product-hero-card{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;background:#fff;border:1px solid var(--color-line);border-radius:12px;padding:24px;margin:12px 0 20px;align-items:center;box-shadow:0 1px 3px rgba(0,0,0,0.02)}
+.product-hero-media{width:100%;height:200px;background:#fcfdfc;border:1px solid #ebf1ec;border-radius:10px;display:flex;align-items:center;justify-content:center;padding:12px}
+.product-hero-photo{width:100%;height:100%;object-fit:contain}
+.product-hero-content{min-width:0;display:flex;flex-direction:column}
+.product-hero-meta{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.product-platform-pill{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;color:#fff;background:var(--color-brand)}
+.product-platform-pill[data-platform="naver"]{background:#03c75a}
+.product-platform-pill[data-platform="coupang"]{background:#1e6bdf}
+.product-platform-pill[data-platform="11st"]{background:#f43142}
+.product-category-text{font-size:12px;color:var(--color-muted)}
+.product-hero-content h1{font-size:24px;line-height:1.35;letter-spacing:-.6px;margin:0 0 6px;color:var(--color-text)}
+.product-hero-subtitle{font-size:13px;color:var(--color-muted);margin:0 0 16px;line-height:1.5}
+.product-hero-stats{display:inline-flex;align-items:center;gap:18px;background:#f8faf8;border:1px solid #e2ebe4;border-radius:8px;padding:10px 18px;margin-bottom:16px;width:fit-content;flex-wrap:wrap}
+.hero-stat-box{display:flex;align-items:center;gap:10px}
+.hero-stat-box .stat-icon{font-size:18px}
+.hero-stat-box .stat-text{display:flex;flex-direction:column}
+.hero-stat-box .stat-main{font-size:15px;color:var(--color-text)}
+.hero-stat-box .stat-main strong{font-size:17px;font-weight:750;color:var(--color-text)}
+.hero-stat-box .stat-sub{font-size:11px;color:var(--color-muted);margin-top:1px}
+.hero-stat-divider{width:1px;height:26px;background:#d8e2da}
+.product-hero-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.product-hero-actions .button{padding:7px 14px;font-size:12px;min-height:36px;gap:5px}
+.hero-source-btn{display:inline-flex;align-items:center;gap:4px;padding:7px 14px;font-size:12px;font-weight:600;color:var(--color-brand);background:#f2f5f2;border-radius:6px;min-height:36px;text-decoration:none;transition:background-color 140ms ease}
+.hero-source-btn:hover{background:#e3ede5;text-decoration:none}
+.hero-source-btn .icon{width:13px;height:13px}
+
+/* Quick Glance Dashboard: Side-by-side Pros & Cons */
+.quick-glance-dashboard{background:#fff;border:1px solid var(--color-line);border-radius:12px;padding:24px;margin-bottom:24px;box-shadow:0 1px 4px rgba(0,0,0,0.03)}
+.glance-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid #edf2ee}
+.glance-head h2{font-size:18px;font-weight:750;margin:0;letter-spacing:-.4px;color:var(--color-text)}
+.glance-head-sub{font-size:12px;color:var(--color-muted);margin:4px 0 0}
+.glance-head-badge{font-size:11px;font-weight:650;background:#eef6f0;color:#27673b;border:1px solid #cfe3d4;padding:3px 9px;border-radius:4px;white-space:nowrap}
+.glance-cards-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:18px}
+.glance-card{border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.glance-card.good{background:#f6faf7;border:1px solid #dbe8dd}
+.glance-card.caution{background:#fff9f5;border:1px solid #fae1d2}
+.glance-card-header{display:flex;justify-content:space-between;align-items:center}
+.glance-badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:750}
+.glance-badge.good{color:#1a6b35}
+.glance-badge.good .icon{width:16px;height:16px;stroke:#1a6b35}
+.glance-badge.caution{color:#a84c17}
+.glance-badge.caution .icon{width:16px;height:16px;stroke:#a84c17}
+.glance-card-tag{font-size:11px;color:#78857d}
+.glance-highlight-text{font-size:15px;font-weight:700;line-height:1.55;color:var(--color-text);margin:2px 0 6px}
+.glance-points-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.glance-points-list li{display:flex;align-items:flex-start;gap:8px;font-size:13px;line-height:1.5}
+.point-bullet{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;font-size:11px;font-weight:800;flex-shrink:0;margin-top:1px}
+.point-bullet.good{background:#dbeef0;color:#186835}
+.point-bullet.caution{background:#fde8dc;color:#a84c17}
+.point-desc{flex:1;min-width:0}
+.point-desc strong{color:var(--color-text);margin-right:4px}
+.point-desc span{color:#49564e}
+.point-count{font-size:11px;color:var(--color-muted);white-space:nowrap;margin-left:6px}
+
+/* Keywords Bar */
+.glance-keywords-bar{display:flex;align-items:center;gap:12px;padding-top:14px;border-top:1px solid #edf2ee;flex-wrap:wrap}
+.keywords-label{font-size:12px;font-weight:650;color:var(--color-muted);white-space:nowrap}
+.keywords-wrap{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.keyword-pill{font-size:12px;color:#384c3e;background:#f0f4f1;border:1px solid #dce6de;padding:3px 10px;border-radius:14px;font-weight:550}
+
+/* Detail tabs styling */
+.detail-section-nav{display:flex;gap:6px;margin:20px 0 24px;border-bottom:1px solid var(--color-line);padding-bottom:2px;overflow-x:auto;scrollbar-width:none}
+.detail-section-nav::-webkit-scrollbar{display:none}
+.detail-section-nav button{background:none;border:none;border-bottom:2px solid transparent;padding:8px 14px;font-size:13px;font-weight:600;color:var(--color-muted);cursor:pointer;white-space:nowrap;transition:all 140ms ease}
+.detail-section-nav button:hover{color:var(--color-brand);border-color:#b5cebd}
+
+@media(max-width:768px){
+  .product-hero-card{grid-template-columns:1fr;gap:16px;text-align:left;padding:18px}
+  .product-hero-media{height:160px}
+  .glance-cards-grid{grid-template-columns:1fr}
+  .product-hero-stats{width:100%;justify-content:space-around}
+  .product-info-rail{display:none}
+}
+
