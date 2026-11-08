@@ -193,7 +193,16 @@ function route(){
   }else{window.scrollTo({top:0,behavior:'instant'});if(leavingProduct)$('#main').focus({preventScroll:true});}
 }
 document.addEventListener('click',event=>{
-  const target=event.target.closest('button,a');if(!target)return;
+  const target=event.target.closest('button,a');
+  if(!target){
+    const card=event.target.closest('.product-card');
+    if(card&&card.dataset.product){
+      if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+      if(state.page!=='product')productReturn={hash:location.hash||'#home',scroll:window.scrollY,trigger:card.dataset.product,triggerClass:'product-card',layout:state.layout};
+      event.preventDefault();return go(`product/${card.dataset.product}`);
+    }
+    return;
+  }
   if(target.hasAttribute('data-open')){
     if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
     if(state.page!=='product')productReturn={hash:location.hash||'#home',scroll:window.scrollY,trigger:target.dataset.open,triggerClass:target.className,layout:state.layout};
