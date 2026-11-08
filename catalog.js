@@ -21,7 +21,7 @@ const catalogPosition=new Map(products.map((product,index)=>[product.id,index]))
 const categories=[['all','전체','grid'],['essentials','생필품','essentials'],['digital','가전·디지털','digital'],['kitchen','주방','kitchen'],['beauty','뷰티','beauty'],['living','생활·인테리어','living'],['food','식품','food'],['fashion','패션','fashion'],['hobby','취미','hobby']];
 const categoryNames=Object.fromEntries(categories.map(([id,name])=>[id,name]));
 const savedKey='review-magnifier:catalog-saved',compareKey='review-magnifier:catalog-compare',layoutKey='review-magnifier:catalog-layout';
-const state={page:'home',category:'all',query:'',sort:'recommended',layout:'grid',saved:new Set(),compare:[],product:null,mentionMinimum:1};
+const state={page:'home',category:'all',platform:'all',query:'',sort:'recommended',layout:'grid',saved:new Set(),compare:[],product:null,mentionMinimum:1};
 const rememberedReturn=history.state?.productReturn;
 let productReturn=rememberedReturn&&/^#(?:home|saved|compare)(?:\?|$)/.test(rememberedReturn.hash)&&Number.isFinite(rememberedReturn.scroll)?rememberedReturn:{hash:'#home',scroll:0,trigger:null,layout:'grid'},toastTimer;
 state.layout=productReturn.layout==='list'?'list':'grid';
@@ -40,8 +40,18 @@ function sortedProducts(){
   return products.filter(product=>{
     if(state.page==='saved'&&!state.saved.has(product.id))return false;
     if(state.category!=='all'&&product.category!==state.category)return false;
+    if(state.platform!=='all'&&platformSlug(product.source)!==state.platform)return false;
     return matchesProduct(product,state.query);
   }).sort((a,b)=>state.sort==='name'?a.name.localeCompare(b.name,'ko'):state.sort==='rating'?(b.sourceRating-a.sourceRating||reviewOrder(a,b)):state.sort==='reviews'?reviewOrder(a,b):catalogPosition.get(a.id)-catalogPosition.get(b.id));
+}
+const platforms=[['all','전체'],['naver','네이버 쇼핑'],['coupang','쿠팡'],['11st','11번가']];
+function renderPlatforms(){
+  const container=$('#platform-chips');
+  if(!container)return;
+  container.innerHTML=platforms.map(([id,name])=>{
+    const count=id==='all'?products.length:products.filter(p=>platformSlug(p.source)===id).length;
+    return `<button class="platform-chip" data-platform="${id}" aria-pressed="${state.platform===id}"><span>${name}</span><span class="platform-chip-count">${count}</span></button>`;
+  }).join('');
 }
 function renderCategories(){
   const nav=$('#category-nav');
@@ -79,9 +89,11 @@ function renderBrowse(){
   $('#browse-title').textContent=savedPage?'다시 읽고 싶은 제품 후기':state.query?'찾던 제품의 후기를 살펴보세요.':showFeatured?'좋다는 후기, 근거부터 살펴보세요.':state.category==='all'?'제품별로 모아 읽는 후기':`${categoryNames[state.category]} 제품, 써본 이야기는?`;
   $('#browse-intro').hidden=!showFeatured;
   $('#browse-intro').textContent=`네이버 쇼핑·쿠팡·11번가 등 주요 커머스 공개 후기 ${data.reviewSampleCount}개를 정리한 ${products.length}개 제품의 데모입니다. 과장된 표현을 가려 읽는 첫 단계로, 요약과 원문을 함께 제공합니다.`;
+  renderPlatforms();
   $('#section-kicker').textContent=savedPage?'내가 찜한 제품':'원문으로 확인하는 후기';
   $('#result-count').textContent=list.length;
-  $('#result-context').textContent=state.category==='all'?'공개 구매 후기 요약':categoryNames[state.category];
+  const platformLabel=state.platform==='all'?'':platforms.find(p=>p[0]===state.platform)?.[1]||'';
+  $('#result-context').textContent=[state.category==='all'?'공개 구매 후기 요약':categoryNames[state.category],platformLabel].filter(Boolean).join(' · ');
   $('#sort-select').value=state.sort;
   $('#sort-select option[value="recommended"]').textContent='기본순';
   $('#product-search').value=state.query;
@@ -99,8 +111,9 @@ function renderBrowse(){
     $('#empty-description').textContent=noSaved?'제품의 북마크를 눌러 다시 보고 싶은 후기를 모아두세요. 이 브라우저에 저장돼요.':state.category!=='all'?'선택한 분류에 맞는 결과가 없어요. 분류를 지우거나 다른 검색어로 찾아보세요.':'현재는 등록된 20개 예시 제품 안에서만 검색합니다. 실시간 수집 기능은 아직 제공하지 않습니다.';
   }
   $('#saved-note').hidden=!savedPage;
-  $('#search-context').hidden=!state.query&&state.category==='all';
-  $('#search-context').innerHTML=`${state.query?`<button class="filter-chip" data-query-clear aria-label="검색어 ${esc(state.query)} 지우기">${esc(state.query)}${icon('close')}</button>`:''}${state.category!=='all'?`<button class="filter-chip" data-category="all" aria-label="${categoryNames[state.category]} 분류 지우기">${categoryNames[state.category]}${icon('close')}</button>`:''}<button class="filter-reset" data-filter-reset>조건 초기화</button>`;
+  const hasFilter=state.query||state.category!=='all'||state.platform!=='all';
+  $('#search-context').hidden=!hasFilter;
+  $('#search-context').innerHTML=`${state.query?`<button class="filter-chip" data-query-clear aria-label="검색어 ${esc(state.query)} 지우기">${esc(state.query)}${icon('close')}</button>`:''}${state.category!=='all'?`<button class="filter-chip" data-category="all" aria-label="${categoryNames[state.category]} 분류 지우기">${categoryNames[state.category]}${icon('close')}</button>`:''}${state.platform!=='all'?`<button class="filter-chip" data-platform="all" aria-label="${platformLabel} 출처 필터 지우기">${platformLabel}${icon('close')}</button>`:''}<button class="filter-reset" data-filter-reset>조건 초기화</button>`;
   $('#browse-status').textContent=`${savedPage?'찜한 ':''}${state.query?'검색 결과 ':''}${list.length}개 제품${state.category!=='all'?', '+categoryNames[state.category]:''}`;
   $$('button[data-layout]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.layout===state.layout)));
   renderSidebar(list.length?list:products);
@@ -154,6 +167,11 @@ function renderProduct(){
     <nav class="detail-section-nav" aria-label="제품 후기 안에서 이동"><button data-detail-jump="review-summary">후기 요약</button><button data-detail-jump="review-mentions">긍정·아쉬움</button><button data-detail-jump="product-reviews">원문 후기</button><button data-detail-jump="product-source-info">출처</button></nav>
     <div class="product-detail-layout">
       <div class="review-reading">
+        <aside class="product-caution-callout" aria-label="구매 전 꼭 체크할 점">
+          <div class="caution-callout-header">${icon('info')}<strong>구매 전 꼭 체크할 점</strong><span class="caution-badge">실제 후기 기반</span></div>
+          <p class="caution-callout-text">${esc(p.caution)}</p>
+          <p class="caution-callout-sub">수집된 후기 표본에서 구매자들이 공통으로 짚은 아쉬운 점이나 사용 전 유의사항이에요.</p>
+        </aside>
         ${renderReviewSummary(p)}
         ${renderMentionSection(p,state.mentionMinimum)}
         ${renderOriginalReviews(p)}
@@ -213,14 +231,16 @@ document.addEventListener('click',event=>{
     if(state.page!=='product')productReturn={hash:location.hash||'#home',scroll:window.scrollY,trigger:target.dataset.open,triggerClass:target.className,layout:state.layout};
     event.preventDefault();return go(`product/${target.dataset.open}`);
   }
+  if(target.hasAttribute('data-platform'))return go(state.page==='saved'?'saved':'home',{category:state.category,platform:target.dataset.platform,q:state.query,sort:state.sort});
+  if(target.hasAttribute('data-search-tag')){const tag=target.dataset.searchTag;$('#product-search').value=tag;return go('home',{category:'all',platform:'all',q:tag,sort:state.sort});}
   if(target.hasAttribute('data-detail-jump')){const section=document.getElementById(target.dataset.detailJump);section?.focus({preventScroll:true});section?.scrollIntoView({block:'start',behavior:'instant'});return;}
   if(target.hasAttribute('data-share')){const address=publicProductUrl(target.dataset.share);if(navigator.clipboard?.writeText)navigator.clipboard.writeText(address).then(()=>notify('제품 후기 링크를 복사했어요.'),()=>{$('#share-fallback').hidden=false;$('#share-address').focus();$('#share-address').select();});else{$('#share-fallback').hidden=false;$('#share-address').focus();$('#share-address').select();}return;}
   if(target.hasAttribute('data-save'))return toggleSave(target.dataset.save);
   if(target.hasAttribute('data-compare'))return toggleCompare(target.dataset.compare);
-  if(target.hasAttribute('data-category'))return go(state.page==='saved'?'saved':'home',{category:target.dataset.category,q:state.query,sort:state.sort});
+  if(target.hasAttribute('data-category'))return go(state.page==='saved'?'saved':'home',{category:target.dataset.category,platform:state.platform,q:state.query,sort:state.sort});
   if(target.hasAttribute('data-layout')){state.layout=target.dataset.layout;persist(layoutKey,state.layout);renderBrowse();syncActions();return;}
   if(target.hasAttribute('data-reset'))return go('home');
-  if(target.hasAttribute('data-query-clear'))return go(state.page,{category:state.category,sort:state.sort});
+  if(target.hasAttribute('data-query-clear'))return go(state.page,{category:state.category,platform:state.platform,sort:state.sort});
   if(target.hasAttribute('data-filter-reset'))return go(state.page==='saved'?'saved':'home');
   if(target.hasAttribute('data-search-suggestion'))return go('home',{q:target.dataset.searchSuggestion});
   if(target.hasAttribute('data-standards'))return go('standards');
@@ -234,10 +254,10 @@ $('#product-view').addEventListener('change',event=>{
   $('#mention-groups').innerHTML=renderMentionGroups(product,state.mentionMinimum);
   $('#mention-filter-status').textContent=`${state.mentionMinimum}개 후기 이상에서 언급된 항목`;
 });
-$('#search-form').addEventListener('submit',event=>{event.preventDefault();go('home',{q:$('#product-search').value.trim()});});
+$('#search-form').addEventListener('submit',event=>{event.preventDefault();go('home',{category:state.category,platform:state.platform,q:$('#product-search').value.trim(),sort:state.sort});});
 $('.skip-link').addEventListener('click',event=>{event.preventDefault();$('#main').focus();$('#main').scrollIntoView({block:'start'});});
-$('#product-search').addEventListener('search',()=>{if(!$('#product-search').value&&state.query)go('home');});
-$('#sort-select').addEventListener('change',event=>go(state.page,{category:state.category,q:state.query,sort:event.target.value}));
+$('#product-search').addEventListener('search',()=>{if(!$('#product-search').value&&state.query)go('home',{category:state.category,platform:state.platform,sort:state.sort});});
+$('#sort-select').addEventListener('change',event=>go(state.page,{category:state.category,platform:state.platform,q:state.query,sort:event.target.value}));
 $('#open-comparison').addEventListener('click',()=>{if(state.compare.length>=2)go('compare');});
 document.addEventListener('error',event=>{if(event.target instanceof HTMLImageElement&&!event.target.dataset.fallback){event.target.dataset.fallback='true';event.target.alt='제품 사진을 불러오지 못했어요. 제품명과 후기는 계속 확인할 수 있어요.';event.target.classList.add('image-error');event.target.src='assets/brand/image-unavailable.svg';}},true);
 window.addEventListener('hashchange',route);$('#category-nav').addEventListener('scroll',updateCategoryScroll,{passive:true});

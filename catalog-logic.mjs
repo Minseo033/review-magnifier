@@ -19,5 +19,6 @@ export function readRoute(hash,categoryNames){
   const page=['saved','compare','standards','privacy','product'].includes(requested)?requested:'home';
   let product=null;
   if(page==='product'){try{product=decodeURIComponent(id);}catch{product='';}}
-  return {page,product,category:Object.hasOwn(categoryNames,params.get('category'))?params.get('category'):'all',query:(params.get('q')||'').slice(0,80),sort:['reviews','rating','name','recommended'].includes(params.get('sort'))?params.get('sort'):'recommended'};
+  const platform=params.get('platform');
+  return {page,product,category:Object.hasOwn(categoryNames,params.get('category'))?params.get('category'):'all',platform:['naver','coupang','11st'].includes(platform)?platform:'all',query:(params.get('q')||'').slice(0,80),sort:['reviews','rating','name','recommended'].includes(params.get('sort'))?params.get('sort'):'recommended'};
 }
