@@ -268,7 +268,11 @@ a{ text-underline-offset:4px }
 .save-button{top:8px;right:8px;width:44px;height:44px;background:#fff;border:1px solid #e2e8e4;border-radius:50%;z-index:2}
 .save-button .icon{width:21px;height:21px}.save-button[aria-pressed=true]{background:var(--color-brand-soft);border-color:#b7cdbf}
 .product-copy{display:flex;flex-direction:column;flex:1;padding-top:14px;min-width:0}
-.product-brand{font-size:12px;color:var(--color-muted);margin-bottom:4px}
+.product-brand{font-size:12px;color:var(--color-muted);margin-bottom:4px;display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.platform-badge{display:inline-flex;align-items:center;font-size:10px;font-weight:600;padding:1px 5px;border-radius:4px;line-height:1.4}
+.platform-naver{background:#edf8f1;color:#028a3d;border:1px solid #c2e9d2}
+.platform-coupang{background:#fdf2f2;color:#cb1400;border:1px solid #f9cccc}
+.platform-11st{background:#fef2f4;color:#de1738;border:1px solid #f9ccd3}
 .product-name-button{display:block}.product-name-button h2{font-size:17px;font-weight:700;line-height:1.45;letter-spacing:-.35px;min-height:2.9em}
 .product-card:hover .product-name-button h2{color:var(--color-brand)}
 .review-preview{display:flex;flex-direction:column;flex:1;min-height:0;padding:12px 14px;margin-top:10px;border-radius:10px;background:#f8faf8;border:1px solid #e8edea;transition:background-color 160ms ease,border-color 160ms ease}
@@ -416,3 +420,35 @@ html{scroll-padding-top:calc(var(--header-height) + 16px)}html[data-page=product
 }
 @media(min-width:901px){#product-grid[data-layout=grid]{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(min-width:1101px){#product-grid[data-layout=grid]{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+/* Quick search tags */
+.quick-tags{display:flex;align-items:center;gap:10px;padding:6px 0 10px;overflow-x:auto;scrollbar-width:none}
+.quick-tags::-webkit-scrollbar{display:none}
+.quick-tags-label{font-size:11px;font-weight:600;color:var(--color-muted);white-space:nowrap}
+.quick-tag-list{display:flex;gap:6px;align-items:center;flex-wrap:nowrap}
+.quick-tag-chip{font-size:11px;color:#4a594e;background:#f0f4f1;border:1px solid #dbe5dd;padding:3px 9px;border-radius:14px;white-space:nowrap;transition:background-color 140ms ease,color 140ms ease}
+.quick-tag-chip:hover{background:#e3ede5;color:var(--color-brand);border-color:#c7d8cc}
+
+/* Platform filter chips */
+.platform-bar{display:flex;align-items:center;gap:12px;margin:12px 0 16px;padding-top:2px}
+.platform-bar-label{font-size:12px;font-weight:600;color:var(--color-muted);white-space:nowrap}
+.platform-chips{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.platform-chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;padding:4px 11px;border-radius:18px;border:1px solid #d8e2da;background:#fff;color:#555;cursor:pointer;transition:all 140ms ease}
+.platform-chip[aria-pressed=true]{background:var(--color-brand);color:#fff;border-color:var(--color-brand);font-weight:650}
+.platform-chip-count{font-size:10px;opacity:.85;font-variant-numeric:tabular-nums}
+.platform-chip:hover:not([aria-pressed=true]){background:#f5f8f5;border-color:#c0d1c4}
+
+/* Product detail: Caution callout */
+.product-caution-callout{padding:16px 20px;background:#fcf9f6;border:1px solid #ebded4;border-left:4px solid #b87a4b;border-radius:9px;margin-bottom:24px}
+.caution-callout-header{display:flex;align-items:center;gap:8px;color:#8f5424;font-size:13px;font-weight:700;margin-bottom:5px}
+.caution-callout-header .icon{width:17px;height:17px;stroke:#8f5424}
+.caution-badge{font-size:10px;font-weight:600;color:#8f5424;background:#f5eae0;padding:1px 6px;border-radius:4px;margin-left:auto}
+.caution-callout-text{font-size:14px;font-weight:600;color:#382c24;line-height:1.6;margin-bottom:4px}
+.caution-callout-sub{font-size:11px;color:#7d6b5e;line-height:1.6;margin:0}
+
+/* Desktop sticky product rail */
+@media(min-width:901px){
+  .product-detail-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:40px;align-items:start}
+  .product-info-rail{position:sticky!important;top:calc(var(--header-height) + 16px)!important;align-self:start!important}
+}
+

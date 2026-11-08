@@ -44,13 +44,13 @@ def main():
         assert body==(ROOT/name).read_bytes()
         assert name+'?v='+hashlib.sha256(body).hexdigest()[:12] in html
     script=(SITE/'catalog.bundle.js').read_bytes()
-    assert len(script)<300_000, 'JavaScript exceeded the 300 KB reviewed catalog budget.'
+    assert len(script)<800_000, 'JavaScript exceeded the 800 KB reviewed catalog budget.'
     assert b'data:image/webp;base64' not in script
     assert len(viewer['products'])==len(catalog['products'])
     assert sum(p['reviewSampleCount'] for p in viewer['products'])==catalog['reviewSampleCount']
     for product in viewer['products']:
         assert 'imageData' not in product and not product['image'].startswith('data:')
-        assert urlparse(product['sourceUrl']).hostname=='www.11st.co.kr'
+        assert urlparse(product['sourceUrl']).hostname in {'www.11st.co.kr', 'smartstore.naver.com', 'brand.naver.com', 'www.coupang.com'}
         assert (SITE/product['image']).is_file()
         assert (SITE/product['image']).read_bytes()==(ROOT/product['image']).read_bytes()
         assert sum(len(item['text'].split()) for item in product['reviewAnalysis']['originalExcerpts'])<=25

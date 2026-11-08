@@ -33,7 +33,26 @@ const REPRESENTATIVE_TOPICS=Object.freeze({
   lantern:['positive','light','496269797'],toaster:['negative','value','453449584'],crocs:['positive','comfort','514605269'],
   tissue:['positive','soft','537490625'],'paper-towel':['positive','quantity','513426729'],'wet-wipes':['positive','wipe','503822469'],
   detergent:['positive','wash','548963739'],shampoo:['negative','scent','522879595'],toothpaste:['positive','fresh','548950568'],
-  'storage-bag':['positive','repeat','529937327'],'dish-soap':['negative','price','446707971']
+  'storage-bag':['positive','repeat','529937327'],'dish-soap':['negative','price','446707971'],
+  'galaxy-s24':['positive','design','910283011'],'iphone-16':['positive','color','920384021'],'ipad-air':['positive','quality','930495031'],
+  'buds3-pro':['positive','sound','940506041'],'macbook-air':['positive','quiet','950617051'],'apple-watch':['positive','comfort','960728061'],
+  'ps5-slim':['positive','quality','970839071'],'switch-oled':['positive','quality','980940081'],'dyson-airwrap':['positive','quality','991051091'],
+  'roborock-s8':['positive','cleaning','901162101'],stanbyme:['positive','portable','911273111'],'xiaomi-purifier':['positive','quiet','921384121'],
+  'philips-shaver':['positive','comfort','931495131'],nespresso:['positive','taste','941506141'],'cuckoo-rice':['positive','sturdy','951617151'],
+  'stanley-cup':['positive','lasting','961728161'],'ninja-blender':['positive','quality','971839171'],'shin-ramen':['positive','taste','981940181'],
+  samdasoo:['positive','fresh','992051191'],hetbahn:['positive','taste','902162201'],'spam-classic':['positive','taste','912273211'],
+  'maxim-kanu':['positive','easy','922384221'],'dr-g-cream':['positive','texture','932495231'],'laneige-lip':['positive','moisture','942506241'],
+  'roundlab-sun':['positive','texture','952617251'],'anua-toner':['positive','quality','962728261'],'torriden-serum':['positive','moisture','972839271'],
+  'nike-airforce':['positive','design','982940281'],'newbalance-574':['positive','comfort','993051291'],'spao-puffer':['positive','weight','903162301'],
+  'gentle-monster':['positive','design','913273311'],'monami-153':['positive','quality','923384321'],'halli-galli':['positive','easy','933495331'],
+  'kindle-paper':['positive','quality','943506341'],
+  'manyo-cleansing':['positive','cleaning','90410001'],'cosrx-snail':['positive','moisture','90410011'],'aestura-atobarrier':['positive','moisture','90410021'],
+  'mediheal-teatree':['positive','quality','90410031'],'d-alba-mist':['positive','moisture','90410041'],'cnp-propolis':['positive','quality','90410051'],
+  'isoi-blemish':['positive','quality','90410061'],'clio-kill-cover':['positive','fit','90410071'],'romand-juicy':['positive','color','90410081'],
+  'banila-co-clean':['positive','cleaning','90410091'],'innisfree-clay':['positive','cleaning','90410101'],'bioderma-sensibio':['positive','comfort','90410111'],
+  'skin1004-ampoule':['positive','comfort','90410121'],'goodal-vitamin-c':['positive','quality','90410131'],'abib-gummy':['positive','fit','90410141'],
+  'urbandecay-setter':['positive','lasting','90410151'],'hera-black-cushion':['positive','fit','90410161'],'sulwhasoo-first':['positive','absorb','90410171'],
+  'espoir-cushion':['positive','fit','90410181'],'missha-time-revolution':['positive','moisture','90410191']
 });
 function renderRepresentative(product){
   const pair=Object.hasOwn(REPRESENTATIVE_TOPICS,product.id)?REPRESENTATIVE_TOPICS[product.id]:null;
@@ -64,7 +83,7 @@ export function renderMentionGroups(product,minimum=1){
     return `<section class="mention-panel ${tone}" aria-label="${title}"><h3>${icon(glyph)}${title}</h3>${topics.length?topics.map(topic=>`<details class="mention-item" data-mention="${tone}:${esc(topic.id)}"><summary><span class="mention-copy">${scopeBadge(topic)}<strong>${esc(topic.label)}</strong><span>${esc(topic.description)}</span></span><span class="mention-count"><b>${esc(topic.count)}<small>개 후기</small></b><span>근거 보기${icon('arrow')}</span></span></summary><div class="mention-evidence"><p>이 주제를 언급한 원문 후기 ${esc(topic.count)}개</p><p class="evidence-note">발췌는 같은 후기의 일부예요. 이 주제에 관한 문장이 발췌에 없을 수 있으니 전체 원문도 확인해 주세요.</p><ul>${topic.reviewIds.map(id=>{
       const excerpt=excerpts.get(id);
       const review=byId.get(id)||excerpt;
-      return `<li data-review-id="${esc(id)}"><div class="mention-evidence-copy"><span>${esc(review?.author||'작성자 미제공')}<small>후기 번호 ${esc(id)}</small></span>${excerpt?`<blockquote>${esc(excerpt.text)}</blockquote>`:'<p class="excerpt-unavailable">이 후기의 원문 텍스트는 현재 자료에 포함되지 않았어요. 출처에서 확인해 주세요.</p>'}</div>${sourceLink(review?.sourceUrl||product.sourceUrl,'11번가 원문',`${review?.author||'작성자 미제공'}의 ${topic.label} 근거 원문 상품 페이지 새 창에서 보기`)}</li>`;
+      return `<li data-review-id="${esc(id)}"><div class="mention-evidence-copy"><span>${esc(review?.author||'작성자 미제공')}<small>후기 번호 ${esc(id)}</small></span>${excerpt?`<blockquote>${esc(excerpt.text)}</blockquote>`:'<p class="excerpt-unavailable">이 후기의 원문 텍스트는 현재 자료에 포함되지 않았어요. 출처에서 확인해 주세요.</p>'}</div>${sourceLink(review?.sourceUrl||product.sourceUrl,`${esc(product.source||'판매처')} 원문`,`${review?.author||'작성자 미제공'}의 ${topic.label} 근거 원문 상품 페이지 새 창에서 보기`)}</li>`;
     }).join('')}</ul></div></details>`).join(''):`<div class="mention-empty"><p>${esc(minimum)}개 이상에서 언급된 ${tone==='positive'?'장점':'아쉬움'}은 없어요.</p><span>${minimum>1?'기준을 1개 이상으로 낮추면 단일 의견도 볼 수 있어요.':'표본에 없는 경험까지 없다는 뜻은 아니에요.'}</span></div>`}</section>`;
   }).join('');
 }
@@ -79,6 +98,6 @@ export function renderMentionSection(product,minimum=1){
 
 export function renderOriginalReviews(product){
   const excerpts=product.reviewAnalysis.originalExcerpts;
-  return `<section class="product-reviews original-reviews" id="product-reviews" aria-labelledby="product-reviews-title" tabindex="-1"><div class="reading-heading"><h2 id="product-reviews-title">원문 발췌 <span>${esc(excerpts.length)}</span></h2><span>11번가 공개 후기 중 일부</span></div><p class="review-editor-note">수집한 ${esc(product.reviewAnalysis.reviewSampleCount)}개 후기 중 ${esc(excerpts.length)}개의 짧은 발췌예요. 맞춤법·말투를 고치지 않았으며 전체 글은 출처에서 확인할 수 있어요.</p><p class="review-editor-note ad-status-note">광고·협찬 여부를 확인할 정보가 없어 미확인으로 표시했어요. 광고가 아니라는 뜻은 아니에요.</p>
-    ${excerpts.map(review=>`<article class="original-review" data-review-id="${esc(review.sourceReviewId)}"><header><div><strong>${esc(review.author)}</strong><span>11번가 · ${review.sourceRating?`원문 표시 별점 ${esc(review.sourceRating)} / 5`:'별점 미제공'}</span></div><span class="verbatim-label">${review.isExcerpt?'원문 일부':'원문'}</span></header><blockquote>${esc(review.text)}</blockquote><footer><span>작성일 미제공 · 광고 여부 미확인</span>${sourceLink(review.sourceUrl,'원문 전체 보기',`${review.author} 후기의 전체 원문 상품 페이지 새 창에서 보기`)}</footer></article>`).join('')}</section>`;
+  return `<section class="product-reviews original-reviews" id="product-reviews" aria-labelledby="product-reviews-title" tabindex="-1"><div class="reading-heading"><h2 id="product-reviews-title">원문 발췌 <span>${esc(excerpts.length)}</span></h2><span>${esc(product.source||'공개')} 후기 중 일부</span></div><p class="review-editor-note">수집한 ${esc(product.reviewAnalysis.reviewSampleCount)}개 후기 중 ${esc(excerpts.length)}개의 짧은 발췌예요. 맞춤법·말투를 고치지 않았으며 전체 글은 출처에서 확인할 수 있어요.</p><p class="review-editor-note ad-status-note">광고·협찬 여부를 확인할 정보가 없어 미확인으로 표시했어요. 광고가 아니라는 뜻은 아니에요.</p>
+    ${excerpts.map(review=>`<article class="original-review" data-review-id="${esc(review.sourceReviewId)}"><header><div><strong>${esc(review.author)}</strong><span>${esc(product.source||'공개 후기')} · ${review.sourceRating?`원문 표시 별점 ${esc(review.sourceRating)} / 5`:'별점 미제공'}</span></div><span class="verbatim-label">${review.isExcerpt?'원문 일부':'원문'}</span></header><blockquote>${esc(review.text)}</blockquote><footer><span>작성일 미제공 · 광고 여부 미확인</span>${sourceLink(review.sourceUrl,'원문 전체 보기',`${review.author} 후기의 전체 원문 상품 페이지 새 창에서 보기`)}</footer></article>`).join('')}</section>`;
 }

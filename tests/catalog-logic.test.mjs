@@ -23,8 +23,8 @@ test('routes handle malformed IDs and query strings without losing query text',(
   assert.equal(readRoute('#privacy',names).page,'privacy');
 });
 test('all published products retain exact source counts and bounded excerpts',()=>{
-  assert.equal(products.length,20);
-  assert.equal(products.reduce((total,p)=>total+p.reviewSampleCount,0),160);
+  assert.equal(products.length,74);
+  assert.equal(products.reduce((total,p)=>total+p.reviewSampleCount,0),592);
   for(const p of products){
     assert.ok(p.reviewAnalysis.originalExcerpts.reduce((n,r)=>n+r.text.trim().split(/\s+/).length,0)<=25);
     for(const groups of Object.values(p.reviewAnalysis.mentionGroups))for(const group of groups)assert.equal(group.count,new Set(group.reviewIds).size);
