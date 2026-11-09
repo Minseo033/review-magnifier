@@ -1,0 +1,325 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-09",
+  "method": "Existing collected HTML snapshots: 160 source text hashes, product URLs and verbatim excerpt inclusion checked locally. Approval does not certify purchase, advertising status or current availability.",
+  "approved": [
+    {
+      "id": "airpods",
+      "contentSha256": "70bab1a0d9b3f3d825b0bfb56f61bbc257e0c92b7c3ffe0277619144086447b8",
+      "imageSha256": "0c2b37c154cabd9ed89d33d83e63ed89f54d1fc78abddda96996bc20ae2953d1"
+    },
+    {
+      "id": "sony",
+      "contentSha256": "055f94e1329b1e4f6bc82aaa98af7b3cd810f2186f001066d6f578d87b3e6cfa",
+      "imageSha256": "09a1247d5c68ed5bf436bea47802497918af94c1bfea3911b43b5bf1bd938976"
+    },
+    {
+      "id": "keyboard",
+      "contentSha256": "48f7c301f13c597b7da551cc01611f52143c03437fc8d4a41825055ea26b1b09",
+      "imageSha256": "4c25dc832a2d2d2a64b87405fc793cb218987737dfb9b0b330281e03ab23e279"
+    },
+    {
+      "id": "illy",
+      "contentSha256": "b02c2d32ceef4fac19526481691f42fb23a9040914afcedc8adc0f4ec6a5c333",
+      "imageSha256": "4a5e44c1507f01411177cfc2417f61707ed245a2f1bfa4c15190182681e12b53"
+    },
+    {
+      "id": "brita",
+      "contentSha256": "76d0e7dfb6a409e234124044c6d077db2ba1a6d0334b15e4b4909aed2766961c",
+      "imageSha256": "fab49d0bb8c61c56ae0eb868d701784222a4e6987d54de22e9f55f763959da3d"
+    },
+    {
+      "id": "cream",
+      "contentSha256": "3d362239c58cb4bb96f7085dcffa108bbbe59e686cec0c2df17d8bedfe6a6fb9",
+      "imageSha256": "580d11a491634e65ce3d52c2063d5266cd227dbe0f875905866a29219a9fd027"
+    },
+    {
+      "id": "lego",
+      "contentSha256": "b27641063d170a86ce2c5335219147f64437c4c4a8c8a575c08da3fd791525f1",
+      "imageSha256": "348fac92f7fcb08e63ce534834d26b6c3232d389328c2967e5b0ad720ce28622"
+    },
+    {
+      "id": "haribo",
+      "contentSha256": "80a0d7b4b496320670d4a1ca313d1d5dfb89ff256926457f4f700cd7061a70f3",
+      "imageSha256": "11528e68cb19189b97a3802a2b0dd811df59e17750a287c245373f33dcf7508f"
+    },
+    {
+      "id": "downy",
+      "contentSha256": "37d84a7c48d191e07c5a14e663281107a3ab8ba2e53820580515a858499526fb",
+      "imageSha256": "d1920cfaa104f2afe7ab24ef36fa6ecee3563879834ecc6296f133de2568d883"
+    },
+    {
+      "id": "lantern",
+      "contentSha256": "fa85b3b3aff1083d131c7c669513298f1e8bb03f01d78d1735f146f5e0cc2849",
+      "imageSha256": "5cce773a635ba0f86a23f5a77bba97327fb9d681fe2ac1b0af576b305e4d97d5"
+    },
+    {
+      "id": "toaster",
+      "contentSha256": "38139906c46ede16e51b0be0c479f5761df8130c45b9fec1b8a26182fc231095",
+      "imageSha256": "23b0f553001731b8b7b3984f0e8e8bc38ac35c66780ef6754ee49a14d24defc0"
+    },
+    {
+      "id": "crocs",
+      "contentSha256": "9f766e5b602b81e35dda9666b0ed73c151775e52cee1e12b74fde5e81e3fdadb",
+      "imageSha256": "4fdf27e8e77ccae0e146e470887a2a24c2255d71d8fe6ad3d286417bd9a3e084"
+    },
+    {
+      "id": "tissue",
+      "contentSha256": "8202eb472c01e8cbb652edcf9d7b2d41900c286db979d10b27d968504cc19aec",
+      "imageSha256": "59b8156d537a4d98cc55aaaa5ff6d977c617fbe389759996866256d85b266cb8"
+    },
+    {
+      "id": "paper-towel",
+      "contentSha256": "ecf25348bd53a3cc2a881ce8ba04725a39fa7e87b3a7a59556c520f405e55ab8",
+      "imageSha256": "d7781df78fc2baa3f8cf48d6d688512562feb72c265776490d8d215475baf25c"
+    },
+    {
+      "id": "wet-wipes",
+      "contentSha256": "e1408c59ddd965f393e2824a6a57e4e0966302a632b8f1ac21ca3fa03caf0c03",
+      "imageSha256": "31f9071cfc2ce8d74758bdda342c96ab71c6a68222beec45ec99f226c08674cc"
+    },
+    {
+      "id": "detergent",
+      "contentSha256": "f9a76ecf45844f2d47b816e5b6c61092ccb2e1f3f38e47d5e483de3a981ffb5b",
+      "imageSha256": "3706090cbcf1c02883bdb1036a21780db7ab3561e638a688e9d4ca2cd23f9941"
+    },
+    {
+      "id": "shampoo",
+      "contentSha256": "415b320af628c047db2229aadea8814f3fd90ea24d2425f0d3587d6143c94508",
+      "imageSha256": "afa0044329feac87b8b2181d28442ae34f889937719336f7f14050b4abb78b42"
+    },
+    {
+      "id": "toothpaste",
+      "contentSha256": "781fc939277e9391ea4063bea8815afee5f0fa900c5fc86947318d8261e51773",
+      "imageSha256": "711fa5be6f3f1b4846aca66259d1516ecb86c4b3c8e39a83875c477711d45fed"
+    },
+    {
+      "id": "storage-bag",
+      "contentSha256": "d68166882f00ae9a6ed9ccf73e971d3adfb95bd9bb21f483a5dd4384ca849cca",
+      "imageSha256": "ccce2978470882d0dcd6d1026d9e0a207e29cc9e58a0da1c525298145cd63ad3"
+    },
+    {
+      "id": "dish-soap",
+      "contentSha256": "006ccbfbf56cd4f4a5d52189d2d20ea03f97541db768d85be7aabd8ec232c065",
+      "imageSha256": "fef7a2037b0a1ebd90dff6da7983efb93b700ab61aaee96199f4310be4dc785e"
+    }
+  ],
+  "pending": [
+    {
+      "id": "galaxy-s24",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "iphone-16",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "ipad-air",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "buds3-pro",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "macbook-air",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "apple-watch",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "ps5-slim",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "switch-oled",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "dyson-airwrap",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "roborock-s8",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "stanbyme",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "xiaomi-purifier",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "philips-shaver",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "nespresso",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "cuckoo-rice",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "stanley-cup",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "ninja-blender",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "shin-ramen",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "samdasoo",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "hetbahn",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "spam-classic",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "maxim-kanu",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "dr-g-cream",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "laneige-lip",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "roundlab-sun",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "anua-toner",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "torriden-serum",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "nike-airforce",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "newbalance-574",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "spao-puffer",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "gentle-monster",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "monami-153",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "halli-galli",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "kindle-paper",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "manyo-cleansing",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "cosrx-snail",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "aestura-atobarrier",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "mediheal-teatree",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "d-alba-mist",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "cnp-propolis",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "isoi-blemish",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "clio-kill-cover",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "romand-juicy",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "banila-co-clean",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "innisfree-clay",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "bioderma-sensibio",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "skin1004-ampoule",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "goodal-vitamin-c",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "abib-gummy",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "urbandecay-setter",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "hera-black-cushion",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "sulwhasoo-first",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "espoir-cushion",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    },
+    {
+      "id": "missha-time-revolution",
+      "reason": "Source collection evidence missing; authored expansion fixture and reassigned marketplace URL require review."
+    }
+  ]
+}

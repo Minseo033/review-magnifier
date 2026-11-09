@@ -3,6 +3,7 @@
     const panel=document.getElementById('startup-error');
     if(!panel)return;
     panel.hidden=false;
+    document.getElementById('product-grid')?.setAttribute('aria-busy','false');
     document.getElementById('startup-retry').href=location.href;
     document.querySelector('.loading-message')?.setAttribute('hidden','');
   };

@@ -107,11 +107,21 @@ def upsert_review(db, listing_id, external_id, body, observed_at, author=None, r
 
 
 def migrate_existing(db, root=ROOT):
-    catalog = json.loads((root / 'data/catalog.json').read_text())
+    catalog = json.loads((root / 'data/catalog.viewer.json').read_text())
+    manifest = json.loads((root / 'data/publication-manifest.json').read_text())
+    approved = {entry['id']: entry['contentSha256'] for entry in manifest['approved']}
+    if {product['id'] for product in catalog['products']} != set(approved):
+        raise ValueError('Public catalog does not match the reviewed publication list.')
+    for product in catalog['products']:
+        content = json.dumps(product, ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+        if digest(content) != approved[product['id']]:
+            raise ValueError('Public product changed; source review required: ' + product['id'])
     annotations = json.loads((root / 'data/review-annotations.json').read_text())['products']
     evidence = json.loads((root / '.cache/catalog/evidence.json').read_text())
     raw = {(review['productId'], review['sourceReviewId']): review for review in json.loads((root / '.cache/catalog/reviews-verbatim.json').read_text())}
     original_products = {product['id']: product for product in evidence}
+    if any(product['id'] not in original_products for product in catalog['products']):
+        raise ValueError('A reviewed product is missing its original collection snapshot.')
     with run(db, 'migrate-existing') as run_id, db:
         for position, product in enumerate(catalog['products']):
             key = product['id']

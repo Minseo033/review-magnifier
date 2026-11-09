@@ -33,26 +33,7 @@ const REPRESENTATIVE_TOPICS=Object.freeze({
   lantern:['positive','light','496269797'],toaster:['negative','value','453449584'],crocs:['positive','comfort','514605269'],
   tissue:['positive','soft','537490625'],'paper-towel':['positive','quantity','513426729'],'wet-wipes':['positive','wipe','503822469'],
   detergent:['positive','wash','548963739'],shampoo:['negative','scent','522879595'],toothpaste:['positive','fresh','548950568'],
-  'storage-bag':['positive','repeat','529937327'],'dish-soap':['negative','price','446707971'],
-  'galaxy-s24':['positive','design','910283011'],'iphone-16':['positive','color','920384021'],'ipad-air':['positive','quality','930495031'],
-  'buds3-pro':['positive','sound','940506041'],'macbook-air':['positive','quiet','950617051'],'apple-watch':['positive','comfort','960728061'],
-  'ps5-slim':['positive','quality','970839071'],'switch-oled':['positive','quality','980940081'],'dyson-airwrap':['positive','quality','991051091'],
-  'roborock-s8':['positive','cleaning','901162101'],stanbyme:['positive','portable','911273111'],'xiaomi-purifier':['positive','quiet','921384121'],
-  'philips-shaver':['positive','comfort','931495131'],nespresso:['positive','taste','941506141'],'cuckoo-rice':['positive','sturdy','951617151'],
-  'stanley-cup':['positive','lasting','961728161'],'ninja-blender':['positive','quality','971839171'],'shin-ramen':['positive','taste','981940181'],
-  samdasoo:['positive','fresh','992051191'],hetbahn:['positive','taste','902162201'],'spam-classic':['positive','taste','912273211'],
-  'maxim-kanu':['positive','easy','922384221'],'dr-g-cream':['positive','texture','932495231'],'laneige-lip':['positive','moisture','942506241'],
-  'roundlab-sun':['positive','texture','952617251'],'anua-toner':['positive','quality','962728261'],'torriden-serum':['positive','moisture','972839271'],
-  'nike-airforce':['positive','design','982940281'],'newbalance-574':['positive','comfort','993051291'],'spao-puffer':['positive','weight','903162301'],
-  'gentle-monster':['positive','design','913273311'],'monami-153':['positive','quality','923384321'],'halli-galli':['positive','easy','933495331'],
-  'kindle-paper':['positive','quality','943506341'],
-  'manyo-cleansing':['positive','cleaning','90410001'],'cosrx-snail':['positive','moisture','90410011'],'aestura-atobarrier':['positive','moisture','90410021'],
-  'mediheal-teatree':['positive','quality','90410031'],'d-alba-mist':['positive','moisture','90410041'],'cnp-propolis':['positive','quality','90410051'],
-  'isoi-blemish':['positive','quality','90410061'],'clio-kill-cover':['positive','fit','90410071'],'romand-juicy':['positive','color','90410081'],
-  'banila-co-clean':['positive','cleaning','90410091'],'innisfree-clay':['positive','cleaning','90410101'],'bioderma-sensibio':['positive','comfort','90410111'],
-  'skin1004-ampoule':['positive','comfort','90410121'],'goodal-vitamin-c':['positive','quality','90410131'],'abib-gummy':['positive','fit','90410141'],
-  'urbandecay-setter':['positive','lasting','90410151'],'hera-black-cushion':['positive','fit','90410161'],'sulwhasoo-first':['positive','absorb','90410171'],
-  'espoir-cushion':['positive','fit','90410181'],'missha-time-revolution':['positive','moisture','90410191']
+  'storage-bag':['positive','repeat','529937327'],'dish-soap':['negative','price','446707971']
 });
 function renderRepresentative(product){
   const pair=Object.hasOwn(REPRESENTATIVE_TOPICS,product.id)?REPRESENTATIVE_TOPICS[product.id]:null;
@@ -84,7 +65,7 @@ export function renderMentionGroups(product,minimum=1){
       const excerpt=excerpts.get(id);
       const review=byId.get(id)||excerpt;
       return `<li data-review-id="${esc(id)}"><div class="mention-evidence-copy"><span>${esc(review?.author||'작성자 미제공')}<small>후기 번호 ${esc(id)}</small></span>${excerpt?`<blockquote>${esc(excerpt.text)}</blockquote>`:'<p class="excerpt-unavailable">이 후기의 원문 텍스트는 현재 자료에 포함되지 않았어요. 출처에서 확인해 주세요.</p>'}</div>${sourceLink(review?.sourceUrl||product.sourceUrl,`${esc(product.source||'판매처')} 원문`,`${review?.author||'작성자 미제공'}의 ${topic.label} 근거 원문 상품 페이지 새 창에서 보기`)}</li>`;
-    }).join('')}</ul></div></details>`).join(''):`<div class="mention-empty"><p>${esc(minimum)}개 이상에서 언급된 ${tone==='positive'?'장점':'아쉬움'}은 없어요.</p><span>${minimum>1?'기준을 1개 이상으로 낮추면 단일 의견도 볼 수 있어요.':'표본에 없는 경험까지 없다는 뜻은 아니에요.'}</span></div>`}</section>`;
+    }).join('')}</ul></div></details>`).join(''):`<div class="mention-empty"><p>${esc(minimum)}개 이상에서 언급된 ${tone==='positive'?'장점':'아쉬움'}은 없어요.</p><span>${minimum>1?'기준을 1개 이상으로 낮추면 단일 의견도 볼 수 있어요.':'표본에 없는 경험까지 없다는 뜻은 아니에요.'}</span>${minimum>1?'<button class="text-link" data-mention-reset>1개 이상으로 다시 보기</button>':''}</div>`}</section>`;
   }).join('');
 }
 

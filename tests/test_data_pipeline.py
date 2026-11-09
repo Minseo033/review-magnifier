@@ -45,7 +45,7 @@ class DataPipelineTest(unittest.TestCase):
         first = stats(self.db)['counts']
         migrate_existing(self.db)
         self.assertEqual(first, stats(self.db)['counts'])
-        expected = json.loads((ROOT / 'data/catalog.json').read_text())
+        expected = json.loads((ROOT / 'data/catalog.viewer.json').read_text())
         exported = export_catalog(self.db)
         self.assertEqual(expected, exported)
         self.assertEqual(first['reviews'], expected['reviewSampleCount'])
@@ -70,7 +70,7 @@ class DataPipelineTest(unittest.TestCase):
     def test_approval_links_existing_candidate_and_excludes_unreviewed_reviews(self):
         if not (ROOT / '.cache/catalog/reviews-verbatim.json').exists():
             self.skipTest('Local full-text source cache is unavailable on this checkout.')
-        expected = json.loads((ROOT / 'data/catalog.json').read_text())
+        expected = json.loads((ROOT / 'data/catalog.viewer.json').read_text())
         product = expected['products'][-1]
         with self.db:
             candidate = upsert_listing(self.db, '11st', product['sourceUrl'].split('/')[-1], product['sourceTitle'], product['sourceUrl'], '2026-11-01T00:00:00+00:00')

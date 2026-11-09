@@ -4,8 +4,16 @@ export const normalizeSearch=value=>String(value??'').normalize('NFKC').toLocale
 export function matchesProduct(product,query){
   const terms=String(query).trim().split(/\s+/).map(normalizeSearch).filter(Boolean);
   if(!terms.length)return true;
-  const text=normalizeSearch([product.name,product.brand,aliases[product.brand.toLowerCase()],product.sourceTitle,product.categoryName,product.subtitle,product.lead,product.good,product.caution,...product.tags,...product.reviews.flatMap(review=>[review.topic,review.title,review.summary]),...product.reviewAnalysis.originalExcerpts.map(review=>review.text)].join(' '));
+  const text=normalizeSearch([product.name,product.brand,aliases[String(product.brand||'').toLowerCase()],product.source,product.sourceTitle,product.categoryName,product.subtitle,product.lead,product.good,product.caution,...(product.tags||[]),...(product.reviews||[]).flatMap(review=>[review.topic,review.title,review.summary]),...(product.reviewAnalysis?.originalExcerpts||[]).map(review=>review.text)].join(' '));
   return terms.every(term=>text.includes(term));
+}
+
+export const platformSlug=source=>({'네이버 쇼핑':'naver','쿠팡':'coupang','11번가':'11st'}[source]||'other');
+export function filterProducts(products,criteria,saved=new Set()){
+  const positions=new Map(products.map((product,index)=>[product.id,index]));
+  const numeric=(a,b,key)=>(Number.isFinite(b[key])?b[key]:-1)-(Number.isFinite(a[key])?a[key]:-1);
+  return products.filter(product=>(criteria.page!=='saved'||saved.has(product.id))&&(!criteria.category||criteria.category==='all'||product.category===criteria.category)&&(!criteria.platform||criteria.platform==='all'||platformSlug(product.source)===criteria.platform)&&matchesProduct(product,criteria.query||''))
+    .sort((a,b)=>criteria.sort==='name'?a.name.localeCompare(b.name,'ko'):criteria.sort==='rating'?numeric(a,b,'sourceRating')||numeric(a,b,'sourceReviewCount'):criteria.sort==='reviews'?numeric(a,b,'sourceReviewCount'):positions.get(a.id)-positions.get(b.id));
 }
 
 export function parseSelection(value,knownIds,limit=Infinity){

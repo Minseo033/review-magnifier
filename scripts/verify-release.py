@@ -25,7 +25,11 @@ class Page(HTMLParser):
 
 
 def main():
-    catalog=json.loads((ROOT/'data/catalog.json').read_text())
+    catalog=json.loads((ROOT/'data/catalog.viewer.json').read_text())
+    manifest=json.loads((ROOT/'data/publication-manifest.json').read_text())
+    assert {p['id'] for p in catalog['products']}=={entry['id'] for entry in manifest['approved']}
+    assert not {p['id'] for p in catalog['products']} & {entry['id'] for entry in manifest['pending']}
+    subprocess.run(['node','scripts/prepare-catalog.mjs'],cwd=ROOT,check=True)
     viewer=json.loads((ROOT/'data/catalog.viewer.json').read_text())
     config=json.loads((ROOT/'config/site.json').read_text())
     html=(SITE/'index.html').read_text();page=Page();page.feed(html)
@@ -46,7 +50,13 @@ def main():
     script=(SITE/'catalog.bundle.js').read_bytes()
     assert len(script)<800_000, 'JavaScript exceeded the 800 KB reviewed catalog budget.'
     assert b'data:image/webp;base64' not in script
-    assert len(viewer['products'])==len(catalog['products'])
+    assert viewer==json.loads((ROOT/'data/catalog.viewer.json').read_text()), 'Build contains stale public data.'
+    expected_images={p['image'] for p in viewer['products']}
+    actual_images={str(p.relative_to(SITE)) for p in (SITE/'assets/catalog').glob('*.webp')}
+    assert actual_images==expected_images, 'Unreviewed or missing public image.'
+    for entry in manifest['pending']:
+        assert ('assets/catalog/'+entry['id']+'.webp') not in html
+        assert ('assets/catalog/'+entry['id']+'.webp').encode() not in script
     assert sum(p['reviewSampleCount'] for p in viewer['products'])==catalog['reviewSampleCount']
     for product in viewer['products']:
         assert 'imageData' not in product and not product['image'].startswith('data:')
