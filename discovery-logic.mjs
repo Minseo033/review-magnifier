@@ -17,7 +17,7 @@ export function canonicalSource(value){
     return {platform:'naver',externalId:match[1]+'/'+match[2],url:`https://blog.naver.com/${match[1]}/${match[2]}`,key:`naver:${match[1]}/${match[2]}`};
   }
   if(host==='instagram.com'){
-    const match=url.pathname.match(/^\/reel\/([\w-]+)\/?$/);
+    const match=url.pathname.match(/^\/reels?\/([\w-]+)\/?$/);
     if(!match)throw Error('릴스 원문 주소가 필요합니다.');
     return {platform:'instagram',externalId:match[1],url:`https://www.instagram.com/reel/${match[1]}/`,key:`instagram:${match[1]}`};
   }
@@ -40,7 +40,7 @@ export function readRoute(hash){
   const params=new URLSearchParams(query);
   const [page,id]=path.split('/');
   const allowed=['home','search','product','saved','standards','privacy'];
-  return {page:allowed.includes(page)?page:'home',id:id||'',q:params.get('q')||'',category:['base','color','care'].includes(params.get('category'))?params.get('category'):'all',format:Object.hasOwn(FORMAT_LABELS,params.get('format'))?params.get('format'):'all',topic:params.get('topic')||'',skin:params.get('skin')||'',shade:params.get('shade')||'',duration:params.get('duration')||'',sort:params.get('sort')==='oldest'?'oldest':'newest',tab:params.get('tab')==='products'?'products':'reviews'};
+  return {page:allowed.includes(page)?page:'home',id:id||'',q:params.get('q')||'',category:['base','color','care','cleanse'].includes(params.get('category'))?params.get('category'):'all',format:Object.hasOwn(FORMAT_LABELS,params.get('format'))?params.get('format'):'all',topic:params.get('topic')||'',skin:params.get('skin')||'',shade:params.get('shade')||'',duration:params.get('duration')||'',sort:params.get('sort')==='oldest'?'oldest':'newest',tab:params.get('tab')==='products'?'products':'reviews'};
 }
 export function routeHash(page,values={}){
   const params=new URLSearchParams();
@@ -64,6 +64,7 @@ export function validateReview(r,products){
   if(!r.disclosure.checkedAreas?.length||!Array.isArray(r.disclosure.uncheckedAreas)||!r.disclosure.checkedAt||r.disclosure.findings?.length!==0)throw Error('광고 표기 검토가 완료되지 않았습니다.');
   if(!r.review?.reviewedAt||!r.review?.reviewedBy||!r.link?.checkedAt||r.link.status!=='available')throw Error('검토 기록과 원문 접근 확인이 필요합니다.');
   if(r.platform==='youtube'&&r.format==='shorts'&&r.formatEvidence!=='youtube_shorts_surface')throw Error('쇼츠 형식 확인 근거가 없습니다.');
+  if(r.platform==='instagram'&&r.formatEvidence!=='public_instagram_reel')throw Error('릴스 형식 확인 근거가 없습니다.');
   for(const c of Object.values(r.conditions||{}))if(c&&(!c.value||!c.quote||!c.location))throw Error('사용 조건의 원문 근거가 없습니다.');
   return canonical;
 }

@@ -146,6 +146,7 @@ test('operator can register privately, approve with evidence, reject duplicates 
  run('status',candidate.id,'inactive','--reviewer','테스트 검토자','--reason','원문 재확인');assert.equal(prepareLibrary(current()).reviews.length,0);
 });
 test('source identity ignores tracking and rejects unsafe or unsupported URLs',()=>{
+ assert.equal(canonicalSource('https://www.instagram.com/reels/DanEWkeyTVe/?igsh=tracking').url,'https://www.instagram.com/reel/DanEWkeyTVe/');
  assert.equal(canonicalSource('https://youtu.be/yn13puTnnkM?t=3').key,canonicalSource('https://www.youtube.com/shorts/yn13puTnnkM').key);
  assert.equal(canonicalSource('https://m.blog.naver.com/syxaa/224460479696?x=1').key,'naver:syxaa/224460479696');
  for(const url of ['javascript:alert(1)','http://youtube.com/watch?v=yn13puTnnkM','https://youtube.com.evil.test/watch?v=yn13puTnnkM','https://user:pass@youtube.com/watch?v=yn13puTnnkM'])assert.throws(()=>canonicalSource(url));
@@ -225,7 +226,7 @@ test('product detail preserves the previous home source sections and their origi
   assert.ok(feature.querySelector('[data-save-type="products"]'));assert.ok(feature.querySelector('[data-share]'));
   assert.equal(d.querySelector('.explore-layout,.filter-rail,.product-heading,.review-feed'),null);
   const sections=[...d.querySelectorAll('.review-section')];
-  const groups=[['shorts','.shorts-grid',/짧게 보는 사용 경험/],['video','.videos-grid',/길게 살펴보는 영상/],['reels','.blogs-grid',/릴스에서 보는 사용 경험/],['blog','.blogs-grid',/글로 읽는 사용 경험/]].filter(([format])=>productReviews.some(r=>r.format===format));
+  const groups=[['shorts','.shorts-grid',/짧게 보는 사용 경험/],['video','.videos-grid',/길게 살펴보는 영상/],['reels','.reels-grid',/릴스에서 보는 사용 경험/],['blog','.blogs-grid',/글로 읽는 사용 경험/]].filter(([format])=>productReviews.some(r=>r.format===format));
   assert.equal(sections.length,groups.length);
   for(const [index,[format,grid,title]] of groups.entries()){
    const section=sections[index];assert.ok(section.querySelector(grid));assert.match(section.querySelector('h2').textContent,title);
@@ -280,4 +281,27 @@ test('share fallback, offline notice, broken image and keyboard skip remain reco
  const image=d.querySelector('.play-preview img');image.dispatchEvent(new w.Event('error'));assert.equal(image.hidden,true);assert.ok(d.querySelector('.image-missing'));
  Object.defineProperty(w.navigator,'onLine',{value:false});w.dispatchEvent(new w.Event('offline'));assert.equal(d.querySelector('#offline').hidden,false);
  await click('.skip');assert.equal(w.location.hash,'#product/'+id);assert.equal(d.activeElement.id,'main');
+});
+
+test('published library and renderer load separately in their production order',async t=>{
+ const production=readFileSync(new URL('../discovery.data.js',import.meta.url),'utf8')+'\n'+readFileSync(new URL('../discovery.bundle.js',import.meta.url),'utf8');
+ const {d,route}=app(t,{script:production});
+ assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,liveData.products.length);
+ await route('#standards');assert.match(d.querySelector('.reading-page').textContent,new RegExp('후기 '+liveData.reviews.length+'개'));
+});
+test('real reels retain their original source, load one Instagram frame on request and can be saved',async t=>{
+ const reel=liveData.reviews.find(r=>r.format==='reels');assert.ok(reel,'검토된 실제 릴스');
+ const {d,click,route}=app(t,{hash:'#product/'+reel.productId+'?format=reels',script:liveBundle});
+ assert.equal(d.querySelectorAll('iframe').length,0);assert.ok(d.querySelector('.reel-card'));
+ const card=d.querySelector(`[data-review="${reel.id}"]`);assert.equal(card.querySelector('.original-link').href,reel.url);assert.match(card.querySelector('.reel-photo-label').textContent,/제품 사진/);
+ await click(`[data-review="${reel.id}"] [data-play]`);assert.equal(d.querySelectorAll('iframe').length,1);assert.equal(d.querySelector('iframe').src,reel.url+'embed/');assert.match(d.querySelector('#player-original').textContent,/Instagram/);
+ await click('#close-player');assert.equal(d.querySelectorAll('iframe').length,0);
+ await click(`[data-save="${reel.id}"]`);await route('#saved');assert.ok(d.querySelector(`[data-review="${reel.id}"]`));
+ const missing=structuredClone(reel);delete missing.formatEvidence;assert.throws(()=>validateReview(missing,liveData.products),/릴스/);
+});
+test('a home reel identifies its product photo and opens the same checked original',async t=>{
+ const reel=liveData.reviews.find(r=>r.format==='reels'),library={...liveData,products:liveData.products.filter(p=>p.id===reel.productId),reviews:[reel]};
+ const {d,click}=app(t,{script:await testBundle(library)});
+ const featured=d.querySelector('[data-featured-review]');assert.equal(featured.dataset.featuredReview,reel.id);assert.match(featured.querySelector('.home-video-platform').textContent,/Instagram 릴스/);assert.match(featured.querySelector('img').alt,/제품 사진/);assert.equal(featured.querySelector('.video-length'),null);
+ await click('.home-video-poster');assert.equal(d.querySelectorAll('iframe').length,1);assert.equal(d.querySelector('iframe').src,reel.url+'embed/');
 });

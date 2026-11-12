@@ -56,13 +56,68 @@
   "publication": {
     "requestedAt": "2026-11-13",
     "reviewMethod": "AI 공개 원문·메타데이터 검토, 일부 썸네일 제품명 확인",
-    "products": 5,
-    "reviews": 28,
+    "products": 19,
+    "reviews": 50,
     "formats": {
-      "shorts": 8,
-      "video": 3,
-      "blog": 17,
-      "reels": 0
+      "shorts": 20,
+      "video": 5,
+      "reels": 2,
+      "blog": 23
     }
-  }
+  },
+  "expansions": [
+    {
+      "batchId": "beauty-catalog-reels-20261113",
+      "requestedAt": "2026-11-13",
+      "basis": "같은 방식으로 화장품 품목 확대와 릴스 적용 요청",
+      "addedProducts": [
+        "vt-pdrn-reedle-shot-eye-lifter",
+        "snature-aqua-squalane-cream",
+        "jsm-essential-skin-nuder-cushion",
+        "biodance-bio-collagen-real-deep-mask",
+        "beplain-mung-bean-cleansing-foam",
+        "makeprem-safe-me-cleansing-milk",
+        "bioderma-sensibio-h2o",
+        "wellage-real-hyaluronic-blue-100-ampoule",
+        "zeroid-intensive-cream",
+        "vdl-cover-stain-perfecting-cushion",
+        "naming-layered-fit-cushion",
+        "romand-the-juicy-lasting-tint",
+        "peripera-ink-mood-glowy-tint",
+        "roundlab-birch-juice-sunscreen"
+      ],
+      "addedReviews": [
+        "youtube-80yf7mlCvFQ",
+        "youtube-VbiMjhcMcnM",
+        "youtube-kP7QsfevMiU",
+        "youtube-42vgHwXMcXI",
+        "youtube-q0Y4oTLY9_o",
+        "youtube-stbbDe_oPV4",
+        "youtube-qwjLfeeFvYE",
+        "youtube-6BUWk01G4zU",
+        "youtube-iL1j0a5usHE",
+        "youtube-5sGUgjrivOY",
+        "youtube-RzNy1w0OQKE",
+        "youtube-6kHXwvzbR_g",
+        "youtube-5oOlOD6qurc",
+        "youtube-h4J9H8H5iAs",
+        "naver-224379793547",
+        "naver-224471795197",
+        "naver-224466563218",
+        "naver-224462727506",
+        "naver-224466497177",
+        "naver-224388796787",
+        "instagram-DanEWkeyTVe",
+        "instagram-DDT_ADfTAkB"
+      ],
+      "addedFormats": {
+        "shorts": 12,
+        "video": 2,
+        "reels": 2,
+        "blog": 6
+      },
+      "selection": "올리브영 판매 랭킹에 노출된 제품군과 기본·기존 라인을 확인. 특정 시점 순위를 실시간 순위로 표시하지 않음.",
+      "verification": "공개 원문·제목·본문·영상 설명·메타데이터·릴스 공개 임베드 확인. 전체 시청·영수증 인증 아님."
+    }
+  ]
 }

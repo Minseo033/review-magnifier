@@ -17,6 +17,9 @@ for(const r of candidates){
   assert.equal(source.paidOverlay,false,r.id+' 유료광고 메타데이터');
   if(r.format==='shorts')assert.equal(source.shortsEligible,true,r.id+' 쇼츠 근거');
  }
+ if(r.platform==='instagram'){
+  assert.equal(source.kind,'instagram');assert.equal(r.author,source.author,r.id+' 릴스 작성자');assert.equal(r.publishedAt,source.date,r.id+' 릴스 작성일');
+ }
 }
 for(const r of registry.excluded){const source=snapshots.find(s=>s.id===r.id);assert.ok(source);assert.ok(normalize(source.title+' '+(source.body||source.description||'')).includes(normalize(r.evidence)));}
 console.log(`${candidates.length}개 직접 구매 후보의 제목·발췌·조건 근거와 영상 메타데이터, 기존 제외 ${registry.excluded.length}건의 고지를 비공개 캐시에 대조했습니다. 공개 승인이나 이미지·영상 장면 검증을 뜻하지 않습니다.`);

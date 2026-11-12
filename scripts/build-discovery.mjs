@@ -1,7 +1,7 @@
 import {readFileSync,writeFileSync,mkdirSync,copyFileSync,rmSync,readdirSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
-import {buildSync} from 'esbuild';
+import {build} from 'esbuild';
 import {prepareLibrary} from './discovery-policy.mjs';
 const root=new URL('../',import.meta.url),path=name=>new URL(name,root);
 const library=prepareLibrary(JSON.parse(readFileSync(path('data/discovery-registry.json'))));
@@ -10,12 +10,13 @@ for(const image of productImages){
  if(typeof image!=='string'||!/^assets\/discovery\/[a-z0-9-]+\.webp$/.test(image))throw Error(`지원하지 않는 제품 이미지: ${image}`);
 }
 writeFileSync(path('data/discovery.public.json'),JSON.stringify(library,null,2)+'\n');
-buildSync({entryPoints:[fileURLToPath(path('discovery.js'))],bundle:true,minify:true,charset:'utf8',target:'es2020',format:'iife',outfile:fileURLToPath(path('discovery.bundle.js'))});
+writeFileSync(path('discovery.data.js'),'globalThis.__reviewLibrary='+JSON.stringify(library)+';\n');
+await build({entryPoints:[fileURLToPath(path('discovery.js'))],bundle:true,minify:true,charset:'utf8',target:'es2020',format:'iife',outfile:fileURLToPath(path('discovery.bundle.js')),plugins:[{name:'separate-public-library',setup(builder){builder.onLoad({filter:/discovery\.public\.json$/},()=>({contents:'export default globalThis.__reviewLibrary;',loader:'js'}));}}]});
 mkdirSync(path('docs/assets/discovery'),{recursive:true});
 // Only old generated copies are removed. Original assets, source data and SQLite remain.
 for(const name of ['docs/catalog.css','docs/catalog.bundle.js','docs/boot.js','docs/assets/catalog','docs/assets/brand','docs/assets/reviews'])rmSync(path(name),{recursive:true,force:true});
 let html=readFileSync(path('index.html'),'utf8');
-for(const name of ['discovery.css','discovery.bundle.js']){
+for(const name of ['discovery.css','discovery.data.js','discovery.bundle.js']){
  const body=readFileSync(path(name));copyFileSync(path(name),path('docs/'+name));
  html=html.replace(`"${name}"`,`"${name}?v=${createHash('sha256').update(body).digest('hex').slice(0,12)}"`);
 }

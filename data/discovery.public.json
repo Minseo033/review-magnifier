@@ -165,6 +165,300 @@
         "observedTitle": "[수지세럼] 아누아 피디알엔 히알루론산 캡슐 100 세럼 30mL 기획 (+30mL 리필팩)",
         "goodsUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222698"
       }
+    },
+    {
+      "id": "vt-pdrn-reedle-shot-eye-lifter",
+      "brand": "VT 브이티",
+      "name": "피디알엔 리들샷 아이 리프터",
+      "fullName": "VT 피디알엔 리들샷 아이 리프터",
+      "version": "PDRN 리들샷 아이 리프터 · 15ml 진동 어플리케이터",
+      "aliases": [
+        "브이티 아이리프터",
+        "VT PDRN eye lifter"
+      ],
+      "catalogGroup": "beauty",
+      "category": "care",
+      "slot": "아이크림",
+      "image": "assets/discovery/vt-pdrn-reedle-shot-eye-lifter.webp",
+      "officialUrl": "https://www.vt-cosmetics.com/product/detail.html?product_no=1914",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://www.vt-cosmetics.com/web/product/big/202607/f666a0d5e363174a9a0a4873ade6dc73.jpg",
+      "shades": [],
+      "lineageNote": "일반 리들샷 100·300 세럼과 구분합니다. 사은품과 리필 구성은 원문별로 다릅니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "snature-aqua-squalane-cream",
+      "brand": "에스네이처 S.NATURE",
+      "name": "아쿠아 스쿠알란 수분크림",
+      "fullName": "에스네이처 아쿠아 스쿠알란 수분크림",
+      "version": "아쿠아 스쿠알란 수분크림 · 60ml 라인",
+      "aliases": [
+        "에스네이쳐 수분크림",
+        "S nature aqua squalane"
+      ],
+      "catalogGroup": "beauty",
+      "category": "care",
+      "slot": "크림",
+      "image": "assets/discovery/snature-aqua-squalane-cream.webp",
+      "officialUrl": "https://m.snature.co.kr/product/detail.html?product_no=74",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://cafe24img.poxo.com/smasteri/web/product/big/202609/3904c9fd5d2bcb0ac32386f9bf8a5b0b.jpg",
+      "shades": [],
+      "lineageNote": "아쿠아 오아시스 크림과 구분합니다. 헬로키티 등 포장 기획은 원문에 표시된 경우만 안내합니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "jsm-essential-skin-nuder-cushion",
+      "brand": "정샘물 JUNGSAEMMOOL",
+      "name": "에센셜 스킨 누더 쿠션",
+      "fullName": "정샘물 에센셜 스킨 누더 쿠션",
+      "version": "에센셜 스킨 누더 쿠션 · 공식 상품 36",
+      "aliases": [
+        "정샘물 쿠션",
+        "JSM skin nuder cushion"
+      ],
+      "catalogGroup": "beauty",
+      "category": "base",
+      "slot": "쿠션",
+      "image": "assets/discovery/jsm-essential-skin-nuder-cushion.webp",
+      "officialUrl": "https://www.jsmbeauty.com/shop/shopdetail.html?branduid=36",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://www.jsmbeauty.com/shopimages/jsmbeauty/003002000016.jpg?1765415929",
+      "shades": [],
+      "lineageNote": "커버레이어·롱웨어 라인과 구분합니다. 색상은 원문에 명시한 경우만 표시합니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "biodance-bio-collagen-real-deep-mask",
+      "brand": "바이오던스 Biodance",
+      "name": "바이오 콜라겐 리얼 딥 마스크",
+      "fullName": "바이오던스 바이오 콜라겐 리얼 딥 마스크",
+      "version": "바이오 콜라겐 리얼 딥 마스크 · 하이드로겔",
+      "aliases": [
+        "바이오던스 콜라겐팩",
+        "Biodance collagen mask"
+      ],
+      "catalogGroup": "beauty",
+      "category": "care",
+      "slot": "마스크팩",
+      "image": "assets/discovery/biodance-bio-collagen-real-deep-mask.webp",
+      "officialUrl": "https://www.biodance.co.kr/product/detail.html?product_no=34",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://cafe24img.poxo.com/biodance/web/product/big/202611/0de0b3ba327e27b2f9744447f6e2169d.png",
+      "shades": [],
+      "lineageNote": "하이드로 세라놀·PDRN·씨켈프 마스크와 구분합니다. 사진은 공식 4매 기획이며 후기 사용 매수는 추정하지 않습니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "beplain-mung-bean-cleansing-foam",
+      "brand": "비플레인 beplain",
+      "name": "녹두 약산성 클렌징폼",
+      "fullName": "비플레인 녹두 약산성 클렌징폼",
+      "version": "녹두 약산성 클렌징폼 · 기본 폼 제형",
+      "aliases": [
+        "비플레인 녹두폼",
+        "beplain mung bean foam"
+      ],
+      "catalogGroup": "beauty",
+      "category": "cleanse",
+      "slot": "클렌징폼",
+      "image": "assets/discovery/beplain-mung-bean-cleansing-foam.webp",
+      "officialUrl": "https://www.beplain.co.kr/shop/shopdetail.html?branduid=15",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://beplain01.img4.kr/MS_product/15/1743562769_379854.jpg",
+      "shades": [],
+      "lineageNote": "녹두 젤 투 워터 클렌저·클레이팩·밀크밤과 구분합니다. 대표 사진은 공식 80ml이며 후기 용량은 미표기일 수 있습니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "makeprem-safe-me-cleansing-milk",
+      "brand": "메이크프렘 make p:rem",
+      "name": "세이프 미 릴리프 모이스처 클렌징 밀크",
+      "fullName": "메이크프렘 세이프 미 릴리프 모이스처 클렌징 밀크",
+      "version": "세이프 미 릴리프 모이스처 클렌징 밀크 · 기본형",
+      "aliases": [
+        "메이크프렘 클렌징밀크",
+        "makeprem cleansing milk"
+      ],
+      "catalogGroup": "beauty",
+      "category": "cleanse",
+      "slot": "클렌징밀크",
+      "image": "assets/discovery/makeprem-safe-me-cleansing-milk.webp",
+      "officialUrl": "https://www.makeprem.com/goods/goods_view.php?goodsNo=1000000128",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://godomall.speedycdn.net/cbda03828f13128c7896245b9504291f/goods/1000000128/image/detail/1000000128_detail_251.jpg",
+      "shades": [],
+      "lineageNote": "PDRN 클렌징 밀크와 구분합니다. 대표 사진은 500ml이고 이번 후기의 본품은 200ml입니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "bioderma-sensibio-h2o",
+      "brand": "바이오더마 BIODERMA",
+      "name": "센시비오 H2O 클렌징 워터",
+      "fullName": "바이오더마 센시비오 H2O 클렌징 워터",
+      "version": "센시비오 H2O · 핑크 캡 미셀라 워터",
+      "aliases": [
+        "크레알린 H2O",
+        "Bioderma Sensibio H2O"
+      ],
+      "catalogGroup": "beauty",
+      "category": "cleanse",
+      "slot": "클렌징워터",
+      "image": "assets/discovery/bioderma-sensibio-h2o.webp",
+      "officialUrl": "https://www.bioderma.sg/our-products/sensibio/h2o",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://www.bioderma.sg/sites/sg/files/styles/product_packshot_slider/public/products/%7B157384%7D_%7B%7D_%7B28704X%7D.jpg?itok=sQYpmBRd",
+      "shades": [],
+      "lineageNote": "세비엄·하이드라비오 워터 및 센시비오 오일·젤과 구분합니다. 공식 글로벌 대표 사진과 국내 용기 표시는 다를 수 있습니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "wellage-real-hyaluronic-blue-100-ampoule",
+      "brand": "웰라쥬 WELLAGE",
+      "name": "리얼 히알루로닉 블루 100 앰플",
+      "fullName": "웰라쥬 리얼 히알루로닉 블루 100 앰플",
+      "version": "리얼 히알루로닉 블루 100 앰플 · 블루 라인",
+      "aliases": [
+        "웰라쥬 블루앰플",
+        "wellage blue 100 ampoule"
+      ],
+      "catalogGroup": "beauty",
+      "category": "care",
+      "slot": "앰플",
+      "image": "assets/discovery/wellage-real-hyaluronic-blue-100-ampoule.webp",
+      "officialUrl": "https://www.wellage.co.kr/product/detail.html?product_no=1010",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://www.wellage.co.kr/web/product/big/202607/d4ca42fa95049498e11d57575753354f.jpg",
+      "shades": [],
+      "lineageNote": "골드·콜라겐·원데이 키트와 구분합니다. 대표 사진은 100ml이며 원문의 용량을 추정하지 않습니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "zeroid-intensive-cream",
+      "brand": "제로이드 ZEROID",
+      "name": "인텐시브 크림",
+      "fullName": "제로이드 인텐시브 크림",
+      "version": "인텐시브 크림 · 기본형(리치·MD 제외)",
+      "aliases": [
+        "제로이드 크림",
+        "zeroid intensive cream"
+      ],
+      "catalogGroup": "beauty",
+      "category": "care",
+      "slot": "크림",
+      "image": "assets/discovery/zeroid-intensive-cream.webp",
+      "officialUrl": "https://www.zeroid.co.kr/web/product/product_detail.asp?cate=308&idx=320",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://cdn.neopharmshop.co.kr/images/detail/brand_zeroid/intensive_cream_80ml/intensiveCream80ml_top.jpg",
+      "shades": [],
+      "lineageNote": "인텐시브 리치크림·MD 크림·수딩크림과 구분합니다. 일반 인텐시브 크림을 다룬 자료만 연결합니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "vdl-cover-stain-perfecting-cushion",
+      "brand": "VDL 브이디엘",
+      "name": "커버 스테인 퍼펙팅 쿠션",
+      "fullName": "VDL 커버 스테인 퍼펙팅 쿠션",
+      "version": "커버 스테인 퍼펙팅 쿠션 · 기본형",
+      "aliases": [
+        "브이디엘 쿠션",
+        "VDL cover stain perfecting"
+      ],
+      "catalogGroup": "beauty",
+      "category": "base",
+      "slot": "쿠션",
+      "image": "assets/discovery/vdl-cover-stain-perfecting-cushion.webp",
+      "officialUrl": "https://www.lgcaremall.com/product/detail/A50071800",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://de89qjx90gu7m.cloudfront.net/familymall_prod/product/074c8886-cef4-42ad-9350-8e5834efe919.jpg",
+      "shades": [],
+      "lineageNote": "하이커버 쿠션과 구분합니다. 밀로우먼 포장 기획의 기본 퍼펙팅 쿠션 후기입니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "naming-layered-fit-cushion",
+      "brand": "네이밍 NAMING.",
+      "name": "레이어드 핏 쿠션",
+      "fullName": "네이밍 레이어드 핏 쿠션",
+      "version": "레이어드 핏 쿠션 · 공식 상품 195",
+      "aliases": [
+        "네이밍 쿠션",
+        "naming layered fit cushion"
+      ],
+      "catalogGroup": "beauty",
+      "category": "base",
+      "slot": "쿠션",
+      "image": "assets/discovery/naming-layered-fit-cushion.webp",
+      "officialUrl": "https://naming.co.kr/product/detail.html?product_no=195",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://naming.co.kr/web/product/big/202610/ec0f62bc577841a058547fd9f591a8ad.jpg",
+      "shades": [],
+      "lineageNote": "레이어드 매트 핏·올데이 마스터 쿠션과 구분합니다. 비교 영상은 레이어드 핏 구간을 살펴보세요.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "romand-the-juicy-lasting-tint",
+      "brand": "롬앤 rom&nd",
+      "name": "더 쥬시 래스팅 틴트",
+      "fullName": "롬앤 더 쥬시 래스팅 틴트",
+      "version": "더 쥬시 래스팅 틴트 · 리뉴얼 라인",
+      "aliases": [
+        "롬앤 틴트",
+        "romand the juicy lasting tint"
+      ],
+      "catalogGroup": "beauty",
+      "category": "color",
+      "slot": "틴트",
+      "image": "assets/discovery/romand-the-juicy-lasting-tint.webp",
+      "officialUrl": "https://www.romand.co.kr/product/detail.html?product_no=958",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://cafe24.poxo.com/ec01/romand/6aDrbsrpgztyixM+aENnH1D89vbvN874SJZ0smDxiaa/k9zGF5hClK+Cdcc6Crl70h/a8RobAiR24eeOO4zRMg==/_/web/product/big/202501/bf9f815d8c49191688891aa9f080d431.jpg",
+      "shades": [],
+      "lineageNote": "이전 쥬시 래스팅 틴트와 구분합니다. 후기에서 더 쥬시 라인과 사용 색상이 명시된 자료만 연결합니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "peripera-ink-mood-glowy-tint",
+      "brand": "페리페라 peripera",
+      "name": "잉크 무드 글로이 틴트",
+      "fullName": "페리페라 잉크 무드 글로이 틴트",
+      "version": "잉크 무드 글로이 틴트 · 기존 잉크 라인",
+      "aliases": [
+        "페리페라 잉크틴트",
+        "peripera ink mood glowy tint"
+      ],
+      "catalogGroup": "beauty",
+      "category": "color",
+      "slot": "틴트",
+      "image": "assets/discovery/peripera-ink-mood-glowy-tint.webp",
+      "officialUrl": "https://clubclio.co.kr/shop/goodsView/0000003508",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://clubclio.co.kr/data/mall_data/images/product/00/00/00/35/08/m.gif",
+      "shades": [],
+      "lineageNote": "새 무드 글로이 틴트·틴트 키와 구분한 기존 잉크 무드 라인입니다. 현재 기획상품의 후기인 것처럼 섞지 않습니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
+    },
+    {
+      "id": "roundlab-birch-juice-sunscreen",
+      "brand": "라운드랩 ROUND LAB",
+      "name": "자작나무 수분 선크림",
+      "fullName": "라운드랩 자작나무 수분 선크림",
+      "version": "자작나무 수분 선크림 · 기본형 50ml",
+      "aliases": [
+        "라운드랩 선크림",
+        "roundlab birch juice sunscreen"
+      ],
+      "catalogGroup": "beauty",
+      "category": "care",
+      "slot": "선크림",
+      "image": "assets/discovery/roundlab-birch-juice-sunscreen.webp",
+      "officialUrl": "https://m.roundlab.co.kr/product/detail.html?product_no=138",
+      "officialCheckedAt": "2026-11-13",
+      "imageSourceUrl": "https://m.roundlab.co.kr/web/product/big/202511/adeb0024e3e3a5c01fe9d3d40e5dddb1.jpg",
+      "shades": [],
+      "lineageNote": "자작나무 톤업·무기자차 선크림과 구분합니다. 기본 수분 선크림 후기입니다.",
+      "selectionNote": "올리브영 공개 랭킹에 노출된 제품군을 우선 탐색하고 직접 구매 원문을 확보한 모델만 추가. 기존 잉크 틴트는 신제품과 구분한 보완 품목이며 실시간 순위 주장이 아닙니다."
     }
   ],
   "reviews": [
@@ -2117,6 +2411,1393 @@
         "reviewerKind": "ai",
         "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
         "contentSha256": "8a76015f2e30577cdadd28b15620b43f2ae2de4e5a3b0e7fc1ac2b6847912532"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-80yf7mlCvFQ",
+      "productId": "snature-aqua-squalane-cream",
+      "productVersion": "아쿠아 스쿠알란 수분크림 · 60ml 라인",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "80yf7mlCvFQ",
+      "url": "https://www.youtube.com/watch?v=80yf7mlCvFQ",
+      "title": "🎀 에스네이처 × 헬로키티 콜라보💙 수분천재 아쿠아 스쿠알란 크림 내돈내산! 올영에서 발견했어요✨",
+      "author": "𝙁𝙡𝙤𝙨 𝘽𝙤𝙣𝙞𝙩𝙖 보니타",
+      "publishedAt": "2026-09-01",
+      "durationSeconds": 37,
+      "thumbnail": "https://i.ytimg.com/vi/80yf7mlCvFQ/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "헬로키티 기획을 직접 구매했다고 밝힌 쇼츠. 설명에서 가볍게 발리고 촉촉하게 마무리됐다는 개인 사용감을 적었습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함"
+      ],
+      "matchEvidence": {
+        "quote": "아쿠아 스쿠알란 수분크림",
+        "location": "영상 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "edcd78fe7d165df4ff3e8fb6e621c02b26a64033dbc9a99d669ce3aa5d3d6ab3"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-VbiMjhcMcnM",
+      "productId": "jsm-essential-skin-nuder-cushion",
+      "productVersion": "에센셜 스킨 누더 쿠션 · 공식 상품 36",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "VbiMjhcMcnM",
+      "url": "https://www.youtube.com/watch?v=VbiMjhcMcnM",
+      "title": "정샘물 에센셜 스킨 누더 쿠션 페어 컬러 21호가 사용해볼께요✨#내돈내산#shorts #정샘물 #정샘물쿠션추천 #올리브영쿠션추천",
+      "author": "류뉴뉴 ryunew_x2",
+      "publishedAt": "2023-10-25",
+      "durationSeconds": 38,
+      "thumbnail": "https://i.ytimg.com/vi/VbiMjhcMcnM/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "에센셜 스킨 누더 쿠션 페어 색상을 다룬 내돈내산 쇼츠. 자세한 표현과 사용 경험은 영상 원문에서 확인할 수 있습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "색상과 호수 선택"
+      ],
+      "matchEvidence": {
+        "quote": "정샘물 에센셜 스킨 누더 쿠션",
+        "location": "제목"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "d2398e438fc327e342964dc8b999e4830a566a07da85f0c9d565625f78a7ba38"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-kP7QsfevMiU",
+      "productId": "jsm-essential-skin-nuder-cushion",
+      "productVersion": "에센셜 스킨 누더 쿠션 · 공식 상품 36",
+      "platform": "youtube",
+      "format": "video",
+      "externalId": "kP7QsfevMiU",
+      "url": "https://www.youtube.com/watch?v=kP7QsfevMiU",
+      "title": "쿠션맛집 NEW 정샘물 신상⭐️커버레이어 쿠션vs스킨누더 쿠션 비교리뷰!✨/초근접샷까지 내돈내산 꼼꼼리뷰/로맨틱민서",
+      "author": "로맨틱민서 MINSEO",
+      "publishedAt": "2022-02-16",
+      "durationSeconds": 744,
+      "thumbnail": "https://i.ytimg.com/vi/kP7QsfevMiU/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_watch_surface",
+      "excerpt": null,
+      "summary": "다른 커버레이어 쿠션과 비교한 영상입니다. 작성자는 설명에서 기존 스킨 누더의 촉촉한 표현을 더 선호했다고 적었습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함"
+      ],
+      "matchEvidence": {
+        "quote": "에센셜 스킨누더 쿠션",
+        "location": "영상 설명 사용 제품 목록"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "8688a46fb4bda3e7bd36e72487d0b1b7c13f685eca9b058a1b909fb36f6b41c4"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-42vgHwXMcXI",
+      "productId": "biodance-bio-collagen-real-deep-mask",
+      "productVersion": "바이오 콜라겐 리얼 딥 마스크 · 하이드로겔",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "42vgHwXMcXI",
+      "url": "https://www.youtube.com/watch?v=42vgHwXMcXI",
+      "title": "바이오던스 콜라겐 리얼딥마스크 내돈내산#바이오던스 #콜라겐팩 #마스크팩 #하이드로겔마스크팩 #추천템 #올리브영 #초저분자 콜라겐 #콜라겐팩 #히알루론산 #미백기능성 #주름개선기능성",
+      "author": "지혜",
+      "publishedAt": "2026-02-18",
+      "durationSeconds": 30,
+      "thumbnail": "https://i.ytimg.com/vi/42vgHwXMcXI/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "콜라겐 리얼 딥 마스크를 내돈내산으로 표시한 쇼츠입니다. 영상 속 사용 경험은 원문에서 살펴볼 수 있습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "바이오던스 콜라겐 리얼딥마스크",
+        "location": "제목"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "52be4768687f49bbc686f25a2c1ef3448b4c7e3530915da414ff3a8c2b769d4c"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-q0Y4oTLY9_o",
+      "productId": "beplain-mung-bean-cleansing-foam",
+      "productVersion": "녹두 약산성 클렌징폼 · 기본 폼 제형",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "q0Y4oTLY9_o",
+      "url": "https://www.youtube.com/watch?v=q0Y4oTLY9_o",
+      "title": "#내돈내산 #비플레인 요즘 데일리 클렌저로 비플레인 녹두 클렌징 폼을 사용하고 있어요💚🤍👼🏻 #화장품리뷰 #올리브영 #올리브영추천템",
+      "author": "문",
+      "publishedAt": "2026-02-13",
+      "durationSeconds": 26,
+      "thumbnail": "https://i.ytimg.com/vi/q0Y4oTLY9_o/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "건성이라고 밝힌 작성자의 데일리 세안 기록. 부드러운 거품과 세안 뒤 사용감을 좋게 적었고, 마스카라와 아이라이너는 충분히 지워지지 않았다고 덧붙였습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "비플레인 녹두 클렌징 폼",
+        "location": "영상 설명 첫 문장"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "d09519911f944119c883eea64571af0d9091c284d31c99722a2def7f7c63bce9"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-stbbDe_oPV4",
+      "productId": "beplain-mung-bean-cleansing-foam",
+      "productVersion": "녹두 약산성 클렌징폼 · 기본 폼 제형",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "stbbDe_oPV4",
+      "url": "https://www.youtube.com/watch?v=stbbDe_oPV4",
+      "title": "✅ 광고X 내돈내산 약사가 고른 [ 올리브영 클렌징제품 ] 5가지",
+      "author": "릴리약사",
+      "publishedAt": "2025-09-02",
+      "durationSeconds": 33,
+      "thumbnail": "https://i.ytimg.com/vi/stbbDe_oPV4/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "여러 클렌저를 직접 구매했다고 표시한 쇼츠입니다. 네 번째로 녹두 클렌징폼의 알갱이와 세정 경험을 다루며 다른 제품의 경험과 구분해서 볼 수 있습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "비플레인 녹두 클렌징폼",
+        "location": "영상 설명 네 번째 제품"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "8d179195380bacc0c807c9bde01c26a5ce6002b0862517e13be1e80ebfa5b90a"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-qwjLfeeFvYE",
+      "productId": "wellage-real-hyaluronic-blue-100-ampoule",
+      "productVersion": "리얼 히알루로닉 블루 100 앰플 · 블루 라인",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "qwjLfeeFvYE",
+      "url": "https://www.youtube.com/watch?v=qwjLfeeFvYE",
+      "title": "#내돈내산 #웰라쥬 리얼 히알루로닉 블루 100 앰플 / 리얼 히알루로닉 블루 앰플",
+      "author": "매거지민 magazimine",
+      "publishedAt": "2024-07-21",
+      "durationSeconds": 38,
+      "thumbnail": "https://i.ytimg.com/vi/qwjLfeeFvYE/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "블루 100 앰플을 내돈내산으로 명시한 쇼츠입니다. 용량·피부 타입·사용 기간은 확인되지 않아 추정하지 않았습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "웰라쥬 리얼 히알루로닉 블루 100 앰플",
+        "location": "제목"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "f7d5a26328e2f4645b9a5e488bf8fd457ffa0f4dce245b5836bd6bd3351420e8"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-6BUWk01G4zU",
+      "productId": "zeroid-intensive-cream",
+      "productVersion": "인텐시브 크림 · 기본형(리치·MD 제외)",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "6BUWk01G4zU",
+      "url": "https://www.youtube.com/watch?v=6BUWk01G4zU",
+      "title": "올리브영 1위 크림 추천 | 내돈내산 비교 #올리브영 #크림",
+      "author": "better_living",
+      "publishedAt": "2025-10-18",
+      "durationSeconds": 69,
+      "thumbnail": "https://i.ytimg.com/vi/6BUWk01G4zU/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "세 가지 크림을 내돈내산으로 표시한 비교 쇼츠입니다. 일반 인텐시브 크림과 리치크림을 구분해 원문을 살펴볼 수 있습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "제로이드 인텐시브 크림",
+        "location": "영상 설명 비교 제품 목록"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "508adf33462d97761f075982225067bfd65e623f453fbf01ca8e24e249400be8"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-iL1j0a5usHE",
+      "productId": "vdl-cover-stain-perfecting-cushion",
+      "productVersion": "커버 스테인 퍼펙팅 쿠션 · 기본형",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "iL1j0a5usHE",
+      "url": "https://www.youtube.com/watch?v=iL1j0a5usHE",
+      "title": "VDL × 밀로우먼 콜라보 🎀 쿠션부터 블러셔, 파우치와 쇼퍼백까지! | 올리브영 내돈내산 #VDL #밀로우먼 #VDL밀로우먼 #VDL쿠션 #VDL블러셔 #올리브영 #올리브영추천템",
+      "author": "이미지 (imz.record)",
+      "publishedAt": "2026-11-11",
+      "durationSeconds": 99,
+      "thumbnail": "https://i.ytimg.com/vi/iL1j0a5usHE/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "밀로우먼 기획의 퍼펙팅 쿠션 N01을 직접 구매했다고 밝힌 쇼츠. 쿠션 본품·리필과 기획 구성품을 구분해 소개합니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "색상과 호수 선택"
+      ],
+      "matchEvidence": {
+        "quote": "VDL 커버 스테인 퍼펙팅 쿠션",
+        "location": "영상 설명 구매 제품 01번"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "79cf00046259552c9921a774e87c106a6ce99155661382cec27d613f30ae3f7e"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-5sGUgjrivOY",
+      "productId": "naming-layered-fit-cushion",
+      "productVersion": "레이어드 핏 쿠션 · 공식 상품 195",
+      "platform": "youtube",
+      "format": "video",
+      "externalId": "5sGUgjrivOY",
+      "url": "https://www.youtube.com/watch?v=5sGUgjrivOY",
+      "title": "💸내돈내산💸네이밍쿠션살까말까? 한달넘게 써보면서 지속력, 다크닝, 코끼임, 전성분, 수정화장 장마철 무너짐 다 테스트 해봄｜각쿠션장단점｜네이밍 레이어드 핏 쿠션 ｜네이밍신상쿠션",
+      "author": "오피치 OHPEACH",
+      "publishedAt": "2023-07-20",
+      "durationSeconds": 759,
+      "thumbnail": "https://i.ytimg.com/vi/5sGUgjrivOY/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_watch_surface",
+      "excerpt": null,
+      "summary": "레이어드 핏과 매트 핏을 한 달 넘게 사용한 비교 영상. 제품별 커버·코 끼임·다크닝·지속력 구간을 타임라인으로 나누어 소개합니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "커버력",
+        "지속력과 무너짐",
+        "다크닝",
+        "모공·요철 표현"
+      ],
+      "matchEvidence": {
+        "quote": "네이밍 레이어드 핏 쿠션",
+        "location": "제목"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "9432b9d15dd082e7e4136555b8a75171bf24da95b38a86d569ac33303094a68b"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-RzNy1w0OQKE",
+      "productId": "naming-layered-fit-cushion",
+      "productVersion": "레이어드 핏 쿠션 · 공식 상품 195",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "RzNy1w0OQKE",
+      "url": "https://www.youtube.com/watch?v=RzNy1w0OQKE",
+      "title": "네이밍 레이어드 핏 쿠션 리뷰✨ 지성편 #내돈내산 #makeup",
+      "author": "정하일 Jungha1",
+      "publishedAt": "2024-10-18",
+      "durationSeconds": 60,
+      "thumbnail": "https://i.ytimg.com/vi/RzNy1w0OQKE/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "레이어드 핏 쿠션을 지성편으로 소개하며 내돈내산을 표시한 쇼츠입니다. 피부 조건은 원문에 명확히 밝힌 범위만 참고해 주세요.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "네이밍 레이어드 핏 쿠션",
+        "location": "제목"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "a290b3e4f8d2067af73b760888725460934ae2e6b2cb883ef9c551d7972bc160"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-6kHXwvzbR_g",
+      "productId": "romand-the-juicy-lasting-tint",
+      "productVersion": "더 쥬시 래스팅 틴트 · 리뉴얼 라인",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "6kHXwvzbR_g",
+      "url": "https://www.youtube.com/watch?v=6kHXwvzbR_g",
+      "title": "롬앤 더 쥬시 래스팅 틴트 밀크티 시리즈 내돈내산 발색🥛✨💋",
+      "author": "유알비 UareB",
+      "publishedAt": "2026-01-11",
+      "durationSeconds": 29,
+      "thumbnail": "https://i.ytimg.com/vi/6kHXwvzbR_g/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "밀크티 시리즈 34 차이 애프리콧과 35 얼그레이 리치를 직접 구매했다고 밝힌 발색 쇼츠. 이전 쥬시 라인과 구분한 더 쥬시 제품입니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "색상과 호수 선택"
+      ],
+      "matchEvidence": {
+        "quote": "롬앤 더 쥬시 래스팅 틴트",
+        "location": "제목·영상 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "156b8b54fcb3b64bd11a20c2db1a18eb00919b057d96785345b9767c2ac4ac2f"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-5oOlOD6qurc",
+      "productId": "peripera-ink-mood-glowy-tint",
+      "productVersion": "잉크 무드 글로이 틴트 · 기존 잉크 라인",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "5oOlOD6qurc",
+      "url": "https://www.youtube.com/watch?v=5oOlOD6qurc",
+      "title": "#내돈내산 페리페라 잉크 무드 글로이 틴트🤍 가성비 좋은 틴트 찾고 계셨다면 추천합니다! #페리페라 #틴트추천 #코랄틴트",
+      "author": "디어빈",
+      "publishedAt": "2025-12-18",
+      "durationSeconds": 20,
+      "thumbnail": "https://i.ytimg.com/vi/5oOlOD6qurc/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "기존 잉크 무드 글로이 틴트를 내돈내산으로 표시한 쇼츠. 사용 색상이나 피부 타입은 원문에서 확인되지 않아 추정하지 않았습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "페리페라 잉크 무드 글로이 틴트",
+        "location": "제목"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "f8361ced443c6738297933b04a187220b419d3601ca25fcc816bca590c86ad0f"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-h4J9H8H5iAs",
+      "productId": "peripera-ink-mood-glowy-tint",
+      "productVersion": "잉크 무드 글로이 틴트 · 기존 잉크 라인",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "h4J9H8H5iAs",
+      "url": "https://www.youtube.com/watch?v=h4J9H8H5iAs",
+      "title": "#내돈내산 페리페라 잉크 무드 글로이틴트 30. 행집베리 립, 손등발색 🍓",
+      "author": "소이 Soi",
+      "publishedAt": "2025-01-03",
+      "durationSeconds": 27,
+      "thumbnail": "https://i.ytimg.com/vi/h4J9H8H5iAs/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "기존 잉크 무드 글로이 틴트 30 행집베리의 입술·손등 발색을 다룬 내돈내산 쇼츠입니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "색상과 호수 선택"
+      ],
+      "matchEvidence": {
+        "quote": "페리페라 잉크 무드 글로이틴트",
+        "location": "제목"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "c195abbfa5ec9939c091c2612103455518a7743b835be6d2ad3c401c85dbc2b3"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224379793547",
+      "productId": "vt-pdrn-reedle-shot-eye-lifter",
+      "productVersion": "PDRN 리들샷 아이 리프터 · 15ml 진동 어플리케이터",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "jsxxoo_/224379793547",
+      "url": "https://blog.naver.com/jsxxoo_/224379793547",
+      "title": "올영 1위 [VT 피디알엔 리들샷 아이리프터] 내돈내산 후기✨",
+      "author": "disoo",
+      "publishedAt": "2026-08-15",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": null,
+      "excerpt": null,
+      "summary": "15ml 본품과 리필 기획을 구매한 기록. 진동 헤드를 이용하는 편의성과 사용감을 적고 재구매 의사를 남겼습니다. 성분·시술 효과를 검증한 자료는 아닙니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "재구매 의사"
+      ],
+      "matchEvidence": {
+        "quote": "VT 피디알엔 리들샷 아이 리프터",
+        "location": "본문 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 주소"
+        ],
+        "uncheckedAreas": [
+          "본문 이미지 속 고지",
+          "외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "7c9dbf4843e8cde26d74e106a194bb16af6638ef6365c2b248e8541fd802c7c8"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224471795197",
+      "productId": "snature-aqua-squalane-cream",
+      "productVersion": "아쿠아 스쿠알란 수분크림 · 60ml 라인",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "luv_lumi/224471795197",
+      "url": "https://blog.naver.com/luv_lumi/224471795197",
+      "title": "에스네이처 아쿠아 스쿠알란 수분크림 내돈내산 후기｜올리브영 블랙프라이데이 블프 속건조 건성 피부의 10통 넘은 재구매",
+      "author": "루미",
+      "publishedAt": "2026-11-10",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": null,
+      "excerpt": null,
+      "summary": "10통 넘게 직접 구매했다고 밝힌 기록. 부드러운 발림성과 얇은 보습막을 좋게 보았고, 끈적임이 완전히 없는 제형은 아니라고 적었습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "재구매 의사",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "에스네이처 아쿠아 스쿠알란 수분크림",
+        "location": "본문 제품 정보"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 주소"
+        ],
+        "uncheckedAreas": [
+          "본문 이미지 속 고지",
+          "외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "3398e9e24215eab3c16bf1e3d090fc16122554feb156446010639075de665be0"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224466563218",
+      "productId": "makeprem-safe-me-cleansing-milk",
+      "productVersion": "세이프 미 릴리프 모이스처 클렌징 밀크 · 기본형",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "mocolog_/224466563218",
+      "url": "https://blog.naver.com/mocolog_/224466563218",
+      "title": "민감성 피부 전용 올영 1등 클렌징밀크 메이크프렘 내돈내산 후기",
+      "author": "모코",
+      "publishedAt": "2026-11-05",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": null,
+      "excerpt": null,
+      "summary": "200ml 본품과 리필을 구매한 기록. 부드러운 제형을 선호했고, 본인은 잔여감이 신경 쓰여 약산성 폼으로 2차 세안했다고 적었습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "메이크프렘 세이프 미 릴리프 모이스처",
+        "location": "본문 제품 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 주소"
+        ],
+        "uncheckedAreas": [
+          "본문 이미지 속 고지",
+          "외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "69ab33c1acc6e6491a94bd6d715286f65c376ff4fa9df5392953ba1d75da1322"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224462727506",
+      "productId": "makeprem-safe-me-cleansing-milk",
+      "productVersion": "세이프 미 릴리프 모이스처 클렌징 밀크 · 기본형",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "chaechae2678/224462727506",
+      "url": "https://blog.naver.com/chaechae2678/224462727506",
+      "title": "메이크프렘 클렌징 밀크 | 올리브영 클렌징 밀크 추천 N통째 비운 내돈내산 찐템 폼폼푸린 기획세트",
+      "author": "채채",
+      "publishedAt": "2026-11-02",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": null,
+      "excerpt": null,
+      "summary": "폼폼푸린 기획을 구매하고 여러 번 재구매한 기록. 섀도와 파운데이션은 지워졌지만 펜슬 아이라이너는 남았고, 본인은 2차 세안을 더한다고 적었습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "재구매 의사",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "릴리프 모이스처 클렌징 밀크",
+        "location": "본문 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 주소"
+        ],
+        "uncheckedAreas": [
+          "본문 이미지 속 고지",
+          "외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "97740bec8e8a90082e52291475b5bb564d73bf9e968d6aa456d5fbccdf1c347f"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224466497177",
+      "productId": "bioderma-sensibio-h2o",
+      "productVersion": "센시비오 H2O · 핑크 캡 미셀라 워터",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "87gusghk87/224466497177",
+      "url": "https://blog.naver.com/87gusghk87/224466497177",
+      "title": "[내돈내산] 민감성 피부 장벽 무너짐 극복! 바이오더마 센시비오 H2O 클렌징워터 세정력 & 자극 테스트",
+      "author": "hahaha",
+      "publishedAt": "2026-11-05",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": null,
+      "excerpt": null,
+      "summary": "500ml를 다시 구매했다고 밝힌 기록. 워터 제형의 사용감과 메이크업 잔여물을 닦는 경험을 적었습니다. 글의 질환 관련 설명을 제품의 치료 효능으로 옮기지 않았습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "바이오더마 센시비오(크레알린) H2O 클렌징워터 500ml",
+        "location": "본문 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 주소"
+        ],
+        "uncheckedAreas": [
+          "본문 이미지 속 고지",
+          "외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "6aa92cf92eb2ffd1484aa285e3e176a083d8df1fb6dcbee135017acd89299abe"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224388796787",
+      "productId": "roundlab-birch-juice-sunscreen",
+      "productVersion": "자작나무 수분 선크림 · 기본형 50ml",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "gkssk3080/224388796787",
+      "url": "https://blog.naver.com/gkssk3080/224388796787",
+      "title": "라운드랩 자작나무 수분 선크림 내돈내산 후기, 촉촉하고 부담 없이 매일 바르기 좋은 선크림!!",
+      "author": "워킹맘 한나",
+      "publishedAt": "2026-08-24",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": null,
+      "excerpt": null,
+      "summary": "50ml 두 개 기획을 구매해 한 통을 사용한 기록. 부드럽게 펴지는 제형과 본인이 느낀 적은 백탁을 적었으며, 남은 통을 사용한 뒤 재구매할 생각이라고 밝혔습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "재구매 의사"
+      ],
+      "matchEvidence": {
+        "quote": "라운드랩 자작나무 수분 선크림",
+        "location": "본문 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 주소"
+        ],
+        "uncheckedAreas": [
+          "본문 이미지 속 고지",
+          "외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "285301cd75c4385569c6ced5316f7ce8dcde3af7aa290f763e5f044ec44193d7"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "instagram-DanEWkeyTVe",
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "productVersion": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "platform": "instagram",
+      "format": "reels",
+      "externalId": "DanEWkeyTVe",
+      "url": "https://www.instagram.com/reel/DanEWkeyTVe/",
+      "title": "#내돈내산 파데프리템 ㄹㅈㄷ 피부표현✨",
+      "author": "hwamo__",
+      "publishedAt": "2026-07-10",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": true,
+      "formatEvidence": "public_instagram_reel",
+      "excerpt": null,
+      "summary": "직접 구매를 밝힌 에딧비 비비 릴스. 작성자는 피부 표현과 지속감을 좋게 적었지만 강한 커버가 필요한 경우의 아쉬움도 남겼습니다.",
+      "conditions": {
+        "skinType": {
+          "value": "건성",
+          "quote": "저는 건성+모공인으로써",
+          "location": "릴스 본문 사용 조건"
+        },
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "지속력과 무너짐",
+        "커버력",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "에딧비 비비x유튜버 지원님 공동개발",
+        "location": "릴스 본문 제품 소개·확인한 첫 화면 SKIN FIT SUN AMPOULE BB 병 표기"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "공개 릴스 본문 전체",
+          "작성자·날짜 메타데이터",
+          "공식 임베드 접근",
+          "Safari 원문 첫 화면과 본문"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "72f988bf4070d96a6dbc36241303fdb3b13127f7adf28c01d9b013e14a0853a5"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "instagram-DDT_ADfTAkB",
+      "productId": "anua-pdrn-capsule-100-serum",
+      "productVersion": "PDRN 히알루론산 캡슐 100 세럼 · 공식 상품 359",
+      "platform": "instagram",
+      "format": "reels",
+      "externalId": "DDT_ADfTAkB",
+      "url": "https://www.instagram.com/reel/DDT_ADfTAkB/",
+      "title": "#내돈내산 \n🩵아누아 - PDRN 히알루론산 캡슐 100 세럼🩵",
+      "author": "shuki.zzim",
+      "publishedAt": null,
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": true,
+      "formatEvidence": "public_instagram_reel",
+      "excerpt": null,
+      "summary": "내돈내산을 표시한 캡슐 100 세럼 릴스. 본문에서 워터리한 발림성과 산뜻한 마무리를 적었습니다. 작성일은 공개 원문에서 확인되지 않아 미표기로 둡니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함"
+      ],
+      "matchEvidence": {
+        "quote": "아누아 - PDRN 히알루론산 캡슐 100 세럼",
+        "location": "릴스 본문 첫 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "공개 릴스 본문 전체",
+          "작성자·날짜 메타데이터",
+          "공식 임베드 접근"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성의 추가 고지",
+          "댓글·외부 페이지의 추가 고지",
+          "구매내역·영수증 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewerKind": "ai",
+        "reviewedBy": "Codex · 공개 원문 대조",
+        "reviewedAt": "2026-11-13",
+        "reason": "사용자의 같은 방식 품목 확장·릴스 반영 요청에 따라 공개. 직접 구매 문장·대상 제품·텍스트 고지와 기록한 영역을 Codex로 확인. 사람 시청·영수증 인증 아님.",
+        "contentSha256": "d86d20b2da05001e3d1f8b0ce4047b628c9566ac8aac7cb17e4b5069b60e011c"
       },
       "link": {
         "status": "available",

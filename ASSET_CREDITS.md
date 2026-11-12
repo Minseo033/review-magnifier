@@ -1,3 +1,26 @@
+# 화장품 확장·릴스 자료 · 2026-11-13
+
+신규 14종의 대표 제품 사진은 아래 공식 제품 페이지에서 확인한 사진이다. 사진 권리는 각 권리자에게 있으며 생성 이미지·후기 작성자의 사진이 아니다. 원장 imageSourceUrl에 실제 사진 주소를 기록했고 비율을 유지해 WebP로 축소했다. 대표 사진 용량·색상·기획 구성과 후기의 실제 사용 조건을 구분한다. 메이크프렘 대표 사진은500ml, 후기 본품은200ml다. 바이오더마는 공식 글로벌 대표 사진이며 국내 용기 표시는 다를 수 있다.
+
+- [VT 피디알엔 리들샷 아이 리프터](https://www.vt-cosmetics.com/product/detail.html?product_no=1914) · `assets/discovery/vt-pdrn-reedle-shot-eye-lifter.webp`
+- [에스네이처 아쿠아 스쿠알란 수분크림](https://m.snature.co.kr/product/detail.html?product_no=74) · `assets/discovery/snature-aqua-squalane-cream.webp`
+- [정샘물 에센셜 스킨 누더 쿠션](https://www.jsmbeauty.com/shop/shopdetail.html?branduid=36) · `assets/discovery/jsm-essential-skin-nuder-cushion.webp`
+- [바이오던스 바이오 콜라겐 리얼 딥 마스크](https://www.biodance.co.kr/product/detail.html?product_no=34) · `assets/discovery/biodance-bio-collagen-real-deep-mask.webp`
+- [비플레인 녹두 약산성 클렌징폼](https://www.beplain.co.kr/shop/shopdetail.html?branduid=15) · `assets/discovery/beplain-mung-bean-cleansing-foam.webp`
+- [메이크프렘 세이프 미 릴리프 모이스처 클렌징 밀크](https://www.makeprem.com/goods/goods_view.php?goodsNo=1000000128) · `assets/discovery/makeprem-safe-me-cleansing-milk.webp`
+- [바이오더마 센시비오 H2O 클렌징 워터](https://www.bioderma.sg/our-products/sensibio/h2o) · `assets/discovery/bioderma-sensibio-h2o.webp`
+- [웰라쥬 리얼 히알루로닉 블루 100 앰플](https://www.wellage.co.kr/product/detail.html?product_no=1010) · `assets/discovery/wellage-real-hyaluronic-blue-100-ampoule.webp`
+- [제로이드 인텐시브 크림](https://www.zeroid.co.kr/web/product/product_detail.asp?cate=308&idx=320) · `assets/discovery/zeroid-intensive-cream.webp`
+- [VDL 커버 스테인 퍼펙팅 쿠션](https://www.lgcaremall.com/product/detail/A50071800) · `assets/discovery/vdl-cover-stain-perfecting-cushion.webp`
+- [네이밍 레이어드 핏 쿠션](https://naming.co.kr/product/detail.html?product_no=195) · `assets/discovery/naming-layered-fit-cushion.webp`
+- [롬앤 더 쥬시 래스팅 틴트](https://www.romand.co.kr/product/detail.html?product_no=958) · `assets/discovery/romand-the-juicy-lasting-tint.webp`
+- [페리페라 잉크 무드 글로이 틴트](https://clubclio.co.kr/shop/goodsView/0000003508) · `assets/discovery/peripera-ink-mood-glowy-tint.webp`
+- [라운드랩 자작나무 수분 선크림](https://m.roundlab.co.kr/product/detail.html?product_no=138) · `assets/discovery/roundlab-birch-juice-sunscreen.webp`
+
+릴스는 Instagram 공식 원문 임베드와 링크로 제공한다. 작성자의 영상·사진은 저장해 배포하지 않고, 미리보기에는 제품 사진이라고 명시한 위 사진을 쓴다. 신규 출처 목록과 검토 범위는 [확장 보고서](docs-data/화장품-확장-릴스-2026-11-13.md)에 있다. 아래는 이전 배포 당시 기록이다.
+
+---
+
 # 2026-11-13 추가 화장품 사진
 
 신규 4종의 공식 제품 사진을 공개 제품 식별에 사용한다. 사진의 권리는 각 권리자에게 있다. 생성 이미지나 후기 작성자의 사용 사진이 아니다. 원본 URL은 운영 원장의 `imageSourceUrl`에 기록했다.
