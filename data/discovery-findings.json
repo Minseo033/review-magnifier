@@ -1,0 +1,199 @@
+{
+  "checkedAt": "2026-11-12",
+  "compiledAt": "2026-11-13",
+  "purpose": "상충 고지 또는 원문 제품·구매 근거 미확인 자료. 공개 후기 아님.",
+  "findings": [
+    {
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "id": "naver-224461419877",
+      "platform": "naver",
+      "url": "https://blog.naver.com/d__jh/224461419877",
+      "status": "excluded",
+      "evidence": "일정액의 수수료를 제공받습니다.",
+      "location": "본문 하단 쿠팡 파트너스 고지",
+      "reviewedAt": "2026-11-12",
+      "reason": "내돈내산 제목과 직접구매 기록이 있어도 제휴 수수료 고지와 링크 존재"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://blog.naver.com/ddungpbara/224465619104",
+      "decision": "excluded",
+      "reason": "올리브영 쇼핑 큐레이터 수수료 고지가 본문 하단 연관 콘텐츠 영역에 있고 oy.run 링크도 사용. 직접구매 표현만으로 통과시키지 않음.",
+      "evidence": "구매가 발생할 경우 일정액의 수수료를 제공",
+      "location": "본문 하단 연결 글 미리보기 문구(263행) ; 외부링크 조건 추가 확인 필요"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://blog.naver.com/mhc3050/224469366109",
+      "decision": "held",
+      "reason": "제목에는 B5+와 내돈내산이 있으나 본문은 B5로만 표기하고 용량·사진내 제품버전 미확인. 정확버전 검토 필요"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://blog.naver.com/gungangchoigo/224465214861",
+      "decision": "held",
+      "reason": "200ml 사용 글이므로 이번 100ml 제품 묶음에서 보류"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://blog.naver.com/barryveil/224472382232",
+      "decision": "held",
+      "reason": "구매표기는 명확하고 본문고지 미발견이나 40ml 사용 글이므로 이번100ml 묶음에서 보류"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://www.youtube.com/shorts/kyod4B8RQ9c",
+      "decision": "held",
+      "reason": "정확한 B5+ 이름과 Shorts 형식은 확인; 제목·설명에 직접구매 명시 없음. 영상장면·음성 미검토"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://www.youtube.com/shorts/KKOF6e8fmHY",
+      "decision": "held",
+      "reason": "제목 내돈내산 명시와 Shorts 형식은 확인했으나 정확대상제품은 제목·설명만으로 불명확"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://www.youtube.com/shorts/TQGNyDaP6qY",
+      "decision": "excluded",
+      "reason": "영상 설명 첫 줄에 쿠팡 링크 구매 시 수수료 고지",
+      "evidence": "수수료를 받아 내돈내산 콘텐츠 제작에 도움이 됩니다."
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://www.youtube.com/watch?v=xWGuttT-Vgs",
+      "decision": "held",
+      "reason": "10:04에 정확한 B5+ 타임라인이 있으나 직접구매 명시 없음; 비광고만으로 승인하지 않음"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://www.youtube.com/watch?v=QRCBX839OJc",
+      "decision": "held",
+      "reason": "정확한 B5+ 타임라인 있으나 직접구매 명시 없음; 고정댓글 링크와 영상장면 추가검토 필요"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "url": "https://www.youtube.com/watch?v=8b8HnOhthbY",
+      "decision": "excluded",
+      "reason": "직접구매 명시는 있으나 설명의 대상은 B5 멀티 리페어 크림으로 다른 제품"
+    },
+    {
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "format": "reels",
+      "decision": "unavailable",
+      "reason": "일차 Instagram 릴스 원문을 읽고 검토할 수 있는 적격 후보 미확보. 2차 분석사이트·리포스트를 원문 근거로 쓰지 않음."
+    },
+    {
+      "productId": "aestura-atobarrier365-cream",
+      "id": "naver-224468987692",
+      "url": "https://blog.naver.com/secolee1004/224468987692",
+      "status": "excluded",
+      "evidence": "이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+      "location": "본문 마지막 문장",
+      "reason": "제목과 본문에 내돈내산이 있어도 제휴 수수료 고지가 상충함"
+    },
+    {
+      "productId": "aestura-atobarrier365-cream",
+      "id": "naver-224461470988",
+      "url": "https://blog.naver.com/showa1122/224461470988",
+      "status": "held",
+      "evidence": "https://brandconnect.naver.com/affiliates/1012659271473408?channelProductNo=13581598987&ac=b_ed",
+      "location": "본문 상품 소개 링크 href",
+      "reason": "본문에 직접 구매 표현이 있어도 Brand Connect affiliate 링크를 포함하므로 제휴 관계 추가 확인 전 비공개"
+    },
+    {
+      "productId": "aestura-atobarrier365-cream",
+      "id": "youtube-39L41WfHI48",
+      "url": "https://www.youtube.com/watch?v=39L41WfHI48",
+      "status": "excluded",
+      "evidence": "이 포스팅은 올리브영 쇼핑 큐레이터 활동의 일환으로, 구매 시 일정 금액의 수수료를 제공받습니다",
+      "location": "영상 설명 첫 문장",
+      "reason": "내돈내산 제목과 제휴 수수료 표시 상충. 유료광고 메타데이터도 존재"
+    },
+    {
+      "productId": "aestura-atobarrier365-cream",
+      "id": "youtube-buxefF1r76E",
+      "url": "https://www.youtube.com/shorts/buxefF1r76E",
+      "status": "excluded",
+      "evidence": "영상 내 태그된 쿠팡 링크로 구매 시, 수수료를 받아 내돈내산 콘텐츠 제작에 도움이 됩니다.",
+      "location": "영상 설명 첫 문장",
+      "reason": "제휴 수수료 고지"
+    },
+    {
+      "productId": "aestura-atobarrier365-cream",
+      "id": "youtube-99oTzm3oxzU",
+      "url": "https://www.youtube.com/watch?v=99oTzm3oxzU",
+      "status": "excluded",
+      "evidence": "이 영상에는 에스트라의 유료광고가 포함되어 있습니다.",
+      "location": "영상 설명 첫 문장",
+      "reason": "브랜드 유료광고. 유료광고 메타데이터도 존재"
+    },
+    {
+      "productId": "aestura-atobarrier365-cream",
+      "kind": "youtube",
+      "id": "yom0YwGa2xo",
+      "title": "40만원 리쥬란보다 두배 효과보는 에스트라 아토베리어 365크림 내돈내산 팩폭리뷰 할께요 #재생크림  #피부장벽 #리쥬란",
+      "author": "피부리셋",
+      "description": "40만원 리쥬란보다 두배 효과보는 재생크림 5가지, 세콜지 에스트라 아토베리어 365크림\n\n#피부장벽 #재생크림 #리쥬란\n\n집에서 부담 없이 피부장벽을 관리하고 싶다면 저는 재생크림을 먼저 챙겨요. 여러 제품을 써보고 고른 저의 원픽은 에스트라 아토베리어365 크림이에요. 피부장벽에 중요한 세라마이드·콜레스테롤·지방산을 함께 담아 건조할 때 보습을 채워주고, 미세캡슐 제형이라 촉촉함이 오래가는 느낌이에요.",
+      "date": "2026-08-27",
+      "seconds": "57",
+      "shortsEligible": true,
+      "paidOverlay": false,
+      "status": "OK"
+    },
+    {
+      "productId": "anua-pdrn-capsule-100-serum",
+      "url": "https://blog.naver.com/heeyas2s2/224403048606",
+      "status": "excluded",
+      "evidence": "이 포스팅은 쿠팡 파트너스 활동의 일환으로,",
+      "location": "본문 끝",
+      "reason": "내돈내산 제목과 상충하는 제휴 수수료 고지 및 link.coupang.com 링크"
+    },
+    {
+      "productId": "anua-pdrn-capsule-100-serum",
+      "url": "https://blog.naver.com/lieblichu_/224387974829",
+      "status": "excluded",
+      "evidence": "https://brandconnect.naver.com/affiliates/987977272285696?channelProductNo=13199102079&ac=b_ed",
+      "location": "본문 상품 링크",
+      "reason": "직접 구매 문구가 있으나 본문 상품 링크가 네이버 BrandConnect affiliates 경로"
+    },
+    {
+      "productId": "anua-pdrn-capsule-100-serum",
+      "url": "https://blog.naver.com/neighborhoodskincare/224424101073",
+      "status": "held",
+      "evidence": "이 포스팅은 쇼핑커넥트 활동의 일환으로 일정액의 수수료를 제공받습니다.",
+      "location": "본문에 포함된 관련 글 미리보기",
+      "reason": "관련 글 카드의 수수료 고지가 현재 글에 적용되는지 구분 필요; 자동 공개 제외"
+    },
+    {
+      "productId": "anua-pdrn-capsule-100-serum",
+      "url": "https://www.youtube.com/watch?v=oI0GJpqWzTw",
+      "status": "excluded",
+      "evidence": "이번 영상은 메디큐브의 유료광고를 포함하고 있습니다.",
+      "location": "영상 설명 첫 부분",
+      "reason": "영상 내 다른 브랜드 유료광고 고지. 아누아도 향 개선 전 제품이라고 명시"
+    },
+    {
+      "productId": "anua-pdrn-capsule-100-serum",
+      "url": "https://www.youtube.com/watch?v=3efY2tgaQto",
+      "status": "excluded",
+      "evidence": "Affiliate Disclosure: This video and description may contain affiliate links",
+      "location": "영상 설명 마지막",
+      "reason": "제휴 수수료 고지"
+    },
+    {
+      "productId": "anua-pdrn-capsule-100-serum",
+      "url": "https://www.youtube.com/shorts/S4IYbv-pagI",
+      "status": "held",
+      "evidence": "#내돈내산",
+      "location": "제목",
+      "reason": "쇼츠형식·내돈내산표기·유료광고 메타데이터 미발견 확인, 설명 비어있고 제목은 아누아 세럼만 표시. 정확히 PDRN 캡슐 100 세럼인지 영상/이미지 확인 필요"
+    },
+    {
+      "productId": "anua-pdrn-capsule-100-serum",
+      "url": "https://www.youtube.com/shorts/NR6K4A8KXI8",
+      "status": "held",
+      "reason": "제목·설명에 비용 부담 자기표시 없음. 진짜 좋은지 평가하는 표현만으로 직접 구매 판정하지 않음"
+    }
+  ]
+}

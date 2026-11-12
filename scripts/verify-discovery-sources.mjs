@@ -1,11 +1,13 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
-import {prepareLibrary} from './discovery-policy.mjs';
-const root=new URL('../',import.meta.url),file=new URL('.local-data/rebuild/source-checks.json',root);
+import {validateReview} from '../discovery-logic.mjs';
+const root=new URL('../',import.meta.url),expanded=new URL('.local-data/rebuild/source-checks-expanded.json',root),file=existsSync(expanded)?expanded:new URL('.local-data/rebuild/source-checks.json',root);
 if(!existsSync(file))throw Error('이 검사는 비공개 원문 캐시가 있는 작업 환경에서만 실행합니다. 일반 빌드에는 캐시가 필요하지 않습니다.');
 const snapshots=JSON.parse(readFileSync(file)),registry=JSON.parse(readFileSync(new URL('data/discovery-registry.json',root)));
 const normalize=text=>String(text||'').replace(/[\s\u200b\ufeff]+/g,'');
-for(const r of prepareLibrary(registry).reviews){
+const candidates=registry.reviews.filter(r=>r.disclosure?.kind==='self_declared'&&!['excluded','inactive'].includes(r.review?.status));
+for(const r of candidates){
+ validateReview(r,registry.products);
  const source=snapshots.find(s=>s.id===r.externalId.split('/').at(-1));assert.ok(source,r.id+' 원문 캐시 없음');
  const text=normalize(source.title+' '+(source.body||source.description||''));
  assert.equal(r.title,source.title,r.id+' 제목 변경');
@@ -17,4 +19,4 @@ for(const r of prepareLibrary(registry).reviews){
  }
 }
 for(const r of registry.excluded){const source=snapshots.find(s=>s.id===r.id);assert.ok(source);assert.ok(normalize(source.title+' '+(source.body||source.description||'')).includes(normalize(r.evidence)));}
-console.log('10개 공개 원문의 제목·발췌·조건 근거와 영상 메타데이터, 제외 2건의 고지를 비공개 캐시에 대조했습니다. 이미지·영상 장면 검증을 뜻하지 않습니다.');
+console.log(`${candidates.length}개 직접 구매 후보의 제목·발췌·조건 근거와 영상 메타데이터, 기존 제외 ${registry.excluded.length}건의 고지를 비공개 캐시에 대조했습니다. 공개 승인이나 이미지·영상 장면 검증을 뜻하지 않습니다.`);

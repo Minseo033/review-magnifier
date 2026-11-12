@@ -1,0 +1,56 @@
+{
+  "batchId": "oliveyoung-2026-11-12",
+  "compiledAt": "2026-11-13",
+  "catalogGroup": "beauty",
+  "sourceUrl": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
+  "sourceKind": "전체 판매 랭킹 공개 페이지",
+  "observedAt": "2026-11-12",
+  "rankingNote": "공개 페이지 한 시점의 기획상품 순서. 동적으로 변동하며 실시간 인기·전체매출·품질·후기 진위 순위로 간주하지 않음.",
+  "priority": [
+    {
+      "rank": 1,
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "status": "human_review_pending"
+    },
+    {
+      "rank": 2,
+      "listing": "메디힐 에센셜 마스크팩 7종 골라담기",
+      "status": "deferred_variant_matching",
+      "reason": "한 상품 페이지에 여러 종류가 있어 특정 마스크 모델부터 확정해야 함"
+    },
+    {
+      "rank": 3,
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "status": "human_review_pending"
+    },
+    {
+      "rank": 4,
+      "listing": "VT 피디알엔 리들샷 아이 리프터 15ml",
+      "status": "next_batch",
+      "reason": "이번 소량 원문 검토는 다른 4종부터 수행"
+    },
+    {
+      "rank": 5,
+      "productId": "aestura-atobarrier365-cream",
+      "status": "human_review_pending"
+    },
+    {
+      "rank": 6,
+      "listing": "라로슈포제 시카플라스트 멀티 리페어 크림",
+      "status": "deferred_separate_product",
+      "reason": "B5+ 밤과 다른 제형이므로 섞지 않고 다음 검토로 분리"
+    },
+    {
+      "rank": 7,
+      "productId": "anua-pdrn-capsule-100-serum",
+      "status": "human_review_pending"
+    }
+  ],
+  "initialCandidateProducts": 4,
+  "initialCandidateReviews": 13,
+  "futureCatalogGroups": [
+    "electronics",
+    "household"
+  ],
+  "futureNote": "확장 의도만 기록. 전자기기·생활용품은 아직 수집하거나 공개하지 않음."
+}

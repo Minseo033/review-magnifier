@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "products": [
     {
       "id": "fwee-all-day-black",
@@ -28,7 +28,143 @@
         "23N"
       ],
       "lineageNote": "글래스 내추럴·글래스 오리지널·에그핏 커버와 구분한 제품입니다. 후기 작성 시점에 따라 판매 호수와 기획 구성이 다를 수 있습니다.",
-      "category": "base"
+      "category": "base",
+      "catalogGroup": "beauty",
+      "slot": "쿠션"
+    },
+    {
+      "id": "editb-veil-on-sun-ampoule-bb",
+      "brand": "에딧비 EDIT.B",
+      "name": "베일온 스킨 핏 선 앰플 비비",
+      "fullName": "에딧비 베일온 스킨 핏 선 앰플 비비 30ml",
+      "version": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "aliases": [
+        "에딧비 비비",
+        "에딧비 선앰플",
+        "지원 비비",
+        "editb bb",
+        "edit b veil on skin fit sun ampoule bb"
+      ],
+      "catalogGroup": "beauty",
+      "category": "base",
+      "slot": "비비크림",
+      "image": "assets/discovery/editb-veil-on-bb.webp",
+      "officialUrl": "https://www.editb.co.kr/product/detail.html?product_no=73",
+      "officialCheckedAt": "2026-11-12",
+      "imageSourceUrl": "https://www.editb.co.kr/web/product/big/202608/82b1cff7e4531f65ebc117daf62df329.png",
+      "shades": [
+        "01 화사",
+        "02 차분",
+        "03 은은"
+      ],
+      "lineageNote": "선 앰플 비비 30ml 본품만 매칭. 다이소 선크림/톤업 선세럼/프렙과 구분하며 사은품 구성은 원문별로 다릅니다.",
+      "ranking": {
+        "source": "oliveyoung",
+        "kind": "sales",
+        "rank": 1,
+        "checkedAt": "2026-11-12",
+        "url": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
+        "goodsUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000001005839",
+        "scope": "2026-11-12 확인한 전체 판매 랭킹의 해당 기획상품. 실시간 또는 품질 순위가 아닙니다."
+      }
+    },
+    {
+      "id": "lrp-cicaplast-baume-b5-plus",
+      "brand": "라로슈포제 La Roche-Posay",
+      "name": "시카플라스트 밤 B5+ 100ml",
+      "fullName": "라로슈포제 시카플라스트 밤 B5+ 100ml",
+      "version": "시카플라스트 밤 B5+ · 100ml (멀티 리페어 크림과 구분)",
+      "aliases": [
+        "라로슈포제 시카밤",
+        "라로슈포제 B5 플러스 밤",
+        "시카플라스트밤B5+",
+        "cicaplast baume b5 plus",
+        "La Roche-Posay Cicaplast Baume B5+"
+      ],
+      "catalogGroup": "beauty",
+      "category": "care",
+      "slot": "크림",
+      "image": "assets/discovery/lrp-cicaplast-baume-b5-plus.webp",
+      "officialUrl": "https://www.larocheposay.co.kr/product/view/4710.do",
+      "officialCheckedAt": "2026-11-12",
+      "imageSourceUrl": "https://www.larocheposay.co.kr/upload/product/main/2025/12/20251219_1511040_837_400x400.png",
+      "lineageNote": "B5+ 밤 100ml를 대상으로 함. 별도 제형인 B5 멀티 리페어 크림, 구형 B5 밤, SPF50+ 밤, 40/200ml 사용 글은 이 초기 검토 묶음에 합치지 않음.",
+      "ranking": {
+        "source": "oliveyoung",
+        "kind": "sales",
+        "rank": 3,
+        "checkedAt": "2026-11-12",
+        "url": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
+        "scope": "2026-11-12 확인한 전체 판매 랭킹의 해당 기획상품. 실시간 또는 품질 순위가 아닙니다.",
+        "goodsUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000263009"
+      }
+    },
+    {
+      "id": "aestura-atobarrier365-cream",
+      "brand": "에스트라 AESTURA",
+      "name": "아토베리어365 크림",
+      "fullName": "에스트라 아토베리어365 크림 80ml",
+      "version": "2024 업그레이드 고밀도 세라마이드 · 크림 80ml",
+      "category": "care",
+      "catalogGroup": "beauty",
+      "slot": "크림",
+      "aliases": [
+        "에스트라 크림",
+        "아토베리어 365 크림",
+        "아토베리어365",
+        "AESTURA ATOBARRIER365 CREAM",
+        "에스트라 2세대 크림"
+      ],
+      "image": "assets/discovery/aestura-atobarrier365-cream.webp",
+      "imageSourceUrl": "https://image.aestura.com/upload/product/1021_121_DSPIMG_L.png?ver=2026101910",
+      "officialUrl": "https://www.aestura.com/web/product/view.do?prdSeq=1021",
+      "officialCheckedAt": "2026-11-12",
+      "shades": [],
+      "lineageNote": "2024년 고밀도 세라마이드로 업그레이드된 80ml 크림. 하이드로 수딩크림·로션·크림 미스트·병원판매 MD 크림 및 리뉴얼 이전 제품과 구분한다. 기획세트의 증정품은 동일 후기 제품으로 세지 않는다.",
+      "ranking": {
+        "source": "oliveyoung",
+        "kind": "sales",
+        "rank": 5,
+        "checkedAt": "2026-11-12",
+        "url": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
+        "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000001002386",
+        "rankedListingTitle": "[11월 올영픽] 에스트라 아토베리어365 크림 80ml 더블 기획 (+세라-히알 앰플 15ml)",
+        "scope": "2026-11-12 확인한 전체 판매 랭킹의 해당 기획상품. 실시간 또는 품질 순위가 아닙니다.",
+        "goodsUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000001002386"
+      }
+    },
+    {
+      "id": "anua-pdrn-capsule-100-serum",
+      "catalogGroup": "beauty",
+      "brand": "아누아 Anua",
+      "name": "PDRN 히알루론산 캡슐 100 세럼",
+      "fullName": "아누아 PDRN 히알루론산 캡슐 100 세럼 30ml",
+      "version": "PDRN 히알루론산 캡슐 100 세럼 · 공식 상품 359",
+      "aliases": [
+        "아누아 피디알엔 세럼",
+        "아누아 수지세럼",
+        "아누아 PDRN 100 세럼",
+        "Anua PDRN Hyaluronic Acid Capsule 100 Serum"
+      ],
+      "image": "assets/discovery/anua-pdrn-capsule-100-serum.webp",
+      "imageSourceUrl": "https://m.anua.kr/web/product/big/202605/62c9be57bcb0a3e694a6dbe879e3d6c0.png",
+      "officialUrl": "https://m.anua.kr/product/detail.html?product_no=359",
+      "officialCheckedAt": "2026-11-12",
+      "category": "care",
+      "slot": "세럼",
+      "shades": [],
+      "lineageNote": "PDRN 캡슐 100 세럼 30ml. 동일 명칭의 수분 캡슐 미스트·수분 크림·립 세럼·마스크와 구분한다. 기획 구성은 시점마다 다를 수 있고 향 개선 전후 버전은 원문 확인이 필요하다. 향 개선 전후 동일 이름 제품의 버전은 운영자 원문 확인 후 확정합니다.",
+      "ranking": {
+        "source": "oliveyoung",
+        "kind": "sales",
+        "scope": "2026-11-12 확인한 전체 판매 랭킹의 해당 기획상품. 실시간 또는 품질 순위가 아닙니다.",
+        "rank": 7,
+        "checkedAt": "2026-11-12",
+        "url": "https://www.oliveyoung.co.kr/store/main/getBestList.do",
+        "productUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222698",
+        "observedTitle": "[수지세럼] 아누아 피디알엔 히알루론산 캡슐 100 세럼 30mL 기획 (+30mL 리필팩)",
+        "goodsUrl": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000222698"
+      }
     }
   ],
   "reviews": [
@@ -100,17 +236,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "1286da200cff8894835a86bf062aaf955e778c3a990b391b3fef48784170b158"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "naver-224396653178",
@@ -172,17 +308,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "181b809ba76b496c0d8173e7e2cc61e9e8f31c60ad235e6e4366f653b9cab383"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "naver-224433582912",
@@ -247,17 +383,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "11cc1f07a2320fd7cbab5750157eb2f8eacb1514d78c8eaa9a1cb7d81aa686cf"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "naver-224439932821",
@@ -318,17 +454,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "e39b311bd034dc7382d09cdfd44421afe1c0608801faa69b0998bd8a79326913"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "youtube-YWFvC1o0NPU",
@@ -377,17 +513,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "bf5b88837d5400934ce61bad91318c4df9552e237f875dbc3d3588c37b969a1a"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "youtube-yn13puTnnkM",
@@ -436,17 +572,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "91161257b907d1427ec5f6ffa0234e470afe003eda6982ae9abfa44547883485"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "youtube-MgB_yIDfYxg",
@@ -505,17 +641,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "b24d5d68d5d8c8fa309b97fdf817c45280c60b72b4995265276605061f34216d"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "youtube-SlA41N4vzLg",
@@ -571,17 +707,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "5d57d1050b1ca0e477e53b7eeeb64b47d565483df6f0f16961389c76ce0f7df5"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "youtube-tjV6r63MFi4",
@@ -635,17 +771,17 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "a166d5a2a07b3a3bf79ee5b0f10ceb38d4ac7d627bb67beaae6d735bb1eb2364"
+        "reason": "명시적인 직접 구매 근거 미확인: 최초 공개 기준상 제외/보류",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
     },
     {
       "id": "youtube-cDCdWKO3z4g",
@@ -708,17 +844,912 @@
         "findings": []
       },
       "review": {
-        "status": "approved",
+        "status": "held",
         "reviewedAt": "2026-11-12",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
-        "contentSha256": "d61c4f10173425e817f959e344c019085cc2b6b5e51674870734f239efe57883"
+        "reason": "운영자 원문 확인 및 공개 승인 대기",
+        "reviewerKind": "ai"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": true
+      "active": false
+    },
+    {
+      "id": "naver-224393985664",
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "productVersion": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "yuru_yuru/224393985664",
+      "url": "https://blog.naver.com/yuru_yuru/224393985664",
+      "title": "[내돈내산] 에딧비 베일온 스킨핏 선앰플 후기🤍 유튜버 지원 공동개발 선비비 (코끼임, 커버력 등)",
+      "author": "얄루얄루",
+      "publishedAt": "2026-08-29",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": null,
+      "summary": "01 화사를 구매한 기록. 가볍게 바르는 피부 표현과 큰 퍼프의 편의성을 적었고, 코 주변 끼임과 양 조절에 대한 아쉬움도 남겼습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": {
+          "value": "01 화사",
+          "quote": "01 화사",
+          "location": "본문 구매 구성"
+        },
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "밀착력",
+        "모공·요철 표현",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "베일온 스킨 핏 선 앰플 비비",
+        "location": "본문 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 링크 목적지 문자열"
+        ],
+        "uncheckedAreas": [
+          "이미지 속 고지·구매내역 이미지의 진위",
+          "연결된 외부 페이지의 추가 고지",
+          "사람의 최종 원문 확인"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 네이버 블로그 원문 텍스트 검토",
+        "reviewerKind": "ai",
+        "reason": "직접 구매 문구와 제품명·상충 고지 검토 완료; 이미지 포함 원문에 대한 운영자 최종 공개 승인 대기"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224421405717",
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "productVersion": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "l_7_bn/224421405717",
+      "url": "https://blog.naver.com/l_7_bn/224421405717",
+      "title": "[EDIT.B] 에딧비 베일온 스킨 핏 선 앰플 비비 크림 (내돈내산 후기)",
+      "author": "연",
+      "publishedAt": "2026-09-24",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": null,
+      "summary": "02 차분을 사용한 수부지 작성자의 기록. 붉은기와 모공을 가리는 표현에는 만족했지만 유분이 많을 때 유지 시간과 손으로 건드릴 때 벗겨지는 점을 함께 적었습니다.",
+      "conditions": {
+        "skinType": {
+          "value": "수부지",
+          "quote": "수부지+홍조",
+          "location": "본문 사용 피부 조건"
+        },
+        "shade": {
+          "value": "02 차분",
+          "quote": "02(차분)로 샀음",
+          "location": "본문 후기"
+        },
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "커버력",
+        "모공·요철 표현",
+        "지속력과 무너짐",
+        "수정 화장",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "베일온 스킨 핏 선 앰플 비비",
+        "location": "본문 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 링크 목적지 문자열"
+        ],
+        "uncheckedAreas": [
+          "이미지 속 고지·구매내역 이미지의 진위",
+          "연결된 외부 페이지의 추가 고지",
+          "사람의 최종 원문 확인"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 네이버 블로그 원문 텍스트 검토",
+        "reviewerKind": "ai",
+        "reason": "직접 구매 문구와 제품명·상충 고지 검토 완료; 이미지 포함 원문에 대한 운영자 최종 공개 승인 대기"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224382496139",
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "productVersion": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "sabina713_/224382496139",
+      "url": "https://blog.naver.com/sabina713_/224382496139",
+      "title": "[내돈내산] 에딧비 스킨핏 선앰플 BB 후기｜커버력·지속력 솔직후기",
+      "author": "48시간",
+      "publishedAt": "2026-08-18",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": null,
+      "summary": "02 차분을 직접 구매했다고 밝힌 기록. 얇게 펴 바른 표현과 촉촉함을 설명하며 초기 묻어남과 사용량 조절을 언급했습니다. 피부 타입이나 사용 기간은 추정하지 않았습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": {
+          "value": "02 차분",
+          "quote": "02 차분",
+          "location": "본문 구매 구성"
+        },
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "커버력",
+        "촉촉함·건조함",
+        "다크닝",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "베일온 스킨 핏 선 앰플 비비",
+        "location": "본문 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "직접 돈 주고 구매한 내돈내산 제품입니다!",
+          "location": "본문 도입부"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 링크 목적지 문자열"
+        ],
+        "uncheckedAreas": [
+          "이미지 속 고지·구매내역 이미지의 진위",
+          "연결된 외부 페이지의 추가 고지",
+          "사람의 최종 원문 확인"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 네이버 블로그 원문 텍스트 검토",
+        "reviewerKind": "ai",
+        "reason": "직접 구매 문구와 제품명·상충 고지 검토 완료; 이미지 포함 원문에 대한 운영자 최종 공개 승인 대기"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224342587815",
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "productVersion": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "tikaday/224342587815",
+      "url": "https://blog.naver.com/tikaday/224342587815",
+      "title": "매번 실망스러웠던 유튜버 공동개발템, 이번엔 괜찮을까? [에딧비 지원 공동개발 베일온 스킨 핏 선 앰플 비비 내돈내산 리뷰]",
+      "author": "티격태격",
+      "publishedAt": "2026-07-10",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": null,
+      "summary": "02 차분을 사용한 건성 작성자의 경험. 가벼운 사용감과 자연스러운 색상에 만족했고, 시간이 지난 뒤 묻어남과 모공 끼임, 양 조절에는 아쉬움을 적었습니다.",
+      "conditions": {
+        "skinType": {
+          "value": "건성",
+          "quote": "악건성에 가까운 건성",
+          "location": "본문 피부 타입"
+        },
+        "shade": {
+          "value": "02 차분",
+          "quote": "02 차분으로 시켰습니다",
+          "location": "본문 색상 선택"
+        },
+        "duration": null,
+        "skinTone": {
+          "value": "23호",
+          "quote": "23호 어두운 피부",
+          "location": "본문 피부 호수"
+        }
+      },
+      "topics": [
+        "색상과 호수 선택",
+        "지속력과 무너짐",
+        "모공·요철 표현",
+        "촉촉함·건조함",
+        "재구매 의사",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "베일온 스킨 핏 선 앰플 비비",
+        "location": "본문 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 링크 목적지 문자열"
+        ],
+        "uncheckedAreas": [
+          "이미지 속 고지·구매내역 이미지의 진위",
+          "연결된 외부 페이지의 추가 고지",
+          "사람의 최종 원문 확인"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 네이버 블로그 원문 텍스트 검토",
+        "reviewerKind": "ai",
+        "reason": "직접 구매 문구와 제품명·상충 고지 검토 완료; 이미지 포함 원문에 대한 운영자 최종 공개 승인 대기"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224472559017",
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "productVersion": "시카플라스트 밤 B5+ · 100ml (멀티 리페어 크림과 구분)",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "hahajuinzzang/224472559017",
+      "url": "https://blog.naver.com/hahajuinzzang/224472559017",
+      "title": "라로슈포제 B5+ 시카플라스트 밤 (내돈내산) 후기 | 복합성 피부 꾸덕한 제형",
+      "author": "하하",
+      "publishedAt": "2026-11-11",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "제 피부에는 발림성이 조금 아쉽고 기름기가 도는 느낌이라",
+      "summary": "복합성이라고 밝힌 작성자의 밤 B5+ 사용 후기. 꾸덕한 제형을 보여주며 본인 피부에는 발림성과 유분감이 아쉬웠다고 기록했어요. 다음 구매에는 다른 크림을 택할 생각이라고 적었어요.",
+      "conditions": {
+        "skinType": {
+          "value": "복합성",
+          "quote": "복합성 피부인 하하 주인장은",
+          "location": "본문 자신의 피부 타입"
+        },
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "번들거림",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "[11월 올영픽] 라로슈포제 시카플라스트 밤 B5+ 100ml 기획",
+        "location": "본문 하단 연결한 제품명과 구매 구성 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목 괄호"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 HTML의 링크·이미지 대체텍스트"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 글자·고지",
+          "외부 판매 링크 내부의 추가 고지",
+          "사람의 원문 최종 승인"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 사전 검토",
+        "reason": "직접 구매 명시·정확한 제품 근거를 사전 대조했으나 이미지 내 고지와 외부 링크, 사람의 최종 공개 승인 대기",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224469271149",
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "productVersion": "시카플라스트 밤 B5+ · 100ml (멀티 리페어 크림과 구분)",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "leto_red_candy/224469271149",
+      "url": "https://blog.naver.com/leto_red_candy/224469271149",
+      "title": "[내돈내산] N번째 재구매한 라로슈포제 시카플라스트 밤 B5+ 솔직 후기",
+      "author": "빨간사탕",
+      "publishedAt": "2026-11-09",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "아침에 사용할 때는 너무 많은 양을 바르면",
+      "summary": "처음에는 친척에게 선물받았고 이후에는 본인이 직접 재구매했다고 구분한 100ml 사용 기록. 보습감과 튜브 사용을 좋아했지만 꾸덕함, 유분감과 아침 화장 전 묵직함도 함께 적었어요. 사진 배경을 AI로 수정했다는 고지가 있어 비교 사진을 객관적 성능 근거로 쓰지 않습니다.",
+      "conditions": {
+        "skinType": {
+          "value": "건조·민감",
+          "quote": "저처럼 피부가 건조하고 민감한 편이거나",
+          "location": "본문 총평의 자기서술"
+        },
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "번들거림",
+        "재구매 의사",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "라로슈포제 시카플라스트 밤 B5+ 100ml",
+        "location": "본문 제품명·용량"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "이제는 제가 직접 재구매하며 꾸준히 사용하고 있어요.",
+          "location": "본문 도입부; 첫 선물 사용과 이후 직접 구매를 구분"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 HTML의 링크·이미지 대체텍스트"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 글자·고지",
+          "외부 판매 링크 내부의 추가 고지",
+          "사람의 원문 최종 승인"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 사전 검토",
+        "reason": "직접 구매 명시·정확한 제품 근거를 사전 대조했으나 이미지 내 고지와 외부 링크, 사람의 최종 공개 승인 대기",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224463407586",
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "productVersion": "시카플라스트 밤 B5+ · 100ml (멀티 리페어 크림과 구분)",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "ssungmin3620/224463407586",
+      "url": "https://blog.naver.com/ssungmin3620/224463407586",
+      "title": "올리브영 추천템! 라로슈포제 시카플라스트 밤 B5+내돈내산 후기 ｜피부장벽 크림 성분·효과·사용법",
+      "author": "곰마왕",
+      "publishedAt": "2026-11-03",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "꼼꼼하게 펴 바르지 않으면 피부에 하얀 잔여물이 남아",
+      "summary": "100ml 제품을 직접 구매해 꾸준히 사용한다는 작성자의 기록. 보습감에는 만족했지만 잘 펴 바르지 않았을 때의 하얀 잔여물과 옷에 묻어나는 점도 언급해요. 성분 설명·질환 관련 문구를 사이트의 효능 보장으로 옮기지 않습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "본품 용량 : 100mL",
+        "location": "본문 제품명 B5+ 및 Specification의 용량"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "위 제품은 내돈내산으로 구매하여 사용 중인 화장품입니다.",
+          "location": "본문 끝 총평 아래"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 HTML의 링크·이미지 대체텍스트"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 글자·고지",
+          "외부 판매 링크 내부의 추가 고지",
+          "사람의 원문 최종 승인"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 사전 검토",
+        "reason": "직접 구매 명시·정확한 제품 근거를 사전 대조했으나 이미지 내 고지와 외부 링크, 사람의 최종 공개 승인 대기",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224463944675",
+      "productId": "aestura-atobarrier365-cream",
+      "productVersion": "2024 업그레이드 고밀도 세라마이드 · 크림 80ml",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "qet5208/224463944675",
+      "url": "https://blog.naver.com/qet5208/224463944675",
+      "title": "[내돈내산] 에스트라 아토베리어365 크림 더블 기획세트 | 세안 후 당김 때문에 써본 솔직 후기 (올리브영 세일 가격, 사용감)",
+      "author": "하루를 신나게 수원",
+      "publishedAt": "2026-11-03",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": null,
+      "summary": "세안 후 당김 때문에 80ml 더블 기획세트를 구매한 기록이에요. 흡수와 보습 지속감에 만족했으며, 특별한 아쉬움은 없었다고 적었어요. 브랜드 발표 수치와 자신의 경험을 구분해 읽을 수 있습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함"
+      ],
+      "matchEvidence": {
+        "quote": "아토베리어365 크림 80mL × 2개",
+        "location": "본문 구성품과 제품 정보"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "제 돈으로 직접 구매하고 쓰는 내돈내산 후기예요.",
+          "location": "본문 첫 문장"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 목적지 문자열"
+        ],
+        "uncheckedAreas": [
+          "사진 속 광고 표시",
+          "댓글·추가 수정 내용",
+          "연결한 외부 페이지의 추가 고지"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 공개 원문 텍스트 검토",
+        "reason": "직접 구매 표기·제품 및 리뉴얼 버전 일치·본문 상충 고지 미발견. 사진 속 표시와 사람의 공개 승인 검토 대기",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224225856659",
+      "productId": "aestura-atobarrier365-cream",
+      "productVersion": "2024 업그레이드 고밀도 세라마이드 · 크림 80ml",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "chickenforever/224225856659",
+      "url": "https://blog.naver.com/chickenforever/224225856659",
+      "title": "내돈내산 NEW 에스트라 아토베리어 365 크림 후기",
+      "author": "만두",
+      "publishedAt": "2026-03-22",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": null,
+      "summary": "리뉴얼된 80ml 크림의 사용감 기록이에요. 화장 전 밀착감과 오후의 보습감은 만족했지만, 극적인 변화는 없고 여름에는 무겁게 느꼈다고 적었어요.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "밀착력",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "리뉴얼이 되고",
+        "location": "본문 제품명·80ml 설명 다음 리뉴얼 단락"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 목적지 문자열"
+        ],
+        "uncheckedAreas": [
+          "사진 속 광고 표시",
+          "댓글·추가 수정 내용",
+          "연결한 외부 페이지의 추가 고지"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 공개 원문 텍스트 검토",
+        "reason": "직접 구매 표기·제품 및 리뉴얼 버전 일치·본문 상충 고지 미발견. 사진 속 표시와 사람의 공개 승인 검토 대기",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-223656833049",
+      "productId": "aestura-atobarrier365-cream",
+      "productVersion": "2024 업그레이드 고밀도 세라마이드 · 크림 80ml",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "seoj731/223656833049",
+      "url": "https://blog.naver.com/seoj731/223656833049",
+      "title": "올리브영 보습크림 에스트라 아토베리어 365크림 환절기 민감피부 내돈내산 추천템",
+      "author": "도동구리",
+      "publishedAt": "2024-11-12",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": null,
+      "summary": "리뉴얼 2세대 80ml 제품을 사용한 복합성 작성자의 재구매 후기예요. 화장 전 사용감에 만족했지만 이전 제품보다 유분이 남아 여름에는 무겁게 느낀다고 적었어요.",
+      "conditions": {
+        "skinType": {
+          "value": "복합성",
+          "quote": "저는 복합성 여드름 피부라서",
+          "location": "본문 자기 피부 소개"
+        },
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "번들거림",
+        "재구매 의사",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "이번건 리뉴얼된 버전이에요",
+        "location": "본문 아토베리어365 크림 설명 다음 단락"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "정말 내돈내산으로 산 꿀템이고요",
+          "location": "본문 마지막 총평"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 전체 텍스트",
+          "본문 외부 링크 목적지 문자열"
+        ],
+        "uncheckedAreas": [
+          "사진 속 광고 표시",
+          "댓글·추가 수정 내용",
+          "연결한 외부 페이지의 추가 고지"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 공개 원문 텍스트 검토",
+        "reason": "직접 구매 표기·제품 및 리뉴얼 버전 일치·본문 상충 고지 미발견. 사진 속 표시와 사람의 공개 승인 검토 대기",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224445282724",
+      "productId": "anua-pdrn-capsule-100-serum",
+      "productVersion": "PDRN 히알루론산 캡슐 100 세럼 · 공식 상품 359",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "j_diary26/224445282724",
+      "url": "https://blog.naver.com/j_diary26/224445282724",
+      "title": "수분 광채 수지 세럼 | 아누아 PDRN 히알루론산 캡슐 100 세럼 내돈내산 후기",
+      "author": "제이",
+      "publishedAt": "2026-10-18",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "바르면 살짝 끈적해요",
+      "summary": "올리브영에서 직접 구매했다고 밝힌 작성자의 사용기. 워터리한 발림과 빠른 흡수에 만족하면서, 바른 뒤 약간의 끈적임도 함께 기록했어요.",
+      "conditions": {
+        "skinType": {
+          "value": "민감성",
+          "quote": "민감성 피부라 사알짝 걱정했는데",
+          "location": "본문 사용 전 피부 상태"
+        },
+        "skinTone": null,
+        "shade": null,
+        "duration": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "아누아 피디알엔 히알루론산 캡슐 100 세럼",
+        "location": "본문 제품 소개"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "광고에 영업당해 직접 구매해 본 찐 내돈내산 후기",
+          "location": "본문 도입부 3번째 줄"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 텍스트 전체",
+          "본문 원문 링크 목적지(보이는 링크 주소)"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 고지",
+          "영상·음성에만 있는 고지",
+          "추가 외부 링크의 본문",
+          "작성자의 영수증·결제 내역"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 공개 텍스트 1차 대조",
+        "reason": "직접 구매 문장·제품명·접근 가능한 본문 고지를 대조함. 사람의 원문·이미지 고지 확인과 향 개선 전후 버전 일치 확인 후 공개 승인 필요.",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224402393657",
+      "productId": "anua-pdrn-capsule-100-serum",
+      "productVersion": "PDRN 히알루론산 캡슐 100 세럼 · 공식 상품 359",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "insook5724/224402393657",
+      "url": "https://blog.naver.com/insook5724/224402393657",
+      "title": "아누아 PDRN 세럼 후기｜1년 사용한 올리브영 내돈내산",
+      "author": "insook5724",
+      "publishedAt": "2026-09-06",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "촉촉한데 끈적이지 않는 사용감입니다.",
+      "summary": "약 1년 사용 후 다시 구매했다고 밝힌 작성자의 경험. 묽게 펴지는 제형과 본인 피부에서 느낀 보습감·낮은 끈적임, 아침저녁 사용을 기록했어요.",
+      "conditions": {
+        "skinType": {
+          "value": "민감성",
+          "quote": "민감한 제 피부에 딱 좋아요",
+          "location": "본문 피부 사용감"
+        },
+        "skinTone": null,
+        "shade": null,
+        "duration": {
+          "value": "약 1년 사용",
+          "quote": "이 제품을 약 1년 동안 사용하면서",
+          "location": "본문 1년 사용하고 또 산 이유"
+        }
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "재구매 의사"
+      ],
+      "matchEvidence": {
+        "quote": "아누아 피디알엔 히알루론산 캡슐 100 세럼 30ml 더블기획",
+        "location": "본문 이번 구매 구성"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "이번에도 제 돈으로 재구매한 내돈내산 후기입니다.",
+          "location": "본문 마무리 직접 구매 안내"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 텍스트 전체",
+          "본문 원문 링크 목적지(보이는 링크 주소)"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 고지",
+          "영상·음성에만 있는 고지",
+          "추가 외부 링크의 본문",
+          "작성자의 영수증·결제 내역"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 공개 텍스트 1차 대조",
+        "reason": "직접 구매 문장·제품명·접근 가능한 본문 고지를 대조함. 사람의 원문·이미지 고지 확인과 향 개선 전후 버전 일치 확인 후 공개 승인 필요.",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
+    },
+    {
+      "id": "naver-224400699281",
+      "productId": "anua-pdrn-capsule-100-serum",
+      "productVersion": "PDRN 히알루론산 캡슐 100 세럼 · 공식 상품 359",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "cy3724/224400699281",
+      "url": "https://blog.naver.com/cy3724/224400699281",
+      "title": "아누아 PDRN 히알루론산 캡슐 100 세럼, 극건성이 두 달 쓴 실제 후기, 수분앰플 앰플추천 히알루론산앰플",
+      "author": "채채",
+      "publishedAt": "2026-09-04",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "물처럼 산뜻하고 가볍게",
+      "summary": "극건성·민감성이라고 밝힌 작성자의 직접 구매 사용기. 묽게 펴지는 제형과 흡수 뒤 쫀쫀하게 느껴진 개인 사용감을 중심으로 읽을 수 있어요. 원문의 성분·효능 주장은 검증한 제품 성능으로 옮기지 않았어요.",
+      "conditions": {
+        "skinType": {
+          "value": "극건성·민감성",
+          "quote": "극건성 + 민감성 피부",
+          "location": "본문 피부 타입 & 구매 계기"
+        },
+        "skinTone": null,
+        "shade": null,
+        "duration": {
+          "value": "한 달 넘게 사용",
+          "quote": "한 달 넘게 직접 '내돈내산'으로 쓰면서 느낀 점",
+          "location": "본문 도입부"
+        }
+      },
+      "topics": [
+        "촉촉함·건조함"
+      ],
+      "matchEvidence": {
+        "quote": "아누아 PDRN 히알루론산 캡슐 100 세럼",
+        "location": "본문 도입부 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "직접 내돈내산 결제를 하게 되었어요.",
+          "location": "본문 피부 타입 & 구매 계기 끝"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 텍스트 전체",
+          "본문 원문 링크 목적지(보이는 링크 주소)"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 고지",
+          "영상·음성에만 있는 고지",
+          "추가 외부 링크의 본문",
+          "작성자의 영수증·결제 내역"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "held",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 공개 텍스트 1차 대조",
+        "reason": "직접 구매 문장·제품명·접근 가능한 본문 고지를 대조함. 사람의 원문·이미지 고지 확인과 향 개선 전후 버전 일치 확인 후 공개 승인 필요.",
+        "reviewerKind": "ai"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": false
     }
   ],
   "excluded": [
@@ -746,5 +1777,11 @@
       "format": "reels",
       "reason": "공개 원문 전체와 광고 표시 검토가 가능한 릴스 출처 미확보"
     }
-  ]
+  ],
+  "publicationPolicy": {
+    "purchaseEvidence": "explicit_author_self_purchase",
+    "humanApprovalRequired": true,
+    "effectiveAt": "2026-11-12",
+    "note": "최초 프롬프트의 원문 구매 표시·상충 고지 제외·사람 승인 기준 재적용"
+  }
 }

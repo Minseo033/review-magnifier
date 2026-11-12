@@ -7,6 +7,7 @@ export function prepareLibrary(registry){
   for(const r of registry.reviews){
     if(ids.has(r.id))throw Error('후기 ID 중복: '+r.id);ids.add(r.id);
     if(r.review?.status!=='approved'||r.active!==true)continue;
+    if(r.review.reviewerKind!=='human'||!r.review.reason)throw Error('사람의 원문 확인과 공개 승인이 필요합니다: '+r.id);
     const source=validateReview(r,registry.products);
     if(r.review.contentSha256!==reviewDigest(r))throw Error('후기 변경 후 재검토 필요: '+r.id);
     if(sources.has(source.key))throw Error('같은 원문 중복: '+r.id);sources.add(source.key);

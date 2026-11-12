@@ -59,8 +59,9 @@ export function validateReview(r,products){
   if(r.productVersion!==products.find(p=>p.id===r.productId).version)throw Error('제품 버전이 다릅니다.');
   if(r.publishedAt&&!/^\d{4}-\d{2}-\d{2}$/.test(r.publishedAt))throw Error('작성일 형식 오류');
   if(!Array.isArray(r.topics)||r.topics.some(t=>!TOPICS.includes(t)))throw Error('주제 태그를 확인하세요.');
-  if(!r.disclosure||!['self_declared','not_observed'].includes(r.disclosure.kind)||!r.disclosure.checkedAreas?.length||!Array.isArray(r.disclosure.uncheckedAreas)||!r.disclosure.checkedAt||r.disclosure.findings?.length!==0)throw Error('광고 표기 검토가 완료되지 않았습니다.');
-  if(r.disclosure.kind==='self_declared'&&(!r.disclosure.evidence?.quote||!r.disclosure.evidence?.location))throw Error('작성자 구매 표기 근거가 없습니다.');
+  if(r.disclosure?.kind!=='self_declared'||!r.disclosure.evidence?.quote||!r.disclosure.evidence?.location)throw Error('작성자 직접 구매 표기와 원문 위치가 필요합니다.');
+  if(!/(내\s*돈\s*내\s*산|자비\s*(구매|구입)|직접[^.!?\n]{0,30}(구매|구입|결제)|제\s*돈|본인[^.!?\n]{0,30}(구매|구입|비용)|(?:purchased|bought)[^.!?\n]{0,40}(?:my|own)|self.funded)/i.test(r.disclosure.evidence.quote))throw Error('구매 비용을 부담했다는 명시적 문장이 필요합니다.');
+  if(!r.disclosure.checkedAreas?.length||!Array.isArray(r.disclosure.uncheckedAreas)||!r.disclosure.checkedAt||r.disclosure.findings?.length!==0)throw Error('광고 표기 검토가 완료되지 않았습니다.');
   if(!r.review?.reviewedAt||!r.review?.reviewedBy||!r.link?.checkedAt||r.link.status!=='available')throw Error('검토 기록과 원문 접근 확인이 필요합니다.');
   if(r.platform==='youtube'&&r.format==='shorts'&&r.formatEvidence!=='youtube_shorts_surface')throw Error('쇼츠 형식 확인 근거가 없습니다.');
   for(const c of Object.values(r.conditions||{}))if(c&&(!c.value||!c.quote||!c.location))throw Error('사용 조건의 원문 근거가 없습니다.');

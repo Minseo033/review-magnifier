@@ -17,7 +17,9 @@ try{
   const record=registry.reviews.find(r=>r.id===id);if(!record)throw Error('등록되지 않은 후기 ID');
   if(!['approved','held','excluded','inactive'].includes(status))throw Error('approved / held / excluded / inactive 중 선택하세요.');
   const reviewer=option('--reviewer'),reason=option('--reason');if(!reviewer||!reason)throw Error('--reviewer와 --reason이 필요합니다.');
+  if(status==='approved'&&!args.includes('--human-confirmed'))throw Error('원문을 직접 확인한 운영자가 --human-confirmed로 승인해야 합니다. AI 텍스트 검토만으로 공개 승인하지 마세요.');
   record.review={status,reviewedAt:today(),reviewedBy:reviewer,reason};record.active=status==='approved';
+  if(status==='approved')record.review.reviewerKind='human';
   if(status==='approved'){validateReview(record,registry.products);record.review.contentSha256=reviewDigest(record);}
   save();console.log(`${id}: ${status}. 공개 반영에는 npm run build와 배포가 필요합니다.`);
  }else if(command==='check-links'){
@@ -36,5 +38,5 @@ try{
    await new Promise(resolve=>setTimeout(resolve,700));
   }
   save();
- }else console.log('사용법:\nnode scripts/reviews.mjs list\nnode scripts/reviews.mjs add /절대경로/후보.json\nnode scripts/reviews.mjs status ID approved|held|excluded|inactive --reviewer 이름 --reason 검토사유\nnode scripts/reviews.mjs check-links [ID]');
+ }else console.log('사용법:\nnode scripts/reviews.mjs list\nnode scripts/reviews.mjs add /절대경로/후보.json\nnode scripts/reviews.mjs status ID approved|held|excluded|inactive --reviewer 이름 --reason 검토사유 [--human-confirmed]\nnode scripts/reviews.mjs check-links [ID]\n공개 승인에는 운영자의 원문 확인과 --human-confirmed가 필요합니다.');
 }catch(error){console.error(error.message);process.exitCode=1;}

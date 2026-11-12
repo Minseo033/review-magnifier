@@ -4,14 +4,30 @@ import {readFileSync,mkdtempSync,mkdirSync,copyFileSync,writeFileSync,rmSync} fr
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 import {JSDOM} from 'jsdom';
+import {build} from 'esbuild';
 import {canonicalSource,searchProducts,filterReviews,readRoute,routeHash,validSaved,validateReview} from '../discovery-logic.mjs';
 import {prepareLibrary,reviewDigest} from '../scripts/discovery-policy.mjs';
-const registry=JSON.parse(readFileSync(new URL('../data/discovery-registry.json',import.meta.url)));
-const data=prepareLibrary(registry),product=data.products[0],id=product.id;
+const sourceRegistry=JSON.parse(readFileSync(new URL('../data/discovery-registry.json',import.meta.url)));
+// Synthetic human approval exists in memory only, to exercise the app independently
+// of the operator's real approval queue. It is never written to the public dataset.
+const registry=structuredClone(sourceRegistry);
+registry.reviews=registry.reviews.filter(r=>r.productId==='fwee-all-day-black'&&r.disclosure.kind==='self_declared').map(r=>{
+ r.active=true;r.review={...r.review,status:'approved',reviewerKind:'human',reviewedBy:'UI test fixture',reviewedAt:'2026-11-12',reason:'Synthetic UI test approval, never published'};
+ r.link={...r.link,status:'available'};r.review.contentSha256=reviewDigest(r);return r;
+});
+const homeSections=JSON.parse(readFileSync(new URL('../data/home-sections.json',import.meta.url)));
+const data=prepareLibrary(registry),id='fwee-all-day-black',productReviews=data.reviews.filter(r=>r.productId===id);
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
-const bundle=readFileSync(new URL('../discovery.bundle.js',import.meta.url),'utf8');
-function app(t,{hash='#home',blocked=false,mobile=false}={}){
+async function testBundle(library){
+ const result=await build({entryPoints:[fileURLToPath(new URL('../discovery.js',import.meta.url))],bundle:true,write:false,format:'iife',target:'es2020',plugins:[{name:'memory-only-library',setup(builder){
+  builder.onLoad({filter:/discovery\.public\.json$/},()=>({contents:JSON.stringify(library),loader:'json'}));
+ }}]});
+ return result.outputFiles[0].text;
+}
+const bundle=await testBundle(data),liveData=prepareLibrary(sourceRegistry),liveBundle=await testBundle(liveData);
+function app(t,{hash='#home',blocked=false,mobile=false,script=bundle}={}){
  const dom=new JSDOM(html,{url:'https://review.test/'+hash,runScripts:'outside-only',pretendToBeVisual:true});
  const w=dom.window,d=w.document,errors=[];
  t.after(()=>dom.window.close());w.scrollTo=()=>{};
@@ -20,7 +36,7 @@ function app(t,{hash='#home',blocked=false,mobile=false}={}){
  w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','');};
  w.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');this.dispatchEvent(new w.Event('close'));};
  w.addEventListener('error',event=>errors.push(event.error));
- w.eval(bundle);t.after(()=>assert.deepEqual(errors,[]));
+ w.eval(script);t.after(()=>assert.deepEqual(errors,[]));
  const settle=()=>new Promise(resolve=>w.setTimeout(resolve,15));
  const click=async selector=>{const n=d.querySelector(selector);assert.ok(n,selector);n.click();await settle();};
  const route=async hash=>{w.location.hash=hash;await settle();};
@@ -28,14 +44,49 @@ function app(t,{hash='#home',blocked=false,mobile=false}={}){
  return {w,d,click,route,select,settle};
 }
 test('only active approved records publish; source totals are canonical unique posts',()=>{
- assert.equal(data.products.length,1);assert.equal(data.reviews.length,10);
- assert.deepEqual(Object.fromEntries(['shorts','reels','video','blog'].map(f=>[f,data.reviews.filter(r=>r.format===f).length])),{shorts:4,reels:0,video:2,blog:4});
- assert.equal(new Set(data.reviews.map(r=>canonicalSource(r.url).key)).size,10);
+ assert.ok(productReviews.length>0);
+ assert.deepEqual(new Set(data.products.map(p=>p.id)),new Set(data.reviews.map(r=>r.productId)));
+ assert.ok(data.reviews.every(r=>r.disclosure.kind==='self_declared'&&r.disclosure.evidence?.quote&&r.disclosure.evidence?.location));
+ assert.equal(new Set(data.reviews.map(r=>canonicalSource(r.url).key)).size,data.reviews.length);
  assert.equal(data.excluded,undefined);
  for(const status of ['candidate','held','excluded','inactive']){
-  const copy=structuredClone(registry);copy.reviews[0].review.status=status;assert.equal(prepareLibrary(copy).reviews.length,9);
+  const copy=structuredClone(registry);copy.reviews.find(r=>r.id===productReviews[0].id).review.status=status;assert.equal(prepareLibrary(copy).reviews.length,data.reviews.length-1);
  }
- const copy=structuredClone(registry);delete copy.reviews[0].active;assert.equal(prepareLibrary(copy).reviews.length,9);
+ const copy=structuredClone(registry);delete copy.reviews.find(r=>r.id===productReviews[0].id).active;assert.equal(prepareLibrary(copy).reviews.length,data.reviews.length-1);
+ const missing=structuredClone(registry),review=missing.reviews.find(r=>r.id===productReviews[0].id);
+ review.disclosure.kind='not_observed';review.disclosure.evidence=null;review.review.contentSha256=reviewDigest(review);
+ assert.throws(()=>prepareLibrary(missing),/구매|내돈내산/);
+ const automated=structuredClone(registry);automated.reviews[0].review.reviewerKind='ai';assert.throws(()=>prepareLibrary(automated),/사람|human|검토/);
+});
+test('real approval queue is separate from the synthetic UI data and empty publication is honest',async t=>{
+ assert.ok(liveData.reviews.every(r=>r.review.reviewerKind==='human'&&r.review.status==='approved'));
+ assert.deepEqual(JSON.parse(readFileSync(new URL('../data/discovery-registry.json',import.meta.url))),sourceRegistry);
+ const {d,route}=app(t,{script:liveBundle});
+ assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,liveData.products.length);
+ if(!liveData.products.length){
+  assert.ok(d.querySelector('.publication-empty'));
+  assert.equal(d.querySelectorAll('[data-review],[data-play]').length,0);
+ }
+ await route('#standards');assert.ok(d.querySelector('.reading-page').textContent.includes(`제품 ${liveData.products.length}개`));
+});
+test('multiple cosmetics keep their reviews separate and sort by captured rank within a category',async t=>{
+ const fixture=structuredClone(sourceRegistry);
+ fixture.reviews=fixture.reviews.filter(r=>r.disclosure.kind==='self_declared').map(r=>{
+  r.active=true;r.review={status:'approved',reviewerKind:'human',reviewedBy:'memory-only multi-product fixture',reviewedAt:'2026-11-13',reason:'Synthetic test only; never written or published',contentSha256:reviewDigest(r)};return r;
+ });
+ const library=prepareLibrary(fixture),script=await testBundle(library);
+ const {d,route}=app(t,{script});
+ assert.equal(d.querySelectorAll('.browse-product-card').length,library.products.length);
+ for(const section of homeSections){
+  const expected=library.products.filter(p=>p.category===section.id).sort((a,b)=>(a.ranking?.rank??9999)-(b.ranking?.rank??9999)).map(p=>p.id);
+  assert.deepEqual([...d.querySelectorAll(`[aria-labelledby="collection-${section.id}"] [data-product]`)].map(n=>n.dataset.product),expected);
+ }
+ for(const p of library.products){
+  await route('#product/'+p.id);
+  const expected=library.reviews.filter(r=>r.productId===p.id).map(r=>r.id).sort();
+  assert.deepEqual([...d.querySelectorAll('[data-review]')].map(n=>n.dataset.review).sort(),expected);
+ }
+ assert.deepEqual(JSON.parse(readFileSync(new URL('../data/discovery-registry.json',import.meta.url))),sourceRegistry);
 });
 test('changed content requires fresh approval and conflicting commercial findings cannot publish',()=>{
  const copy=structuredClone(registry);copy.reviews[0].summary='unreviewed change';assert.throws(()=>prepareLibrary(copy),/재검토/);
@@ -62,7 +113,8 @@ test('operator can register privately, approve with evidence, reject duplicates 
  const current=()=>JSON.parse(readFileSync(registryFile));
  run('add',join(temp,'candidate.json'));assert.equal(current().reviews[0].review.status,'candidate');assert.equal(prepareLibrary(current()).reviews.length,0);
  assert.throws(()=>run('status',candidate.id,'approved'),/reviewer/);assert.equal(current().reviews[0].review.status,'candidate');
- run('status',candidate.id,'approved','--reviewer','테스트 검토자','--reason','원문 대조');assert.equal(prepareLibrary(current()).reviews.length,1);
+ assert.throws(()=>run('status',candidate.id,'approved','--reviewer','테스트 검토자','--reason','원문 대조'),/human|사람/);
+ run('status',candidate.id,'approved','--reviewer','테스트 검토자','--human-confirmed','--reason','원문 대조');assert.equal(prepareLibrary(current()).reviews.length,1);
  assert.throws(()=>run('add',join(temp,'candidate.json')),/이미 등록/);
  run('status',candidate.id,'inactive','--reviewer','테스트 검토자','--reason','원문 재확인');assert.equal(prepareLibrary(current()).reviews.length,0);
 });
@@ -72,51 +124,60 @@ test('source identity ignores tracking and rejects unsafe or unsupported URLs',(
  for(const url of ['javascript:alert(1)','http://youtube.com/watch?v=yn13puTnnkM','https://youtube.com.evil.test/watch?v=yn13puTnnkM','https://user:pass@youtube.com/watch?v=yn13puTnnkM'])assert.throws(()=>canonicalSource(url));
 });
 test('Korean/English aliases find the exact line; unrelated lines and unknown conditions return empty',()=>{
- for(const q of ['퓌 올데이 쿠션','fwee cushion','FWEE ALL DAY','올데쿠','퓌블랙쿠션'])assert.equal(searchProducts(data.products,q).length,1,q);
- assert.equal(searchProducts(data.products,'글래스').length,0);
+ for(const q of ['퓌 올데이 쿠션','fwee cushion','FWEE ALL DAY','올데쿠','퓌블랙쿠션'])assert.ok(searchProducts(data.products,q).some(p=>p.id===id),q);
+ assert.ok(!searchProducts(data.products,'글래스').some(p=>p.id===id));
  assert.equal(filterReviews(data.reviews,{skin:'추정 피부'}).length,0);
- const filtered=filterReviews(data.reviews,{format:'blog',skin:'건성',shade:'19N'});assert.equal(filtered.length,1);
+ const filtered=filterReviews(productReviews,{format:'blog',skin:'건성',shade:'19N'});assert.equal(filtered.length,1);
  const params={topic:'지속력과 무너짐',skin:'건성',sort:'oldest'};assert.equal(readRoute(routeHash('product/'+id,params)).topic,params.topic);
  assert.deepEqual(validSaved('{bad',new Set(['x'])),[]);
  assert.deepEqual(validSaved('["x","x","unknown"]',new Set(['x'])),['x']);
 });
 test('home, search and invalid product routes expose truthful data with escaped query input',async t=>{
- const {w,d,route,settle}=app(t);assert.equal(d.documentElement.dataset.appReady,'true');assert.equal(d.querySelectorAll('[data-review]').length,0);assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,1);assert.equal(d.querySelectorAll('iframe').length,0);
- d.querySelector('#hero-query').value='fwee cushion';d.querySelector('.hero-search').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await settle();assert.equal(d.querySelectorAll('.product-feature').length,1);
+ const {w,d,route,settle}=app(t);assert.equal(d.documentElement.dataset.appReady,'true');assert.equal(d.querySelectorAll('[data-review]').length,0);assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,data.products.length);assert.equal(d.querySelectorAll('iframe').length,0);
+ d.querySelector('#hero-query').value='fwee cushion';d.querySelector('.hero-search').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await settle();assert.equal(d.querySelectorAll('.product-feature').length,searchProducts(data.products,'fwee cushion').length);
  await route('#search?q='+encodeURIComponent('<img src=x onerror=alert(1)>'));assert.equal(d.querySelector('.page-heading img'),null);assert.match(d.querySelector('.empty-state').textContent,/아직/);
  await route('#product/unknown');assert.match(d.querySelector('.empty-state').textContent,/찾을 수/);
 });
 test('home selects products, opens the complete review detail, and returns to the product home',async t=>{
  const {w,d,click}=app(t);
  assert.equal(d.querySelectorAll('.review-card,[data-play]').length,0);
- await click(`.browse-product-card[data-product="${id}"] a[href="#product/${id}"]`);
- assert.equal(w.location.hash,'#product/'+id);assert.equal(d.querySelectorAll('[data-review]').length,10);
- assert.equal(d.querySelectorAll('.browse-product-card').length,0);assert.ok(d.querySelector('[data-format="shorts"]'));
- await click('.breadcrumb a[href="#home"]');
- assert.equal(w.location.hash,'#home');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,1);assert.equal(d.querySelectorAll('[data-review]').length,0);
+ for(const product of data.products){
+  const {id:productId}=product;
+  await click(`.browse-product-card[data-product="${productId}"] a[href="#product/${productId}"]`);
+  assert.equal(w.location.hash,'#product/'+productId);
+  assert.deepEqual(new Set([...d.querySelectorAll('[data-review]')].map(n=>n.dataset.review)),new Set(data.reviews.filter(r=>r.productId===productId).map(r=>r.id)));
+  assert.equal(d.querySelectorAll('.browse-product-card').length,0);assert.ok(d.querySelector('[data-format="shorts"]'));
+  await click('.breadcrumb a[href="#home"]');
+  assert.equal(w.location.hash,'#home');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,data.products.length);assert.equal(d.querySelectorAll('[data-review]').length,0);
+ }
 });
 test('home category navigation is shareable, distinguishes preparation slots, and restores all products',async t=>{
  const {w,d,click,route}=app(t,{mobile:true});
- for(const category of ['color','care']){
+ for(const {id:category} of homeSections){
   await click(`[data-home-category="${category}"]`);
   assert.equal(new URLSearchParams(w.location.hash.split('?')[1]).get('category'),category);
   assert.equal(d.querySelector(`[data-home-category="${category}"]`).getAttribute('aria-pressed'),'true');
-  assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,0);assert.ok(d.querySelectorAll('.preparing-card').length>0);
+  const shown=[...d.querySelectorAll('.browse-product-card[data-product]')].map(n=>n.dataset.product);
+  assert.deepEqual(new Set(shown),new Set(data.products.filter(p=>p.category===category).map(p=>p.id)));
+  const ranks=shown.map(id=>data.products.find(p=>p.id===id).ranking?.rank??Number.MAX_SAFE_INTEGER);
+  assert.deepEqual(ranks,[...ranks].sort((a,b)=>a-b));
   assert.equal(d.querySelectorAll('[data-review],[data-play],iframe').length,0);
  }
- await route('#home?category=base');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,1);
+ await route('#home?category=base');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,data.products.filter(p=>p.category==='base').length);
  assert.equal(d.querySelector('[data-home-category="base"]').getAttribute('aria-pressed'),'true');
- await click('[data-home-category="all"]');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,1);
+ await click('[data-home-category="all"]');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,data.products.length);
  assert.equal(d.querySelector('[data-home-category="all"]').getAttribute('aria-pressed'),'true');
 });
 test('preparing products cannot be opened, saved or played and are not fabricated search results',async t=>{
- const {d,route}=app(t);const slots=[...d.querySelectorAll('.preparing-card')];assert.ok(slots.length>=3);
+ const {d,route}=app(t);const slots=[...d.querySelectorAll('.preparing-card')];
+ const expected=homeSections.flatMap(s=>s.preparing.filter(slot=>!data.products.some(p=>p.category===s.id&&p.slot===slot.label)));
+ assert.deepEqual(slots.map(n=>n.querySelector('h3').textContent),expected.map(slot=>slot.label));
  for(const slot of slots){
   assert.match(slot.textContent,/준비\s*중/);assert.equal(slot.querySelector('a,button,[data-save],[data-play],[data-product],[data-review]'),null);
   assert.equal(slot.hasAttribute('data-product'),false);assert.equal(slot.hasAttribute('tabindex'),false);
  }
- await route('#search?q='+encodeURIComponent('컨실러'));assert.equal(d.querySelectorAll('.product-feature').length,0);assert.ok(d.querySelector('.empty-state'));
- assert.equal(data.products.length,1);assert.equal(data.reviews.length,10);
+ const notRegistered=expected.find(slot=>!searchProducts(data.products,slot.label).length);
+ if(notRegistered){await route('#search?q='+encodeURIComponent(notRegistered.label));assert.equal(d.querySelectorAll('.product-feature').length,0);assert.ok(d.querySelector('.empty-state'));}
 });
 test('product detail preserves the previous home source sections and their original evidence',t=>{
  for(const mobile of [false,true]){
@@ -124,15 +185,14 @@ test('product detail preserves the previous home source sections and their origi
   const feature=d.querySelector('.product-feature');assert.ok(feature);assert.match(feature.textContent,/올데이 커버 블랙 쿠션/);
   assert.ok(feature.querySelector('[data-save-type="products"]'));assert.ok(feature.querySelector('[data-share]'));
   assert.equal(d.querySelector('.explore-layout,.filter-rail,.product-heading,.review-feed'),null);
-  const sections=[...d.querySelectorAll('.review-section')];assert.equal(sections.length,3);
-  for(const [index,grid,count,format] of [[0,'.shorts-grid',4,'shorts'],[1,'.videos-grid',2,'video'],[2,'.blogs-grid',4,'blog']]){
-   const section=sections[index];assert.ok(section.querySelector(grid));assert.equal(section.querySelectorAll('[data-review]').length,count);
-   for(const card of section.querySelectorAll('[data-review]'))assert.equal(data.reviews.find(r=>r.id===card.dataset.review).format,format);
+  const sections=[...d.querySelectorAll('.review-section')];
+  const groups=[['shorts','.shorts-grid',/짧게 보는 사용 경험/],['video','.videos-grid',/길게 살펴보는 영상/],['reels','.blogs-grid',/릴스에서 보는 사용 경험/],['blog','.blogs-grid',/글로 읽는 사용 경험/]].filter(([format])=>productReviews.some(r=>r.format===format));
+  assert.equal(sections.length,groups.length);
+  for(const [index,[format,grid,title]] of groups.entries()){
+   const section=sections[index];assert.ok(section.querySelector(grid));assert.match(section.querySelector('h2').textContent,title);
+   assert.deepEqual(new Set([...section.querySelectorAll('[data-review]')].map(card=>card.dataset.review)),new Set(productReviews.filter(r=>r.format===format).map(r=>r.id)));
   }
-  assert.match(sections[0].querySelector('h2').textContent,/짧게 보는 사용 경험/);
-  assert.match(sections[1].querySelector('h2').textContent,/길게 살펴보는 영상/);
-  assert.match(sections[2].querySelector('h2').textContent,/글로 읽는 사용 경험/);
-  assert.equal(d.querySelectorAll('.evidence').length,10);assert.equal(d.querySelectorAll('.original-link').length,10);
+  assert.equal(d.querySelectorAll('.evidence').length,productReviews.length);assert.equal(d.querySelectorAll('.original-link').length,productReviews.length);
   const filter=d.querySelector('.inline-review-filters details.filter-panel');assert.ok(filter);assert.equal(filter.open,false);
   for(const card of d.querySelectorAll('[data-review]')){
    const review=data.reviews.find(r=>r.id===card.dataset.review),link=card.querySelector('.original-link');
@@ -147,8 +207,8 @@ test('date sorting applies within source formats and survives reload in a sharea
  const {w,d,select}=app(t,{hash:'#product/'+id});
  const assertDateOrder=(document,sort)=>{
   for(const [format,grid] of [['shorts','.shorts-grid'],['video','.videos-grid'],['blog','.blogs-grid']]){
-   const ids=[...document.querySelectorAll(grid+' [data-review]')].map(n=>n.dataset.review);
-   assert.deepEqual(ids,filterReviews(data.reviews,{format,sort}).map(r=>r.id));
+   const ids=[...document.querySelectorAll(grid+' [data-review]')].map(n=>n.dataset.review).filter(id=>productReviews.some(r=>r.id===id&&r.format===format));
+   assert.deepEqual(ids,filterReviews(productReviews,{format,sort}).map(r=>r.id));
   }
  };
  assert.match(d.querySelector('#review-sort').closest('label').textContent,/형식별/);
@@ -161,7 +221,7 @@ test('mobile filter state stays open after changing condition; empty reels reset
  const {w,d,click,select}=app(t,{hash:'#product/'+id,mobile:true});assert.equal(d.querySelector('.filter-panel').open,false);d.querySelector('.filter-panel').open=true;
  await select('[data-filter="skin"]','건성');assert.equal(d.querySelector('.filter-panel').open,true);assert.equal(d.querySelectorAll('[data-review]').length,2);assert.match(w.location.hash,/skin=/);
  await click('[data-format="reels"]');assert.equal(d.querySelectorAll('[data-review]').length,0);assert.match(d.querySelector('.empty-state').textContent,/릴스/);
- await click('[data-reset-filters]');assert.equal(d.querySelectorAll('[data-review]').length,10);
+ await click('[data-reset-filters]');assert.equal(d.querySelectorAll('[data-review]').length,productReviews.length);
 });
 test('product and review saves persist; deleting last saved review moves focus to recovery content',async t=>{
  const {w,d,click,route}=app(t,{hash:'#product/'+id});await click('[data-save-type="products"]');await click('[data-save-type="reviews"]');assert.match(d.querySelector('.saved-count').textContent,/2/);
