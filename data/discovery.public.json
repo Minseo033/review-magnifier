@@ -1,0 +1,723 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-12",
+  "products": [
+    {
+      "id": "fwee-all-day-black",
+      "brand": "퓌 fwee",
+      "name": "올데이 커버 블랙 쿠션",
+      "fullName": "퓌 올데이 커버 블랙 쿠션",
+      "version": "올데이 커버 블랙 · 공식 상품 284",
+      "aliases": [
+        "퓌 올데이 쿠션",
+        "퓌 블랙쿠션",
+        "올데쿠",
+        "fwee all day cover black cushion",
+        "fwee cushion"
+      ],
+      "image": "assets/discovery/fwee-black.webp",
+      "officialUrl": "https://fwee.kr/product/detail.html?product_no=284",
+      "officialCheckedAt": "2026-11-12",
+      "shades": [
+        "13N",
+        "17N",
+        "19N",
+        "21N",
+        "21NW",
+        "22N",
+        "23N"
+      ],
+      "lineageNote": "글래스 내추럴·글래스 오리지널·에그핏 커버와 구분한 제품입니다. 후기 작성 시점에 따라 판매 호수와 기획 구성이 다를 수 있습니다."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "naver-224460479696",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "syxaa/224460479696",
+      "url": "https://blog.naver.com/syxaa/224460479696",
+      "title": "퓌 올데이 커버 블랙 쿠션 21N 🖤 건성 겨쿨딥 내돈내산 솔직 후기 / 6시간 지속력!",
+      "author": "사야",
+      "publishedAt": "2026-10-31",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "6시간 경과 후, 코 옆 유분으로 인한 들뜸과",
+      "summary": "21N을 사용한 건성 작성자의 6시간 경과 후기. 가벼운 밀착과 홍조 커버에 만족했지만, 코 주변 들뜸과 유분·약간의 다크닝도 기록했어요. 파우더를 함께 사용한 조건입니다.",
+      "conditions": {
+        "skinType": {
+          "value": "건성",
+          "quote": "건성",
+          "location": "제목"
+        },
+        "shade": {
+          "value": "21N",
+          "quote": "구매한 컬러는 21N",
+          "location": "본문 구매 컬러"
+        },
+        "duration": {
+          "value": "6시간 경과",
+          "quote": "약 6시간 경과",
+          "location": "본문 시간 경과"
+        },
+        "skinTone": {
+          "value": "겨쿨딥",
+          "quote": "겨쿨딥",
+          "location": "제목"
+        }
+      },
+      "topics": [
+        "밀착력",
+        "커버력",
+        "지속력과 무너짐",
+        "다크닝",
+        "들뜸·각질 부각"
+      ],
+      "matchEvidence": {
+        "quote": "올데이 커버 블랙",
+        "location": "제목 또는 본문"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 텍스트"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "1286da200cff8894835a86bf062aaf955e778c3a990b391b3fef48784170b158"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224396653178",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "kinnrin/224396653178",
+      "url": "https://blog.naver.com/kinnrin/224396653178",
+      "title": "퓌 올데이 커버 블랙 쿠션 19N 내돈내산 재구매 후기",
+      "author": "린 Rin",
+      "publishedAt": "2026-08-31",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "그냥 자연스럽게 무너지는 쪽이에요",
+      "summary": "19N을 다시 구매한 작성자의 기록. 얇게 발리는 사용감과 자연스러운 무너짐, 수정 화장 경험을 이야기해요. 재구매 이유를 중심으로 읽을 수 있어요.",
+      "conditions": {
+        "skinType": {
+          "value": "수부지·지성",
+          "quote": "수부지 지성인으로써",
+          "location": "본문 재구매 이유"
+        },
+        "shade": {
+          "value": "19N",
+          "quote": "호수는 지난번이랑 똑같이 19N",
+          "location": "본문 구매 정보"
+        },
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "밀착력",
+        "지속력과 무너짐",
+        "색상과 호수 선택",
+        "수정 화장",
+        "재구매 의사"
+      ],
+      "matchEvidence": {
+        "quote": "올데이 커버 블랙",
+        "location": "제목 또는 본문"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 텍스트"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "181b809ba76b496c0d8173e7e2cc61e9e8f31c60ad235e6e4366f653b9cab383"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224433582912",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "xejxlog/224433582912",
+      "url": "https://blog.naver.com/xejxlog/224433582912",
+      "title": "퓌 올데이 커버 블랙 쿠션 21NW 내돈내산, 웜톤 올리브영 쿠션 후기",
+      "author": "녜로그",
+      "publishedAt": "2026-10-07",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "저는 수분 부족한 지성이라",
+      "summary": "웜톤 작성자가 21NW를 고른 이유와 얇게 바른 경험을 정리했어요. 밝은 호수만 고르던 습관과 얼굴·목의 색상 차이를 함께 이야기합니다.",
+      "conditions": {
+        "skinType": {
+          "value": "수부지",
+          "quote": "저는 수분 부족한 지성이라",
+          "location": "본문 피부 설명"
+        },
+        "shade": {
+          "value": "21NW",
+          "quote": "21NW로 사봤어요.",
+          "location": "본문 구매 이유"
+        },
+        "duration": null,
+        "skinTone": {
+          "value": "웜톤",
+          "quote": "저는 웜톤인데",
+          "location": "본문 피부 톤"
+        }
+      },
+      "topics": [
+        "색상과 호수 선택",
+        "밀착력",
+        "커버력",
+        "번들거림"
+      ],
+      "matchEvidence": {
+        "quote": "올데이 커버 블랙",
+        "location": "제목 또는 본문"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 텍스트"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "11cc1f07a2320fd7cbab5750157eb2f8eacb1514d78c8eaa9a1cb7d81aa686cf"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "naver-224439932821",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "naver",
+      "format": "blog",
+      "externalId": "maroo_mi/224439932821",
+      "url": "https://blog.naver.com/maroo_mi/224439932821",
+      "title": "퓌 올데이 커버 블랙 쿠션 19N 내돈내산｜건성 피부 사용 후기",
+      "author": "청홍단이언니",
+      "publishedAt": "2026-10-13",
+      "durationSeconds": null,
+      "thumbnail": null,
+      "embedAllowed": false,
+      "formatEvidence": "blog_post",
+      "excerpt": "나는 건성이라",
+      "summary": "19N을 쓴 건성 작성자의 경험. 도톰하게 기초화장한 조건에서 가볍게 밀착되고 당김이 없었다고 적었어요. 호수는 직접 비교해 고르도록 권합니다.",
+      "conditions": {
+        "skinType": {
+          "value": "건성",
+          "quote": "나는 건성이라",
+          "location": "본문 건성 사용감"
+        },
+        "shade": {
+          "value": "19N",
+          "quote": "블랙 쿠션 19N.",
+          "location": "본문 구매 컬러"
+        },
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "밀착력",
+        "색상과 호수 선택",
+        "재구매 의사"
+      ],
+      "matchEvidence": {
+        "quote": "올데이 커버 블랙",
+        "location": "제목 또는 본문"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "본문 텍스트"
+        ],
+        "uncheckedAreas": [
+          "이미지에만 있는 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "e39b311bd034dc7382d09cdfd44421afe1c0608801faa69b0998bd8a79326913"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-YWFvC1o0NPU",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "YWFvC1o0NPU",
+      "url": "https://www.youtube.com/watch?v=YWFvC1o0NPU",
+      "title": "퓌 신상쿠션 내돈내산 후기🖤 #올데이커버블랙쿠션",
+      "author": "김퍼프PUFF",
+      "publishedAt": "2026-05-11",
+      "durationSeconds": 41,
+      "thumbnail": "https://i.ytimg.com/vi/YWFvC1o0NPU/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "김퍼프PUFF의 블랙 쿠션 후기 쇼츠. 작성자가 제목에 내돈내산을 명시했어요. 영상 속 사용 장면과 설명은 원문에서 직접 확인해 보세요.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "올데이커버블랙쿠션",
+        "location": "제목 또는 영상 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상·음성 안의 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "bf5b88837d5400934ce61bad91318c4df9552e237f875dbc3d3588c37b969a1a"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-yn13puTnnkM",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "yn13puTnnkM",
+      "url": "https://www.youtube.com/watch?v=yn13puTnnkM",
+      "title": "영상 20초부터 꼭 봐야 하는 퓌 올데이 커버 블랙쿠션 내돈내산 솔직리뷰 #퓌 #쿠션 #올리브영",
+      "author": "쥔장🫨",
+      "publishedAt": "2026-10-06",
+      "durationSeconds": 63,
+      "thumbnail": "https://i.ytimg.com/vi/yn13puTnnkM/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "작성자가 내돈내산을 명시한 1분 쇼츠. 제목에서 20초 이후 장면을 안내하고 있어요. 영상의 사용 경험을 직접 확인할 수 있어요.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "올데이 커버 블랙",
+        "location": "제목 또는 영상 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상·음성 안의 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "91161257b907d1427ec5f6ffa0234e470afe003eda6982ae9abfa44547883485"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-MgB_yIDfYxg",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "MgB_yIDfYxg",
+      "url": "https://www.youtube.com/watch?v=MgB_yIDfYxg",
+      "title": "내돈내산💸 퓌 블랙쿠션 솔직 리뷰, 지속력 테스트🖤 #올영세일",
+      "author": "영이",
+      "publishedAt": "2026-09-04",
+      "durationSeconds": 48,
+      "thumbnail": "https://i.ytimg.com/vi/MgB_yIDfYxg/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "영상 설명에 3시간·6시간 경과와 수정 화장 경험이 적혀 있어요. 초기 표현에 대한 만족과, 다크닝·모공 주변 무너짐·수정 시 밀림에 대한 아쉬움을 함께 기록했어요.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": {
+          "value": "6시간 경과",
+          "quote": "*6시간 후*",
+          "location": "영상 설명 지속력 테스트"
+        },
+        "skinTone": null
+      },
+      "topics": [
+        "지속력과 무너짐",
+        "다크닝",
+        "모공·요철 표현",
+        "수정 화장",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "퓌 블랙쿠션",
+        "location": "제목 또는 영상 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상·음성 안의 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "b24d5d68d5d8c8fa309b97fdf817c45280c60b72b4995265276605061f34216d"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-SlA41N4vzLg",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "SlA41N4vzLg",
+      "url": "https://www.youtube.com/watch?v=SlA41N4vzLg",
+      "title": "퓌 신상쿠션 진짜 좋은 거 맞음? #내돈내산 찐후기",
+      "author": "쥬니 JY",
+      "publishedAt": "2026-04-29",
+      "durationSeconds": 40,
+      "thumbnail": "https://i.ytimg.com/vi/SlA41N4vzLg/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "복합성~수부지라고 밝힌 작성자의 쇼츠. 설명에서 세미매트로 느낀 마무리와 모공 커버, 파우더를 함께 쓰는 경우를 이야기해요.",
+      "conditions": {
+        "skinType": {
+          "value": "복합성·수부지",
+          "quote": "저는 복합성~수부지에 가깝습니당",
+          "location": "영상 설명 하단"
+        },
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "모공·요철 표현",
+        "번들거림"
+      ],
+      "matchEvidence": {
+        "quote": "올데이 커버 블랙",
+        "location": "제목 또는 영상 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상·음성 안의 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "5d57d1050b1ca0e477e53b7eeeb64b47d565483df6f0f16961389c76ce0f7df5"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-tjV6r63MFi4",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "youtube",
+      "format": "video",
+      "externalId": "tjV6r63MFi4",
+      "url": "https://www.youtube.com/watch?v=tjV6r63MFi4",
+      "title": "광고❌ 올데이라고?🔥 헬스장에서 운동까지 하고 왔는데... | 퓌 올데이 커버 블랙쿠션 VS 네이밍 올데이 마스터 쿠션 팩폭리뷰🤜🏻💥🤛🏻",
+      "author": "채우 Chaewoo",
+      "publishedAt": "2026-04-29",
+      "durationSeconds": 1179,
+      "thumbnail": "https://i.ytimg.com/vi/tjV6r63MFi4/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_watch_surface",
+      "excerpt": null,
+      "summary": "퓌와 네이밍 쿠션을 비교한 일반 영상. 설명에 색상·사용감 비교와 8시간 지속력 구간이 안내되어 있어요. 퓌 사용 구간은 7분 5초부터 시작합니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": {
+          "value": "8시간 경과",
+          "quote": "14:19 8시간 지속력",
+          "location": "영상 설명 타임라인"
+        },
+        "skinTone": null
+      },
+      "topics": [
+        "색상과 호수 선택",
+        "커버력",
+        "지속력과 무너짐"
+      ],
+      "matchEvidence": {
+        "quote": "올데이 커버 블랙",
+        "location": "제목 또는 영상 설명"
+      },
+      "disclosure": {
+        "kind": "not_observed",
+        "evidence": null,
+        "checkedAreas": [
+          "제목",
+          "영상 설명",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상·음성 안의 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "a166d5a2a07b3a3bf79ee5b0f10ceb38d4ac7d627bb67beaae6d735bb1eb2364"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-cDCdWKO3z4g",
+      "productId": "fwee-all-day-black",
+      "productVersion": "올데이 커버 블랙 · 공식 상품 284",
+      "platform": "youtube",
+      "format": "video",
+      "externalId": "cDCdWKO3z4g",
+      "url": "https://www.youtube.com/watch?v=cDCdWKO3z4g",
+      "title": "퓌 VS 네이밍🔥 여름 쿠션 뭐가 더 좋을까?(ft.내돈내산📒) 장단점 비교❕올데이 커버or올데이 마스터/ #올영신상쿠션 솔직리뷰 가져왔음❕#파데리뷰 (🚨더보기 필수🚨)",
+      "author": "우린",
+      "publishedAt": "2026-05-11",
+      "durationSeconds": 1268,
+      "thumbnail": "https://i.ytimg.com/vi/cDCdWKO3z4g/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_watch_surface",
+      "excerpt": null,
+      "summary": "퓌·네이밍 두 제품의 사용 장면과 시간 경과를 비교해요. 설명에서 퓌의 발림성·커버에 대한 만족과 다크닝·주름 끼임에 대한 아쉬움을 구분했어요.",
+      "conditions": {
+        "skinType": null,
+        "shade": {
+          "value": "22N",
+          "quote": "블랙 쿠션 22N",
+          "location": "영상 설명 제품 정보"
+        },
+        "duration": {
+          "value": "12시간 경과",
+          "quote": "(11:52) 12시간 후",
+          "location": "영상 설명 타임라인"
+        },
+        "skinTone": null
+      },
+      "topics": [
+        "커버력",
+        "밀착력",
+        "다크닝",
+        "들뜸·각질 부각",
+        "지속력과 무너짐"
+      ],
+      "matchEvidence": {
+        "quote": "올데이 커버 블랙",
+        "location": "제목 또는 영상 설명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상·음성 안의 표시",
+          "외부 링크 내 추가 표시"
+        ],
+        "checkedAt": "2026-11-12",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-12",
+        "reviewedBy": "Codex · 원문 텍스트 검토",
+        "reason": "사용자 수정 기준 적용: 검토 범위에서 광고·협찬·제품 제공·제휴 고지가 발견되지 않음",
+        "contentSha256": "d61c4f10173425e817f959e344c019085cc2b6b5e51674870734f239efe57883"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-12"
+      },
+      "active": true
+    }
+  ]
+}

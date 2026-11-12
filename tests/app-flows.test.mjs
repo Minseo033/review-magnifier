@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {JSDOM} from 'jsdom';
-const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
+const html=readFileSync(new URL('../legacy/index-v4.html',import.meta.url),'utf8');
 const script=readFileSync(new URL('../catalog.bundle.js',import.meta.url),'utf8');
 const publicData=JSON.parse(readFileSync(new URL('../data/catalog.viewer.json',import.meta.url)));
 const savedKey='review-magnifier:catalog-saved',compareKey='review-magnifier:catalog-compare';

@@ -24,6 +24,21 @@ jobs:
       - name: Download published site files
         uses: actions/checkout@v4
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Verify and build reviewed content
+        run: |
+          npm ci
+          npm run check
+          npm run build
+          npm run test:ui
+          npm run test:data
+          npm run verify:release
+
       - name: Set up GitHub Pages
         uses: actions/configure-pages@v5
 
