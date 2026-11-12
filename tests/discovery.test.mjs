@@ -81,10 +81,42 @@ test('Korean/English aliases find the exact line; unrelated lines and unknown co
  assert.deepEqual(validSaved('["x","x","unknown"]',new Set(['x'])),['x']);
 });
 test('home, search and invalid product routes expose truthful data with escaped query input',async t=>{
- const {w,d,route,settle}=app(t);assert.equal(d.documentElement.dataset.appReady,'true');assert.equal(d.querySelectorAll('[data-review]').length,10);assert.equal(d.querySelectorAll('iframe').length,0);
+ const {w,d,route,settle}=app(t);assert.equal(d.documentElement.dataset.appReady,'true');assert.equal(d.querySelectorAll('[data-review]').length,0);assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,1);assert.equal(d.querySelectorAll('iframe').length,0);
  d.querySelector('#hero-query').value='fwee cushion';d.querySelector('.hero-search').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await settle();assert.equal(d.querySelectorAll('.product-feature').length,1);
  await route('#search?q='+encodeURIComponent('<img src=x onerror=alert(1)>'));assert.equal(d.querySelector('.page-heading img'),null);assert.match(d.querySelector('.empty-state').textContent,/아직/);
  await route('#product/unknown');assert.match(d.querySelector('.empty-state').textContent,/찾을 수/);
+});
+test('home selects products, opens the complete review detail, and returns to the product home',async t=>{
+ const {w,d,click}=app(t);
+ assert.equal(d.querySelectorAll('.review-card,[data-play]').length,0);
+ await click(`.browse-product-card[data-product="${id}"] a[href="#product/${id}"]`);
+ assert.equal(w.location.hash,'#product/'+id);assert.equal(d.querySelectorAll('[data-review]').length,10);
+ assert.equal(d.querySelectorAll('.browse-product-card').length,0);assert.ok(d.querySelector('[data-format="shorts"]'));
+ await click('.breadcrumb a[href="#home"]');
+ assert.equal(w.location.hash,'#home');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,1);assert.equal(d.querySelectorAll('[data-review]').length,0);
+});
+test('home category navigation is shareable, distinguishes preparation slots, and restores all products',async t=>{
+ const {w,d,click,route}=app(t,{mobile:true});
+ for(const category of ['color','care']){
+  await click(`[data-home-category="${category}"]`);
+  assert.equal(new URLSearchParams(w.location.hash.split('?')[1]).get('category'),category);
+  assert.equal(d.querySelector(`[data-home-category="${category}"]`).getAttribute('aria-pressed'),'true');
+  assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,0);assert.ok(d.querySelectorAll('.preparing-card').length>0);
+  assert.equal(d.querySelectorAll('[data-review],[data-play],iframe').length,0);
+ }
+ await route('#home?category=base');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,1);
+ assert.equal(d.querySelector('[data-home-category="base"]').getAttribute('aria-pressed'),'true');
+ await click('[data-home-category="all"]');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,1);
+ assert.equal(d.querySelector('[data-home-category="all"]').getAttribute('aria-pressed'),'true');
+});
+test('preparing products cannot be opened, saved or played and are not fabricated search results',async t=>{
+ const {d,route}=app(t);const slots=[...d.querySelectorAll('.preparing-card')];assert.ok(slots.length>=3);
+ for(const slot of slots){
+  assert.match(slot.textContent,/준비\s*중/);assert.equal(slot.querySelector('a,button,[data-save],[data-play],[data-product],[data-review]'),null);
+  assert.equal(slot.hasAttribute('data-product'),false);assert.equal(slot.hasAttribute('tabindex'),false);
+ }
+ await route('#search?q='+encodeURIComponent('컨실러'));assert.equal(d.querySelectorAll('.product-feature').length,0);assert.ok(d.querySelector('.empty-state'));
+ assert.equal(data.products.length,1);assert.equal(data.reviews.length,10);
 });
 test('date sorting applies globally across formats and survives reload in a shareable route',async t=>{
  const {d,select}=app(t,{hash:'#product/'+id});
@@ -100,16 +132,16 @@ test('mobile filter state stays open after changing condition; empty reels reset
  await click('[data-reset-filters]');assert.equal(d.querySelectorAll('[data-review]').length,10);
 });
 test('product and review saves persist; deleting last saved review moves focus to recovery content',async t=>{
- const {w,d,click,route}=app(t);await click('[data-save-type="products"]');await click('[data-save-type="reviews"]');assert.match(d.querySelector('.saved-count').textContent,/2/);
+ const {w,d,click,route}=app(t,{hash:'#product/'+id});await click('[data-save-type="products"]');await click('[data-save-type="reviews"]');assert.match(d.querySelector('.saved-count').textContent,/2/);
  await route('#saved');assert.equal(d.querySelectorAll('[data-review]').length,1);await click('[data-save-type="reviews"]');assert.match(d.querySelector('.empty-state').textContent,/아직 저장/);assert.equal(d.activeElement.id,'main');
  assert.deepEqual(JSON.parse(w.localStorage.getItem('review-magnifier:v5:reviews')),[]);await click('[data-saved-tab="products"]');assert.equal(d.querySelectorAll('.product-feature').length,1);
 });
 test('blocked storage stays usable in memory and a cross-tab clear updates the current view',async t=>{
- const blocked=app(t,{blocked:true});assert.equal(blocked.d.querySelector('#storage-note').hidden,false);await blocked.click('[data-save-type="products"]');assert.equal(blocked.d.querySelector('.saved-count').textContent,'1');
- const {w,d,click,route}=app(t);await click('[data-save-type="products"]');await route('#saved?tab=products');w.localStorage.clear();w.dispatchEvent(new w.StorageEvent('storage',{key:null}));assert.equal(d.querySelectorAll('.product-feature').length,0);
+ const blocked=app(t,{blocked:true,hash:'#product/'+id});assert.equal(blocked.d.querySelector('#storage-note').hidden,false);await blocked.click('[data-save-type="products"]');assert.equal(blocked.d.querySelector('.saved-count').textContent,'1');
+ const {w,d,click,route}=app(t,{hash:'#product/'+id});await click('[data-save-type="products"]');await route('#saved?tab=products');w.localStorage.clear();w.dispatchEvent(new w.StorageEvent('storage',{key:null}));assert.equal(d.querySelectorAll('.product-feature').length,0);
 });
 test('playback is user-triggered, single-player, no autoplay, and always has original fallback',async t=>{
- const {d,click,route}=app(t);await click('[data-play]');assert.equal(d.querySelectorAll('iframe').length,1);const frame=d.querySelector('iframe');assert.match(frame.src,/youtube-nocookie/);assert.match(frame.src,/autoplay=0/);assert.ok(d.querySelector('#player-original').href.startsWith('https://www.youtube.com/'));
+ const {d,click,route}=app(t,{hash:'#product/'+id});await click('[data-play]');assert.equal(d.querySelectorAll('iframe').length,1);const frame=d.querySelector('iframe');assert.match(frame.src,/youtube-nocookie/);assert.match(frame.src,/autoplay=0/);assert.ok(d.querySelector('#player-original').href.startsWith('https://www.youtube.com/'));
  await click('#close-player');assert.equal(d.querySelectorAll('iframe').length,0);await click('[data-play]');await route('#saved');assert.equal(d.querySelectorAll('iframe').length,0);
 });
 test('share fallback, offline notice, broken image and keyboard skip remain recoverable',async t=>{

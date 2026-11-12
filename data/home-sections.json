@@ -1,0 +1,31 @@
+[
+  {
+    "id": "base",
+    "label": "베이스 메이크업",
+    "description": "쿠션부터 컨실러까지, 피부 위에서의 사용 경험",
+    "preparing": [
+      {"label": "파운데이션", "shape": "bottle"},
+      {"label": "컨실러", "shape": "tube"}
+    ]
+  },
+  {
+    "id": "color",
+    "label": "립·포인트 메이크업",
+    "description": "발색과 질감, 시간이 지난 뒤의 이야기",
+    "preparing": [
+      {"label": "틴트", "shape": "tint"},
+      {"label": "립스틱", "shape": "lipstick"},
+      {"label": "블러셔", "shape": "compact"}
+    ]
+  },
+  {
+    "id": "care",
+    "label": "스킨케어·선케어",
+    "description": "매일 바르는 제품, 직접 써본 사람들의 이야기",
+    "preparing": [
+      {"label": "세럼", "shape": "dropper"},
+      {"label": "크림", "shape": "jar"},
+      {"label": "선크림", "shape": "tube"}
+    ]
+  }
+]

@@ -17,7 +17,7 @@ for(const name of ['discovery.css','discovery.bundle.js']){
 }
 for(const name of ['mark.svg','fwee-black.webp'])copyFileSync(path('assets/discovery/'+name),path('docs/assets/discovery/'+name));
 const url='https://minseo033.github.io/review-magnifier/';
-html=html.replace('</head>',`<link rel="canonical" href="${url}"><meta property="og:type" content="website"><meta property="og:site_name" content="후기돋보기"><meta property="og:title" content="후기돋보기 · 사기 전, 후기를 한곳에서"><meta property="og:description" content="쇼츠·영상·블로그의 사용 경험과 원문 출처를 한곳에서 살펴보세요."><meta property="og:url" content="${url}"></head>`);
+html=html.replace('</head>',`<link rel="canonical" href="${url}"><meta property="og:type" content="website"><meta property="og:site_name" content="후기돋보기"><meta property="og:title" content="후기돋보기 · 사기 전, 내돈내산 후기부터"><meta property="og:description" content="제품별로 모은 후기에서 작성자의 구매 표시와 원문 출처를 함께 살펴보세요."><meta property="og:url" content="${url}"></head>`);
 writeFileSync(path('docs/index.html'),html);
 writeFileSync(path('docs/.nojekyll'),'');
 writeFileSync(path('docs/robots.txt'),'User-agent: *\nDisallow: /\n');

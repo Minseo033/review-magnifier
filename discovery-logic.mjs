@@ -40,7 +40,7 @@ export function readRoute(hash){
   const params=new URLSearchParams(query);
   const [page,id]=path.split('/');
   const allowed=['home','search','product','saved','standards','privacy'];
-  return {page:allowed.includes(page)?page:'home',id:id||'',q:params.get('q')||'',format:Object.hasOwn(FORMAT_LABELS,params.get('format'))?params.get('format'):'all',topic:params.get('topic')||'',skin:params.get('skin')||'',shade:params.get('shade')||'',duration:params.get('duration')||'',sort:params.get('sort')==='oldest'?'oldest':'newest',tab:params.get('tab')==='products'?'products':'reviews'};
+  return {page:allowed.includes(page)?page:'home',id:id||'',q:params.get('q')||'',category:['base','color','care'].includes(params.get('category'))?params.get('category'):'all',format:Object.hasOwn(FORMAT_LABELS,params.get('format'))?params.get('format'):'all',topic:params.get('topic')||'',skin:params.get('skin')||'',shade:params.get('shade')||'',duration:params.get('duration')||'',sort:params.get('sort')==='oldest'?'oldest':'newest',tab:params.get('tab')==='products'?'products':'reviews'};
 }
 export function routeHash(page,values={}){
   const params=new URLSearchParams();
