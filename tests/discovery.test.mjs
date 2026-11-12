@@ -118,12 +118,44 @@ test('preparing products cannot be opened, saved or played and are not fabricate
  await route('#search?q='+encodeURIComponent('컨실러'));assert.equal(d.querySelectorAll('.product-feature').length,0);assert.ok(d.querySelector('.empty-state'));
  assert.equal(data.products.length,1);assert.equal(data.reviews.length,10);
 });
-test('date sorting applies globally across formats and survives reload in a shareable route',async t=>{
- const {d,select}=app(t,{hash:'#product/'+id});
- const ids=()=>[...d.querySelectorAll('[data-review]')].map(n=>n.dataset.review);
- assert.deepEqual(ids(),filterReviews(data.reviews,{}).map(r=>r.id));
- await select('#review-sort','oldest');assert.deepEqual(ids(),filterReviews(data.reviews,{sort:'oldest'}).map(r=>r.id));
+test('product detail preserves the previous home source sections and their original evidence',t=>{
+ for(const mobile of [false,true]){
+  const {d}=app(t,{hash:'#product/'+id,mobile});
+  const feature=d.querySelector('.product-feature');assert.ok(feature);assert.match(feature.textContent,/올데이 커버 블랙 쿠션/);
+  assert.ok(feature.querySelector('[data-save-type="products"]'));assert.ok(feature.querySelector('[data-share]'));
+  assert.equal(d.querySelector('.explore-layout,.filter-rail,.product-heading,.review-feed'),null);
+  const sections=[...d.querySelectorAll('.review-section')];assert.equal(sections.length,3);
+  for(const [index,grid,count,format] of [[0,'.shorts-grid',4,'shorts'],[1,'.videos-grid',2,'video'],[2,'.blogs-grid',4,'blog']]){
+   const section=sections[index];assert.ok(section.querySelector(grid));assert.equal(section.querySelectorAll('[data-review]').length,count);
+   for(const card of section.querySelectorAll('[data-review]'))assert.equal(data.reviews.find(r=>r.id===card.dataset.review).format,format);
+  }
+  assert.match(sections[0].querySelector('h2').textContent,/짧게 보는 사용 경험/);
+  assert.match(sections[1].querySelector('h2').textContent,/길게 살펴보는 영상/);
+  assert.match(sections[2].querySelector('h2').textContent,/글로 읽는 사용 경험/);
+  assert.equal(d.querySelectorAll('.evidence').length,10);assert.equal(d.querySelectorAll('.original-link').length,10);
+  const filter=d.querySelector('.inline-review-filters details.filter-panel');assert.ok(filter);assert.equal(filter.open,false);
+  for(const card of d.querySelectorAll('[data-review]')){
+   const review=data.reviews.find(r=>r.id===card.dataset.review),link=card.querySelector('.original-link');
+   assert.equal(canonicalSource(link.href).key,canonicalSource(review.url).key);
+   const evidence=card.querySelector('.evidence');evidence.open=true;
+   assert.match(evidence.textContent,/확인 범위/);assert.match(evidence.textContent,/확인하지 못한 범위/);
+   if(review.disclosure.evidence)assert.ok(evidence.textContent.includes(review.disclosure.evidence.quote));
+  }
+ }
+});
+test('date sorting applies within source formats and survives reload in a shareable route',async t=>{
+ const {w,d,select}=app(t,{hash:'#product/'+id});
+ const assertDateOrder=(document,sort)=>{
+  for(const [format,grid] of [['shorts','.shorts-grid'],['video','.videos-grid'],['blog','.blogs-grid']]){
+   const ids=[...document.querySelectorAll(grid+' [data-review]')].map(n=>n.dataset.review);
+   assert.deepEqual(ids,filterReviews(data.reviews,{format,sort}).map(r=>r.id));
+  }
+ };
+ assert.match(d.querySelector('#review-sort').closest('label').textContent,/형식별/);
+ assertDateOrder(d,'newest');
+ await select('#review-sort','oldest');assertDateOrder(d,'oldest');assert.match(w.location.hash,/sort=oldest/);
  assert.equal(d.activeElement.id,'review-sort');
+ const reloaded=app(t,{hash:w.location.hash});assert.equal(reloaded.d.querySelector('#review-sort').value,'oldest');assertDateOrder(reloaded.d,'oldest');
 });
 test('mobile filter state stays open after changing condition; empty reels reset recovers',async t=>{
  const {w,d,click,select}=app(t,{hash:'#product/'+id,mobile:true});assert.equal(d.querySelector('.filter-panel').open,false);d.querySelector('.filter-panel').open=true;
