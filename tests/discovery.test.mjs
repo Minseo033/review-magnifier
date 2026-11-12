@@ -56,7 +56,7 @@ function app(t,{hash='#home',blocked=false,mobile=false,script=bundle,lastFeatur
    await settle();
   }finally{w.removeEventListener('hashchange',onHash);}
  }
- const click=async selector=>{const n=d.querySelector(selector);assert.ok(n,selector);const href=n.getAttribute('href');await act(()=>n.click(),href?.startsWith('#')?href:undefined);};
+ const click=async selector=>{const n=d.querySelector(selector);assert.ok(n,selector);const href=n.getAttribute('href');await act(()=>n.click(),href?.startsWith('#')&&!n.matches('.skip')?href:undefined);};
  const route=async hash=>{await act(()=>{w.location.hash=hash;},hash);};
  const select=async(selector,value)=>{const n=d.querySelector(selector);assert.ok(n,selector);await act(()=>{n.focus();n.value=value;n.dispatchEvent(new w.Event('change',{bubbles:true}));});};
  return {w,d,click,route,select,settle};
