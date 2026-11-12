@@ -6,7 +6,7 @@ const productMap=new Map(data.products.map(p=>[p.id,p])),reviewMap=new Map(data.
 const keys={products:'review-magnifier:v5:products',reviews:'review-magnifier:v5:reviews'};
 const paths={search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',bookmark:'<path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16l-6-4Z"/>',arrow:'<path d="M5 12h14m-6-6 6 6-6 6"/>',external:'<path d="M14 4h6v6m-1-5-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/>',play:'<path d="m9 5 11 7-11 7Z"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',filter:'<path d="M4 7h16M4 17h16M9 4v6m6 4v6"/>',check:'<path d="m5 12 4 4L19 6"/>',share:'<path d="M12 16V3m-5 5 5-5 5 5M5 12v8h14v-8"/>'};
 const icon=name=>`<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${paths[name]||paths.arrow}</svg>`;
-let storageBlocked=false,toastTimer,previousRoute;
+let storageBlocked=false,toastTimer,previousRoute,playingReview;
 function loadSaved(type){try{return new Set(validSaved(localStorage.getItem(keys[type]),type==='products'?productMap:reviewMap));}catch{storageBlocked=true;return new Set();}}
 let saved={products:loadSaved('products'),reviews:loadSaved('reviews')},state=readRoute(location.hash);
 const date=value=>value?value.replaceAll('-','.'): '작성일 미표기';
@@ -37,9 +37,27 @@ function productCard(p,detail=false){
 }
 function evidence(r){const d=r.disclosure;return `<details class="evidence"><summary>${icon('check')} 작성자 내돈내산 표기 <span>근거 보기</span></summary><div class="evidence-body"><p class="evidence-quote">“${esc(d.evidence.quote)}” <small>${esc(d.evidence.location)}</small></p><dl><div><dt>확인 범위</dt><dd>${d.checkedAreas.map(esc).join(', ')}</dd></div><div><dt>확인하지 못한 범위</dt><dd>${d.uncheckedAreas.map(esc).join(', ')}</dd></div><div><dt>검토 방식</dt><dd>${r.review.reviewerKind==='ai'?'AI 도구로 공개 원문과 표시된 영역 확인':'운영자 원문 확인'}</dd></div><div><dt>원문 확인</dt><dd>${date(r.link.checkedAt)}</dd></div><div><dt>제품 일치</dt><dd>${esc(r.matchEvidence.quote)} <small>(${esc(r.matchEvidence.location)})</small></dd></div></dl><p class="small-note">작성자의 자기표시와 구매 증빙 인증은 달라요. 광고가 전혀 없다는 보장은 아닙니다.</p></div></details>`;}
 function conditionChips(r){return Object.values(r.conditions).filter(Boolean).map(c=>`<span title="${esc(c.location+': '+c.quote)}">${esc(c.value)}</span>`).join('');}
+function playerDetails(r){
+ const p=productMap.get(r.productId);
+ return `<div class="player-byline"><span class="platform-label ${r.platform}">${r.platform==='instagram'?'Instagram 릴스':r.format==='shorts'?'YouTube 쇼츠':'YouTube'}</span><strong>${esc(r.author)}</strong><time datetime="${r.publishedAt||''}">${date(r.publishedAt)}</time></div><h3>${esc(r.title)}</h3><div class="player-review-text"><h4>후기 요약</h4><p>${esc(r.summary)}</p>${r.excerpt?`<blockquote><span>원문 발췌</span>“${esc(r.excerpt)}”</blockquote>`:''}</div><div class="condition-chips">${conditionChips(r)}</div>${evidence(r)}<a class="player-product" href="#product/${esc(p.id)}"><img src="${esc(p.image)}" width="48" height="48" alt=""><span><small>${esc(p.brand)}</small>${esc(p.name)}<b>이 제품 후기 모두 보기</b></span>${icon('arrow')}</a><div class="player-save">${saveButton('reviews',r.id)}</div>`;
+}
+function openPlayer(r){
+ playingReview=r.id;
+ const reel=r.platform==='instagram',frame=document.createElement('iframe');
+ $('#player').dataset.format=r.format;
+ $('#player-frame').className=reel?'instagram-player':r.format==='shorts'?'portrait':'landscape';
+ frame.src=reel?`https://www.instagram.com/reel/${r.externalId}/embed/captioned/`:`https://www.youtube-nocookie.com/embed/${r.externalId}?rel=0&autoplay=0`;
+ frame.title=r.title;frame.allow='encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';
+ $('#player-frame').replaceChildren(frame);
+ $('#player-details').innerHTML=playerDetails(r);$('#player-details').scrollTop=0;
+ $('#player-help').textContent=reel?'게시물 안을 아래로 스크롤하면 작성자의 본문을 읽을 수 있어요.':'영상과 후기 요약을 함께 살펴보세요.';
+ $('#player-source-note').textContent=reel?'Instagram에서 보기만 표시되면 원문에서 재생해 주세요.':'재생이 제한되면 원문에서 확인해 주세요.';
+ $('#player-original').href=r.url;$('#player-original').textContent=(reel?'Instagram':'YouTube')+' 원문 열기';
+ if(!$('#player').open)$('#player').showModal();
+}
 function reelCard(r){
  const p=productMap.get(r.productId);
- return `<article class="review-card reel-card" data-review="${esc(r.id)}"><div class="reel-visual"><button class="reel-preview" data-play="${esc(r.id)}" aria-label="${esc(r.title)} 릴스 열기"><img src="${esc(p.image)}" width="240" height="300" alt="${esc(p.fullName)} 제품 사진"><span class="reel-photo-label">제품 사진</span><span class="play-symbol">${icon('play')}</span><span class="reel-open-label">Instagram 릴스 열기</span></button>${saveButton('reviews',r.id,true)}</div><div class="review-copy"><div class="review-byline"><span class="platform-label instagram">Instagram</span><span>${esc(r.author)}</span><time datetime="${r.publishedAt||''}">${date(r.publishedAt)}</time></div><h3><button data-play="${esc(r.id)}">${esc(r.title)}</button></h3><p class="editorial-summary"><span>편집 요약</span>${esc(r.summary)}</p><div class="condition-chips">${conditionChips(r)}</div>${evidence(r)}<a class="original-link" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">릴스 원문 보기 ${icon('external')}</a></div></article>`;
+ return `<article class="review-card reel-card" data-review="${esc(r.id)}"><div class="reel-visual"><button class="reel-preview" data-play="${esc(r.id)}" aria-label="${esc(r.title)} 릴스와 본문 열기"><img src="${esc(p.image)}" width="240" height="300" alt="${esc(p.fullName)} 제품 사진"><span class="reel-photo-label">제품 사진</span><span class="play-symbol">${icon('play')}</span><span class="reel-open-label">릴스·본문 보기</span></button>${saveButton('reviews',r.id,true)}</div><div class="review-copy"><div class="review-byline"><span class="platform-label instagram">Instagram</span><span>${esc(r.author)}</span><time datetime="${r.publishedAt||''}">${date(r.publishedAt)}</time></div><h3><button data-play="${esc(r.id)}">${esc(r.title)}</button></h3><p class="editorial-summary"><span>편집 요약</span>${esc(r.summary)}</p><div class="condition-chips">${conditionChips(r)}</div>${evidence(r)}<a class="original-link" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">릴스 원문 보기 ${icon('external')}</a></div></article>`;
 }
 function reviewCard(r){
   if(r.format==='reels')return reelCard(r);
@@ -90,7 +108,7 @@ function homeVideo(category){
  const duration=r.durationSeconds?`${Math.floor(r.durationSeconds/60)}:${String(r.durationSeconds%60).padStart(2,'0')}`:'',reel=r.format==='reels';
  return `<aside class="home-video-pick" aria-labelledby="home-video-heading" data-featured-review="${esc(r.id)}">
   <h3 id="home-video-heading">후기 한 편 <small>새로 들어올 때 다른 영상</small></h3>
-  <div class="home-video-body"><button class="play-preview home-video-poster${reel?' reel-home-poster':''}" data-play="${esc(r.id)}" aria-label="${esc(r.title)} ${reel?'릴스 열기':'재생'}"><img src="${esc(reel?p.image:r.thumbnail)}" width="480" height="360" alt="${esc(reel?p.fullName+' 제품 사진':r.author+' 영상 썸네일')}" decoding="async">${reel?'<span class="reel-photo-label">제품 사진</span>':''}<span class="play-symbol">${icon('play')}</span>${duration?`<span class="video-length">${duration}</span>`:''}</button>
+  <div class="home-video-body"><button class="play-preview home-video-poster${reel?' reel-home-poster':''}" data-play="${esc(r.id)}" aria-label="${esc(r.title)} ${reel?'릴스와 본문 열기':'재생'}"><img src="${esc(reel?p.image:r.thumbnail)}" width="480" height="360" alt="${esc(reel?p.fullName+' 제품 사진':r.author+' 영상 썸네일')}" decoding="async">${reel?'<span class="reel-photo-label">제품 사진</span>':''}<span class="play-symbol">${icon('play')}</span>${duration?`<span class="video-length">${duration}</span>`:''}</button>
    <div class="home-video-copy"><p class="home-video-platform">${reel?'Instagram 릴스':'YouTube 쇼츠'}</p><p class="home-video-title">${esc(r.title)}</p><p class="home-video-author">${esc(r.author)}</p><time datetime="${r.publishedAt||''}">${date(r.publishedAt)}</time><a class="home-video-original" href="${esc(reel?r.url:'https://www.youtube.com/shorts/'+r.externalId)}" target="_blank" rel="noopener noreferrer">영상 원문 ${icon('external')}</a></div>
   </div>${evidence(r)}
   <a class="home-video-product" href="#product/${esc(p.id)}"><span>${esc(p.name)}<small>이 제품 후기 모두 보기</small></span>${icon('arrow')}</a>
@@ -169,21 +187,22 @@ document.addEventListener('submit',event=>{if(event.target.matches('.search-form
 document.addEventListener('click',async event=>{
  const target=event.target.closest('button,a');if(!target)return;
  if(target.matches('.skip')){event.preventDefault();$('#main').focus();return;}
+ if(target.matches('.player-product'))$('#player').close();
  if(target.hasAttribute('data-home-category'))navigate('home',{category:target.dataset.homeCategory});
  if(target.dataset.query)navigate('search',{q:target.dataset.query});
  if(target.hasAttribute('data-format'))changeFilters({format:target.dataset.format});
  if(target.hasAttribute('data-topic'))changeFilters({topic:target.dataset.topic});
  if(target.hasAttribute('data-reset-filters'))changeFilters({format:'all',topic:'',skin:'',shade:'',duration:''});
  if(target.dataset.savedTab)navigate('saved',{tab:target.dataset.savedTab});
- if(target.dataset.save){const type=target.dataset.saveType,id=target.dataset.save,adding=!saved[type].has(id);adding?saved[type].add(id):saved[type].delete(id);persist();render();notify(adding?'저장함에 담았어요':'저장을 취소했어요');$$('[data-save]').find(n=>n.dataset.save===id&&n.dataset.saveType===type)?.focus({preventScroll:true});if(!document.activeElement?.closest('[data-save]'))$('#main').focus({preventScroll:true});}
+ if(target.dataset.save){const inPlayer=!!target.closest('#player'),type=target.dataset.saveType,id=target.dataset.save,adding=!saved[type].has(id);adding?saved[type].add(id):saved[type].delete(id);persist();render();notify(adding?'저장함에 담았어요':'저장을 취소했어요');if(inPlayer){$('#player-details [data-save]').outerHTML=saveButton('reviews',playingReview);$('#player-details [data-save]').focus({preventScroll:true});}else{$$('[data-save]').find(n=>n.dataset.save===id&&n.dataset.saveType===type)?.focus({preventScroll:true});if(!document.activeElement?.closest('[data-save]'))$('#main').focus({preventScroll:true});}}
  if(target.hasAttribute('data-clear-saved')){saved={products:new Set(),reviews:new Set()};persist();render();notify('저장 목록을 비웠어요');}
- if(target.dataset.play){const r=reviewMap.get(target.dataset.play);if(!r||!['youtube','instagram'].includes(r.platform)||!r.embedAllowed)return;$('#player-frame').replaceChildren();$('#player-frame').className=r.platform==='instagram'?'instagram-player':r.format==='shorts'?'portrait':'landscape';const frame=document.createElement('iframe');frame.src=r.platform==='instagram'?`https://www.instagram.com/reel/${r.externalId}/embed/`:`https://www.youtube-nocookie.com/embed/${r.externalId}?rel=0&autoplay=0`;frame.title=r.title;frame.allow='encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';$('#player-frame').append(frame);$('#player-title').textContent=r.title;$('#player-original').href=r.url;$('#player-original').textContent=(r.platform==='instagram'?'Instagram':'YouTube')+' 원문 열기';$('#player').showModal();}
+ if(target.dataset.play){const r=reviewMap.get(target.dataset.play);if(!r||!['youtube','instagram'].includes(r.platform)||!r.embedAllowed)return;openPlayer(r);}
  if(target.dataset.share){const url=new URL(location.href);url.hash='product/'+target.dataset.share;try{await navigator.clipboard.writeText(url.href);notify('제품 후기 주소를 복사했어요');}catch{$('#share-url').value=url.href;$('#share-dialog').showModal();$('#share-url').focus();$('#share-url').select();}}
 });
 document.addEventListener('change',event=>{if(event.target.dataset.filter)changeFilters({[event.target.dataset.filter]:event.target.value});if(event.target.id==='review-sort')changeFilters({sort:event.target.value});});
-$('#close-player').addEventListener('click',()=>$('#player').close());$('#player').addEventListener('close',()=>$('#player-frame').replaceChildren());
+$('#close-player').addEventListener('click',()=>$('#player').close());$('#player').addEventListener('close',()=>{$('#player-frame').replaceChildren();$('#player-details').replaceChildren();playingReview=null;});
 window.addEventListener('hashchange',()=>{if($('#player').open)$('#player').close();render();});
-window.addEventListener('storage',event=>{if(event.key===null||Object.values(keys).includes(event.key)){saved={products:loadSaved('products'),reviews:loadSaved('reviews')};render();}});
+window.addEventListener('storage',event=>{if(event.key===null||Object.values(keys).includes(event.key)){saved={products:loadSaved('products'),reviews:loadSaved('reviews')};render();if(playingReview)$('#player-details [data-save]').outerHTML=saveButton('reviews',playingReview);}});
 document.addEventListener('error',event=>{if(event.target instanceof HTMLImageElement){event.target.hidden=true;event.target.parentElement.classList.add('image-missing');}},true);
 const connection=()=>{$('#offline').hidden=navigator.onLine!==false;};window.addEventListener('online',connection);window.addEventListener('offline',connection);connection();
 render();document.documentElement.dataset.appReady='true';

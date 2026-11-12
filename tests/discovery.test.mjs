@@ -294,7 +294,7 @@ test('real reels retain their original source, load one Instagram frame on reque
  const {d,click,route}=app(t,{hash:'#product/'+reel.productId+'?format=reels',script:liveBundle});
  assert.equal(d.querySelectorAll('iframe').length,0);assert.ok(d.querySelector('.reel-card'));
  const card=d.querySelector(`[data-review="${reel.id}"]`);assert.equal(card.querySelector('.original-link').href,reel.url);assert.match(card.querySelector('.reel-photo-label').textContent,/제품 사진/);
- await click(`[data-review="${reel.id}"] [data-play]`);assert.equal(d.querySelectorAll('iframe').length,1);assert.equal(d.querySelector('iframe').src,reel.url+'embed/');assert.match(d.querySelector('#player-original').textContent,/Instagram/);
+ await click(`[data-review="${reel.id}"] [data-play]`);assert.equal(d.querySelectorAll('iframe').length,1);assert.equal(d.querySelector('iframe').src,reel.url+'embed/captioned/');assert.match(d.querySelector('#player-original').textContent,/Instagram/);
  await click('#close-player');assert.equal(d.querySelectorAll('iframe').length,0);
  await click(`[data-save="${reel.id}"]`);await route('#saved');assert.ok(d.querySelector(`[data-review="${reel.id}"]`));
  const missing=structuredClone(reel);delete missing.formatEvidence;assert.throws(()=>validateReview(missing,liveData.products),/릴스/);
@@ -303,5 +303,41 @@ test('a home reel identifies its product photo and opens the same checked origin
  const reel=liveData.reviews.find(r=>r.format==='reels'),library={...liveData,products:liveData.products.filter(p=>p.id===reel.productId),reviews:[reel]};
  const {d,click}=app(t,{script:await testBundle(library)});
  const featured=d.querySelector('[data-featured-review]');assert.equal(featured.dataset.featuredReview,reel.id);assert.match(featured.querySelector('.home-video-platform').textContent,/Instagram 릴스/);assert.match(featured.querySelector('img').alt,/제품 사진/);assert.equal(featured.querySelector('.video-length'),null);
- await click('.home-video-poster');assert.equal(d.querySelectorAll('iframe').length,1);assert.equal(d.querySelector('iframe').src,reel.url+'embed/');
+ await click('.home-video-poster');assert.equal(d.querySelectorAll('iframe').length,1);assert.equal(d.querySelector('iframe').src,reel.url+'embed/captioned/');
+});
+
+
+test('video reader keeps source context and saves without reloading playback',async t=>{
+ const review=productReviews.find(r=>r.platform==='youtube');
+ const {d,click,route}=app(t,{hash:'#product/'+id});
+ await click(`[data-play="${review.id}"]`);
+ const frame=d.querySelector('#player-frame iframe'),details=d.querySelector('#player-details');
+ assert.equal(details.querySelector('h3').textContent,review.title);
+ assert.equal(details.querySelector('.player-byline strong').textContent,review.author);
+ assert.equal(details.querySelector('.player-review-text>p').textContent,review.summary);
+ assert.equal(details.querySelector('.evidence-quote').textContent.includes(review.disclosure.evidence.quote),true);
+ assert.equal(details.querySelector('.player-product').hash,'#product/'+review.productId);
+ await click('#player-details [data-save]');
+ assert.equal(d.querySelector('#player-frame iframe'),frame,'저장 중 플레이어는 유지');
+ assert.equal(d.querySelector('#player').open,true);
+ assert.equal(details.querySelector('[data-save]').getAttribute('aria-pressed'),'true');
+ assert.equal(d.activeElement,details.querySelector('[data-save]'));
+ await click('#player-details .player-product');assert.equal(d.querySelector('#player').open,false);assert.equal(details.children.length,0);
+ await route('#saved');assert.ok(d.querySelector(`[data-review="${review.id}"]`));
+});
+test('each Instagram reader shows its own checked summary and captioned official source',async t=>{
+ for(const reel of liveData.reviews.filter(r=>r.format==='reels')){
+  const {d,click}=app(t,{hash:'#product/'+reel.productId+'?format=reels',script:liveBundle});
+  await click(`[data-review="${reel.id}"] [data-play]`);
+  const details=d.querySelector('#player-details');
+  assert.equal(details.querySelector('.player-byline strong').textContent,reel.author);
+  assert.equal(details.querySelector('time').textContent,reel.publishedAt?reel.publishedAt.replaceAll('-','.'): '작성일 미표기');
+  assert.equal(details.querySelector('.player-review-text>p').textContent,reel.summary);
+  assert.equal(d.querySelector('#player-frame iframe').src,reel.url+'embed/captioned/');
+  assert.match(d.querySelector('#player-help').textContent,/본문/);
+  assert.match(d.querySelector('#player-source-note').textContent,/원문에서 재생/);
+  assert.equal(d.querySelectorAll('video').length,0,'별도 복제한 영상이 없음');
+  assert.equal(d.querySelector('#player-original').href,reel.url);
+  await click('#close-player');
+ }
 });
