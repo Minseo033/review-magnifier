@@ -71,9 +71,9 @@
     {
       "id": "lrp-cicaplast-baume-b5-plus",
       "brand": "라로슈포제 La Roche-Posay",
-      "name": "시카플라스트 밤 B5+ 100ml",
-      "fullName": "라로슈포제 시카플라스트 밤 B5+ 100ml",
-      "version": "시카플라스트 밤 B5+ · 100ml (멀티 리페어 크림과 구분)",
+      "name": "시카플라스트 밤 B5+",
+      "fullName": "라로슈포제 시카플라스트 밤 B5+",
+      "version": "시카플라스트 밤 B5+ · 밤 제형",
       "aliases": [
         "라로슈포제 시카밤",
         "라로슈포제 B5 플러스 밤",
@@ -88,7 +88,7 @@
       "officialUrl": "https://www.larocheposay.co.kr/product/view/4710.do",
       "officialCheckedAt": "2026-11-12",
       "imageSourceUrl": "https://www.larocheposay.co.kr/upload/product/main/2025/12/20251219_1511040_837_400x400.png",
-      "lineageNote": "B5+ 밤 100ml를 대상으로 함. 별도 제형인 B5 멀티 리페어 크림, 구형 B5 밤, SPF50+ 밤, 40/200ml 사용 글은 이 초기 검토 묶음에 합치지 않음.",
+      "lineageNote": "공식 대표 사진은 100ml입니다. 후기 용량은 원문에 표기된 경우에만 표시하고 미표기 영상은 추정하지 않습니다. 구형 B5 밤·멀티 리페어 크림·SPF50+ 밤과 구분합니다.",
       "ranking": {
         "source": "oliveyoung",
         "kind": "sales",
@@ -236,17 +236,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "1286da200cff8894835a86bf062aaf955e778c3a990b391b3fef48784170b158"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224396653178",
@@ -308,17 +309,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "181b809ba76b496c0d8173e7e2cc61e9e8f31c60ad235e6e4366f653b9cab383"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224433582912",
@@ -383,17 +385,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "11cc1f07a2320fd7cbab5750157eb2f8eacb1514d78c8eaa9a1cb7d81aa686cf"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224439932821",
@@ -454,17 +457,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "e39b311bd034dc7382d09cdfd44421afe1c0608801faa69b0998bd8a79326913"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "youtube-YWFvC1o0NPU",
@@ -513,17 +517,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "bf5b88837d5400934ce61bad91318c4df9552e237f875dbc3d3588c37b969a1a"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "youtube-yn13puTnnkM",
@@ -572,17 +577,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "91161257b907d1427ec5f6ffa0234e470afe003eda6982ae9abfa44547883485"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "youtube-MgB_yIDfYxg",
@@ -641,17 +647,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "b24d5d68d5d8c8fa309b97fdf817c45280c60b72b4995265276605061f34216d"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "youtube-SlA41N4vzLg",
@@ -707,17 +714,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "5d57d1050b1ca0e477e53b7eeeb64b47d565483df6f0f16961389c76ce0f7df5"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "youtube-tjV6r63MFi4",
@@ -844,17 +852,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 검토",
-        "reason": "운영자 원문 확인 및 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "d61c4f10173425e817f959e344c019085cc2b6b5e51674870734f239efe57883"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224393985664",
@@ -912,17 +921,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 네이버 블로그 원문 텍스트 검토",
         "reviewerKind": "ai",
-        "reason": "직접 구매 문구와 제품명·상충 고지 검토 완료; 이미지 포함 원문에 대한 운영자 최종 공개 승인 대기"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "7154990f316894593564bb505a21663408255a90aeba3132c6a106fa0c9252d5"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224421405717",
@@ -986,17 +996,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 네이버 블로그 원문 텍스트 검토",
         "reviewerKind": "ai",
-        "reason": "직접 구매 문구와 제품명·상충 고지 검토 완료; 이미지 포함 원문에 대한 운영자 최종 공개 승인 대기"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "bd15369e4c9532770dda6868453fdb3cf4df0919c8fcd259af923d87ff10c338"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224382496139",
@@ -1055,17 +1066,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 네이버 블로그 원문 텍스트 검토",
         "reviewerKind": "ai",
-        "reason": "직접 구매 문구와 제품명·상충 고지 검토 완료; 이미지 포함 원문에 대한 운영자 최종 공개 승인 대기"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "214715ace1569c5daeb3a795cf8bac8e3b0a43f326fd15b8bbb90f3cbfe551c2"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224342587815",
@@ -1134,22 +1146,23 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 네이버 블로그 원문 텍스트 검토",
         "reviewerKind": "ai",
-        "reason": "직접 구매 문구와 제품명·상충 고지 검토 완료; 이미지 포함 원문에 대한 운영자 최종 공개 승인 대기"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "531d70b1aa351b95f74282fcd7a4e139fab28102ab3c7fa18ff332f5021dca59"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224472559017",
       "productId": "lrp-cicaplast-baume-b5-plus",
-      "productVersion": "시카플라스트 밤 B5+ · 100ml (멀티 리페어 크림과 구분)",
+      "productVersion": "시카플라스트 밤 B5+ · 밤 제형",
       "platform": "naver",
       "format": "blog",
       "externalId": "hahajuinzzang/224472559017",
@@ -1171,7 +1184,12 @@
         },
         "shade": null,
         "duration": null,
-        "skinTone": null
+        "skinTone": null,
+        "volume": {
+          "value": "100ml",
+          "quote": "100ml",
+          "location": "본문 제품 용량"
+        }
       },
       "topics": [
         "번들거림",
@@ -1201,22 +1219,23 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 사전 검토",
-        "reason": "직접 구매 명시·정확한 제품 근거를 사전 대조했으나 이미지 내 고지와 외부 링크, 사람의 최종 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "878ead5a0bdceb7cc3a5dd9efa6fe677b072cf2e2554d246a5c05b99ed0f5e5d"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224469271149",
       "productId": "lrp-cicaplast-baume-b5-plus",
-      "productVersion": "시카플라스트 밤 B5+ · 100ml (멀티 리페어 크림과 구분)",
+      "productVersion": "시카플라스트 밤 B5+ · 밤 제형",
       "platform": "naver",
       "format": "blog",
       "externalId": "leto_red_candy/224469271149",
@@ -1238,7 +1257,12 @@
         },
         "shade": null,
         "duration": null,
-        "skinTone": null
+        "skinTone": null,
+        "volume": {
+          "value": "100ml",
+          "quote": "100ml",
+          "location": "본문 제품 용량"
+        }
       },
       "topics": [
         "촉촉함·건조함",
@@ -1270,22 +1294,23 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 사전 검토",
-        "reason": "직접 구매 명시·정확한 제품 근거를 사전 대조했으나 이미지 내 고지와 외부 링크, 사람의 최종 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "578a5f4ac77d54e854843964deb3c202af0c5c57563bad2510888dc73673e131"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224463407586",
       "productId": "lrp-cicaplast-baume-b5-plus",
-      "productVersion": "시카플라스트 밤 B5+ · 100ml (멀티 리페어 크림과 구분)",
+      "productVersion": "시카플라스트 밤 B5+ · 밤 제형",
       "platform": "naver",
       "format": "blog",
       "externalId": "ssungmin3620/224463407586",
@@ -1303,7 +1328,12 @@
         "skinType": null,
         "shade": null,
         "duration": null,
-        "skinTone": null
+        "skinTone": null,
+        "volume": {
+          "value": "100ml",
+          "quote": "100mL",
+          "location": "본문 제품 용량"
+        }
       },
       "topics": [
         "촉촉함·건조함",
@@ -1333,17 +1363,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 원문 텍스트 사전 검토",
-        "reason": "직접 구매 명시·정확한 제품 근거를 사전 대조했으나 이미지 내 고지와 외부 링크, 사람의 최종 공개 승인 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "849c63b75d2034f27a86d8591c214dbd232ab0a136ecbd8f382636c80a39298f"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224463944675",
@@ -1395,17 +1426,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 공개 원문 텍스트 검토",
-        "reason": "직접 구매 표기·제품 및 리뉴얼 버전 일치·본문 상충 고지 미발견. 사진 속 표시와 사람의 공개 승인 검토 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "586d10bf59d373d390faab59b37e970c8fba2c34732c228d9117b14c3f664a0b"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224225856659",
@@ -1459,17 +1491,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 공개 원문 텍스트 검토",
-        "reason": "직접 구매 표기·제품 및 리뉴얼 버전 일치·본문 상충 고지 미발견. 사진 속 표시와 사람의 공개 승인 검토 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "7c70cb944c5f38e93cf71dfc85e6cb578c188e16ec70cb380d0118f8bc9c8d91"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-223656833049",
@@ -1528,17 +1561,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 공개 원문 텍스트 검토",
-        "reason": "직접 구매 표기·제품 및 리뉴얼 버전 일치·본문 상충 고지 미발견. 사진 속 표시와 사람의 공개 승인 검토 대기",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "159ad72b2670d31ccf0b309bde717886132ea9b4e9b9e6c0fb6fc3060af2a21d"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224445282724",
@@ -1596,17 +1630,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 공개 텍스트 1차 대조",
-        "reason": "직접 구매 문장·제품명·접근 가능한 본문 고지를 대조함. 사람의 원문·이미지 고지 확인과 향 개선 전후 버전 일치 확인 후 공개 승인 필요.",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "d5fbf002f45c962cd54c3e9140aee33901c293ceb7626782ba3d4b47e5afa156"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224402393657",
@@ -1668,17 +1703,18 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 공개 텍스트 1차 대조",
-        "reason": "직접 구매 문장·제품명·접근 가능한 본문 고지를 대조함. 사람의 원문·이미지 고지 확인과 향 개선 전후 버전 일치 확인 후 공개 승인 필요.",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "40a533f1e5c9cd07b8d76e471855d035dc1e1093049cc77cb95c8f46cd45a2e4"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
     },
     {
       "id": "naver-224400699281",
@@ -1739,17 +1775,418 @@
         "findings": []
       },
       "review": {
-        "status": "held",
-        "reviewedAt": "2026-11-12",
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
         "reviewedBy": "Codex · 공개 텍스트 1차 대조",
-        "reason": "직접 구매 문장·제품명·접근 가능한 본문 고지를 대조함. 사람의 원문·이미지 고지 확인과 향 개선 전후 버전 일치 확인 후 공개 승인 필요.",
-        "reviewerKind": "ai"
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "reviewerKind": "ai",
+        "contentSha256": "2ca0a0fd758c64e870542b536739317c940ec4a4b76ded9e2248f6162600ed4b"
       },
       "link": {
         "status": "available",
         "checkedAt": "2026-11-12"
       },
-      "active": false
+      "active": true
+    },
+    {
+      "id": "youtube-Z5Iy3Jdkev4",
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "productVersion": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "Z5Iy3Jdkev4",
+      "url": "https://www.youtube.com/watch?v=Z5Iy3Jdkev4",
+      "title": "품절대란이라는 에딧비 선 앰플 비비 좋을까? 내돈내산 팩폭!",
+      "author": "별블리아 byulvelya",
+      "publishedAt": "2026-07-13",
+      "durationSeconds": 44,
+      "thumbnail": "https://i.ytimg.com/vi/Z5Iy3Jdkev4/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "지원 공동개발 비비의 두 색상을 직접 구매했다고 밝힌 쇼츠. 영상 설명에서 바를 때의 촉촉함과 커버·유지감에 대한 개인 경험을 적었습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": {
+          "value": "01 화사·02 차분",
+          "quote": "1호 화사, 2호 차분 구매해봤어요.",
+          "location": "영상 설명 구매 색상"
+        },
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "커버력",
+        "지속력과 무너짐",
+        "촉촉함·건조함"
+      ],
+      "matchEvidence": {
+        "quote": "에딧비 베일온 스킨 핏 선 앰플 비비",
+        "location": "영상 설명 제품명"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성에만 있는 고지",
+          "고정 댓글·외부 링크의 추가 고지",
+          "구매내역·영수증의 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
+        "reviewedBy": "Codex · 영상 제목·설명·메타데이터 검토",
+        "reviewerKind": "ai",
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "546f5f75957b4693d459b19529e28ef98469758428acb28447abd7bb88eabd93"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-8DlpkjLQmYI",
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "productVersion": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "8DlpkjLQmYI",
+      "url": "https://www.youtube.com/watch?v=8DlpkjLQmYI",
+      "title": "#내돈내산 에딧비 스킨핏 선앰플 비비",
+      "author": "코덕 령이",
+      "publishedAt": "2026-10-09",
+      "durationSeconds": 52,
+      "thumbnail": "https://i.ytimg.com/vi/8DlpkjLQmYI/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "출시 때 구매해 몇 달 사용했다고 밝힌 쇼츠. 설명에서는 촉촉하게 바른 뒤 마무리의 번들거림이 적었다는 개인 사용감을 기록했습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": {
+          "value": "몇 달 사용",
+          "quote": "몇달간 쓰고있는",
+          "location": "영상 설명 사용 기간"
+        },
+        "skinTone": null
+      },
+      "topics": [
+        "촉촉함·건조함",
+        "번들거림"
+      ],
+      "matchEvidence": {
+        "quote": "에딧비 스킨핏 선앰플 비비",
+        "location": "제목"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성에만 있는 고지",
+          "고정 댓글·외부 링크의 추가 고지",
+          "구매내역·영수증의 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
+        "reviewedBy": "Codex · 영상 제목·설명·메타데이터 검토",
+        "reviewerKind": "ai",
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "026cfe3ef83c1a76ee172e54c5e7061862402e79d9699651f0eb6d2c2749bb26"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-l-YTU_S15Eo",
+      "productId": "editb-veil-on-sun-ampoule-bb",
+      "productVersion": "베일온 스킨 핏 선 앰플 비비 30ml · 공식 상품 73",
+      "platform": "youtube",
+      "format": "video",
+      "externalId": "l-YTU_S15Eo",
+      "url": "https://www.youtube.com/watch?v=l-YTU_S15Eo",
+      "title": "수부지 내돈내산 오일파이터의 환절기 베이스 추천 요즘 이거 쓰고 있어요インナードライ肌の自腹購入レビュー オイルファイターが季節の変わり目におすすめするベースメイク 今はこれを使ってます",
+      "author": "hanabono하나보노",
+      "publishedAt": "2026-11-11",
+      "durationSeconds": 400,
+      "thumbnail": "https://i.ytimg.com/vi/l-YTU_S15Eo/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_watch_surface",
+      "excerpt": null,
+      "summary": "수부지라고 밝힌 작성자의 여러 베이스 사용 영상. 설명의 세 번째 제품이 에딧비 비비 01 화사입니다. 다른 제품의 경험과 구분해 원문을 살펴볼 수 있습니다.",
+      "conditions": {
+        "skinType": {
+          "value": "수부지",
+          "quote": "수부지 오일파이터",
+          "location": "영상 설명 도입부"
+        },
+        "shade": {
+          "value": "01 화사",
+          "quote": "01 화사",
+          "location": "영상 설명 에딧비 제품 아래"
+        },
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "색상과 호수 선택"
+      ],
+      "matchEvidence": {
+        "quote": "에딧비 베일온 스킨 핏 선 앰플 비비",
+        "location": "영상 설명 ITEM 3번"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성에만 있는 고지",
+          "고정 댓글·외부 링크의 추가 고지",
+          "구매내역·영수증의 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
+        "reviewedBy": "Codex · 영상 제목·설명·메타데이터 검토",
+        "reviewerKind": "ai",
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "8ad48e9cc8a0cbccd20e5202971ab65460c0469f7762e122f650e112b309bb85"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-DpBFXoUpc2U",
+      "productId": "lrp-cicaplast-baume-b5-plus",
+      "productVersion": "시카플라스트 밤 B5+ · 밤 제형",
+      "platform": "youtube",
+      "format": "video",
+      "externalId": "DpBFXoUpc2U",
+      "url": "https://www.youtube.com/watch?v=DpBFXoUpc2U",
+      "title": "올영세일 스킨케어 TOP5🔥1개는 사면 후회합니다 | 올리브영 추천템",
+      "author": "화니 HWAN'E",
+      "publishedAt": "2026-08-16",
+      "durationSeconds": 532,
+      "thumbnail": "https://i.ytimg.com/vi/DpBFXoUpc2U/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_watch_surface",
+      "excerpt": null,
+      "summary": "영상 설명에서 밤 B5+를 직접 구매했다고 밝힌 일반 영상. 본인 피부에서는 기름지게 느껴져 맞지 않았다고 구분하며, 해당 후기는 44초부터 안내돼 있습니다. 사용 용량은 미표기입니다.",
+      "conditions": {
+        "skinType": {
+          "value": "수부지·민감성",
+          "quote": "민감성 수부지 피부 기준",
+          "location": "영상 설명 사용 조건"
+        },
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [
+        "번들거림",
+        "아쉬웠던 점"
+      ],
+      "matchEvidence": {
+        "quote": "라로슈포제 시카플라스트 밤 B5+",
+        "location": "영상 설명 00:44 구간과 제품 목록"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "[직접구매]",
+          "location": "영상 설명 PRODUCTS Information의 라로슈포제 밤 B5+ 바로 아래"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "영상 장면·음성에만 있는 고지",
+          "고정 댓글·외부 링크의 추가 고지",
+          "구매내역·영수증의 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
+        "reviewedBy": "Codex · 영상 제목·설명·메타데이터 검토",
+        "reviewerKind": "ai",
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "b219cd894f5652ed6a239ae68675ec21d5361e57dc3252ba6d82784fc097a603"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-2T2uWEfRRMw",
+      "productId": "anua-pdrn-capsule-100-serum",
+      "productVersion": "PDRN 히알루론산 캡슐 100 세럼 · 공식 상품 359",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "2T2uWEfRRMw",
+      "url": "https://www.youtube.com/watch?v=2T2uWEfRRMw",
+      "title": "아누아 히알루론산 세럼 내돈내산 리뷰 #세럼 #스킨케어 #아누아 #코덕",
+      "author": "소혜의리뷰",
+      "publishedAt": "2026-10-01",
+      "durationSeconds": 112,
+      "thumbnail": "https://i.ytimg.com/vi/2T2uWEfRRMw/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "제목에 내돈내산을 명시한 쇼츠입니다. 공개 썸네일에서 PDRN 히알루론산 세럼명과 100+ 병 표기를 확인했습니다. 사용 호수·기간·피부 타입은 확인되지 않아 표시하지 않았습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "아누아 피디알엔 히알루론산 세럼",
+        "location": "YouTube 공개 썸네일의 제품명 자막 및 병의 100+ 표기"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체(비어 있음)",
+          "공개 썸네일의 제품명·고지",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "썸네일 외 영상 장면·음성에만 있는 고지",
+          "고정 댓글·외부 링크의 추가 고지",
+          "구매내역·영수증의 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
+        "reviewedBy": "Codex · 제목·메타데이터·썸네일 제품명 검토",
+        "reviewerKind": "ai",
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "5fc256186fa1918cd9ac0184cda57624c21e42075f24806031d9822c6e013546"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
+    },
+    {
+      "id": "youtube-S4IYbv-pagI",
+      "productId": "anua-pdrn-capsule-100-serum",
+      "productVersion": "PDRN 히알루론산 캡슐 100 세럼 · 공식 상품 359",
+      "platform": "youtube",
+      "format": "shorts",
+      "externalId": "S4IYbv-pagI",
+      "url": "https://www.youtube.com/watch?v=S4IYbv-pagI",
+      "title": "광고❌ 아누아 세럼 솔직후기💦 #올리브영 #뷰티꿀템 #내돈내산 #속건조",
+      "author": "막내누나",
+      "publishedAt": "2025-12-27",
+      "durationSeconds": 28,
+      "thumbnail": "https://i.ytimg.com/vi/S4IYbv-pagI/hqdefault.jpg",
+      "embedAllowed": true,
+      "formatEvidence": "youtube_shorts_surface",
+      "excerpt": null,
+      "summary": "제목에 내돈내산을 명시한 쇼츠입니다. 공개 썸네일 자막에 피디알엔 히알루론산 캡슐 100 세럼이라고 표시돼 있습니다. 자세한 사용 경험은 영상 원문에서 확인할 수 있습니다.",
+      "conditions": {
+        "skinType": null,
+        "shade": null,
+        "duration": null,
+        "skinTone": null
+      },
+      "topics": [],
+      "matchEvidence": {
+        "quote": "아누아 피디알엔 히알루론산 캡슐 100 세럼",
+        "location": "YouTube 공개 썸네일의 제품명 자막"
+      },
+      "disclosure": {
+        "kind": "self_declared",
+        "evidence": {
+          "quote": "내돈내산",
+          "location": "제목"
+        },
+        "checkedAreas": [
+          "제목",
+          "영상 설명 전체(비어 있음)",
+          "공개 썸네일의 제품명·고지",
+          "플랫폼 유료광고 메타데이터"
+        ],
+        "uncheckedAreas": [
+          "썸네일 외 영상 장면·음성에만 있는 고지",
+          "고정 댓글·외부 링크의 추가 고지",
+          "구매내역·영수증의 진위"
+        ],
+        "checkedAt": "2026-11-13",
+        "findings": []
+      },
+      "review": {
+        "status": "approved",
+        "reviewedAt": "2026-11-13",
+        "reviewedBy": "Codex · 제목·메타데이터·썸네일 제품명 검토",
+        "reviewerKind": "ai",
+        "reason": "공개 원문의 직접 구매 표시·제품 일치·기재된 상충 고지 확인. 사용자의 수집·사이트 적용·배포 요청에 따른 한정 공개. 사람의 영상 전체 시청·구매 증빙 인증 아님.",
+        "contentSha256": "8a76015f2e30577cdadd28b15620b43f2ae2de4e5a3b0e7fc1ac2b6847912532"
+      },
+      "link": {
+        "status": "available",
+        "checkedAt": "2026-11-13"
+      },
+      "active": true
     }
   ],
   "excluded": [
@@ -1781,7 +2218,128 @@
   "publicationPolicy": {
     "purchaseEvidence": "explicit_author_self_purchase",
     "humanApprovalRequired": true,
-    "effectiveAt": "2026-11-12",
-    "note": "최초 프롬프트의 원문 구매 표시·상충 고지 제외·사람 승인 기준 재적용"
+    "effectiveAt": "2026-11-13",
+    "batchException": "publicationAuthorization에 내용 해시가 고정된 이번 묶음만 사용자 공개 요청에 따라 AI 검토 방식으로 공개. 운영자 검토 경로와 구별.",
+    "note": "직접 구매 문장·제품 일치·상충 고지 제외는 필수. 사람 검토를 수행했다고 표시하지 않음."
+  },
+  "publicationAuthorization": {
+    "mode": "user_authorized_agent_review",
+    "authorizedAt": "2026-11-13",
+    "instruction": "찾고 후기돋보기 사이트에 적용까지 시켜서 배포까지 해 뭔말알 ?",
+    "scope": "이번에 원문 근거를 확인한 28개 기록에 한정. AI 검토를 사람 원문 확인으로 기록하지 않으며 영상·음성의 미확인 영역을 표시. 이후 수집 자료 자동 공개 권한 아님.",
+    "approved": [
+      {
+        "id": "naver-224460479696",
+        "contentSha256": "1286da200cff8894835a86bf062aaf955e778c3a990b391b3fef48784170b158"
+      },
+      {
+        "id": "naver-224396653178",
+        "contentSha256": "181b809ba76b496c0d8173e7e2cc61e9e8f31c60ad235e6e4366f653b9cab383"
+      },
+      {
+        "id": "naver-224433582912",
+        "contentSha256": "11cc1f07a2320fd7cbab5750157eb2f8eacb1514d78c8eaa9a1cb7d81aa686cf"
+      },
+      {
+        "id": "naver-224439932821",
+        "contentSha256": "e39b311bd034dc7382d09cdfd44421afe1c0608801faa69b0998bd8a79326913"
+      },
+      {
+        "id": "youtube-YWFvC1o0NPU",
+        "contentSha256": "bf5b88837d5400934ce61bad91318c4df9552e237f875dbc3d3588c37b969a1a"
+      },
+      {
+        "id": "youtube-yn13puTnnkM",
+        "contentSha256": "91161257b907d1427ec5f6ffa0234e470afe003eda6982ae9abfa44547883485"
+      },
+      {
+        "id": "youtube-MgB_yIDfYxg",
+        "contentSha256": "b24d5d68d5d8c8fa309b97fdf817c45280c60b72b4995265276605061f34216d"
+      },
+      {
+        "id": "youtube-SlA41N4vzLg",
+        "contentSha256": "5d57d1050b1ca0e477e53b7eeeb64b47d565483df6f0f16961389c76ce0f7df5"
+      },
+      {
+        "id": "youtube-cDCdWKO3z4g",
+        "contentSha256": "d61c4f10173425e817f959e344c019085cc2b6b5e51674870734f239efe57883"
+      },
+      {
+        "id": "naver-224393985664",
+        "contentSha256": "7154990f316894593564bb505a21663408255a90aeba3132c6a106fa0c9252d5"
+      },
+      {
+        "id": "naver-224421405717",
+        "contentSha256": "bd15369e4c9532770dda6868453fdb3cf4df0919c8fcd259af923d87ff10c338"
+      },
+      {
+        "id": "naver-224382496139",
+        "contentSha256": "214715ace1569c5daeb3a795cf8bac8e3b0a43f326fd15b8bbb90f3cbfe551c2"
+      },
+      {
+        "id": "naver-224342587815",
+        "contentSha256": "531d70b1aa351b95f74282fcd7a4e139fab28102ab3c7fa18ff332f5021dca59"
+      },
+      {
+        "id": "naver-224472559017",
+        "contentSha256": "878ead5a0bdceb7cc3a5dd9efa6fe677b072cf2e2554d246a5c05b99ed0f5e5d"
+      },
+      {
+        "id": "naver-224469271149",
+        "contentSha256": "578a5f4ac77d54e854843964deb3c202af0c5c57563bad2510888dc73673e131"
+      },
+      {
+        "id": "naver-224463407586",
+        "contentSha256": "849c63b75d2034f27a86d8591c214dbd232ab0a136ecbd8f382636c80a39298f"
+      },
+      {
+        "id": "naver-224463944675",
+        "contentSha256": "586d10bf59d373d390faab59b37e970c8fba2c34732c228d9117b14c3f664a0b"
+      },
+      {
+        "id": "naver-224225856659",
+        "contentSha256": "7c70cb944c5f38e93cf71dfc85e6cb578c188e16ec70cb380d0118f8bc9c8d91"
+      },
+      {
+        "id": "naver-223656833049",
+        "contentSha256": "159ad72b2670d31ccf0b309bde717886132ea9b4e9b9e6c0fb6fc3060af2a21d"
+      },
+      {
+        "id": "naver-224445282724",
+        "contentSha256": "d5fbf002f45c962cd54c3e9140aee33901c293ceb7626782ba3d4b47e5afa156"
+      },
+      {
+        "id": "naver-224402393657",
+        "contentSha256": "40a533f1e5c9cd07b8d76e471855d035dc1e1093049cc77cb95c8f46cd45a2e4"
+      },
+      {
+        "id": "naver-224400699281",
+        "contentSha256": "2ca0a0fd758c64e870542b536739317c940ec4a4b76ded9e2248f6162600ed4b"
+      },
+      {
+        "id": "youtube-Z5Iy3Jdkev4",
+        "contentSha256": "546f5f75957b4693d459b19529e28ef98469758428acb28447abd7bb88eabd93"
+      },
+      {
+        "id": "youtube-8DlpkjLQmYI",
+        "contentSha256": "026cfe3ef83c1a76ee172e54c5e7061862402e79d9699651f0eb6d2c2749bb26"
+      },
+      {
+        "id": "youtube-l-YTU_S15Eo",
+        "contentSha256": "8ad48e9cc8a0cbccd20e5202971ab65460c0469f7762e122f650e112b309bb85"
+      },
+      {
+        "id": "youtube-DpBFXoUpc2U",
+        "contentSha256": "b219cd894f5652ed6a239ae68675ec21d5361e57dc3252ba6d82784fc097a603"
+      },
+      {
+        "id": "youtube-2T2uWEfRRMw",
+        "contentSha256": "5fc256186fa1918cd9ac0184cda57624c21e42075f24806031d9822c6e013546"
+      },
+      {
+        "id": "youtube-S4IYbv-pagI",
+        "contentSha256": "8a76015f2e30577cdadd28b15620b43f2ae2de4e5a3b0e7fc1ac2b6847912532"
+      }
+    ]
   }
 }

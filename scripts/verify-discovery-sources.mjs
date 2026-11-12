@@ -9,7 +9,7 @@ const candidates=registry.reviews.filter(r=>r.disclosure?.kind==='self_declared'
 for(const r of candidates){
  validateReview(r,registry.products);
  const source=snapshots.find(s=>s.id===r.externalId.split('/').at(-1));assert.ok(source,r.id+' 원문 캐시 없음');
- const text=normalize(source.title+' '+(source.body||source.description||''));
+ const text=normalize(source.title+' '+(source.body||source.description||'')+' '+(source.thumbnailText||''));
  assert.equal(r.title,source.title,r.id+' 제목 변경');
  for(const quote of [r.excerpt,r.matchEvidence.quote,r.disclosure.evidence?.quote,...Object.values(r.conditions).filter(Boolean).map(c=>c.quote)].filter(Boolean))assert.ok(text.includes(normalize(quote)),r.id+' 근거 불일치: '+quote);
  if(r.platform==='youtube'){

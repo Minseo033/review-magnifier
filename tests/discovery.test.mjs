@@ -13,6 +13,7 @@ const sourceRegistry=JSON.parse(readFileSync(new URL('../data/discovery-registry
 // Synthetic human approval exists in memory only, to exercise the app independently
 // of the operator's real approval queue. It is never written to the public dataset.
 const registry=structuredClone(sourceRegistry);
+delete registry.publicationAuthorization;
 registry.reviews=registry.reviews.filter(r=>r.productId==='fwee-all-day-black'&&r.disclosure.kind==='self_declared').map(r=>{
  r.active=true;r.review={...r.review,status:'approved',reviewerKind:'human',reviewedBy:'UI test fixture',reviewedAt:'2026-11-12',reason:'Synthetic UI test approval, never published'};
  r.link={...r.link,status:'available'};r.review.contentSha256=reviewDigest(r);return r;
@@ -27,12 +28,14 @@ async function testBundle(library){
  return result.outputFiles[0].text;
 }
 const bundle=await testBundle(data),liveData=prepareLibrary(sourceRegistry),liveBundle=await testBundle(liveData);
-function app(t,{hash='#home',blocked=false,mobile=false,script=bundle}={}){
+function app(t,{hash='#home',blocked=false,mobile=false,script=bundle,lastFeatured,blockedSession=false}={}){
  const dom=new JSDOM(html,{url:'https://review.test/'+hash,runScripts:'outside-only',pretendToBeVisual:true});
  const w=dom.window,d=w.document,errors=[];
  t.after(()=>dom.window.close());w.scrollTo=()=>{};
  if(mobile)w.innerWidth=390;
  if(blocked)Object.defineProperty(w,'localStorage',{get(){throw new w.DOMException('blocked','SecurityError');}});
+ if(blockedSession)Object.defineProperty(w,'sessionStorage',{get(){throw new w.DOMException('blocked','SecurityError');}});
+ else if(lastFeatured)w.sessionStorage.setItem('review-magnifier:v5:last-home-short',lastFeatured);
  w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','');};
  w.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');this.dispatchEvent(new w.Event('close'));};
  w.addEventListener('error',event=>errors.push(event.error));
@@ -58,8 +61,9 @@ test('only active approved records publish; source totals are canonical unique p
  assert.throws(()=>prepareLibrary(missing),/구매|내돈내산/);
  const automated=structuredClone(registry);automated.reviews[0].review.reviewerKind='ai';assert.throws(()=>prepareLibrary(automated),/사람|human|검토/);
 });
-test('real approval queue is separate from the synthetic UI data and empty publication is honest',async t=>{
- assert.ok(liveData.reviews.every(r=>r.review.reviewerKind==='human'&&r.review.status==='approved'));
+test('real publication records its review method separately from memory-only human fixtures',async t=>{
+ assert.ok(liveData.reviews.every(r=>r.review.status==='approved'));
+ for(const r of liveData.reviews.filter(r=>r.review.reviewerKind==='ai'))assert.ok(sourceRegistry.publicationAuthorization.approved.some(entry=>entry.id===r.id&&entry.contentSha256===reviewDigest(r)));
  assert.deepEqual(JSON.parse(readFileSync(new URL('../data/discovery-registry.json',import.meta.url))),sourceRegistry);
  const {d,route}=app(t,{script:liveBundle});
  assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,liveData.products.length);
@@ -68,6 +72,14 @@ test('real approval queue is separate from the synthetic UI data and empty publi
   assert.equal(d.querySelectorAll('[data-review],[data-play]').length,0);
  }
  await route('#standards');assert.ok(d.querySelector('.reading-page').textContent.includes(`제품 ${liveData.products.length}개`));
+});
+test('user-authorized AI review is restricted to the pinned records and never becomes human review',()=>{
+ const record=structuredClone(data.reviews[0]);record.review.reviewerKind='ai';
+ const copy={...structuredClone(registry),reviews:[record],publicationAuthorization:{mode:'user_authorized_agent_review',authorizedAt:'2026-11-13',instruction:'이 자료를 사이트에 적용하고 배포',approved:[{id:record.id,contentSha256:reviewDigest(record)}]}};
+ assert.equal(prepareLibrary(copy).reviews[0].review.reviewerKind,'ai');
+ const revoked=structuredClone(copy);delete revoked.publicationAuthorization;assert.throws(()=>prepareLibrary(revoked),/승인/);
+ const changed=structuredClone(copy);changed.reviews[0].summary='unreviewed revision';changed.reviews[0].review.contentSha256=reviewDigest(changed.reviews[0]);assert.throws(()=>prepareLibrary(changed),/승인/);
+ const extra=structuredClone(copy),unlisted=structuredClone(data.reviews[1]);unlisted.review.reviewerKind='ai';extra.reviews.push(unlisted);assert.throws(()=>prepareLibrary(extra),/승인/);
 });
 test('multiple cosmetics keep their reviews separate and sort by captured rank within a category',async t=>{
  const fixture=structuredClone(sourceRegistry);
@@ -140,7 +152,7 @@ test('home, search and invalid product routes expose truthful data with escaped 
 });
 test('home selects products, opens the complete review detail, and returns to the product home',async t=>{
  const {w,d,click}=app(t);
- assert.equal(d.querySelectorAll('.review-card,[data-play]').length,0);
+ assert.equal(d.querySelectorAll('.review-card').length,0);assert.equal(d.querySelectorAll('[data-play]').length,1);
  for(const product of data.products){
   const {id:productId}=product;
   await click(`.browse-product-card[data-product="${productId}"] a[href="#product/${productId}"]`);
@@ -161,12 +173,24 @@ test('home category navigation is shareable, distinguishes preparation slots, an
   assert.deepEqual(new Set(shown),new Set(data.products.filter(p=>p.category===category).map(p=>p.id)));
   const ranks=shown.map(id=>data.products.find(p=>p.id===id).ranking?.rank??Number.MAX_SAFE_INTEGER);
   assert.deepEqual(ranks,[...ranks].sort((a,b)=>a-b));
-  assert.equal(d.querySelectorAll('[data-review],[data-play],iframe').length,0);
+  assert.equal(d.querySelectorAll('[data-review],iframe').length,0);
+  assert.ok(d.querySelectorAll('[data-featured-review]').length<=1);
+  for(const pick of d.querySelectorAll('[data-featured-review]'))assert.equal(data.products.find(p=>p.id===data.reviews.find(r=>r.id===pick.dataset.featuredReview).productId).category,category);
  }
  await route('#home?category=base');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,data.products.filter(p=>p.category==='base').length);
  assert.equal(d.querySelector('[data-home-category="base"]').getAttribute('aria-pressed'),'true');
  await click('[data-home-category="all"]');assert.equal(d.querySelectorAll('.browse-product-card[data-product]').length,data.products.length);
  assert.equal(d.querySelector('[data-home-category="all"]').getAttribute('aria-pressed'),'true');
+});
+test('home shows one playable original, preserves it while browsing, and changes it on a new load',async t=>{
+ const {d,route,click}=app(t);
+ const pick=d.querySelector('[data-featured-review]'),review=data.reviews.find(r=>r.id===pick.dataset.featuredReview);
+ assert.ok(review);assert.equal(review.format,'shorts');assert.equal(d.querySelectorAll('[data-featured-review]').length,1);assert.equal(d.querySelectorAll('iframe').length,0);
+ assert.ok(pick.querySelector('.evidence'));assert.match(pick.querySelector('.home-video-original').href,/youtube.com\/shorts\//);
+ await click('.home-video-poster');assert.equal(d.querySelectorAll('iframe').length,1);await click('#close-player');
+ await route('#saved');await route('#home');assert.equal(d.querySelector('[data-featured-review]').dataset.featuredReview,review.id);
+ const next=app(t,{lastFeatured:review.id});assert.notEqual(next.d.querySelector('[data-featured-review]').dataset.featuredReview,review.id);
+ const blocked=app(t,{blockedSession:true});assert.equal(blocked.d.querySelectorAll('[data-featured-review]').length,1);
 });
 test('preparing products cannot be opened, saved or played and are not fabricated search results',async t=>{
  const {d,route}=app(t);const slots=[...d.querySelectorAll('.preparing-card')];

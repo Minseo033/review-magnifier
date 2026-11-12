@@ -35,7 +35,7 @@ function productCard(p,detail=false){
   <div class="product-note"><span>확인한 제품</span><p>${esc(p.fullName)}</p><small>작성자가 밝힌 구매 표시와 사용 조건을 확인해 보세요.</small>${detail?`<a class="quiet-link" href="${esc(p.officialUrl)}" target="_blank" rel="noopener noreferrer">공식 제품 확인 ${icon('external')}</a>`:''}</div>
  </article>`;
 }
-function evidence(r){const d=r.disclosure;return `<details class="evidence"><summary>${icon('check')} 작성자 내돈내산 표기 <span>근거 보기</span></summary><div class="evidence-body"><p class="evidence-quote">“${esc(d.evidence.quote)}” <small>${esc(d.evidence.location)}</small></p><dl><div><dt>확인 범위</dt><dd>${d.checkedAreas.map(esc).join(', ')}</dd></div><div><dt>확인하지 못한 범위</dt><dd>${d.uncheckedAreas.map(esc).join(', ')}</dd></div><div><dt>원문 확인</dt><dd>${date(r.link.checkedAt)}</dd></div><div><dt>제품 일치</dt><dd>${esc(r.matchEvidence.quote)} <small>(${esc(r.matchEvidence.location)})</small></dd></div></dl><p class="small-note">작성자의 자기표시와 구매 증빙 인증은 달라요. 광고가 전혀 없다는 보장은 아닙니다.</p></div></details>`;}
+function evidence(r){const d=r.disclosure;return `<details class="evidence"><summary>${icon('check')} 작성자 내돈내산 표기 <span>근거 보기</span></summary><div class="evidence-body"><p class="evidence-quote">“${esc(d.evidence.quote)}” <small>${esc(d.evidence.location)}</small></p><dl><div><dt>확인 범위</dt><dd>${d.checkedAreas.map(esc).join(', ')}</dd></div><div><dt>확인하지 못한 범위</dt><dd>${d.uncheckedAreas.map(esc).join(', ')}</dd></div><div><dt>검토 방식</dt><dd>${r.review.reviewerKind==='ai'?'AI 도구로 공개 원문과 표시된 영역 확인':'운영자 원문 확인'}</dd></div><div><dt>원문 확인</dt><dd>${date(r.link.checkedAt)}</dd></div><div><dt>제품 일치</dt><dd>${esc(r.matchEvidence.quote)} <small>(${esc(r.matchEvidence.location)})</small></dd></div></dl><p class="small-note">작성자의 자기표시와 구매 증빙 인증은 달라요. 광고가 전혀 없다는 보장은 아닙니다.</p></div></details>`;}
 function conditionChips(r){return Object.values(r.conditions).filter(Boolean).map(c=>`<span title="${esc(c.location+': '+c.quote)}">${esc(c.value)}</span>`).join('');}
 function reviewCard(r){
   const video=['shorts','video'].includes(r.format),short=r.format==='shorts',mins=r.durationSeconds?`${Math.floor(r.durationSeconds/60)}:${String(r.durationSeconds%60).padStart(2,'0')}`:'',url=r.format==='shorts'?`https://www.youtube.com/shorts/${r.externalId}`:r.url;
@@ -70,6 +70,27 @@ function preparingCard(slot){
   <div class="preparing-copy"><h3>${esc(slot.label)}</h3><p>제품별 후기를 준비하고 있어요.</p></div>
  </article>`;
 }
+let featuredShort;
+function homeVideo(category){
+ if(featuredShort===undefined){
+  const key='review-magnifier:v5:last-home-short';
+  let previous;try{previous=sessionStorage.getItem(key);}catch{}
+  const candidates=data.reviews.filter(r=>r.format==='shorts'&&r.embedAllowed&&productMap.has(r.productId));
+  const alternatives=candidates.filter(r=>r.id!==previous),pool=alternatives.length?alternatives:candidates;
+  featuredShort=pool[Math.floor(Math.random()*pool.length)]??null;
+  if(featuredShort)try{sessionStorage.setItem(key,featuredShort.id);}catch{}
+ }
+ const r=featuredShort,p=productMap.get(r?.productId);
+ if(!r||p.category!==category)return '';
+ const duration=`${Math.floor(r.durationSeconds/60)}:${String(r.durationSeconds%60).padStart(2,'0')}`;
+ return `<aside class="home-video-pick" aria-labelledby="home-video-heading" data-featured-review="${esc(r.id)}">
+  <h3 id="home-video-heading">후기 한 편 <small>새로 들어올 때 다른 영상</small></h3>
+  <div class="home-video-body"><button class="play-preview home-video-poster" data-play="${esc(r.id)}" aria-label="${esc(r.title)} 재생"><img src="${esc(r.thumbnail)}" width="480" height="360" alt="${esc(r.author)} 영상 썸네일" decoding="async"><span class="play-symbol">${icon('play')}</span><span class="video-length">${duration}</span></button>
+   <div class="home-video-copy"><p class="home-video-platform">YouTube 쇼츠</p><p class="home-video-title">${esc(r.title)}</p><p class="home-video-author">${esc(r.author)}</p><time datetime="${r.publishedAt}">${date(r.publishedAt)}</time><a class="home-video-original" href="https://www.youtube.com/shorts/${esc(r.externalId)}" target="_blank" rel="noopener noreferrer">영상 원문 ${icon('external')}</a></div>
+  </div>${evidence(r)}
+  <a class="home-video-product" href="#product/${esc(p.id)}"><span>${esc(p.name)}<small>이 제품 후기 모두 보기</small></span>${icon('arrow')}</a>
+ </aside>`;
+}
 function home(){
  const sections=homeSections.filter(section=>state.category==='all'||section.id===state.category);
  return `<section class="home-intro product-home-intro" aria-labelledby="home-title">
@@ -82,10 +103,10 @@ function home(){
  ${!data.products.length?'<p class="home-source-note publication-empty" role="status">공개 후기를 준비하고 있어요. 직접 구매 근거와 원문 검토를 마친 제품부터 공개합니다.</p>':''}
  <div class="product-collections">${sections.map(section=>{
   const products=data.products.filter(p=>p.category===section.id).sort((a,b)=>salesRank(a)-salesRank(b));
-  const preparing=section.preparing.filter(slot=>!products.some(p=>p.slot===slot.label));
+  const preparing=section.preparing.filter(slot=>!products.some(p=>p.slot===slot.label)),video=homeVideo(section.id);
   return `<section class="product-collection" aria-labelledby="collection-${section.id}">
    <div class="collection-heading"><div><h2 id="collection-${section.id}">${section.label}</h2><p>${section.description}</p></div>${products.length?'<span class="collection-availability">후기 공개 중</span>':'<span class="collection-preparing">상품 준비 중</span>'}</div>
-   <div class="browse-product-grid">${products.map(browseProductCard).join('')}${preparing.map(preparingCard).join('')}</div>
+   <div class="browse-product-grid${video?' with-home-video':''}">${products.map((p,i)=>browseProductCard(p)+(i===0?video:'')).join('')}${preparing.map(preparingCard).join('')}</div>
   </section>`;
  }).join('')}</div>
  <div class="home-criteria-note">${icon('check')}<p>후기마다 작성자의 구매 표시와 원문 출처, 확인한 범위를 함께 안내해요.</p><a href="#standards">후기를 모으는 기준 ${icon('arrow')}</a></div>`;
@@ -114,8 +135,8 @@ function standards(){
  const total=counts(data.reviews);
  return `<article class="reading-page">
   <div class="page-heading"><span class="breadcrumb">후기를 모으는 기준</span><h1>후기를 고를 때,<br>출처부터 살펴봐요.</h1><p>여러 플랫폼에 흩어진 사용 경험을 제품별로 모읍니다.</p></div>
-  <section><h2>어떤 후기가 올라오나요?</h2><p>실제 제품이 일치하고 작성자가 직접 구매했다고 밝힌 후기를 사람이 확인한 뒤 공개해요. 제목·본문·영상 설명에서 확인한 구매 표기와 원문 위치를 카드에서 볼 수 있어요.</p><p>화장품 후보를 고를 때 올리브영 판매 랭킹을 참고합니다. 공개 목록에는 기준을 충족하는 후기를 확보한 제품이 올라오며, 판매 순위를 실시간으로 보여주는 화면은 아니에요.</p></section>
-  <section><h2>무엇을 확인했나요?</h2><p>AI 도구는 공개 텍스트와 메타데이터를 수집해 검토 후보를 준비합니다. 공개 전에는 사람이 원문과 직접 구매 근거, 광고 고지 여부를 확인하고 승인해야 해요. 확인한 범위를 후기마다 기록합니다. 이미지·영상 장면·음성에만 있는 표시는 확인하지 못했으므로 후기마다 검토 범위를 보여드려요.</p><p>작성자가 직접 구매했다고 밝힌 사실을 확인한 것이며, 영수증을 검증하거나 광고가 전혀 없음을 보증하는 건 아니에요.</p></section>
+  <section><h2>어떤 후기가 올라오나요?</h2><p>실제 제품이 일치하고 작성자가 직접 구매했다고 밝힌 후기를 모아요. 제목·본문·영상 설명에서 확인한 구매 표기와 원문 위치를 카드에서 볼 수 있어요.</p><p>화장품 후보를 고를 때 올리브영 판매 랭킹을 참고합니다. 공개 목록에는 기준을 충족하는 후기를 확보한 제품이 올라오며, 판매 순위를 실시간으로 보여주는 화면은 아니에요.</p></section>
+  <section><h2>무엇을 확인했나요?</h2><p>현재 자료는 AI 도구(Codex)로 공개 원문을 확인하고 운영자의 수집·공개 요청에 따라 등록했습니다. 블로그는 제목·본문 텍스트, 영상은 제목·설명·플랫폼 유료광고 메타데이터를 확인했어요. 일부 영상은 공개 썸네일의 제품명도 확인했습니다. 후기마다 확인한 영역과 검토 방식을 기록합니다.</p><p>사람이 모든 영상 장면·음성을 시청하거나 이미지 속 고지를 검수한 자료는 아니에요. 작성자의 직접 구매 표시를 확인한 것이며, 영수증을 검증하거나 광고가 전혀 없음을 보증하는 건 아니에요.</p></section>
   <section><h2>이런 콘텐츠는 제외해요</h2><p>직접 구매 근거를 찾지 못했거나, 원문을 확인할 수 없는 후기는 공개하지 않아요. 광고·협찬·제품 제공·체험단·후기 보상·구매금 환급·제휴 수수료 표시가 있으면 내돈내산 표기가 있어도 제외해요.</p></section>
   <section><h2>사용 조건은 작성자가 밝힌 만큼만</h2><p>피부 타입·톤·호수·사용 기간은 원문에 기재된 정보만 사용해요. 얼굴 사진으로 추정하지 않아요. 편집 요약과 원문 발췌를 구분하며, 서로 다른 촬영 조건을 객관적인 성능 비교로 바꾸지 않아요.</p></section>
   <section><h2>현재 모아둔 범위</h2><p>제품 ${data.products.length}개의 후기 ${data.reviews.length}개 출처를 모았어요. 쇼츠 ${total.shorts}개, 일반 영상 ${total.video}개, 릴스 ${total.reels}개, 블로그 ${total.blog}개입니다. 목록은 ${date(data.updatedAt)}에 갱신했어요.</p><p>원문은 삭제·변경될 수 있어요. 오류를 발견하면 <a href="mailto:kim6323b@naver.com">자료 수정 요청</a>으로 알려주세요.</p></section>

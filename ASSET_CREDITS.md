@@ -1,13 +1,13 @@
-# 2026-11-13 검토 대기 화장품 사진
+# 2026-11-13 추가 화장품 사진
 
-신규 4종의 공식 제품 사진은 로컬 검토용이며 사람 공개 승인 전 배포 빌드에서 제외한다. 사진의 권리는 각 권리자에게 있다. 생성 이미지나 후기 작성자의 사용 사진이 아니다. 원본 URL은 운영 원장의 `imageSourceUrl`에 기록했다.
+신규 4종의 공식 제품 사진을 공개 제품 식별에 사용한다. 사진의 권리는 각 권리자에게 있다. 생성 이미지나 후기 작성자의 사용 사진이 아니다. 원본 URL은 운영 원장의 `imageSourceUrl`에 기록했다.
 
 - [에딧비 공식 상품 73](https://www.editb.co.kr/product/detail.html?product_no=73): `editb-veil-on-bb.webp`
 - [라로슈포제 공식 B5+ 밤 100ml](https://www.larocheposay.co.kr/product/view/4710.do): `lrp-cicaplast-baume-b5-plus.webp`
 - [에스트라 공식 아토베리어365 크림](https://www.aestura.com/web/product/view.do?prdSeq=1021): `aestura-atobarrier365-cream.webp`
 - [아누아 공식 상품 359](https://m.anua.kr/product/detail.html?product_no=359): `anua-pdrn-capsule-100-serum.webp`
 
-공식 사진을 비율 유지 축소하고 WebP로 변환했다. 별도 후보 원문과 검토 결과는 [수집 보고서](docs-data/화장품-원문수집-2026-11-13.md)에 있다. 기존 자산 설명은 아래에 보존한다.
+공식 사진을 비율 유지 축소하고 WebP로 변환했다. 별도 후보 원문과 검토 결과는 [수집 보고서](docs-data/화장품-원문수집-2026-11-13.md)에 있다. 라로슈포제 대표 사진은 100ml이고 실제 후기 용량은 원문별 명시한 경우에만 표시한다. 현재 28개 원문·8개 쇼츠·3개 일반 영상의 상세 근거와 검토 범위는 수집 보고서와 원장에 있다. 기존 자산 설명은 아래의 당시 기록으로 보존한다.
 
 ---
 
