@@ -38,7 +38,8 @@ test('home shows approved totals and all public product detail routes render wit
     await route(`#product/${product.id}`);
     assert.equal(d.querySelector('#product-title').textContent,product.name);
     assert.match(w.document.title,/후기/);
-    assert.equal(d.querySelectorAll('.original-review').length,product.reviewAnalysis.originalExcerpts.length);
+    if(product.id==='airpods'){assert.equal(d.querySelectorAll('[data-review-source]').length,3);assert.equal(d.querySelector('.original-review'),null);assert.equal(d.querySelector('.quick-glance-dashboard'),null);}
+    else assert.equal(d.querySelectorAll('.original-review').length,product.reviewAnalysis.originalExcerpts.length);
     assert.ok(!d.querySelector('#product-view').textContent.includes('팩트체크 완료'));
   }
 });
@@ -66,11 +67,11 @@ test('filters compose, platform-only views hide the introduction, and empty rese
   assert.equal(d.querySelector('#result-count').textContent,'1');
 });
 test('a summary topic opens its evidence even after a stricter minimum filter',async t=>{
-  const {w,d,click}=app(t,{hash:'#product/airpods'});
+  const {w,d,click}=app(t,{hash:'#product/sony'});
   const select=d.querySelector('#mention-minimum');select.value='3';select.dispatchEvent(new w.Event('change',{bubbles:true}));
-  await click('[data-topic-jump="negative:care"]');
+  await click('[data-topic-jump="negative:noise"]');
   assert.equal(select.value,'1');
-  const details=d.querySelector('[data-mention="negative:care"]');
+  const details=d.querySelector('[data-mention="negative:noise"]');
   assert.equal(details.open,true);
   assert.equal(d.activeElement,details.querySelector('summary'));
   assert.ok(details.querySelector('blockquote'));
@@ -149,19 +150,19 @@ test('user-provided query text stays text, not executable markup',async t=>{
   assert.equal(d.querySelector('#search-context img'),null);
   assert.ok(d.querySelector('#search-context').textContent.includes('<img'));
 });
-test('adjacent detail navigation and browser back retain the original filtered list',async t=>{
-  const {w,d,click,settle}=app(t,{hash:'#home?category=digital&sort=name'});
+test('adjacent legacy detail navigation and browser back retain the original filtered list',async t=>{
+  const {w,d,click,settle}=app(t,{hash:'#home?category=essentials&sort=name'});
   const first=d.querySelector('#product-grid .product-name-button').dataset.open;
   await click('#product-grid .product-name-button');
   await click('.adjacent-products a:last-child');
   assert.notEqual(w.location.hash,`#product/${first}`);
-  assert.equal(w.history.state.productReturn.hash,'#home?category=digital&sort=name');
+  assert.equal(w.history.state.productReturn.hash,'#home?category=essentials&sort=name');
   w.history.back();await settle();
   assert.equal(w.location.hash,`#product/${first}`);
   w.history.back();await settle();
-  assert.equal(w.location.hash,'#home?category=digital&sort=name');
+  assert.equal(w.location.hash,'#home?category=essentials&sort=name');
   assert.equal(d.querySelector('#sort-select').value,'name');
-  assert.equal(d.querySelector('[data-category="digital"]').getAttribute('aria-pressed'),'true');
+  assert.equal(d.querySelector('[data-category="essentials"]').getAttribute('aria-pressed'),'true');
 });
 test('failed app loading presents a retry for the same address and ends the loading announcement',t=>{
   const dom=new JSDOM(html,{url:'https://review.test/#product/sony',runScripts:'outside-only'});

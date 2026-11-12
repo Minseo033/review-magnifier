@@ -2,6 +2,7 @@ import data from './data/catalog.viewer.json';
 import {renderReviewSummary,renderMentionSection,renderMentionGroups,renderOriginalReviews} from './review-insights.js';
 import {parseSelection,readRoute,filterProducts,platformSlug} from './catalog-logic.mjs';
 import site from './config/site.json';
+import {hasSelfFundedDetail,renderSelfFundedDetail,updateSelfFundedFeed,playSelfFundedVideo} from './self-funded-detail.js';
 
 const $=selector=>document.querySelector(selector);
 const $$=selector=>[...document.querySelectorAll(selector)];
@@ -20,7 +21,7 @@ const sourceNames=[...new Set(products.map(product=>product.source))];
 const categories=[['all','전체','grid'],['essentials','생필품','essentials'],['digital','가전·디지털','digital'],['kitchen','주방','kitchen'],['beauty','뷰티','beauty'],['living','생활·인테리어','living'],['food','식품','food'],['fashion','패션','fashion'],['hobby','취미','hobby']];
 const categoryNames=Object.fromEntries(categories.map(([id,name])=>[id,name]));
 const savedKey='review-magnifier:catalog-saved',compareKey='review-magnifier:catalog-compare',layoutKey='review-magnifier:catalog-layout';
-const state={page:'home',category:'all',platform:'all',query:'',sort:'recommended',layout:'grid',saved:new Set(),compare:[],product:null,mentionMinimum:1};
+const state={page:'home',category:'all',platform:'all',query:'',sort:'recommended',layout:'grid',saved:new Set(),compare:[],product:null,mentionMinimum:1,reviewFormat:'all',reviewTopic:'all'};
 const rememberedReturn=history.state?.productReturn;
 let productReturn=rememberedReturn&&/^#(?:home|saved|compare)(?:\?|$)/.test(rememberedReturn.hash)&&Number.isFinite(rememberedReturn.scroll)?rememberedReturn:{hash:'#home',scroll:0,trigger:null,layout:'grid'},toastTimer,undoAction;
 state.layout=productReturn.layout==='list'?'list':'grid';
@@ -243,6 +244,13 @@ function renderProduct(){
     return;
   }
   document.title=`${p.name} 후기 — 후기돋보기`;
+  document.documentElement.dataset.selfFunded=String(hasSelfFundedDetail(p.id));
+  if(hasSelfFundedDetail(p.id)){
+    state.reviewFormat='all';state.reviewTopic='all';
+    $('#product-view').innerHTML=renderSelfFundedDetail(p,productReturn.hash);
+    $('#share-address').value=publicProductUrl(p.id);
+    updateSelfFundedFeed($('#product-view'),p.id);return;
+  }
   $('#product-view').innerHTML=`
     <nav class="product-breadcrumb" aria-label="현재 위치"><a href="${esc(productReturn.hash)}" data-product-return>${icon('arrow')}목록으로</a><span>${esc(p.categoryName)}</span><span aria-current="page">제품 후기</span></nav>
     ${renderProductHero(p)}
@@ -278,6 +286,7 @@ function route(){
   const returnState=history.state?.productReturn;
   if(returnState&&/^#(?:home|saved|compare)(?:\?|$)/.test(returnState.hash)&&Number.isFinite(returnState.scroll))productReturn=returnState;
   Object.assign(state,readRoute(location.hash,categoryNames));
+  document.documentElement.dataset.selfFunded='false';
   $('#main').dataset.page=state.page;document.documentElement.dataset.page=state.page;$('.sidebar').hidden=true;
   $('.category-wrap').hidden=!['home','saved'].includes(state.page);
   $('#browse-view').hidden=!['home','saved'].includes(state.page);$('#compare-view').hidden=state.page!=='compare';$('#standards-view').hidden=state.page!=='standards';$('#product-view').hidden=state.page!=='product';
@@ -285,7 +294,7 @@ function route(){
   document.title=({saved:'찜한 제품',compare:'제품 비교',standards:'수집 기준과 출처',privacy:'저장·개인정보 안내'}[state.page]||'')?( {saved:'찜한 제품',compare:'제품 비교',standards:'수집 기준과 출처',privacy:'저장·개인정보 안내'}[state.page]+' — 후기돋보기'):siteTitle;
   $$('[data-nav]').forEach(link=>link.dataset.nav===state.page?link.setAttribute('aria-current','page'):link.removeAttribute('aria-current'));
   renderCategories();
-  $('#quick-tags').hidden=false;
+  $('#quick-tags').hidden=state.page==='product'&&hasSelfFundedDetail(state.product);
   $$('[data-search-tag]').forEach(chip=>chip.setAttribute('aria-pressed',String(['home','saved'].includes(state.page)&&state.query===chip.dataset.searchTag)));
   if(!['home','saved'].includes(state.page)){$('#product-search').value='';$('#search-scope').textContent=`${products.length}개 공개 제품 전체에서 검색해요.`;}
   if(state.page==='product')renderProduct();else if(state.page==='compare')renderComparison();else if(state.page==='standards')renderStandards();else if(state.page==='privacy')renderPrivacy();else renderBrowse();
@@ -309,6 +318,10 @@ document.addEventListener('click',event=>{
     else productReturn={...productReturn,trigger:target.dataset.open,triggerClass:'product-name-button'};
     event.preventDefault();return go(`product/${target.dataset.open}`);
   }
+  if(target.hasAttribute('data-review-format')){state.reviewFormat=target.dataset.reviewFormat;updateSelfFundedFeed($('#product-view'),state.product,state.reviewFormat,state.reviewTopic);return;}
+  if(target.hasAttribute('data-review-topic')){state.reviewTopic=target.dataset.reviewTopic;updateSelfFundedFeed($('#product-view'),state.product,state.reviewFormat,state.reviewTopic);return;}
+  if(target.hasAttribute('data-review-reset')){state.reviewFormat='all';state.reviewTopic='all';updateSelfFundedFeed($('#product-view'),state.product);return;}
+  if(target.hasAttribute('data-review-play')){playSelfFundedVideo($('#product-view'),state.product,target.dataset.reviewPlay);return;}
   if(target.hasAttribute('data-topic-jump')){
     state.mentionMinimum=1;$('#mention-minimum').value='1';$('#mention-groups').innerHTML=renderMentionGroups(byId.get(state.product),1);
     $('#mention-filter-status').textContent='1개 후기 이상에서 언급된 항목';

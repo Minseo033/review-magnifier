@@ -1,0 +1,69 @@
+{
+  "policyVersion": 1,
+  "products": {
+    "airpods": [
+      {
+        "id": "reviewchuck-airpods-2",
+        "format": "video",
+        "platform": "YouTube",
+        "title": "[내돈내산] 에어팟 프로 2세대 언박싱 | 노캔이 두 배?",
+        "author": "리뷰하는척 ReviewChuck",
+        "url": "https://www.youtube.com/watch?v=3A1OH446JSE",
+        "videoId": "3A1OH446JSE",
+        "videoKind": "video",
+        "duration": "4:12",
+        "date": "2022-10-22",
+        "model": "2세대 · Lightning",
+        "thumbnail": "assets/reviews/reviewchuck-airpods-2.jpg",
+        "description": "1세대와 직접 비교하며 노이즈 캔슬링, 볼륨 조절, 케이스 변화를 살펴보는 영상이에요.",
+        "topics": ["노이즈 캔슬링", "1세대 비교"],
+        "selfPurchase": true,
+        "disclosure": "[내돈내산] 에어팟 프로 2세대 (AirPods Pro 2) 언박싱 | 노캔이 두 배?",
+        "disclosureLocation": "영상 제목",
+        "commercialDisclosureFound": false,
+        "checkedAt": "2026-11-12",
+        "reviewed": true
+      },
+      {
+        "id": "yoeu-airpods-2",
+        "format": "blog",
+        "platform": "티스토리",
+        "title": "에어팟 프로 2세대 구매후기",
+        "author": "요으",
+        "url": "https://dydmdmdk.tistory.com/4",
+        "date": "2023-07-07",
+        "model": "2세대 · 단자 미표기",
+        "description": "옥션에서 직접 구입한 뒤 느낀 소음 차단과 음질, 살짝 먹먹한 착용감을 함께 적었어요.",
+        "excerpt": "나는 당장 사용할거라 옥션에서 30만원 초반대에 구매했다.",
+        "excerptLabel": "구매 경험 · 원문 일부",
+        "topics": ["노이즈 캔슬링", "착용감"],
+        "selfPurchase": true,
+        "disclosure": "내돈내산 리뷰",
+        "disclosureLocation": "원문 카테고리와 본문의 옥션 구매 서술",
+        "commercialDisclosureFound": false,
+        "checkedAt": "2026-11-12",
+        "reviewed": true
+      },
+      {
+        "id": "griffith-airpods-2",
+        "format": "blog",
+        "platform": "티스토리",
+        "title": "애플 에어팟 프로2 뒤늦은 사용후기 Part 1 - 언박싱 내돈내산",
+        "author": "그리피스의꿈",
+        "url": "https://candid-review.tistory.com/73",
+        "date": "2023-06-07",
+        "model": "2세대 · Lightning",
+        "description": "애플 기기 간 연결과 노이즈 캔슬링은 좋지만, 가격과 사운드 밸런스는 아쉽다는 사용기예요.",
+        "excerpt": "비슷한 가격의 제품에 비해 음질, 사운드 밸런스가 아쉽습니다",
+        "excerptLabel": "아쉬웠던 점 · 원문 일부",
+        "topics": ["음질", "애플 기기 연결"],
+        "selfPurchase": true,
+        "disclosure": "애플 에어팟 프로2 뒤늦은 사용후기 Part 1 - 언박싱 내돈내산",
+        "disclosureLocation": "글 제목과 본문의 직접 구입 서술",
+        "commercialDisclosureFound": false,
+        "checkedAt": "2026-11-12",
+        "reviewed": true
+      }
+    ]
+  }
+}

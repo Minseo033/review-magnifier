@@ -17,14 +17,14 @@ for name in ['catalog.css','boot.js','catalog.bundle.js']:
 catalog=json.loads((root/'data/catalog.viewer.json').read_text())
 public_images={p['image'] for p in catalog['products']}
 assets=site/'assets'
-for folder in ('catalog','brand'):
+for folder in ('catalog','brand','reviews'):
     (assets/folder).mkdir(parents=True,exist_ok=True)
     if folder=='catalog':
         for old in (assets/folder).iterdir():
             if old.is_file() and old.suffix=='.webp' and str(old.relative_to(site)) not in public_images:
                 old.unlink()  # Generated public copies only; candidate originals stay in assets/.
     for file in (root/'assets'/folder).iterdir():
-        if file.suffix in {'.webp','.png','.svg'} and (folder!='catalog' or str(file.relative_to(root)) in public_images):
+        if file.suffix in {'.webp','.png','.svg','.jpg'} and (folder!='catalog' or str(file.relative_to(root)) in public_images):
             shutil.copyfile(file,assets/folder/file.name)
 url=config['url']
 title='후기돋보기 — 요약보다 근거, 원문과 함께'
