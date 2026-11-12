@@ -41,9 +41,24 @@ function app(t,{hash='#home',blocked=false,mobile=false,script=bundle,lastFeatur
  w.addEventListener('error',event=>errors.push(event.error));
  w.eval(script);t.after(()=>assert.deepEqual(errors,[]));
  const settle=()=>new Promise(resolve=>w.setTimeout(resolve,15));
- const click=async selector=>{const n=d.querySelector(selector);assert.ok(n,selector);n.click();await settle();};
- const route=async hash=>{w.location.hash=hash;await settle();};
- const select=async(selector,value)=>{const n=d.querySelector(selector);assert.ok(n,selector);n.focus();n.value=value;n.dispatchEvent(new w.Event('change',{bubbles:true}));await settle();};
+ async function act(action,expectedHash){
+  const before=w.location.hash;
+  let complete;const changed=new Promise(resolve=>{complete=resolve;});
+  const onHash=()=>{if(!expectedHash||w.location.hash===expectedHash)complete();};
+  w.addEventListener('hashchange',onHash);
+  try{
+   action();
+   if((expectedHash&&expectedHash!==before)||w.location.hash!==before){
+    let timer;
+    try{await Promise.race([changed,new Promise((_,reject)=>{timer=w.setTimeout(()=>reject(Error('화면 전환 시간 초과: '+w.location.hash)),2000);})]);}
+    finally{w.clearTimeout(timer);}
+   }
+   await settle();
+  }finally{w.removeEventListener('hashchange',onHash);}
+ }
+ const click=async selector=>{const n=d.querySelector(selector);assert.ok(n,selector);const href=n.getAttribute('href');await act(()=>n.click(),href?.startsWith('#')?href:undefined);};
+ const route=async hash=>{await act(()=>{w.location.hash=hash;},hash);};
+ const select=async(selector,value)=>{const n=d.querySelector(selector);assert.ok(n,selector);await act(()=>{n.focus();n.value=value;n.dispatchEvent(new w.Event('change',{bubbles:true}));});};
  return {w,d,click,route,select,settle};
 }
 test('only active approved records publish; source totals are canonical unique posts',()=>{
