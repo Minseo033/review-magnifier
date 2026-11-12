@@ -285,7 +285,8 @@ function route(){
   document.title=({saved:'찜한 제품',compare:'제품 비교',standards:'수집 기준과 출처',privacy:'저장·개인정보 안내'}[state.page]||'')?( {saved:'찜한 제품',compare:'제품 비교',standards:'수집 기준과 출처',privacy:'저장·개인정보 안내'}[state.page]+' — 후기돋보기'):siteTitle;
   $$('[data-nav]').forEach(link=>link.dataset.nav===state.page?link.setAttribute('aria-current','page'):link.removeAttribute('aria-current'));
   renderCategories();
-  $('#quick-tags').hidden=!['home','saved'].includes(state.page);
+  $('#quick-tags').hidden=false;
+  $$('[data-search-tag]').forEach(chip=>chip.setAttribute('aria-pressed',String(['home','saved'].includes(state.page)&&state.query===chip.dataset.searchTag)));
   if(!['home','saved'].includes(state.page)){$('#product-search').value='';$('#search-scope').textContent=`${products.length}개 공개 제품 전체에서 검색해요.`;}
   if(state.page==='product')renderProduct();else if(state.page==='compare')renderComparison();else if(state.page==='standards')renderStandards();else if(state.page==='privacy')renderPrivacy();else renderBrowse();
   syncActions();
