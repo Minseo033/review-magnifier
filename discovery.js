@@ -39,18 +39,23 @@ function evidence(r){const d=r.disclosure;return `<details class="evidence"><sum
 function conditionChips(r){return Object.values(r.conditions).filter(Boolean).map(c=>`<span title="${esc(c.location+': '+c.quote)}">${esc(c.value)}</span>`).join('');}
 function playerDetails(r){
  const p=productMap.get(r.productId);
- return `<div class="player-byline"><span class="platform-label ${r.platform}">${r.platform==='instagram'?'Instagram 릴스':r.format==='shorts'?'YouTube 쇼츠':'YouTube'}</span><strong>${esc(r.author)}</strong><time datetime="${r.publishedAt||''}">${date(r.publishedAt)}</time></div><h3>${esc(r.title)}</h3><div class="player-review-text"><h4>후기 요약</h4><p>${esc(r.summary)}</p>${r.excerpt?`<blockquote><span>원문 발췌</span>“${esc(r.excerpt)}”</blockquote>`:''}</div><div class="condition-chips">${conditionChips(r)}</div>${evidence(r)}<a class="player-product" href="#product/${esc(p.id)}"><img src="${esc(p.image)}" width="48" height="48" alt=""><span><small>${esc(p.brand)}</small>${esc(p.name)}<b>이 제품 후기 모두 보기</b></span>${icon('arrow')}</a><div class="player-save">${saveButton('reviews',r.id)}</div>`;
+ const instagramCaptions={
+  'instagram-DanEWkeyTVe':'#내돈내산 파데프리템 ㄹㅈㄷ 피부표현✨\n\n👾에딧비 비비x유튜버 지원님 공동개발\n저는 지원님 유튜브 보다가 마켓으로 구입했어요오..! 사실 저는 건성+모공인으로써 평소 파데프리템에 불신있었는데 이건 피부표현 너무 예쁘고 지속력도 길어요\n색상도 화사 컬러는 19호-21호 가능할것같아요!\n\n🚨주의사항\n 여드름 있는 분들은 커버력이 약해서 비추!\n\n👾추천 조합\n전에 리뷰했던 입큰 파우더같이 모공 잘가려지는 거랑 쓰면 더 좋아요✨\n\n#에딧비 #스킨핏비비 #파데프리템 #비비크림',
+  'instagram-DDT_ADfTAkB':'#내돈내산 \n🩵아누아 - PDRN 히알루론산 캡슐 100 세럼🩵\nꕤ\n[제품POINT]\n✔️PDRN+히알루론산+콜라겐 3초 광채 플럼핑 효과\n✔️세럼 100% 적용 국내 최초 초저분자 스마트 캡슐\n✔️에메랄드빛 고효능 워터리 제형\n✔️인공향료 FREE 안심 처방\n\n[추천대상]\n✔️속당김이 고민이신 분\n✔️푸석한 피부에 광채를 주고 싶은 분\n✔️속에서 은은하게 올라오는 수분광채를 원하는 분\n✔️순하고 쫀쫀한 보습감의 기초제품을 찾는 분\nꕤ\n워터리하게 발리면서 산뜻하게 마무리되고\n피부 속건조를 잘 잡아주는 기초제품을 찾는 분들은\n이 아누아 PDRN 눈물세럼을 체크해 보세요~\nꕤ\n#아누아 #pdrn세럼 @anua_kr'
+ };
+ const rawCap=r.platform==='instagram'?instagramCaptions[r.id]:'';
+ return `<div class="player-byline"><span class="platform-label ${r.platform}">${r.platform==='instagram'?'Instagram 릴스':r.format==='shorts'?'YouTube 쇼츠':'YouTube'}</span><strong>${esc(r.author)}</strong><time datetime="${r.publishedAt||''}">${date(r.publishedAt)}</time></div><h3>${esc(r.title)}</h3><div class="player-review-text"><h4>후기 요약</h4><p>${esc(r.summary)}</p>${rawCap?`<div class="player-raw-caption"><h4>인스타그램 원본 내용</h4><p>${esc(rawCap)}</p></div>`:r.excerpt?`<blockquote><span>원문 발췌</span>“${esc(r.excerpt)}”</blockquote>`:''}</div><div class="condition-chips">${conditionChips(r)}</div>${evidence(r)}<a class="player-product" href="#product/${esc(p.id)}"><img src="${esc(p.image)}" width="48" height="48" alt=""><span><small>${esc(p.brand)}</small>${esc(p.name)}<b>이 제품 후기 모두 보기</b></span>${icon('arrow')}</a><div class="player-save">${saveButton('reviews',r.id)}</div>`;
 }
 function openPlayer(r){
  playingReview=r.id;
  const reel=r.platform==='instagram',frame=document.createElement('iframe');
  $('#player').dataset.format=r.format;
  $('#player-frame').className=reel?'instagram-player':r.format==='shorts'?'portrait':'landscape';
- frame.src=reel?`https://www.instagram.com/reel/${r.externalId}/embed/captioned/`:`https://www.youtube-nocookie.com/embed/${r.externalId}?rel=0&autoplay=0`;
+ frame.src=reel?`https://www.instagram.com/reel/${r.externalId}/embed/`:`https://www.youtube-nocookie.com/embed/${r.externalId}?rel=0&autoplay=0`;
  frame.title=r.title;frame.allow='encrypted-media; picture-in-picture; fullscreen';frame.allowFullscreen=true;frame.referrerPolicy='strict-origin-when-cross-origin';
  $('#player-frame').replaceChildren(frame);
  $('#player-details').innerHTML=playerDetails(r);$('#player-details').scrollTop=0;
- $('#player-help').textContent=reel?'게시물 안을 아래로 스크롤하면 작성자의 본문을 읽을 수 있어요.':'영상과 후기 요약을 함께 살펴보세요.';
+ $('#player-help').textContent=reel?'릴스 영상과 우측의 인스타그램 원본 내용을 함께 살펴보세요.':'영상과 후기 요약을 함께 살펴보세요.';
  $('#player-source-note').textContent=reel?'Instagram에서 보기만 표시되면 원문에서 재생해 주세요.':'재생이 제한되면 원문에서 확인해 주세요.';
  $('#player-original').href=r.url;$('#player-original').textContent=(reel?'Instagram':'YouTube')+' 원문 열기';
  if(!$('#player').open)$('#player').showModal();
