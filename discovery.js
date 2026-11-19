@@ -35,7 +35,13 @@ function productCard(p,detail=false){
   <div class="product-note"><span>확인한 제품</span><p>${esc(p.fullName)}</p><small>작성자가 밝힌 구매 표시와 사용 조건을 확인해 보세요.</small>${detail?`<a class="quiet-link" href="${esc(p.officialUrl)}" target="_blank" rel="noopener noreferrer">공식 제품 확인 ${icon('external')}</a>`:''}</div>
  </article>`;
 }
-function evidence(r){const d=r.disclosure;return `<details class="evidence"><summary>${icon('check')} 작성자 내돈내산 표기 <span>근거 보기</span></summary><div class="evidence-body"><p class="evidence-quote">“${esc(d.evidence.quote)}” <small>${esc(d.evidence.location)}</small></p><dl><div><dt>확인 범위</dt><dd>${d.checkedAreas.map(esc).join(', ')}</dd></div><div><dt>확인하지 못한 범위</dt><dd>${d.uncheckedAreas.map(esc).join(', ')}</dd></div><div><dt>검토 방식</dt><dd>${r.review.reviewerKind==='ai'?'AI 도구로 공개 원문과 표시된 영역 확인':'운영자 원문 확인'}</dd></div><div><dt>원문 확인</dt><dd>${date(r.link.checkedAt)}</dd></div><div><dt>제품 일치</dt><dd>${esc(r.matchEvidence.quote)} <small>(${esc(r.matchEvidence.location)})</small></dd></div></dl><p class="small-note">작성자의 자기표시와 구매 증빙 인증은 달라요. 광고가 전혀 없다는 보장은 아닙니다.</p></div></details>`;}
+function nonAdReason(r){
+ const d=r.disclosure;
+ if(r.platform==='youtube')return `${d.evidence.location}에서 ‘${d.evidence.quote}’ 직접 구매 표기를 확인했고, 영상 제목·더보기란·플랫폼 유료광고 메타데이터에서 협찬·제휴 수수료 문구가 발견되지 않았습니다.`;
+ if(r.platform==='instagram')return `${d.evidence.location}에서 ‘${d.evidence.quote}’ 직접 구매 표기를 확인했고, 공개 릴스 본문과 태그에서 유료 광고·협찬·제휴 수수료 문구가 발견되지 않았습니다.`;
+ return `${d.evidence.location}에서 ‘${d.evidence.quote}’ 직접 구매 표기를 확인했고, 본문 전체 텍스트와 외부 링크에서 협찬·원고료·제휴 수수료(파트너스·큐레이터 등) 문구가 발견되지 않았습니다.`;
+}
+function evidence(r){const d=r.disclosure;return `<details class="evidence"><summary>${icon('check')} 작성자 내돈내산 표기 · 비광고 판단 근거 <span>근거 보기</span></summary><div class="evidence-body"><p class="evidence-quote">“${esc(d.evidence.quote)}” <small>${esc(d.evidence.location)}</small></p><dl><div><dt>광고·제휴 미발견 판단 근거</dt><dd>${esc(nonAdReason(r))}</dd></div><div><dt>확인 범위</dt><dd>${d.checkedAreas.map(esc).join(', ')}</dd></div><div><dt>확인하지 못한 범위</dt><dd>${d.uncheckedAreas.map(esc).join(', ')}</dd></div><div><dt>검토 방식</dt><dd>${r.review.reviewerKind==='ai'?'AI 도구로 공개 원문과 표시된 영역 확인':'운영자 원문 확인'}</dd></div><div><dt>원문 확인</dt><dd>${date(r.link.checkedAt)}</dd></div><div><dt>제품 일치</dt><dd>${esc(r.matchEvidence.quote)} <small>(${esc(r.matchEvidence.location)})</small></dd></div></dl><p class="small-note">작성자의 자기표시와 구매 증빙 인증은 달라요. 광고가 전혀 없다는 보장은 아닙니다.</p></div></details>`;}
 function conditionChips(r){return Object.values(r.conditions).filter(Boolean).map(c=>`<span title="${esc(c.location+': '+c.quote)}">${esc(c.value)}</span>`).join('');}
 function playerDetails(r){
  const p=productMap.get(r.productId);
